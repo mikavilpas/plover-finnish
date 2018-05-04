@@ -22,12 +22,14 @@ In Finnish, words are most often based on a root word, with many affixes added
 to it, in order to give it additional meaning. This is very much in contrast to
 English, which uses multiple words instead of affixes.
 
-> istua "to sit down" (istun "I sit down")
-> istahtaa "to sit down for a while"
-> istahdan "I'll sit down for a while"
-> istahtaisin "I would sit down for a while"
-> istahtaisinko "should I sit down for a while?"
-> istahtaisinkohan "I wonder if I should sit down for a while"
+| istua            | "to sit down" (istun "I sit down")          |
+|                  |                                             |
+| istahtaa         | "to sit down for a while"                   |
+| istahdan         | "I'll sit down for a while"                 |
+| istahtaisin      | "I would sit down for a while"              |
+| istahtaisinko    | "should I sit down for a while?"            |
+| istahtaisinkohan | "I wonder if I should sit down for a while" |
+
 [wikipedia: Finnish language lexicon](https://en.wikipedia.org/wiki/Finnish_language#Lexicon)
 
 *The Finnish steno system should give special focus to writing affixes.*
@@ -47,14 +49,14 @@ word.
 
 The following sounds are used.
 
-- Single character (8 sounds, 5 with vowel harmony): `a,e,i,o,u,y,ä,ö` 
-- Double character (8 sounds, 5 with vowel harmony): `aa,ee,ii,oo,uu,yy,ää,öö` 
-- Diphtongs (28 sounds, 10 with vowel harmony):
--- ei,öi,äi,oi,ai
--- ey,öy,äy,	
--- eu,ou,au,	
--- yi,ui,iu,iy	
--- ie,yö,uo,	
+* Single character (8 sounds, 5 with vowel harmony): `a,e,i,o,u,y,ä,ö` 
+* Double character (8 sounds, 5 with vowel harmony): `aa,ee,ii,oo,uu,yy,ää,öö` 
+* Diphtongs (28 sounds, 10 with vowel harmony):
+** `ei,öi,äi,oi,ai`
+** `ey,öy,äy`	
+** `eu,ou,au`	
+** `yi,ui,iu,iy`	
+** `ie,yö,uo`	
 
 Grand total: 44 sounds. The minimum number of keys that can express all
 different possibilities is 6 (2^6=64).
