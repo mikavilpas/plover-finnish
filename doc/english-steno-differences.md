@@ -19,8 +19,7 @@ meaning. Instead it combines endings to words, creating long words that have a
 lot of packed meaning.
 
 In Finnish, words are most often based on a root word, with many affixes added
-to it, in order to give it additional meaning. This is very much in contrast to
-English, which uses multiple words instead of affixes.
+to it, in order to give it additional meaning.
 
 | Finnish          | English                                     |
 | ----             | ----                                        |
