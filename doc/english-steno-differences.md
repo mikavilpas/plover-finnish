@@ -46,7 +46,7 @@ word.
 
 *It should be possible to avoid having vowel keys for `ÄÖY`.*
 
-## More vowel sounds
+## More vowel sounds, need extra keys for them
 
 The following sounds are used.
 
