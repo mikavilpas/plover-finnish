@@ -22,8 +22,9 @@ In Finnish, words are most often based on a root word, with many affixes added
 to it, in order to give it additional meaning. This is very much in contrast to
 English, which uses multiple words instead of affixes.
 
-| istua            | "to sit down" (istun "I sit down")          |
+| Finnish          | English                                     |
 | ----             | ----                                        |
+| istua            | "to sit down" (istun "I sit down")          |
 | istahtaa         | "to sit down for a while"                   |
 | istahdan         | "I'll sit down for a while"                 |
 | istahtaisin      | "I would sit down for a while"              |
