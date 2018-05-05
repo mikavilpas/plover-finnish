@@ -67,3 +67,12 @@ express with 5 keys (2^5=32).
 
 *It is required to have extra keys to account for the larger number of vowel
 sounds.*
+
+## Frequency of characters
+
+To be done. There is some research into this, but it seems to take affixes into
+account, which isn't necessary with a two phase system.
+
+http://jkorpela.fi/kielikello/kirjtil.html
+
+This is likely to be the most important factor in designing the layout.
