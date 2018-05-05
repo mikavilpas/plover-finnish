@@ -99,14 +99,14 @@ There are 4 cases for each part of speech:
 
 * Verbs with possessive suffixes:
 
-| Strokes | Finnish | English            | Pluralizable | Notes |
-| ----    | ----    | ----               | :----:       | ----  |
-|         | syön    | I eat              |              |       |
-|         | syöt    | You (singular) eat |              |       |
-|         | syövät  | They eat           |              |       |
-|         | syömme  | We eat             |              |       |
-|         | syötte  | You (plural) eat   |              |       |
-|         | syövät  |                    |              |       |
+| Strokes | Finnish | English            | Pluralizable | Notes                       |
+| ----    | ----    | ----               | :----:       | ----                        |
+|         | syön    | I eat              |              |                             |
+|         | syöt    | You (singular) eat |              |                             |
+|         | syövät  | They eat           |              | Same as for the plural case |
+|         | syömme  | We eat             |              |                             |
+|         | syötte  | You (plural) eat   |              |                             |
+|         | syödään | (It's) being eaten |              | Passive                     |
 
 `TODO: make sure this section is correct.`
 
