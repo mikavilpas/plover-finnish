@@ -20,6 +20,18 @@ In simple terms, it means adding an affix to a word:
 
 [wikipedia: Finnish language lexicon](https://en.wikipedia.org/wiki/Finnish_language#Lexicon)
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [Agglutination in the Finnish steno system](#agglutination-in-the-finnish-steno-system)
+    - [Two phase word writing system](#two-phase-word-writing-system)
+    - [Agglutination rules](#agglutination-rules)
+        - [Nouns, like `talo` (house)](#nouns-like-talo-house)
+        - [Possessive suffixes, like `-ni` and `-si` (my and your)](#possessive-suffixes-like--ni-and--si-my-and-your)
+        - [Verbs](#verbs)
+            - [Infinitive verbs](#infinitive-verbs)
+
+<!-- markdown-toc end -->
 
 ## Two phase word writing system
 
