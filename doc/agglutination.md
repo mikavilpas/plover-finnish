@@ -110,3 +110,90 @@ There are 4 cases for each part of speech:
 
 `TODO: make sure this section is correct.`
 
+### Verbs
+
+Verbs come in a couple of different varieties.
+
+#### Infinitive verbs
+
+Infinite verbs are used like nouns:
+
+* there are 5 different forms
+* some can be either in active (I do, you do, they do) or in passive (is being
+  done)
+* in addition to this, some of the forms can only be inflected in one or too
+  parts of speech. Others support all of them
+
+There are a lot of examples at https://fi.wikipedia.org/wiki/Infinitiivi (in Finnish).
+
+1. Group `A, laulaa` (to sing)
+
+Only supports the translative (`-ksi`).
+
+| Strokes | Finnish      | English                     | Notes                      |
+| ----    | ----         | ----                        | ----                       |
+|         | laulaakseni  | so that I could sing        | 1st singular form (me)     |
+|         | laulaaksesi  | ... you could sing          | 2nd singular form (you)    |
+|         | laulaakseen  | ... He/she could sing       | 3rd singular form (he/she) |
+|         | laulaaksemme | ... we could sing           | 1st plural form (we)       |
+|         | laulaaksenne | ... You (plural) could sing | 2nd plural form (you)      |
+             
+2. Group `E, laulaessa (while singing)`
+
+Supports three parts of speech in the active, and one in the passive:
+
+| Strokes | Finnish      | English       | Notes          |
+| ----    | ----         | ----          | ----           |
+|         | laulaessa    | while singing | inessive       |
+|         | laulaen      | by singing    | instructive    |
+|         | laulaesta    | from singing  | elative (rare) |
+|         | laulettaessa |               |                |
+
+Also it's possible to add a possessive suffix at the end for each of the active
+cases (not for the passive, obviously), such as in the word `laulaessani` (while
+I was singing).
+
+3. Group `MA, laulama(-tta)` (without singing)
+
+The active form works with *all* forms of speech. Also it's possible to use the
+possessive suffix.
+
+Examples from Wikipedia (not all parts of speech are shown):
+
+| Strokes | Finnish       | English                     | Notes                    |
+| ----    | ----          | ----                        | ----                     |
+|         | laulamassa    | in singing                  | inessive                 |
+|         | laulamasta    | from singing                | elative                  |
+|         | laulamaan     | toward singing              | illative                 |
+|         | laulamaa+ni   | of something sung by myself | partitive + possession   |
+|         | laulamalla    | by singing                  | adessive                 |
+|         | laulamaksi    | to become sung by           | translative              |
+|         | laulamakse+ni | to because sung by myself   | translative + possession |
+
+The passive form works with the instructive case.
+
+| Strokes | Finnish     | English                         | Notes       |
+| ----    | ----        | ----                            | ----        |
+|         | laulettaman | to be sung (by unknown singers) | instructive |
+
+4. Group `MINEN, laulaminen` (the act of singing, or just "singing")
+
+Works with all parts of speech.
+
+| Strokes | Finnish       | English     | Notes                                         |
+| ----    | ----          | ----        | ----                                          |
+|         | laulamise+mme | our singing | genitive, the first plural person as a suffix |
+
+Does not work with the passive.
+
+5. Group `MAINEN, laulamaisillani (as I was about to start singing)`
+
+Only works with the adessive.
+
+| Strokes | Finnish           | English                          | Notes                                       |
+| ----    | ----              | ----                             | ----                                        |
+|         | laulamaisilla+ni  | (see title)                      | adessive, first singular person as a suffix |
+|         | laulamaisilla+an  | as he was about to start singing |                                             |
+|         | laulamaisilla+nsa | as he was about to start singing | alternative way of writing,but same meaning |
+
+Does not work with the passive.
