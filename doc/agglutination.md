@@ -8,6 +8,11 @@
         - [Possessive suffixes, like `-ni` and `-si` (my and your)](#possessive-suffixes-like--ni-and--si-my-and-your)
         - [Verbs](#verbs)
             - [Infinitive verbs](#infinitive-verbs)
+                - [1. Group `A, laulaa` (to sing)](#1-group-a-laulaa-to-sing)
+                - [2. Group `E, laulaessa (while singing)`](#2-group-e-laulaessa-while-singing)
+                - [3. Group `MA, laulama(-tta)` (without singing)](#3-group-ma-laulama-tta-without-singing)
+                - [4. Group `MINEN, laulaminen` (the act of singing, or just "singing")](#4-group-minen-laulaminen-the-act-of-singing-or-just-singing)
+                - [5. Group `MAINEN, laulamaisillani (as I was about to start singing)`](#5-group-mainen-laulamaisillani-as-i-was-about-to-start-singing)
 
 <!-- markdown-toc end -->
 
@@ -138,7 +143,7 @@ Infinite verbs are used like nouns:
 
 There are a lot of examples at https://fi.wikipedia.org/wiki/Infinitiivi (in Finnish).
 
-1. Group `A, laulaa` (to sing)
+##### 1. Group `A, laulaa` (to sing)
 
 Only supports the translative (`-ksi`).
 
@@ -150,7 +155,7 @@ Only supports the translative (`-ksi`).
 |         | laulaaksemme | ... we could sing           | 1st plural form (we)       |
 |         | laulaaksenne | ... You (plural) could sing | 2nd plural form (you)      |
              
-2. Group `E, laulaessa (while singing)`
+##### 2. Group `E, laulaessa (while singing)`
 
 Supports three parts of speech in the active, and one in the passive:
 
@@ -165,7 +170,7 @@ Also it's possible to add a possessive suffix at the end for each of the active
 cases (not for the passive, obviously), such as in the word `laulaessani` (while
 I was singing).
 
-3. Group `MA, laulama(-tta)` (without singing)
+##### 3. Group `MA, laulama(-tta)` (without singing)
 
 The active form works with *all* forms of speech. Also it's possible to use the
 possessive suffix.
@@ -188,7 +193,7 @@ The passive form works with the instructive case.
 | ----    | ----        | ----                            | ----        |
 |         | laulettaman | to be sung (by unknown singers) | instructive |
 
-4. Group `MINEN, laulaminen` (the act of singing, or just "singing")
+##### 4. Group `MINEN, laulaminen` (the act of singing, or just "singing")
 
 Works with all parts of speech.
 
@@ -198,7 +203,7 @@ Works with all parts of speech.
 
 Does not work with the passive.
 
-5. Group `MAINEN, laulamaisillani (as I was about to start singing)`
+##### 5. Group `MAINEN, laulamaisillani (as I was about to start singing)`
 
 Only works with the adessive.
 
