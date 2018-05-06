@@ -12,7 +12,7 @@
             - [2. Group `E, laulaessa (while singing)`](#2-group-e-laulaessa-while-singing)
             - [3. Group `MA, laulama(-tta)` (without singing)](#3-group-ma-laulama-tta-without-singing)
             - [4. Group `MINEN, laulaminen` (the act of singing, or just "singing")](#4-group-minen-laulaminen-the-act-of-singing-or-just-singing)
-            - [5. Group `MAINEN, laulamaisillani (as I was about to start singing)`](#5-group-mainen-laulamaisillani-as-i-was-about-to-start-singing)
+            - [5. Group `MAINEN, laulamaisillani` (as I was about to start singing)](#5-group-mainen-laulamaisillani-as-i-was-about-to-start-singing)
 
 <!-- markdown-toc end -->
 
@@ -203,7 +203,7 @@ Works with all parts of speech.
 
 Does not work with the passive.
 
-#### 5. Group `MAINEN, laulamaisillani (as I was about to start singing)`
+#### 5. Group `MAINEN, laulamaisillani` (as I was about to start singing)
 
 Only works with the adessive.
 
