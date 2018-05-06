@@ -2,17 +2,17 @@
 **Table of Contents**
 
 - [Agglutination in the Finnish steno system](#agglutination-in-the-finnish-steno-system)
-    - [Two phase word writing system](#two-phase-word-writing-system)
-    - [Agglutination rules](#agglutination-rules)
-        - [Nouns, like `talo` (house)](#nouns-like-talo-house)
-        - [Possessive suffixes, like `-ni` and `-si` (my and your)](#possessive-suffixes-like--ni-and--si-my-and-your)
-        - [Verbs](#verbs)
-            - [Infinitive verbs](#infinitive-verbs)
-                - [1. Group `A, laulaa` (to sing)](#1-group-a-laulaa-to-sing)
-                - [2. Group `E, laulaessa (while singing)`](#2-group-e-laulaessa-while-singing)
-                - [3. Group `MA, laulama(-tta)` (without singing)](#3-group-ma-laulama-tta-without-singing)
-                - [4. Group `MINEN, laulaminen` (the act of singing, or just "singing")](#4-group-minen-laulaminen-the-act-of-singing-or-just-singing)
-                - [5. Group `MAINEN, laulamaisillani (as I was about to start singing)`](#5-group-mainen-laulamaisillani-as-i-was-about-to-start-singing)
+- [Two phase word writing system](#two-phase-word-writing-system)
+- [Agglutination rules](#agglutination-rules)
+    - [Nouns, like `talo` (house)](#nouns-like-talo-house)
+    - [Possessive suffixes, like `-ni` and `-si` (my and your)](#possessive-suffixes-like--ni-and--si-my-and-your)
+    - [Verbs](#verbs)
+        - [Infinitive verbs](#infinitive-verbs)
+            - [1. Group `A, laulaa` (to sing)](#1-group-a-laulaa-to-sing)
+            - [2. Group `E, laulaessa (while singing)`](#2-group-e-laulaessa-while-singing)
+            - [3. Group `MA, laulama(-tta)` (without singing)](#3-group-ma-laulama-tta-without-singing)
+            - [4. Group `MINEN, laulaminen` (the act of singing, or just "singing")](#4-group-minen-laulaminen-the-act-of-singing-or-just-singing)
+            - [5. Group `MAINEN, laulamaisillani (as I was about to start singing)`](#5-group-mainen-laulamaisillani-as-i-was-about-to-start-singing)
 
 <!-- markdown-toc end -->
 
@@ -38,7 +38,7 @@ In simple terms, it means adding an affix to a word:
 
 [wikipedia: Finnish language lexicon](https://en.wikipedia.org/wiki/Finnish_language#Lexicon)
 
-## Two phase word writing system
+# Two phase word writing system
 
 An agglutinated word in the Finnish steno system is written in two steps:
 
@@ -56,12 +56,12 @@ Here are some simple examples (subject to change):
 | `KOIR / -L`  | koiralla | on the dog | Adessive                                   |
 | `KOIR / -LT` | koirilla | on the dog | Combined plural and adessive               |
 
-## Agglutination rules
+# Agglutination rules
 
 Finnish has different kinds of affixes for different parts of speech ("classes"
 of words). Each one of these uses unique affixes as well.
 
-### Nouns, like `talo` (house)
+## Nouns, like `talo` (house)
 
 There are 15 cases, some of which are in the plural.
 
@@ -87,7 +87,7 @@ There are 15 cases, some of which are in the plural.
 
 *The goal is to make typing these as easy as possible.*
 
-### Possessive suffixes, like `-ni` and `-si` (my and your)
+## Possessive suffixes, like `-ni` and `-si` (my and your)
 
 A possessive suffix adds the notion of an owner to a sentence. They can be used
 with nouns, adjectives and verbs too.
@@ -127,11 +127,11 @@ There are 4 cases for each part of speech:
 
 `TODO: make sure this section is correct.`
 
-### Verbs
+## Verbs
 
 Verbs come in a couple of different varieties.
 
-#### Infinitive verbs
+### Infinitive verbs
 
 Infinite verbs are used like nouns:
 
@@ -143,7 +143,7 @@ Infinite verbs are used like nouns:
 
 There are a lot of examples at https://fi.wikipedia.org/wiki/Infinitiivi (in Finnish).
 
-##### 1. Group `A, laulaa` (to sing)
+#### 1. Group `A, laulaa` (to sing)
 
 Only supports the translative (`-ksi`).
 
@@ -155,7 +155,7 @@ Only supports the translative (`-ksi`).
 |         | laulaaksemme | ... we could sing           | 1st plural form (we)       |
 |         | laulaaksenne | ... You (plural) could sing | 2nd plural form (you)      |
              
-##### 2. Group `E, laulaessa (while singing)`
+#### 2. Group `E, laulaessa (while singing)`
 
 Supports three parts of speech in the active, and one in the passive:
 
@@ -170,7 +170,7 @@ Also it's possible to add a possessive suffix at the end for each of the active
 cases (not for the passive, obviously), such as in the word `laulaessani` (while
 I was singing).
 
-##### 3. Group `MA, laulama(-tta)` (without singing)
+#### 3. Group `MA, laulama(-tta)` (without singing)
 
 The active form works with *all* forms of speech. Also it's possible to use the
 possessive suffix.
@@ -193,7 +193,7 @@ The passive form works with the instructive case.
 | ----    | ----        | ----                            | ----        |
 |         | laulettaman | to be sung (by unknown singers) | instructive |
 
-##### 4. Group `MINEN, laulaminen` (the act of singing, or just "singing")
+#### 4. Group `MINEN, laulaminen` (the act of singing, or just "singing")
 
 Works with all parts of speech.
 
@@ -203,7 +203,7 @@ Works with all parts of speech.
 
 Does not work with the passive.
 
-##### 5. Group `MAINEN, laulamaisillani (as I was about to start singing)`
+#### 5. Group `MAINEN, laulamaisillani (as I was about to start singing)`
 
 Only works with the adessive.
 
