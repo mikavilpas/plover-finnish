@@ -207,10 +207,10 @@ Does not work with the passive.
 
 Only works with the adessive.
 
-| Strokes | Finnish           | English                          | Notes                                       |
-| ----    | ----              | ----                             | ----                                        |
-|         | laulamaisilla+ni  | (see title)                      | adessive, first singular person as a suffix |
-|         | laulamaisilla+an  | as he was about to start singing |                                             |
-|         | laulamaisilla+nsa | as he was about to start singing | alternative way of writing,but same meaning |
+| Strokes | Finnish           | English                          | Notes                                        |
+| ----    | ----              | ----                             | ----                                         |
+|         | laulamaisilla+ni  | (see title)                      | adessive, first singular person as a suffix  |
+|         | laulamaisilla+an  | as he was about to start singing |                                              |
+|         | laulamaisilla+nsa | as he was about to start singing | alternative way of writing, but same meaning |
 
 Does not work with the passive.
