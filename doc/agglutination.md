@@ -214,3 +214,170 @@ Only works with the adessive.
 |         | laulamaisilla+nsa | as he was about to start singing | alternative way of writing, but same meaning |
 
 Does not work with the passive.
+
+### Participle
+
+Like a verb and an adjective together.
+
+There are 6 cases: three active, two passive, and one that specifies negation.
+
+[Wikipedia: Partisiippi](https://fi.wikipedia.org/wiki/Partisiippi)
+
+#### 1. Group `VA, laulava` (the singing one)
+
+Indicates that the singing is ongoing, it hasn't finished yet.
+
+
+| Strokes | Finnish    | English                   | Pluralizable | Notes       |
+| ----    | ----       | ----                      | :----:       |             |
+|         | laulava    | singing / the singing one | **✓**        | nominative  |
+|         | laulavan   | ...'s                     | **✓**        | genitive    |
+|         | laulavaa   | part of ...               | **✓**        | partitive   |
+|         | laulavaksi | to become ...             | **✓**        | translative |
+|         | laulavana  | as ...                    | **✓**        | essive      |
+|         | laulavassa | in ...                    | **✓**        | inessive    |
+|         | laulavasta | from ...                  | **✓**        | elative     |
+|         | laulavaan  | to ...                    | **✓**        | illative    |
+|         | laulavalla | on (top of) ...           | **✓**        | adessive    |
+|         | laulavalta | from (on top of) ...      | **✓**        | ablative    |
+|         | laulavalle | to (on top of) ...        | **✓**        | allative    |
+|         | laulavatta | without ...               | **✓**        | abessive    |
+|         | laulavine  | with their ...            |              | comitative  |
+|         | laulavin   | using / by means of ...   |              | instructive |
+
+
+#### 2. Group `NUT, laulanut` (the one who sang)
+
+Indicates the singing has stopped, or that it has been completed.
+
+
+| Strokes | Finnish      | English                 | Pluralizable | Notes       |
+| ----    | ----         | ----                    | :----:       |             |
+|         | laulanut     | the one(s) who sang     | **✓**        | nominative  |
+|         | laulaneen    | ...'s                   | **✓**        | genitive    |
+|         | laulanutta   | part of ...             | **✓**        | partitive   |
+|         | laulaneeksi  | to become ...           | **✓**        | translative |
+|         | laulaneena   | as ...                  | **✓**        | essive      |
+|         | laulaneessa  | in ...                  | **✓**        | inessive    |
+|         | laulaneesta  | from ...                | **✓**        | elative     |
+|         | laulaneeseen | to ...                  | **✓**        | illative    |
+|         | laulaneella  | on (top of) ...         | **✓**        | adessive    |
+|         | laulaneelta  | from (on top of) ...    | **✓**        | ablative    |
+|         | laulaneelle  | to (on top of) ...      | **✓**        | allative    |
+|         | laulaneetta  | without ...             | **✓**        | abessive    |
+|         | laulaneine   | with their ...          |              | comitative  |
+|         | laulanein    | using / by means of ... |              | instructive |
+
+
+#### 3. Group `MA, laulama` (the one sung by)
+
+Indicates something that has/have been sung by someone.
+
+| Strokes | Finnish    | English                 | Pluralizable | Notes       |
+| ----    | ----       | ----                    | :----:       |             |
+|         | laulama    | the one sung by         | **✓**        | nominative  |
+|         | laulaman   | ... some person         | **✓**        | genitive    |
+|         | laulamaa   | part of ...             | **✓**        | partitive   |
+|         | laulamaksi | to become ...           | **✓**        | translative |
+|         | laulamana  | as ...                  | **✓**        | essive      |
+|         | laulamassa | in ...                  | **✓**        | inessive    |
+|         | laulamasta | from ...                | **✓**        | elative     |
+|         | laulamaan  | to ...                  | **✓**        | illative    |
+|         | laulamalla | on (top of) ...         | **✓**        | adessive    |
+|         | laulamalta | from (on top of) ...    | **✓**        | ablative    |
+|         | laulamalle | to (on top of) ...      | **✓**        | allative    |
+|         | laulamatta | without ...             | **✓**        | abessive    |
+|         | laulamine  | with their ...          |              | comitative  |
+|         | laulamin   | using / by means of ... |              | instructive |
+
+
+#### 4. Group `VA, laulettava, passiivi` (being sung, the passive)
+
+Indicates something that is sung by someone, but doesn't contain the information
+about the person doing the singing.
+
+| Strokes | Finnish       | English                 | Pluralizable | Notes       |
+| ----    | ----          | ----                    | :----:       |             |
+|         | laulettava    | the one being sung      | **✓**        | nominative  |
+|         | laulettavan   | owned by ...            | **✓**        | genitive    |
+|         | laulettavaa   | part of ...             | **✓**        | partitive   |
+|         | laulettavaksi | to become ...           | **✓**        | translative |
+|         | laulettavana  | as ...                  | **✓**        | essive      |
+|         | laulettavassa | in ...                  | **✓**        | inessive    |
+|         | laulettavasta | from ...                | **✓**        | elative     |
+|         | laulettavaan  | to ...                  | **✓**        | illative    |
+|         | laulettavalla | on (top of) ...         | **✓**        | adessive    |
+|         | laulettavalta | from (on top of) ...    | **✓**        | ablative    |
+|         | laulettavalle | to (on top of) ...      | **✓**        | allative    |
+|         | laulettavatta | without ...             | **✓**        | abessive    |
+|         | laulettavine  | with the ...            |              | comitative  |
+|         | laulettavin   | using / by means of ... |              | instructive |
+
+
+#### 5. Group `TU, laulettu, passiivi` (something that was sung, passive)
+
+Indicates something that was sung by someone. The actor is unknown.
+
+| Strokes | Finnish     | English                 | Pluralizable | Notes       |
+| ----    | ----        | ----                    | :----:       |             |
+|         | laulettu    | something that was sung | **✓**        | nominative  |
+|         | lauletun    | owned by ...            | **✓**        | genitive    |
+|         | laulettua   | part of ...             | **✓**        | partitive   |
+|         | lauletuksi  | to become ...           | **✓**        | translative |
+|         | laulettuna  | as ...                  | **✓**        | essive      |
+|         | lauletussa  | in ...                  | **✓**        | inessive    |
+|         | lauletusta  | from ...                | **✓**        | elative     |
+|         | laulettuun  | to ...                  | **✓**        | illative    |
+|         | lauletulla  | on (top of) ...         | **✓**        | adessive    |
+|         | lauletulta  | from (on top of) ...    | **✓**        | ablative    |
+|         | lauletulle  | to (on top of) ...      | **✓**        | allative    |
+|         | lauletutta  | without ...             | **✓**        | abessive    |
+|         | laulettuine | with the ...            |              | comitative  |
+|         | lauletuin   | using / by means of ... |              | instructive |
+
+
+#### 6. Group `KIELTOPARTISIIPPI, laulamaton` (something that is/was NOT sung)
+
+Indicates something that was NOT sung by someone. Note that this is not in the
+passive necessarily.
+
+| Strokes | Finnish            | English                 | Pluralizable | Notes       |
+| ----    | ----               | ----                    | :----:       |             |
+|         | laulamaton         | the unsung (something)  | **✓**        | nominative  |
+|         | laulamattoman      | owned by ...            | **✓**        | genitive    |
+|         | laulamatonta       | part of ...             | **✓**        | partitive   |
+|         | laulamattomaksi    | to become ...           | **✓**        | translative |
+|         | laulamattomana     | as ...                  | **✓**        | essive      |
+|         | laulamattomassa    | in ...                  | **✓**        | inessive    |
+|         | laulamattomasta    | from ...                | **✓**        | elative     |
+|         | laulamattomaan     | to ...                  | **✓**        | illative    |
+|         | laulamattomalla    | on (top of) ...         | **✓**        | adessive    |
+|         | laulamattomalta    | from (on top of) ...    | **✓**        | ablative    |
+|         | laulamattomalle    | to (on top of) ...      | **✓**        | allative    |
+|         | laulamattomatta 1) | without ...             | **✓**        | abessive    |
+|         | laulamattomine     | with the ...            |              | comitative  |
+|         | laulamattomin      | using / by means of ... |              | instructive |
+
+<!-- 
+
+Laulaa-verbin partisiipit
+
+Nimitys        	I partisiippi 	II partisiippi       	III partisiippi         	IV partisiippi            	V partisiippi 	VI partisiippi
+Tunnus         	VA            	NUT                  	MA (agenttipartisiippi) 	VA (passiivi)             	TU (passiivi) 	Kieltopartisiippi
+Sijat ja luvut 	yks.          	mon.                 	yks.                    	mon.                      	yks.          	mon.                 	yks.          	mon.                       	yks.       	mon.         	yks.               	mon.
+Nominatiivi    	laulava       	laulavat             	laulanut                	laulaneet                 	laulama       	laulamat             	laulettava    	laulettavat                	laulettu   	lauletut     	laulamaton         	laulamattomat
+Genetiivi      	laulavan      	laulavien/ laulavain 	laulaneen               	laulaneiden/ laulaneitten 	laulaman      	laulamien/ laulamain 	laulettavan   	laulettavien/ laulettavain 	lauletun   	laulettujen  	laulamattoman      	laulamattomien/ laulamattomain
+Partitiivi     	laulavaa      	laulavia             	laulanutta              	laulaneita                	laulamaa      	laulamia             	laulettavaa   	laulettavia                	laulettua  	laulettuja   	laulamatonta       	laulamattomia
+Translatiivi   	laulavaksi    	laulaviksi           	laulaneeksi             	laulaneiksi               	laulamaksi    	laulamiksi           	laulettavaksi 	laulettaviksi              	lauletuksi 	lauletuiksi  	laulamattomaksi    	laulamattomiksi
+Essiivi        	laulavana     	laulavina            	laulaneena              	laulaneina                	laulamana     	laulamina            	laulettavana  	laulettavina               	laulettuna 	laulettuina  	laulamattomana     	laulamattomina
+Inessiivi      	laulavassa    	laulavissa           	laulaneessa             	laulaneissa               	laulamassa    	laulamissa           	laulettavassa 	laulettavissa              	lauletussa 	lauletuissa  	laulamattomassa    	laulamattomissa
+Elatiivi       	laulavasta    	laulavista           	laulaneesta             	laulaneista               	laulamasta    	laulamista           	laulettavasta 	laulettavista              	lauletusta 	lauletuista  	laulamattomasta    	laulamattomista
+Illatiivi      	laulavaan     	laulaviin            	laulaneeseen            	laulaneisiin              	laulamaan     	laulamiin            	laulettavaan  	laulettaviin               	laulettuun 	laulettuihin 	laulamattomaan     	laulamattomiin
+Adessiivi      	laulavalla    	laulavilla           	laulaneella             	laulaneilla               	laulamalla    	laulamilla           	laulettavalla 	laulettavilla              	lauletulla 	lauletuilla  	laulamattomalla    	laulamattomilla
+Ablatiivi      	laulavalta    	laulavilta           	laulaneelta             	laulaneilta               	laulamalta    	laulamilta           	laulettavalta 	laulettavilta              	lauletulta 	lauletuilta  	laulamattomalta    	laulamattomilta
+Allatiivi      	laulavalle    	laulaville           	laulaneelle             	laulaneille               	laulamalle    	laulamille           	laulettavalle 	laulettaville              	lauletulle 	lauletuille  	laulamattomalle    	laulamattomille
+Abessiivi      	laulavatta    	laulavitta           	laulaneetta             	laulaneitta               	laulamatta    	laulamitta           	laulettavatta 	laulettavitta              	lauletutta 	lauletuitta  	laulamattomatta 1) 	laulamattomitta
+Komitatiivi    	laulavine     	laulaneine           	laulamine               	laulettavine              	laulettuine   	laulamattomine
+Instruktiivi   	laulavin      	laulanein            	laulamin                	laulettavin               	lauletuin     	laulamattomin
+
+-->
