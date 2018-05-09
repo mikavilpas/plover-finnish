@@ -236,7 +236,7 @@ Indicates that the singing is ongoing, it hasn't finished yet.
 
 
 | Strokes | Finnish    | English                   | Pluralizable | Notes       |
-| ----    | ----       | ----                      | :----:       |             |
+| ----    | ----       | ----                      | :----:       | ----        |
 |         | laulava    | singing / the singing one | **✓**        | nominative  |
 |         | laulavan   | ...'s                     | **✓**        | genitive    |
 |         | laulavaa   | part of ...               | **✓**        | partitive   |
@@ -259,7 +259,7 @@ Indicates the singing has stopped, or that it has been completed.
 
 
 | Strokes | Finnish      | English                 | Pluralizable | Notes       |
-| ----    | ----         | ----                    | :----:       |             |
+| ----    | ----         | ----                    | :----:       | ----        |
 |         | laulanut     | the one(s) who sang     | **✓**        | nominative  |
 |         | laulaneen    | ...'s                   | **✓**        | genitive    |
 |         | laulanutta   | part of ...             | **✓**        | partitive   |
@@ -281,7 +281,7 @@ Indicates the singing has stopped, or that it has been completed.
 Indicates something that has/have been sung by someone.
 
 | Strokes | Finnish    | English                 | Pluralizable | Notes       |
-| ----    | ----       | ----                    | :----:       |             |
+| ----    | ----       | ----                    | :----:       | ----        |
 |         | laulama    | the one sung by         | **✓**        | nominative  |
 |         | laulaman   | ... some person         | **✓**        | genitive    |
 |         | laulamaa   | part of ...             | **✓**        | partitive   |
@@ -304,7 +304,7 @@ Indicates something that is sung by someone, but doesn't contain the information
 about the person doing the singing.
 
 | Strokes | Finnish       | English                 | Pluralizable | Notes       |
-| ----    | ----          | ----                    | :----:       |             |
+| ----    | ----          | ----                    | :----:       | ----        |
 |         | laulettava    | the one being sung      | **✓**        | nominative  |
 |         | laulettavan   | owned by ...            | **✓**        | genitive    |
 |         | laulettavaa   | part of ...             | **✓**        | partitive   |
@@ -326,7 +326,7 @@ about the person doing the singing.
 Indicates something that was sung by someone. The actor is unknown.
 
 | Strokes | Finnish     | English                 | Pluralizable | Notes       |
-| ----    | ----        | ----                    | :----:       |             |
+| ----    | ----        | ----                    | :----:       | ----        |
 |         | laulettu    | something that was sung | **✓**        | nominative  |
 |         | lauletun    | owned by ...            | **✓**        | genitive    |
 |         | laulettua   | part of ...             | **✓**        | partitive   |
@@ -349,7 +349,7 @@ Indicates something that was NOT sung by someone. Note that this is not in the
 passive necessarily.
 
 | Strokes | Finnish            | English                 | Pluralizable | Notes       |
-| ----    | ----               | ----                    | :----:       |             |
+| ----    | ----               | ----                    | :----:       | ----        |
 |         | laulamaton         | the unsung (something)  | **✓**        | nominative  |
 |         | laulamattoman      | owned by ...            | **✓**        | genitive    |
 |         | laulamatonta       | part of ...             | **✓**        | partitive   |
