@@ -13,6 +13,13 @@
             - [3. Group `MA, laulama(-tta)` (without singing)](#3-group-ma-laulama-tta-without-singing)
             - [4. Group `MINEN, laulaminen` (the act of singing, or just "singing")](#4-group-minen-laulaminen-the-act-of-singing-or-just-singing)
             - [5. Group `MAINEN, laulamaisillani` (as I was about to start singing)](#5-group-mainen-laulamaisillani-as-i-was-about-to-start-singing)
+        - [Participle](#participle)
+            - [1. Group `VA, laulava` (the singing one)](#1-group-va-laulava-the-singing-one)
+            - [2. Group `NUT, laulanut` (the one who sang)](#2-group-nut-laulanut-the-one-who-sang)
+            - [3. Group `MA, laulama` (the one sung by)](#3-group-ma-laulama-the-one-sung-by)
+            - [4. Group `VA, laulettava, passiivi` (being sung, the passive)](#4-group-va-laulettava-passiivi-being-sung-the-passive)
+            - [5. Group `TU, laulettu, passiivi` (something that was sung, passive)](#5-group-tu-laulettu-passiivi-something-that-was-sung-passive)
+            - [6. Group `KIELTOPARTISIIPPI, laulamaton` (something that is/was NOT sung)](#6-group-kieltopartisiippi-laulamaton-something-that-iswas-not-sung)
 
 <!-- markdown-toc end -->
 
