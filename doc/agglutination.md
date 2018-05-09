@@ -182,7 +182,7 @@ and negation. List them all.`
 
 ### Infinitive verbs
 
-Infinite verbs are used like nouns:
+Infinitive verbs are used like nouns:
 
 * there are 5 different forms
 * some can be either in active (I do, you do, they do) or in passive (is being
