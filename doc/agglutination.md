@@ -7,6 +7,8 @@
     - [Nouns, like `talo` (house)](#nouns-like-talo-house)
     - [Possessive suffixes, like `-ni` and `-si` (my and your)](#possessive-suffixes-like--ni-and--si-my-and-your)
     - [Verbs](#verbs)
+        - [Tempus](#tempus)
+        - [Modus (mood)](#modus-mood)
         - [Infinitive verbs](#infinitive-verbs)
             - [1. Group `A, laulaa` (to sing)](#1-group-a-laulaa-to-sing)
             - [2. Group `E, laulaessa (while singing)`](#2-group-e-laulaessa-while-singing)
@@ -137,6 +139,46 @@ There are 4 cases for each part of speech:
 ## Verbs
 
 Verbs come in a couple of different varieties.
+
+### Tempus
+
+Tells when something is taking place.
+
+There are six supported forms in the Finnish language:
+
+| Strokes | Finnish     | English            | Notes                             |
+| ----    | ----        | ----               | ----                              |
+|         | syö+n       | I eat              | present tense + possessive suffix |
+|         | söi+n       | I ate              | past + possessive suffix          |
+|         | olen syönyt | I have eaten       | present perfect                   |
+|         | olin syönyt | I had eaten        | past perfect                      |
+|         | olen syövä  | I will eat         | See note below.                   |
+|         | olin syövä  | I was going to eat |                                   |
+
+Note that there's no separate agglutination rule for the future tense, that is
+achieved using other means.
+
+The two final forms can be handled well as separate words.
+
+### Modus (mood)
+
+Indicates the relation or opinion of the speaker to the subject being said.
+
+Note that all moduses and tempuses can be specified in the same word.
+
+*It may be useful to have a way to apply both the modus and the tempus in one
+combined stroke.*
+
+| Strokes | Finnish         | English         | Notes                           |
+| ----    | ----            | ----            | ----                            |
+|         | kävele+n        | I eat           | indicative + possessive suffix  |
+|         | kävele          | walk            | imperative (as in "walk here!") |
+|         | kävelisit+kö    | would you walk  | conditional                     |
+|         | lähtenen        | I may leave     | potential                       |
+|         | lienen lähtenyt | I may have left | potential                       |
+
+`TODO: there are many more cases once you apply all possible possessive suffixes
+and negation. List them all.`
 
 ### Infinitive verbs
 
