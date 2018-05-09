@@ -14,6 +14,9 @@ There is no project roadmap available at this time.
   powerful enough to serve advanced users
 - **Consistent**, allowing the writing of even the most complicated words in the
   Finnish language
-- **Fast** to use, with optional shortcuts for common words and phrases
+- **Fast** to use, with optional shortcuts for common words and phrases. The
+  design goal is to support the dictation of real time speech.
 - **Grammatically correct**. With a dictionary of most Finnish language words, a
   large number of spelling errors are avoided altogether
+- **Customizable**. Add new words that are easy to remember for you. Add
+  shortcuts for phrases that you use a lot.
