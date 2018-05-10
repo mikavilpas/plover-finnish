@@ -5,7 +5,7 @@ This page describes the design and layout of the Finnish steno keyboard.
 |                                  N U M B E R                                  |
 ---------------------------------------------------------------------------------
 |       |       |       |       |       |       |       |       |       |       |
-|       |   T   F   P   M   H   |       |   R   |   P   |   T   |   A   |   E   |
+|       |   T   F   P   M   H   |       |   R   |   T   |   P   |   A   |   E   |
 |       |       |       |       |       |       |       |       |       |       |
 |   S   |---D---G---B---|---L---|   *   |-------|-------|-------|---U---|-------|
 |       |       |       |       |       |       |       |       |       |       |
