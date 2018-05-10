@@ -104,14 +104,6 @@ This is based on the idea that:
   fasting) could be chosen, but can be changed afterward to be the word "päästö"
   (emission)
 
-It must be possible to:
-* write 5(8) double vowel sounds: `aa,ee,ii,oo,uu,yy,ää,öö`
-* write diphtong sounds. Finnish has a limited number of diphtong sounds.
-* write vocal sounds in the most common root words.
-    * this is a special requirement because the common diphtongs are based on
-      syllables, while the strokes for the root words span many syllables
-    * Hence the normal rules don't apply
-
 ## Vowel doubling (a -> aa)
 
 Can be doubled with `*`.
