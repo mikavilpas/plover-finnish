@@ -71,13 +71,13 @@ There are several vowel sounds that are needed for the Finnish language:
 
 ## Initial vowel
 
-| Strokes | Notes   |
-| ----    | ----    |
-| `A`     | a and ä |
-| `E`     | e       |
-| `O`     | o and ö |
-| `I`     | i       |
-| `AE`    | u and y |
+| Stroke | Notes   |
+| ----   | ----    |
+| `A-`   | a and ä |
+| `E-`   | e       |
+| `O-`   | o and ö |
+| `I-`   | i       |
+| `AE-`  | u and y |
 
 The diphtong "ae" doesn't exist in Finnish, so it can be used for other things.
 
@@ -112,8 +112,9 @@ Can be doubled with `*`.
 
 | Strokes | Finnish | English              | Notes |
 | ----    | ----    | ----                 | ----  |
-| `PH*A`  | maa     | the ground           |       |
-| `S*A`   | saa     | he/she gets/receives |       |
+| `PH*A-` | maa     | the ground           |       |
+| `S*A-`  | saa     | he/she gets/receives |       |
+
 
 ## Final vowel
 
@@ -132,28 +133,31 @@ A special option `-IA` for the "-ia" and "-ija" endings is provided.
 
 The initial consonant has almost the same layout as in English.
 
-| Strokes | character | Notes                                           |
-| ----    | ----      | ----                                            |
-| `PV`    | b         |                                                 |
-| `KR`    | c         |                                                 |
-| `TK`    | d         |                                                 |
-| `TP`    | f         |                                                 |
-| `TKPV`  | g         |                                                 |
-| `H`     | h         |                                                 |
-| `SKVR`  | j         |                                                 |
-| `K`     | k         |                                                 |
-| `HR`    | l         |                                                 |
-| `PH`    | m         |                                                 |
-| `TPH`   | n         |                                                 |
-| `P`     | p         |                                                 |
-| `KV`    | q         |                                                 |
-| `R`     | r         |                                                 |
-| `S`     | s         |                                                 |
-| `T`     | t         |                                                 |
-| `V`     | v         | switched with w                                 |
-| `SR`    | w         | very rare in Finnish                            |
-|         | y         | missing because it's not a consonant in Finnish |
-| `VR`    | z         | very rare. Is `S*` in the English layout.       |
+| Strokes  | character | Notes                                           |
+| ----     | ----      | ----                                            |
+| `PV--`   | b         |                                                 |
+| `KR--`   | c         |                                                 |
+| `TK--`   | d         |                                                 |
+| `TP--`   | f         |                                                 |
+| `TKPV--` | g         |                                                 |
+| `H--`    | h         |                                                 |
+| `SKVR--` | j         |                                                 |
+| `K--`    | k         |                                                 |
+| `HR--`   | l         |                                                 |
+| `PH--`   | m         |                                                 |
+| `TPH--`  | n         |                                                 |
+| `P--`    | p         |                                                 |
+| `KV--`   | q         |                                                 |
+| `R--`    | r         |                                                 |
+| `S--`    | s         |                                                 |
+| `T--`    | t         |                                                 |
+| `V--`    | v         | switched with w                                 |
+| `SR--`   | w         | very rare in Finnish                            |
+|          | y         | missing because it's not a consonant in Finnish |
+| `VR--`   | z         | very rare. Is `S*` in the English layout.       |
+
+<!-- todo: move -M between -R and -P -->
+<!-- todo: create -L -->
 
 ## Final consonant
 
