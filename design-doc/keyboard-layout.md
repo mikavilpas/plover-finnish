@@ -93,6 +93,11 @@ In the following, the Finnish vowel harmony is accounted for with the notation
 `2(4)`, indicating 4 different vowel sounds (for example `a, u, ä, y`), but
 which is possible to reduce down to 2 forms of writing.
 
+| Strokes        | Finnish          | English                         | Notes |
+| ----           | ----             | ----                            | ----  |
+| `S*A- / AE-`   | saa -> sää       | he/she gets/receives -> weather |       |
+| `P*ASTO / AE-` | paasto -> päästö | fasting -> emission             |       |
+
 This is based on the idea that:
 
 * `A` and `Ä` both never occur in the same word
