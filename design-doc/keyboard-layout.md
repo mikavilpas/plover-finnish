@@ -87,9 +87,35 @@ Only a single vowel is supported. No diphtongs or long vowels.
 
 # Consonant system
 
-Initial consonant the same as in English.
+## Initial consonant
 
-Final consonant can be doubled by making a star shape.
+The initial consonant has almost the same layout as in English.
+
+| Strokes | character | Notes                                           |
+| ----    | ----      | ----                                            |
+| `PV`    | b         |                                                 |
+| `KR`    | c         |                                                 |
+| `TK`    | d         |                                                 |
+| `TP`    | f         |                                                 |
+| `TKPV`  | g         |                                                 |
+| `H`     | h         |                                                 |
+| `SKVR`  | j         |                                                 |
+| `K`     | k         |                                                 |
+| `HR`    | l         |                                                 |
+| `PH`    | m         |                                                 |
+| `TPH`   | n         |                                                 |
+| `P`     | p         |                                                 |
+| `KV`    | q         |                                                 |
+| `R`     | r         |                                                 |
+| `S`     | s         |                                                 |
+| `T`     | t         |                                                 |
+| `V`     | v         | switched with w                                 |
+| `SR`    | w         | very rare in Finnish                            |
+|         | y         | missing because it's not a consonant in Finnish |
+| `VR`    | z         | very rare. Is `S*` in the English layout.       |
+
+## Final consonant
+## Doubling of final consonants
 
 # Suffix system
 
