@@ -31,6 +31,21 @@ writing in the language it's made for.
 
 # Vowel system
 
+## Initial vowel
+
+## Vowel doubling (a -> aa)
+
+Can be doubled with `*`.
+
+<!-- vowel group alternating has not been covered yet, let's not include it in
+these examples -->
+
+| Strokes | Finnish | English              | Notes |
+| ----    | ----    | ----                 | ----  |
+| `PH*A`  | maa     | the ground           |       |
+| `S*A`   | saa     | he/she gets/receives |       |
+|         |         |                      |       |
+
 ## A stroke to switch the vocal harmony group to the opposite one
 
 In the following, the Finnish vowel harmony is accounted for with the notation
