@@ -47,6 +47,20 @@ Because of the nature of the language, **some keys will need to be rearranged**
 from the English one. It makes no sense to build a system that isn't good for
 writing in the language it's made for.
 
+# Layout specific stroke notation
+
+The final vowels require an extra dash to avoid confusing it with the middle
+vowels.
+
+Examples:
+
+| Stroke  | Notes                              |
+| ----    | ----                               |
+| `A-`    | middle A                           |
+| `-A`    | final A                            |
+| `AEOI-` | all initial vowels (in the middle) |
+| `AA`    | initial A and final A              |
+
 # Vowel system
 
 There are several vowel sounds that are needed for the Finnish language:
