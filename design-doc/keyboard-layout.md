@@ -18,6 +18,25 @@ This page describes the design and layout of the Finnish steno keyboard.
                     ---------------------------------
 ```
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [General design notes](#general-design-notes)
+    - [Keys must be rearranged](#keys-must-be-rearranged)
+- [Vowel system](#vowel-system)
+    - [Initial vowel](#initial-vowel)
+    - [A stroke to switch the vocal harmony group to the opposite one](#a-stroke-to-switch-the-vocal-harmony-group-to-the-opposite-one)
+    - [Vowel doubling (a -> aa)](#vowel-doubling-a---aa)
+    - [Final vowel](#final-vowel)
+- [Consonant system](#consonant-system)
+    - [Initial consonant](#initial-consonant)
+    - [Final consonant](#final-consonant)
+    - [Doubling of final consonants](#doubling-of-final-consonants)
+- [Suffix system](#suffix-system)
+
+<!-- markdown-toc end -->
+
+
 # General design notes
 
 ## Keys must be rearranged
