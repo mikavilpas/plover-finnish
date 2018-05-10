@@ -28,6 +28,7 @@ This page describes the design and layout of the Finnish steno keyboard.
     - [Initial vowel](#initial-vowel)
     - [A stroke to switch the vocal harmony group to the opposite one](#a-stroke-to-switch-the-vocal-harmony-group-to-the-opposite-one)
     - [Vowel doubling (a -> aa)](#vowel-doubling-a---aa)
+    - [Diphtongs](#diphtongs)
     - [Final vowel](#final-vowel)
 - [Consonant system](#consonant-system)
     - [Initial consonant](#initial-consonant)
@@ -120,6 +121,30 @@ Can be doubled with `*`.
 | `PH*A-` | maa     | the ground           |       |
 | `S*A-`  | saa     | he/she gets/receives |       |
 
+## Diphtongs
+
+Vowel harmony rules apply, which means some diphtongs are only reachable by
+changing the vowel group with an extra stroke.
+
+Ones using only the middle vowels:
+
+| Strokes | Finnish example | English        | Notes      |
+| ----    | ----            | ----           | ----       |
+| `AU`    | kaula, käy      | neck, running  |            |
+| `EI-`   | ei              | no             |            |
+| `OI-`   | koira, töin     | dog, with jobs | öi is rare |
+| `AI-`   | kaivo, äiti     | well, mother   |            |
+| `AOI-`  | ui, hyi         | swim, ew       |            |
+
+Ones that are only possible to stroke using the final vowels:
+
+| Strokes | Finnish example | English                | Notes      |
+| ----    | ----            |                        | ----       |
+| `IE`    | tie             | road                   |            |
+| `OU`    | koulu, löyly    | school, hot steam      |            |
+| `IU`    | hius, kääriytyä | hair, to wrap          |            |
+| `EEO`   | keula, peseytyä | front, to wash oneself | ey is rare |
+| `AOO`   | yö, vuo         | night, stream          |            |
 
 ## Final vowel
 
