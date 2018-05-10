@@ -13,7 +13,7 @@ This page describes the design and layout of the Finnish steno keyboard.
 |       |       |       |       |       |       |       |       |       |       |
 ---------------------------------------------------------------------------------
                     |       |       |       |       |
-                    |   A   U   E   |   O   |   I   |
+                    |   A   U   O   |   E   |   I   |
                     |       |       |       |       |
                     ---------------------------------
 ```
@@ -75,13 +75,14 @@ There are several vowel sounds that are needed for the Finnish language:
 
 ## Initial vowel
 
-| Stroke | Notes   |
-| ----   | ----    |
-| `A-`   | a and ä |
-| `E-`   | e       |
-| `O-`   | o and ö |
-| `I-`   | i       |
-| `AE-`  | u and y |
+| Stroke | Notes                               |
+| ----   | ----                                |
+| `A-`   | a and ä                             |
+| `E-`   | e                                   |
+| `O-`   | o and ö                             |
+| `I-`   | i                                   |
+| `AE-`  | u and y                             |
+| `OI-`  | u and y also. Helps with diphtongs. |
 
 The diphtong "ae" doesn't exist in Finnish, so it can be used for other things.
 
