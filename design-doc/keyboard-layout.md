@@ -77,6 +77,8 @@ This is based on the idea that:
 
 * `A` and `Ä` both never occur in the same word
 * in case of a conflict, the more common word is chosen
+* if a common word is not found, use the AOU variant if it exists
+* if one doesn't exist, use the ÄÖY variant
 * in case the wrong word was guessed, the writer can change the vowel group to
   the opposite one. For example the word "paasto" (fast, as in the act of
   fasting) could be chosen, but can be changed afterward to be the word "päästö"
