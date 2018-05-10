@@ -18,7 +18,7 @@ This page describes the design and layout of the Finnish steno keyboard.
                     ---------------------------------
 ```
 
-# General notes
+# General design notes
 
 ## Keys must be rearranged
 
@@ -31,20 +31,23 @@ writing in the language it's made for.
 
 # Vowel system
 
+There are several vowel sounds that are needed for the Finnish language:
+ 
+* One sound per vowel
+* Doubled vowels
+* Combinations of two vowels (diphtongs)
+
 ## Initial vowel
 
-## Vowel doubling (a -> aa)
+| Strokes | Notes   |
+| ----    | ----    |
+| `A`     | a and ä |
+| `E`     | e       |
+| `O`     | o and ö |
+| `I`     | i       |
+| `AE`    | u and y |
 
-Can be doubled with `*`.
-
-<!-- vowel group alternating has not been covered yet, let's not include it in
-these examples -->
-
-| Strokes | Finnish | English              | Notes |
-| ----    | ----    | ----                 | ----  |
-| `PH*A`  | maa     | the ground           |       |
-| `S*A`   | saa     | he/she gets/receives |       |
-|         |         |                      |       |
+The diphtong "ae" doesn't exist in Finnish, so it can be used for other things.
 
 ## A stroke to switch the vocal harmony group to the opposite one
 
@@ -67,7 +70,26 @@ It must be possible to:
 * write vocal sounds in the most common root words.
     * this is a special requirement because the common diphtongs are based on
       syllables, while the strokes for the root words span many syllables
-    * Hence the normal rules don't apply.
+    * Hence the normal rules don't apply
+
+## Vowel doubling (a -> aa)
+
+Can be doubled with `*`.
+
+| Strokes | Finnish | English              | Notes |
+| ----    | ----    | ----                 | ----  |
+| `PH*A`  | maa     | the ground           |       |
+| `S*A`   | saa     | he/she gets/receives |       |
+
+## Final vowel
+
+Only a single vowel is supported. No diphtongs or long vowels.
+
+# Consonant system
+
+Initial consonant the same as in English.
+
+Final consonant can be doubled by making a star shape.
 
 # Suffix system
 
