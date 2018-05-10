@@ -31,7 +31,6 @@ This page describes the design and layout of the Finnish steno keyboard.
 - [Consonant system](#consonant-system)
     - [Initial consonant](#initial-consonant)
     - [Final consonant](#final-consonant)
-    - [Doubling of final consonants](#doubling-of-final-consonants)
 - [Suffix system](#suffix-system)
 
 <!-- markdown-toc end -->
@@ -169,8 +168,6 @@ characters, and in case of conflicts the keys are matched front to back.
 |         | y         | not a consonant in Finnish |
 | `-S`    | z         | (s,v,f,c,z)                |
 
-
-## Doubling of final consonants
 
 # Suffix system
 
