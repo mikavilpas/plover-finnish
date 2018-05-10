@@ -23,6 +23,7 @@ This page describes the design and layout of the Finnish steno keyboard.
 
 - [General design notes](#general-design-notes)
     - [Keys must be rearranged](#keys-must-be-rearranged)
+- [Layout specific stroke notation](#layout-specific-stroke-notation)
 - [Vowel system](#vowel-system)
     - [Initial vowel](#initial-vowel)
     - [A stroke to switch the vocal harmony group to the opposite one](#a-stroke-to-switch-the-vocal-harmony-group-to-the-opposite-one)
@@ -54,12 +55,15 @@ vowels.
 
 Examples:
 
-| Stroke  | Notes                              |
-| ----    | ----                               |
-| `A-`    | middle A                           |
-| `-A`    | final A                            |
-| `AEOI-` | all initial vowels (in the middle) |
-| `AA`    | initial A and final A              |
+| Stroke  | Notes                               |
+| ----    | ----                                |
+| `A-`    | middle A                            |
+| `-A`    | final A                             |
+| `AEOI-` | all initial vowels (in the middle)  |
+| `AA`    | initial A and final A               |
+| `S-`    | initial S                           |
+| `SA-`   | S and A but no final vowel          |
+| `-SA`   | Final consonant S and final vowel A |
 
 # Vowel system
 
