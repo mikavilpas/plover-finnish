@@ -5,17 +5,17 @@ This page describes the design and layout of the Finnish steno keyboard.
 |                                  N U M B E R                                  |
 ---------------------------------------------------------------------------------
 |       |       |       |       |       |       |       |       |       |       |
+|       |   T   |   R   |   K   |       |   R   |   R   |   T   |   A   |   E   |
 |       |       |       |       |       |       |       |       |       |       |
+|   S   |---D---|---B---|---L---|   *   |-------|-------|-------|---U---|-------|
 |       |       |       |       |       |       |       |       |       |       |
-|-------|-------|-------|-------|   *   |-------|-------|-------|-------|-------|
-|       |       |       |       |       |       |       |       |       |       |
-|       |       |       |       |       |       |       |       |       |       |
+|       |   K   Q   V   |   R   |       |   S   |   N   |   K   |   O   |   I   |
 |       |       |       |       |       |       |       |       |       |       |
 ------------------------|-------|-------|-------|-------|-------|-------|--------
-                        |       |       |       |       |
-                        |   A   |   O   |   E   |   I   |
-                        |       |       |       |       |
-                        ---------------------------------
+                    |       |       |       |       |
+                    |   A   |   O   |   E   |   I   |
+                    |       |       |       |       |
+                    ---------------------------------
 ```
 
 # General notes
@@ -25,7 +25,7 @@ This page describes the design and layout of the Finnish steno keyboard.
 The layout of the keyboard must be such that it is well adapted to the Finnish
 language.
 
-Because of the nature of the language, **most keys will need to be rearranged**
+Because of the nature of the language, **some keys will need to be rearranged**
 from the English one. It makes no sense to build a system that isn't good for
 writing in the language it's made for.
 
