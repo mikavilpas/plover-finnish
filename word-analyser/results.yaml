@@ -1,156 +1,388 @@
+- st:
+    count: 3780
+    matched_words_preview:
+    - a=systolia
+    - aakkosisto
+    - aakkostaa
+    - aakkosto
+- nt:
+    count: 1884
+    matched_words_preview:
+    - aberrantti
+    - abiturientti
+    - absintti
+    - absorbentti
+- tr:
+    count: 1086
+    matched_words_preview:
+    - a=traumaattinen
+    - aatra
+    - abstrahoida
+    - abstrakti
+- ks:
+    count: 1061
+    matched_words_preview:
+    - a=praksia
+    - a=refleksia
+    - a=seksuaalinen
+    - aamu=kahdeksan
+- sk:
+    count: 983
+    matched_words_preview:
+    - a=vaskulaarinen
+    - abskissa
+    - alas=laskettava
+    - alaskaan=päin
+- ht:
+    count: 679
+    matched_words_preview:
+    - ahnehtia
+    - ahtaa
+    - ahtaan=paikan=kammo
+    - ahtauma
+- rt:
+    count: 662
+    matched_words_preview:
+    - aaronin=parta
+    - aarteisto
+    - abortoida
+    - abortti
+- nk:
+    count: 657
+    matched_words_preview:
+    - aarni=honka
+    - ahdinko
+    - akupunktio
+    - akupunktuuri
+- ns:
+    count: 610
+    matched_words_preview:
+    - absorbanssi
+    - abstinenssi
+    - adenyyli=transferaasi
+    - adherenssi
+- ts:
+    count: 589
+    matched_words_preview:
+    - aamu=seitsemän
+    - aasian=metsä=pyy
+    - al=pra=tsolaami
+    - alemtutsumabi
+- pr:
+    count: 564
+    matched_words_preview:
+    - a=praksia
+    - aaprotti
+    - akamprosaatti
+    - al=pra=tsolaami
+- kt:
+    count: 563
+    matched_words_preview:
+    - abduktiivinen
+    - abduktio
+    - abstrakti
+    - abstraktinen
+- rk:
+    count: 552
+    matched_words_preview:
+    - aivo=kurkiainen
+    - anarkia
+    - anarkismi
+    - anarkisti
+- lt:
+    count: 539
+    matched_words_preview:
+    - aalto
+    - aaltoilla
+    - aaltonen
+    - akkulturaatio
+- mp:
+    count: 509
+    matched_words_preview:
+    - aida=trumpetti
+    - aiempi
+    - akamprosaatti
+    - alas=ampuminen
+- lk:
+    count: 479
+    matched_words_preview:
+    - aarni=valkea
+    - aavikko=tulkku
+    - alk.
+    - alkaa
+- sm:
+    count: 448
+    matched_words_preview:
+    - abolitionismi
+    - absolutismi
+    - adventismi
+    - aforismi
+- rm:
+    count: 430
+    matched_words_preview:
+    - a=spermato=geneesi
+    - a=spermia
+    - ab=normaali
+    - abnormi
+- lm:
+    count: 410
+    matched_words_preview:
+    - aamu=kolme
+    - aatelma
+    - ahdas=kulma=glaukooma
+    - ahto=ilma
+- kr:
+    count: 390
+    matched_words_preview:
+    - a=kromaatti
+    - a=kromaattinen
+    - ak=kreditoida
+    - akraalinen
+- rs:
+    count: 387
+    matched_words_preview:
+    - aasian=norsu
+    - adeno=karsinooma
+    - adversatiivinen
+    - afrikan=norsu
 - hk:
-    count: 350
+    count: 319
     matched_words_preview:
-    - Huuhka
-    - Isopahkala
-    - Jouhki
-    - Jouhkola
-- hl:
-    count: 86
+    - acajou=pähkinä
+    - ahkera
+    - ahkera=liisa
+    - ahkeroida
+- kl:
+    count: 293
     matched_words_preview:
-    - Ahl=gren
-    - Ahl=qvist
-    - Ahl=skog
-    - Ahl=ström
+    - adenylaatti=syklaasi
+    - ak=klimatisoida
+    - akklimatisaatio
+    - ammonium=kloridi
+- tk:
+    count: 282
+    matched_words_preview:
+    - aarni=kotka
+    - alaston=tutkielma
+    - amerikan=tukka=sotka
+    - atk
+- pl:
+    count: 267
+    matched_words_preview:
+    - a=plasia
+    - akromio=plastia
+    - akso=plasma
+    - allo=plastinen
+- sp:
+    count: 243
+    matched_words_preview:
+    - a=spell
+    - a=spermato=geneesi
+    - a=spermia
+    - antiperspirantti
+- ps:
+    count: 242
+    matched_words_preview:
+    - akromatopsia
+    - anapsidi
+    - anopsia
+    - anti=psykootti
+- pt:
+    count: 184
+    matched_words_preview:
+    - abatasepti
+    - absorptio
+    - adaptaatio
+    - adapteri
+- rp:
+    count: 167
+    matched_words_preview:
+    - absorptio
+    - adsorptio
+    - arpa
+    - arpa=jainen
+- ls:
+    count: 160
+    matched_words_preview:
+    - alfa=kalsidoli
+    - alsike=apila
+    - anti=konvulsantti
+    - anti=konvulsiivi
+- rn:
+    count: 160
+    matched_words_preview:
+    - aarni
+    - aarni=alue
+    - aarni=hauta
+    - aarni=honka
+- lp:
+    count: 130
+    matched_words_preview:
+    - alpakka
+    - alpha
+    - alpiininen
+    - alpinismi
+- rh:
+    count: 128
+    matched_words_preview:
+    - aamu=varhain
+    - aito=perhonen
+    - apollo=perhonen
+    - aurora=perhonen
 - hm:
-    count: 152
+    count: 124
     matched_words_preview:
-    - Ahma=vuo
-    - Ahmavaara
-    - Ahmed
-    - Gahmberg
-- hn:
+    - ahma
+    - ahmaista
+    - ahmatti
+    - ahmia
+- sl:
+    count: 76
+    matched_words_preview:
+    - aldesleukiini
+    - asla
+    - dislokaatio
+    - dysleksia
+- nh:
+    count: 63
+    matched_words_preview:
+    - anhedonia
+    - anhydriitti
+    - bernhardilainen
+    - bernhardin=koira
+- sh:
+    count: 58
+    matched_words_preview:
+    - ayrshire=lehmä
+    - ayrshire=rotu
+    - bash
+    - bermuda=shortsi
+- hr:
     count: 50
     matched_words_preview:
-    - Crohn
-    - Eschner
-    - Gröhn
-    - Hahn
-- hp:
-    count: 1
+    - ahrain
+    - bohrium
+    - fahrenheit=aste
+    - hra
+- hl:
+    count: 46
     matched_words_preview:
-    - Tiihpolainen
-- hr:
-    count: 66
+    - haahla
+    - hahla
+    - hahlo
+    - helka=juhla
+- lh:
+    count: 46
     matched_words_preview:
-    - Bahrain
-    - Bohr
-    - Chris
-    - Christer
-- hs:
-    count: 2
+    - alhaa
+    - alhainen
+    - alhais=aateli
+    - alhais=aatelisto
+- hn:
+    count: 37
     matched_words_preview:
-    - Heinrichs
-    - Kazahstan
-- ht:
-    count: 790
-    matched_words_preview:
-    - Ahtee
-    - Ahti
-    - Ahtiainen
-    - Ahto
-- kl:
-    count: 306
-    matched_words_preview:
-    - Auckland
-    - Damokles
-    - Eklund
-    - Falklandin=saari
-- km:
-    count: 18
-    matched_words_preview:
-    - Beckman
-    - Dekman
-    - Dieckman
-    - Ekman
+    - ahnas
+    - ahne
+    - ahnehtia
+    - durum=vehnä
 - kn:
-    count: 34
+    count: 33
     matched_words_preview:
-    - Orkney
     - akne
     - araknoidaalinen
     - araknoidiitti
-- kp:
-    count: 1
+    - esitys=tekninen
+- tm:
+    count: 29
     matched_words_preview:
-    - kpl
-- kr:
-    count: 404
+    - a=rytminen
+    - algoritmi
+    - aritmeettinen
+    - aritmetiikka
+- rl:
+    count: 28
     matched_words_preview:
-    - Akropolis
-    - Karls=krona
-    - Mekri=järvi
-    - MikroPC
-- ks:
-    count: 1124
-    matched_words_preview:
-    - Airaksinen
-    - Aksel
-    - Akseli
-    - Aksenja
-- kt:
-    count: 566
-    matched_words_preview:
-    - Antarktis
-    - Viktor
-    - Viktoria
-    - abduktiivinen
-- lm:
-    count: 553
-    matched_words_preview:
-    - Adalmiina
-    - Alm=aty
-    - Alma
-    - Alma-Ata
-- ln:
-    count: 11
-    matched_words_preview:
-    - Elna
-    - Helne
-    - Köln
-    - Milne
-- lp:
-    count: 160
-    matched_words_preview:
-    - Alpiin
-    - Alpo
-    - Alppi
-    - Alppila
-- lr:
-    count: 5
-    matched_words_preview:
-    - Ahlroth
-    - Ulrika
-    - Wahlroos
-    - alruuna
-- ls:
-    count: 200
-    matched_words_preview:
-    - Axelsson
-    - Bertills
-    - Brommels
-    - Burls
-- lt:
-    count: 624
-    matched_words_preview:
-    - Aalto
-    - Aaltonen
-    - Alta=vista
-    - Altai
+    - berliinin=makkara
+    - berliinin=munkki
+    - burleski
+    - charleston
 - mn:
-    count: 27
+    count: 26
     matched_words_preview:
-    - Amnesty
     - alumni
     - amnesia
     - amnestia
-- mp:
-    count: 584
+    - amnestinen
+- pn:
+    count: 25
     matched_words_preview:
-    - Atsin=lampi
-    - Campanella
-    - Compton
-    - Gompertz
+    - apnea
+    - bronko=pneumonia
+    - dys=pnea
+    - elektro=pneumaattinen
+- sn:
+    count: 25
+    matched_words_preview:
+    - bisnes
+    - bosnia
+    - glasnost
+    - läsnä
+- th:
+    count: 24
+    matched_words_preview:
+    - apartheid
+    - ethernet
+    - gthumb
+    - hemo=thorax
+- ms:
+    count: 22
+    matched_words_preview:
+    - famsikloviiri
+    - gemsitabiini
+    - hamsteri
+    - hamstrata
+- tl:
+    count: 19
+    matched_words_preview:
+    - atlas
+    - atleetikko
+    - atleetti
+    - euro=atlanttinen
+- tn:
+    count: 15
+    matched_words_preview:
+    - etninen
+    - etno
+    - etno=grafi
+    - etno=grafia
+- kh:
+    count: 10
+    matched_words_preview:
+    - kh.
+    - khaki
+    - khii
+    - khmer
+- ml:
+    count: 9
+    matched_words_preview:
+    - amlodipiini
+    - amlodipiini=besilaatti
+    - amlodipiini=maleaatti
+    - kremlologi
+- nr:
+    count: 9
+    matched_words_preview:
+    - genre
+    - henry
+    - kenraali
+    - kenraalisto
+- km:
+    count: 6
+    matched_words_preview:
+    - drakma
+    - km
+    - lakmus
+    - lkm.
 - mr:
     count: 6
     matched_words_preview:
@@ -158,13 +390,34 @@
     - kamrikki=jyrä
     - kimröökki
     - kymri
-- ms:
-    count: 40
+- nl:
+    count: 6
     matched_words_preview:
-    - Adams
-    - Amsterdam
-    - Broms
-    - Jämsen
+    - enlightenment
+    - grönlannin=lokki
+    - grönlannin=valas
+    - online
+- np:
+    count: 6
+    matched_words_preview:
+    - input
+    - kunpa
+    - nonparelli
+    - takaakaanpäin
+- sr:
+    count: 6
+    matched_words_preview:
+    - deksratsoksaani
+    - dysrytmia
+    - isradipiini
+    - israeliitta
+- ln:
+    count: 5
+    matched_words_preview:
+    - kölnin=vesi
+    - milnasi=praani
+    - mindfulness
+    - telnet
 - mt:
     count: 5
     matched_words_preview:
@@ -172,73 +425,54 @@
     - emt.
     - jämtti
     - triamtereeni
-- np:
-    count: 7
+- ph:
+    count: 5
     matched_words_preview:
-    - Finnpanel
-    - input
-    - kunpa
-    - nonparelli
-- nr:
-    count: 30
+    - alpha
+    - apheli
+    - hiphop
+    - phui
+- tp:
+    count: 4
     matched_words_preview:
-    - Ehrnrooth
-    - Finnref
-    - Grönroos
-    - Grönros
-- ns:
-    count: 689
+    - ftp
+    - http
+    - postpositio
+    - potpuri
+- nm:
+    count: 3
     matched_words_preview:
-    - Aaronson
-    - Alonso
-    - Anselm
-    - Anselmi
-- nt:
-    count: 2141
+    - edutainment
+    - enlightenment
+    - nm
+- lr:
+    count: 2
     matched_words_preview:
-    - AMK-tutkinto
-    - Aksentjeff
-    - Aleksanteri
-    - Antarktis
-- pr:
-    count: 577
+    - alruuna
+    - malrotaatio
+- mk:
+    count: 2
     matched_words_preview:
-    - Aapraham
-    - Aaprami
-    - Capri
-    - Kaprakka
-- ps:
-    count: 255
+    - kumkvatti
+    - mk
+- kp:
+    count: 1
     matched_words_preview:
-    - Cecrops
-    - Lipsanen
-    - Peipsi=järvi
-    - Pepsi
-- pt:
-    count: 191
+    - kpl
+- pk:
+    count: 1
     matched_words_preview:
-    - Compton
-    - Egypti
-    - Java=Script
-    - KOMA-Script
-- rs:
-    count: 465
+    - pk-yritys
+- pm:
+    count: 1
     matched_words_preview:
-    - Ahlfors
-    - Anders
-    - Andersen
-    - Anderson
-- rt:
-    count: 825
-    matched_words_preview:
-    - Aarto
-    - Aberth
-    - Aherto
-    - Airto
-- st:
-    count: 4116
-    matched_words_preview:
-    - Afganistan
-    - Agonist
-    - Ahl=qvist
-    - Ahl=ström
+    - pm
+- hp:
+    count: 0
+    matched_words_preview: []
+- hs:
+    count: 0
+    matched_words_preview: []
+- mh:
+    count: 0
+    matched_words_preview: []

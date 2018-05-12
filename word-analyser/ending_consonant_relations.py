@@ -20,14 +20,15 @@ def get_wordlist(path):
                 for l in lines
                 if not l == u""]
 
-def combinations_present_in_words(character_pair, words):
+def permutations_present_in_words(character_pair, words, word_filter):
     matched_words = [w for w in words
+                     if word_filter(w)
                      if character_pair in w]
     return dict(character_pair = character_pair,
                 matched_words = matched_words)
 
 def all_character_pairs(characters, length):
-    pair_tuples = itertools.combinations(characters, length)
+    pair_tuples = itertools.permutations(characters, length)
 
     return [u"".join(pair)
             for pair in sorted(pair_tuples)]
@@ -38,21 +39,30 @@ def save_results_into_file(data, filename):
         yaml.default_flow_style = False
         return yaml.dump(data, f)
 
-def compactify(combination):
-    # a readable view of the entire data set for this combination
-    name = combination["character_pair"]
+def compactify(permutation):
+    # a readable view of the entire data set for this permutation
+    name = permutation["character_pair"]
 
-    words = combination["matched_words"]
+    words = permutation["matched_words"]
     properties = dict(matched_words_preview = words[:4],
                       count = len(words))
     return {name: properties}
 
+def not_a_name(word):
+    first_character = word[0]
+    return not first_character.isupper()
+
+def count_of_words(a):
+    (char_pair, properties) = list(a.iteritems())[0]
+    return properties["count"]
+
 def main():
     words = get_wordlist("../wordlists/joukahainen.txt")
-    consonant_combinations = all_character_pairs(consonants, length = 2)
+    consonant_permutations = all_character_pairs(consonants, length = 2)
 
-    results = map(lambda c: compactify(combinations_present_in_words(c, words)),
-                  consonant_combinations)
+    results = map(lambda c: compactify(permutations_present_in_words(c, words, not_a_name)),
+                  consonant_permutations)
+    results = sorted(results, key = count_of_words, reverse = True)
 
     save_results_into_file(results, "results.yaml")
 
