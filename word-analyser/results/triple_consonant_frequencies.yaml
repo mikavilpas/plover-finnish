@@ -1,447 +1,3528 @@
-- str:
-    count: 204
+- hkl:
+    count: 34625
     matched_words_preview:
-    - abstrahoida
-    - abstrakti
-    - abstraktinen
-    - abstraktio
-- ntr:
-    count: 130
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hkm:
+    count: 34625
     matched_words_preview:
-    - antraniili=happo
-    - antrasiitti
-    - antrasykliini
-    - antrooppinen
-- rsk:
-    count: 76
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hkn:
+    count: 34625
     matched_words_preview:
-    - förskotti
-    - hurskas
-    - hurskastella
-    - hyrske
-- nst:
-    count: 64
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hkp:
+    count: 34625
     matched_words_preview:
-    - bronko=konstriktio
-    - de=konstruktiivinen
-    - de=konstruktio
-    - de=konstruktionismi
-- kst:
-    count: 45
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hkr:
+    count: 34625
     matched_words_preview:
-    - alku=peräis=teksti
-    - ambidekstria
-    - dekstraani
-    - dekstro=amfetamiini
-- ktr:
-    count: 40
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hks:
+    count: 34625
     matched_words_preview:
-    - di=elektrinen
-    - doktriini
-    - ekso=elektroni
-    - ekso=elektroninen
-- rst:
-    count: 39
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hkt:
+    count: 34625
     matched_words_preview:
-    - braatvursti
-    - bratwurst
-    - eversti
-    - everstinna
-- nts:
-    count: 37
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hlk:
+    count: 34625
     matched_words_preview:
-    - amino=bentsoe=happo
-    - bentseeni
-    - bentsiili
-    - bentsiini
-- nkt:
-    count: 32
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hlm:
+    count: 34625
     matched_words_preview:
-    - akupunktio
-    - akupunktuuri
-    - arkus=funktio
-    - disjunktiivi=konjunktio
-- lsk:
-    count: 31
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hln:
+    count: 34625
     matched_words_preview:
-    - falskata
-    - falski
-    - helskyttää
-    - helskytys
-- rts:
-    count: 27
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hlp:
+    count: 34625
     matched_words_preview:
-    - bermuda=shortsi
-    - bermuda=sortsi
-    - bermuda=šortsi
-    - bilhartsia
-- mpl:
-    count: 25
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hlr:
+    count: 34625
     matched_words_preview:
-    - amplitudi
-    - immuno=kompleksi
-    - implantaatio
-    - implantaatti
-- mpr:
-    count: 22
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hls:
+    count: 34625
     matched_words_preview:
-    - akamprosaatti
-    - amprenaviiri
-    - de=kompressio
-    - de=kompressoida
-- nsk:
-    count: 19
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hlt:
+    count: 34625
     matched_words_preview:
-    - finski
-    - hanska
-    - jänskä
-    - penska
-- skl:
-    count: 18
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hmk:
+    count: 34625
     matched_words_preview:
-    - arterio=skleroosi
-    - atero=skleroosi
-    - atero=skleroottinen
-    - epi=skleriitti
-- nkr:
-    count: 17
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hml:
+    count: 34625
     matched_words_preview:
-    - asynkroninen
-    - idio=synkraattinen
-    - idiosynkrasia
-    - inkrementaalinen
-- ksp:
-    count: 15
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hmn:
+    count: 34625
     matched_words_preview:
-    - dekspantenoli
-    - ekspansiivinen
-    - ekspansio
-    - ekspansionistinen
-- ltr:
-    count: 14
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hmp:
+    count: 34625
     matched_words_preview:
-    - altruismi
-    - altruisti
-    - eltrombopagi
-    - filtraatio
-- mps:
-    count: 14
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hmr:
+    count: 34625
     matched_words_preview:
-    - eklampsia
-    - humpsahtaa
-    - hömpsy
-    - hömpsöttää
-- skr:
-    count: 12
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hms:
+    count: 34625
     matched_words_preview:
-    - deskriptiivi=sana
-    - deskriptiivinen
-    - deskriptio
-    - diskriminantti
-- lst:
-    count: 11
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hmt:
+    count: 34625
     matched_words_preview:
-    - halstari
-    - halstaroida
-    - halsteri
-    - halsteroida
-- spl:
-    count: 11
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hnk:
+    count: 34625
     matched_words_preview:
-    - dysplastinen
-    - eksploraatio
-    - eksploratiivinen
-    - eksploroida
-- mpt:
-    count: 9
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hnl:
+    count: 34625
     matched_words_preview:
-    - asymptomaattinen
-    - asymptootti
-    - asymptotiikka
-    - im=promptu
-- nsl:
-    count: 9
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hnm:
+    count: 34625
     matched_words_preview:
-    - hanslankari
-    - kansleri
-    - kanslerius
-    - kanslia
-- nsp:
-    count: 9
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hnp:
+    count: 34625
     matched_words_preview:
-    - inspehtori
-    - inspektio
-    - inspiraatio
-    - inspiratorinen
-- spr:
-    count: 9
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hnr:
+    count: 34625
     matched_words_preview:
-    - dysprosium
-    - ekspressio
-    - lispro=insuliini
-    - spray
-- tsk:
-    count: 9
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hns:
+    count: 34625
     matched_words_preview:
-    - jutsku
-    - jätski
-    - litsku
-    - matsku
-- nks:
-    count: 8
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hnt:
+    count: 34625
     matched_words_preview:
-    - anksio=lyytti
-    - bänks
-    - henkseli
-    - lonksahtaa
-- rkt:
-    count: 8
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hpk:
+    count: 34625
     matched_words_preview:
-    - antarktinen
-    - arktinen
-    - infarkti
-    - koarktaatio
-- rpt:
-    count: 7
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hpl:
+    count: 34625
     matched_words_preview:
-    - absorptio
-    - adsorptio
-    - desorptio
-    - mal=absorptio
-- lts:
-    count: 5
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hpm:
+    count: 34625
     matched_words_preview:
-    - maltsa
-    - pultsari
-    - streltsi
-    - sultsina
-- nkl:
-    count: 5
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hpn:
+    count: 34625
     matched_words_preview:
-    - enkliittinen
-    - inklinaatio
-    - konklaavi
-    - sprinkleri
-- rks:
-    count: 5
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hpr:
+    count: 34625
     matched_words_preview:
-    - marksilainen
-    - marksismi
-    - marksismi-leninismi
-    - marksisti
-- ksh:
-    count: 4
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hps:
+    count: 34625
     matched_words_preview:
-    - ekshaustio
-    - ekshibitionismi
-    - ekshibitionisti
-    - yorkshire=sika
-- nsm:
-    count: 4
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hpt:
+    count: 34625
     matched_words_preview:
-    - neuro=transmissio
-    - neuro=transmitteri
-    - transmissio
-    - transmittanssi
-- lsh:
-    count: 3
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrk:
+    count: 34625
     matched_words_preview:
-    - bolshevikki
-    - bolshevismi
-    - bolshevistinen
-- mst:
-    count: 3
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrl:
+    count: 34625
     matched_words_preview:
-    - hamsteri
-    - hamstrata
-    - semstvo
-- rnh:
-    count: 3
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrm:
+    count: 34625
     matched_words_preview:
-    - bernhardilainen
-    - bernhardin=koira
-    - herrnhutilainen
-- rth:
-    count: 3
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrn:
+    count: 34625
     matched_words_preview:
-    - apartheid
-    - karthaginem
-    - mccarthyismi
-- stm:
-    count: 3
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrp:
+    count: 34625
     matched_words_preview:
-    - astma
-    - astmaatikko
-    - astmaattinen
-- ntl:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrs:
+    count: 34625
     matched_words_preview:
-    - gentlemanni
-    - hantlankari
-- pst:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hrt:
+    count: 34625
     matched_words_preview:
-    - hipsteri
-    - vipstaaki
-- rkl:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hsk:
+    count: 34625
     matched_words_preview:
-    - rkl
-    - sirklata
-- rsh:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hsl:
+    count: 34625
     matched_words_preview:
-    - ayrshire=lehmä
-    - ayrshire=rotu
-- shm:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hsm:
+    count: 34625
     matched_words_preview:
-    - kashmirin=uuni=lintu
-    - leishmaniaasi
-- sth:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hsn:
+    count: 34625
     matched_words_preview:
-    - rusthollari
-    - rustholli
-- thl:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hsp:
+    count: 34625
     matched_words_preview:
-    - triathlon
-    - triathlonisti
-- tsh:
-    count: 2
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hsr:
+    count: 34625
     matched_words_preview:
-    - tshekki
-    - tshetsheeni
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- htk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- htl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- htm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- htn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- htp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - htr:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - vihtrilli
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- hts:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- khl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - khm:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - khmer
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- khn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- khp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- khr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- khs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- klh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- klm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kln:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- klp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- klr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kls:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- klt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kmh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kml:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kmn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kmp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kmr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kms:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kmt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- knh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- knl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- knm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- knp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- knr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kns:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- knt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kph:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - kpl:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - kpl
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kpm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kpn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kpr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kps:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kpt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- krh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- krl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- krm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- krn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- krp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - krs:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - krs
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- krt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ksh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - ksl:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - vekslata
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - ksm:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - saksmanni
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ksn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ksp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - ksr:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - deksratsoksaani
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- kth:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ktl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ktm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ktn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ktp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ktr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - kts:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - kts
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lhk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lhm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lhn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lhp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lhr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lhs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lkh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - lkm:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - lkm.
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lkn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lkp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lkr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lks:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lkt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lmh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lmk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lmn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lmp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lmr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lms:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lmt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lnh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lnk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lnm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lnp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lnr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lns:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lnt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - lph:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - alpha
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lpk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lpm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lpn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - lpr:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - valproiini=happo
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lps:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lpt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lrt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lsh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lsk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - lsm:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - engelsmanni
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - lsn:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - pilsneri
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lsp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lsr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lth:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ltk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ltm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ltn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ltp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ltr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- lts:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mhk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mhl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mhn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mhp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mhr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mhs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mkh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mkl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mkn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mkp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mkr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mks:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mkt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mlh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mlk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mln:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mlp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mlr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mls:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mlt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mnh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mnk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mnl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mnp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mnr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mns:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mnt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mph:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mpk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mpl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mpn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mpr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mps:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mpt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mrh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - mrk:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - mrk
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mrl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mrn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mrp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mrs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mrt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- msh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - msk:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - limska
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- msl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- msn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- msp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- msr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mth:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mtk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mtl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mtn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mtp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- mtr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - mts:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - umts
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nhk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nhl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nhm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nhp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nhr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nhs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nkh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nkl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nkm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nkp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nkr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nks:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nkt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nlh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nlk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nlm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nlp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nlr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nls:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nlt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nmh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nmk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nml:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nmp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nmr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nms:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nmt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nph:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- npk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- npl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- npm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- npr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nps:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- npt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nrt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - nsh:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - menshevikki
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nsk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nsl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nsm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nsp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nsr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nth:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ntk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ntl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ntm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ntp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ntr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- nts:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- phk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- phl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- phm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- phn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- phr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- phs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pkh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pkl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pkm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pkn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pkr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pks:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pkt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- plh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- plk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- plm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pln:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- plr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pls:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- plt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pmh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pmk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pml:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pmn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pmr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pms:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pmt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pnh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pnk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pnl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pnm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pnr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pns:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pnt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- prt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- psh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- psk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- psl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- psm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- psn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- psr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - pth:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - pthyi
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ptk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ptl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ptm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ptn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - ptr:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - dioptria
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- pts:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rhk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rhl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rhm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rhn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rhp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rhs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rkh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rkl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rkm:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - turkmeeni
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rkn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rkp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rks:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rkt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rlh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rlk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rlm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rln:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rlp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rls:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rlt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rmh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rmk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rml:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - vrml
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rmn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rmp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rms:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rmt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rnh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rnk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rnl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rnm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rnp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rns:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rnt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rph:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rpk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rpl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rpm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rpn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rps:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rpt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rsh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rsk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rsl:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - porsliini
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rsm:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - horsma
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rsn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rsp:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - antiperspirantti
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rst:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rth:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rtk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rtl:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - portland=sementti
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rtm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - rtn:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - partneri
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rtp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- rts:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- shk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- shl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- shm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- shn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- shp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- shr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- sht:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- skt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- slh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- slk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- slm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- sln:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- slp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- slr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- slt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- smh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- smk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- sml:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- smn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- smp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- smr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- smt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- snh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- snk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- snl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- snm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- snp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- snr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - snt:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - snt
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- sph:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- spk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- spl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- spm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- spn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- spr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- spt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- srt:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- sth:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- stk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- stl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- stm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - stn:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - postnataali
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - stp:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - postpositio
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- str:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- thk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- thl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- thm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- thn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- thp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- thr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- ths:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tkh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tkl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tkm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tkn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tkp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tkr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tks:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tlh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - tlk:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - tlk
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tlm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tln:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tlp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tlr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tls:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tmh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tmk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tml:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tmn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tmp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tmr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - tms:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - tms.
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tnh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tnk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tnl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tnm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tnp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tnr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tns:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tph:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tpk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tpl:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tpm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tpn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tpr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tps:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- trh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- trk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - trl:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - ctrl
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- trm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- trn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- trp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- trs:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tsh:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tsk:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
 - tsl:
-    count: 1
+    count: 34625
     matched_words_preview:
-    - tsl
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tsm:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tsn:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tsp:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia
+- tsr:
+    count: 34625
+    matched_words_preview:
+    - a
+    - a.p.
+    - a=bioottinen
+    - a=gamma=globulinemia

@@ -1,6 +1,6 @@
 import tools
 
-def not_a_name(word):
+def not_a_name(word, chars):
     first_character = word[0]
     return not first_character.isupper()
 

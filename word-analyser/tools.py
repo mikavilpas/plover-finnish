@@ -23,10 +23,12 @@ def get_wordlist(path):
 def get_finnish_wordlist():
     return get_wordlist("../wordlists/joukahainen.txt")
 
-def permutations_present_in_words(character_pair, words, word_filter):
+def characters_anywhere_in_word(word, chars):
+    return chars in word
+
+def permutations_present_in_words(character_pair, words, word_filter = characters_anywhere_in_word):
     matched_words = [w for w in words
-                     if word_filter(w)
-                     if character_pair in w]
+                     if word_filter(w, character_pair)]
     return dict(character_pair = character_pair,
                 matched_words = matched_words)
 

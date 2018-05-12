@@ -19,12 +19,8 @@ def pairs(vowels):
 # ija is a special case. It's expressed via the -IA stroke.
 vowel_permutations = pairs(left + middle) + pairs(right + middle) + [u"ija"] + [u"ijä"]
 
-def has_ending_vowels(word):
-    sounds = tuple(vowel_permutations)
-    return word.endswith(sounds)
-
-def non_name_with_ending_vowels(word):
-    return analysis.not_a_name(word) and has_ending_vowels(word)
+def non_name_with_ending_vowels(word, vowels):
+    return analysis.not_a_name(word, vowels) and word.endswith(vowels)
 
 def main():
     print("Finding the frequencies of words that have these ending vowel sounds:")
