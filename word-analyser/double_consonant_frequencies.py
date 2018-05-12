@@ -3,43 +3,20 @@
 
 import sys
 import tools
+import character_analysis_tools as analysis
 
 # Not all consonants are present, since many have multiple meanings.
 # These are described in the design documentation.
 consonants = "hklmnprst"
 
-def compactify(permutation):
-    # a readable view of the entire data set for this permutation
-    name = permutation["character_pair"]
-
-    words = permutation["matched_words"]
-    properties = dict(matched_words_preview = words[:4],
-                      count = len(words))
-    return {name: properties}
-
 def not_a_name(word):
     first_character = word[0]
     return not first_character.isupper()
 
-def count_of_words(a):
-    (char_pair, properties) = list(a.iteritems())[0]
-    return properties["count"]
-
-def has_matches(consonant_group):
-    return count_of_words(consonant_group) > 0
-
 def main():
-    words = tools.get_finnish_wordlist()
     consonant_permutations = tools.all_character_pairs(consonants, length = 2)
-
-    results = map(
-        lambda c: compactify(
-            tools.permutations_present_in_words(c, words, not_a_name)),
-        consonant_permutations)
-
-    results = filter(has_matches, results)
-    results = sorted(results, key = count_of_words, reverse = True)
-
+    results = analysis.frequency_analysis(consonant_permutations,
+                                          word_filter = not_a_name)
     tools.save_results_into_file(results, "results/double_consonant_frequencies.yaml")
 
     return 0 # no error
