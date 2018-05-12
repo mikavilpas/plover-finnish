@@ -5,9 +5,6 @@ import sys
 import tools
 import double_consonant_frequencies as double
 
-def has_matches(consonant_group):
-    return double.count_of_words(consonant_group) > 0
-
 def main():
     words = tools.get_finnish_wordlist()
     triple_consonant_permutations = tools.all_character_pairs(double.consonants, length = 3)
@@ -16,10 +13,10 @@ def main():
         lambda c: double.compactify(
             tools.permutations_present_in_words(c, words, double.not_a_name)),
         triple_consonant_permutations)
-    results = filter(has_matches, results)
+    results = filter(double.has_matches, results)
     results = sorted(results, key = double.count_of_words, reverse = True)
 
-    tools.save_results_into_file(results, "triple_consonant_frequencies.yaml")
+    tools.save_results_into_file(results, "results/triple_consonant_frequencies.yaml")
 
     return 0 # no error
 

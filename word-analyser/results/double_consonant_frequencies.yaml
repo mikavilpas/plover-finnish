@@ -467,12 +467,3 @@
     count: 1
     matched_words_preview:
     - pm
-- hp:
-    count: 0
-    matched_words_preview: []
-- hs:
-    count: 0
-    matched_words_preview: []
-- mh:
-    count: 0
-    matched_words_preview: []

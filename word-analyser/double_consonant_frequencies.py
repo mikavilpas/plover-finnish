@@ -25,6 +25,9 @@ def count_of_words(a):
     (char_pair, properties) = list(a.iteritems())[0]
     return properties["count"]
 
+def has_matches(consonant_group):
+    return count_of_words(consonant_group) > 0
+
 def main():
     words = tools.get_finnish_wordlist()
     consonant_permutations = tools.all_character_pairs(consonants, length = 2)
@@ -33,9 +36,11 @@ def main():
         lambda c: compactify(
             tools.permutations_present_in_words(c, words, not_a_name)),
         consonant_permutations)
+
+    results = filter(has_matches, results)
     results = sorted(results, key = count_of_words, reverse = True)
 
-    tools.save_results_into_file(results, "double_consonant_frequencies.yaml")
+    tools.save_results_into_file(results, "results/double_consonant_frequencies.yaml")
 
     return 0 # no error
 
