@@ -35,7 +35,7 @@ def main():
         consonant_permutations)
     results = sorted(results, key = count_of_words, reverse = True)
 
-    tools.save_results_into_file(results, "results.yaml")
+    tools.save_results_into_file(results, "double_consonant_frequencies.yaml")
 
     return 0 # no error
 
