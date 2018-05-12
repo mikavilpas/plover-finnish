@@ -2,7 +2,7 @@ import tools
 
 def not_a_name(word, chars):
     first_character = word[0]
-    return not first_character.isupper()
+    return not first_character.isupper() and chars in word
 
 def compactify(permutation):
     # a readable view of the entire data set for this permutation
