@@ -5,8 +5,7 @@ description = ""
 authors = ["Mika Vilpas <mika.vilpas@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "*"
-"ruamel.yaml" = "^0.15.37"
+python = "^3.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
