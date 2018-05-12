@@ -1,0 +1,269 @@
+- ia:
+    count: 1425
+    matched_words_preview:
+    - Aasia
+    - Abessinia
+    - Abhasia
+    - Akhaia
+- io:
+    count: 981
+    matched_words_preview:
+    - Aarnio
+    - Aikio
+    - Ailio
+    - Alkio
+- ua:
+    count: 934
+    matched_words_preview:
+    - Antigua
+    - Halsua
+    - Lapua
+    - Liettua
+- yä:
+    count: 372
+    matched_words_preview:
+    - Pöytyä
+    - ali=jäähtyä
+    - arki=päiväistyä
+    - eheytyä
+- au:
+    count: 253
+    matched_words_preview:
+    - Claudie
+    - Guinea-Bissau
+    - Kaukasia
+    - Klaudia
+- ea:
+    count: 195
+    matched_words_preview:
+    - Andrea
+    - Antrea
+    - Eritrea
+    - Fimea
+- ai:
+    count: 193
+    matched_words_preview:
+    - Akhaia
+    - Altai
+    - Dubai
+    - Hyundai
+- uo:
+    count: 183
+    matched_words_preview:
+    - Aarre=vuo
+    - Ahma=vuo
+    - Arki=vuo
+    - Aura=vuo
+- oi:
+    count: 182
+    matched_words_preview:
+    - Boiotia
+    - Delfoi
+    - Foinikia
+    - Hanoi
+- iä:
+    count: 174
+    matched_words_preview:
+    - Kälviä
+    - Mäkriä
+    - Nilsiä
+    - Sirkiä
+- oa:
+    count: 135
+    matched_words_preview:
+    - Kroatia
+    - Nooa
+    - Samoa
+    - aikoa
+- eä:
+    count: 106
+    matched_words_preview:
+    - aamu=äreä
+    - eheä
+    - elin=tärkeä
+    - hehkeä
+- eu:
+    count: 102
+    matched_words_preview:
+    - Seleukia
+    - aiheutua
+    - aneuploidia
+    - arpeutua
+- ou:
+    count: 101
+    matched_words_preview:
+    - Guillou
+    - Jousivuo
+    - Joutsivuo
+    - Ouagadougou
+- ie:
+    count: 98
+    matched_words_preview:
+    - Bernie
+    - Britt-Marie
+    - Claudie
+    - Curie
+- ie:
+    count: 98
+    matched_words_preview:
+    - Bernie
+    - Britt-Marie
+    - Claudie
+    - Curie
+- ei:
+    count: 82
+    matched_words_preview:
+    - Aleksei
+    - Andrei
+    - Aquileia
+    - Brunei
+- ei:
+    count: 82
+    matched_words_preview:
+    - Aleksei
+    - Andrei
+    - Aquileia
+    - Brunei
+- iö:
+    count: 79
+    matched_words_preview:
+    - Elpiö
+    - Enon=tekiö
+    - Heiniö
+    - Heliö
+- ija:
+    count: 78
+    matched_words_preview:
+    - Aija
+    - Berija
+    - Eija
+    - Freija
+- eo:
+    count: 58
+    matched_words_preview:
+    - Borneo
+    - Feodosia
+    - Galileo
+    - Geoffrey
+- iu:
+    count: 49
+    matched_words_preview:
+    - Siuntio
+    - ali=suoriutua
+    - blokkiutua
+    - diftongiutua
+- äy:
+    count: 48
+    matched_words_preview:
+    - eläytyä
+    - eristäytyä
+    - esittäytyä
+    - heittäytyä
+- äi:
+    count: 47
+    matched_words_preview:
+    - Häikiö
+    - Päiviö
+    - arki=päiväistyä
+    - häikäistyä
+- ui:
+    count: 42
+    matched_words_preview:
+    - Aquileia
+    - Guillou
+    - Guinea
+    - Guinea-Bissau
+- ey:
+    count: 38
+    matched_words_preview:
+    - Abbey
+    - Berkeley
+    - Crowley
+    - Disney
+- yö:
+    count: 33
+    matched_words_preview:
+    - halpa=työ
+    - hyökyä
+    - hyöriä
+    - hyötyä
+- ue:
+    count: 32
+    matched_words_preview:
+    - Guernsey
+    - Lebesgue
+    - Martinique
+    - Sue
+- öy:
+    count: 24
+    matched_words_preview:
+    - Köyliö
+    - Pöytyä
+    - höyläytyä
+    - höyryyntyä
+- öi:
+    count: 22
+    matched_words_preview:
+    - eläköityä
+    - elävöityä
+    - esitelmöitsijä
+    - hedelmöittyä
+- iy:
+    count: 21
+    matched_words_preview:
+    - eriytyä
+    - esiytyä
+    - etsiytyä
+    - häiriytyä
+- ijä:
+    count: 18
+    matched_words_preview:
+    - edellä=kävijä
+    - esitelmöitsijä
+    - huorin=tekijä
+    - hyvän=tekijä
+- ye:
+    count: 13
+    matched_words_preview:
+    - Päätye
+    - de=myelinaatio
+    - myelinaatio
+    - myelinisaatio
+- ao:
+    count: 10
+    matched_words_preview:
+    - Laodikea
+    - Macao
+    - Makao
+    - Mao
+- oe:
+    count: 7
+    matched_words_preview:
+    - Sillitoe
+    - aaloe
+    - koe
+    - koe
+- yi:
+    count: 5
+    matched_words_preview:
+    - Sosnovyi
+    - hyi
+    - phyi
+    - pthyi
+- ae:
+    count: 5
+    matched_words_preview:
+    - aerologia
+    - jae
+    - rae
+    - reggae
+- äe:
+    count: 2
+    matched_words_preview:
+    - silo=säe
+    - säe
+- öä:
+    count: 2
+    matched_words_preview:
+    - säilöä
+    - tyköä
