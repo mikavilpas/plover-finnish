@@ -9,14 +9,10 @@ import character_analysis_tools as analysis
 # These are described in the design documentation.
 consonants = "hklmnprst"
 
-def not_a_name(word):
-    first_character = word[0]
-    return not first_character.isupper()
-
 def main():
     consonant_permutations = tools.all_character_pairs(consonants, length = 2)
     results = analysis.frequency_analysis(consonant_permutations,
-                                          word_filter = not_a_name)
+                                          word_filter = analysis.not_a_name)
     tools.save_results_into_file(results, "results/double_consonant_frequencies.yaml")
 
     return 0 # no error

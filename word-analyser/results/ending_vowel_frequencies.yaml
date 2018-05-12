@@ -1,80 +1,80 @@
 - ia:
-    count: 1425
+    count: 1237
     matched_words_preview:
-    - Aasia
-    - Abessinia
-    - Abhasia
-    - Akhaia
-- io:
-    count: 981
-    matched_words_preview:
-    - Aarnio
-    - Aikio
-    - Ailio
-    - Alkio
+    - a=gamma=globulinemia
+    - a=kinesia
+    - a=plasia
+    - a=praksia
 - ua:
-    count: 934
+    count: 923
     matched_words_preview:
-    - Antigua
-    - Halsua
-    - Lapua
-    - Liettua
+    - aavikoitua
+    - ahavoitua
+    - ahtautua
+    - aiheutua
+- io:
+    count: 906
+    matched_words_preview:
+    - aarnio
+    - abduktio
+    - aberraatio
+    - ablaatio
 - yä:
-    count: 372
+    count: 371
     matched_words_preview:
-    - Pöytyä
     - ali=jäähtyä
     - arki=päiväistyä
     - eheytyä
+    - ehtyä
 - au:
-    count: 253
+    count: 239
     matched_words_preview:
-    - Claudie
-    - Guinea-Bissau
-    - Kaukasia
-    - Klaudia
-- ea:
-    count: 195
-    matched_words_preview:
-    - Andrea
-    - Antrea
-    - Eritrea
-    - Fimea
-- ai:
-    count: 193
-    matched_words_preview:
-    - Akhaia
-    - Altai
-    - Dubai
-    - Hyundai
-- uo:
-    count: 183
-    matched_words_preview:
-    - Aarre=vuo
-    - Ahma=vuo
-    - Arki=vuo
-    - Aura=vuo
-- oi:
-    count: 182
-    matched_words_preview:
-    - Boiotia
-    - Delfoi
-    - Foinikia
-    - Hanoi
+    - ahtautua
+    - ajautua
+    - akkautua
+    - antautua
 - iä:
-    count: 174
+    count: 169
     matched_words_preview:
-    - Kälviä
-    - Mäkriä
-    - Nilsiä
-    - Sirkiä
+    - bylsiä
+    - ehtiä
+    - elehtiä
+    - empiä
+- oi:
+    count: 168
+    matched_words_preview:
+    - aamu=koi
+    - aamun=koi
+    - aavikoitua
+    - ahavoitua
+- ea:
+    count: 167
+    matched_words_preview:
+    - a=menorrea
+    - aarni=valkea
+    - ankea
+    - apea
+- ai:
+    count: 163
+    matched_words_preview:
+    - ai
+    - aie
+    - aiheutua
+    - aihio
 - oa:
-    count: 135
+    count: 132
     matched_words_preview:
-    - Kroatia
-    - Nooa
-    - Samoa
     - aikoa
+    - ainoa
+    - aitoa
+    - anoa
+- uo:
+    count: 114
+    matched_words_preview:
+    - aivo=juovio
+    - ali=suoriutua
+    - bitti=vuo
+    - duo
 - eä:
     count: 106
     matched_words_preview:
@@ -83,75 +83,68 @@
     - elin=tärkeä
     - hehkeä
 - eu:
-    count: 102
+    count: 101
     matched_words_preview:
-    - Seleukia
     - aiheutua
     - aneuploidia
     - arpeutua
+    - bronko=pneumonia
 - ou:
-    count: 101
+    count: 95
     matched_words_preview:
-    - Guillou
-    - Jousivuo
-    - Joutsivuo
-    - Ouagadougou
+    - bougainvillea
+    - boutique
+    - gettoutua
+    - ghettoutua
 - ie:
-    count: 98
+    count: 84
     matched_words_preview:
-    - Bernie
-    - Britt-Marie
-    - Claudie
-    - Curie
+    - aie
+    - brie
+    - caddie
+    - collie
 - ie:
-    count: 98
+    count: 84
     matched_words_preview:
-    - Bernie
-    - Britt-Marie
-    - Claudie
-    - Curie
+    - aie
+    - brie
+    - caddie
+    - collie
 - ei:
-    count: 82
+    count: 65
     matched_words_preview:
-    - Aleksei
-    - Andrei
-    - Aquileia
-    - Brunei
+    - akileija
+    - armeija
+    - aseistautua
+    - dreija
 - ei:
-    count: 82
+    count: 65
     matched_words_preview:
-    - Aleksei
-    - Andrei
-    - Aquileia
-    - Brunei
-- iö:
-    count: 79
-    matched_words_preview:
-    - Elpiö
-    - Enon=tekiö
-    - Heiniö
-    - Heliö
+    - akileija
+    - armeija
+    - aseistautua
+    - dreija
 - ija:
-    count: 78
+    count: 62
     matched_words_preview:
-    - Aija
-    - Berija
-    - Eija
-    - Freija
+    - aijai
+    - akileija
+    - alaston=tanssija
+    - alkuun=panija
+- iö:
+    count: 60
+    matched_words_preview:
+    - ehiö
+    - eliö
+    - ensiö
+    - eriö
 - eo:
-    count: 58
+    count: 52
     matched_words_preview:
-    - Borneo
-    - Feodosia
-    - Galileo
-    - Geoffrey
-- iu:
-    count: 49
-    matched_words_preview:
-    - Siuntio
-    - ali=suoriutua
-    - blokkiutua
-    - diftongiutua
+    - agro=geologia
+    - arkeo=astronomia
+    - arkeologia
+    - censeo
 - äy:
     count: 48
     matched_words_preview:
@@ -159,27 +152,27 @@
     - eristäytyä
     - esittäytyä
     - heittäytyä
-- äi:
-    count: 47
+- iu:
+    count: 48
     matched_words_preview:
-    - Häikiö
-    - Päiviö
+    - ali=suoriutua
+    - blokkiutua
+    - diftongiutua
+    - fakkiutua
+- äi:
+    count: 45
+    matched_words_preview:
     - arki=päiväistyä
     - häikäistyä
+    - häilyä
+    - häipyä
 - ui:
-    count: 42
+    count: 36
     matched_words_preview:
-    - Aquileia
-    - Guillou
-    - Guinea
-    - Guinea-Bissau
-- ey:
-    count: 38
-    matched_words_preview:
-    - Abbey
-    - Berkeley
-    - Crowley
-    - Disney
+    - aikuistua
+    - guinea
+    - hui
+    - huikaistua
 - yö:
     count: 33
     matched_words_preview:
@@ -187,20 +180,20 @@
     - hyökyä
     - hyöriä
     - hyötyä
+- ey:
+    count: 27
+    matched_words_preview:
+    - eheytyä
+    - hikeytyä
+    - imeytyä
+    - iskeytyä
 - ue:
-    count: 32
+    count: 27
     matched_words_preview:
-    - Guernsey
-    - Lebesgue
-    - Martinique
-    - Sue
-- öy:
-    count: 24
-    matched_words_preview:
-    - Köyliö
-    - Pöytyä
-    - höyläytyä
-    - höyryyntyä
+    - aarni=alue
+    - airue
+    - alue
+    - avenue
 - öi:
     count: 22
     matched_words_preview:
@@ -208,6 +201,13 @@
     - elävöityä
     - esitelmöitsijä
     - hedelmöittyä
+- öy:
+    count: 22
+    matched_words_preview:
+    - höyläytyä
+    - höyryyntyä
+    - höystyä
+    - köyhtyä
 - iy:
     count: 21
     matched_words_preview:
@@ -223,33 +223,26 @@
     - huorin=tekijä
     - hyvän=tekijä
 - ye:
-    count: 13
+    count: 12
     matched_words_preview:
-    - Päätye
     - de=myelinaatio
     - myelinaatio
     - myelinisaatio
+    - myelo=dys=plasia
 - ao:
-    count: 10
+    count: 6
     matched_words_preview:
-    - Laodikea
-    - Macao
-    - Makao
-    - Mao
+    - aorto=grafia
+    - faarao
+    - farao
+    - kaakao
 - oe:
-    count: 7
+    count: 6
     matched_words_preview:
-    - Sillitoe
     - aaloe
     - koe
     - koe
-- yi:
-    count: 5
-    matched_words_preview:
-    - Sosnovyi
-    - hyi
-    - phyi
-    - pthyi
+    - koettei
 - ae:
     count: 5
     matched_words_preview:
@@ -257,6 +250,13 @@
     - jae
     - rae
     - reggae
+- yi:
+    count: 4
+    matched_words_preview:
+    - hyi
+    - phyi
+    - pthyi
+    - synnyin=paikkei
 - äe:
     count: 2
     matched_words_preview:

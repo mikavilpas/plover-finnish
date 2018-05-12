@@ -1,5 +1,9 @@
 import tools
 
+def not_a_name(word):
+    first_character = word[0]
+    return not first_character.isupper()
+
 def compactify(permutation):
     # a readable view of the entire data set for this permutation
     name = permutation["character_pair"]
