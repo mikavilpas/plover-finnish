@@ -5,11 +5,11 @@ This page describes the design and layout of the Finnish steno keyboard.
 |                                  N U M B E R                                  |
 ---------------------------------------------------------------------------------
 |       |       |       |       |       |       |       |       |       |       |
-|       |   T   F   P   M   H   |       |   R   M   N   |   P   |   I   |   E   |
+|       |   T   F   P   M   H   |       |   R   M   N   |   P   |   E   |   O   |
 |       |       |       |       |       |       |       |       |       |       |
-|   S   |---D---G---B---|---L---|   *   |-------|-------|---H---|-------|---U---|
+|   S   |---D---G---B---|---L---|   *   |-------|-------|---H---|---U---|-------|
 |       |       |       |       |       |       |       |       |       |       |
-|       |   K   Q   V   |   R   |       |   S   |   T   |   K   |   A   |   O   |
+|       |   K   Q   V   |   R   |       |   S   |   T   |   K   |   I   |   A   |
 |       |       |       |       |       |       |       |       |       |       |
 ---------------------------------------------------------------------------------
                     |       |       |       |       |
@@ -153,6 +153,11 @@ A special option `-IA` for the "-ia" and "-ija" endings is provided.
 | Strokes | character | Notes |
 | ----    | ----      | ----  |
 | `-IA`   | ia,ija    |       |
+
+This precise layout was chosen because it can support the largest amount of
+ending vowels. Included in this repository is the full analysis made to find
+this out.
+
 
 # Consonant system
 
