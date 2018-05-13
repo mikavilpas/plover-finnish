@@ -188,37 +188,22 @@ The initial consonant has almost the same layout as in English.
 |          | y         | missing because it's not a consonant in Finnish |
 | `VR--`   | z         | very rare. Is `S*` in the English layout.       |
 
-<!-- todo: move -M between -R and -P -->
-<!-- todo: create -L -->
-
 ## Final consonant
 
-Some characters are bundled together because there are so few keys. These are
-shown in the format (a,b,c,d), which means that this key is used for the four
-characters, and in case of conflicts the keys are matched front to back.
+Not all consonants are supported on this side.
 
-| Strokes | character | Notes                      |
-| ----    | ----      | ----                       |
-| `-P`    | b         | (b,p)                      |
-| `-S`    | c         | (s,v,f,c,z)                |
-| `-T`    | d         | (t,d)                      |
-| `-S`    | f         | (s,v,f,c,z)                |
-| `-K`    | g         | (k,g,q)                    |
-| `-PK`   | h         |                            |
-|         | (j)       | handled as the vowel i     |
-| `-K`    | k         | (k,g,q)                    |
-| `-`     | l         |                            |
-| `-RN`   | m         | (rn,m) because rn is rare  |
-| `-N`    | n         |                            |
-| `-P`    | p         | (b,p)                      |
-| `-K`    | q         | (k,g,q)                    |
-| `-R`    | r         |                            |
-| `-S`    | s         | (s,v,f,c,z)                |
-| `-T`    | t         | (t,d)                      |
-| `-S`    | v         | (s,v,f,c,z)                |
-|         | w         |                            |
-|         | y         | not a consonant in Finnish |
-| `-S`    | z         | (s,v,f,c,z)                |
+| Strokes | character | Notes                       |
+| ----    | ----      | ----                        |
+| `-PK`   | h         |                             |
+| `-K`    | k         | k                           |
+| `-NST`  | l         |                             |
+| `-SH`   | m         |                             |
+| `-N`    | n         |                             |
+| `-HR`   | p         |                             |
+| `-R`    | r         |                             |
+| `-S`    | s         |                             |
+| `-T`    | t         |                             |
+| `-SR`   | v         | same as on the initial side |
 
 
 # Suffix system
