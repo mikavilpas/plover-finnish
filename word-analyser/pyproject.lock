@@ -19,6 +19,17 @@ description = "Cross-platform colored terminal text."
 [package.requirements]
 platform = "win32"
 [[package]]
+category = "main"
+platform = "MacOS X"
+version = "0.7.0"
+name = "ensure"
+python-versions = "*"
+optional = false
+description = "Literate BDD assertions in Python with no magic"
+
+[package.dependencies]
+six = ">= 1.9.0.0"
+[[package]]
 category = "dev"
 platform = "*"
 version = "4.1.0"
@@ -77,7 +88,7 @@ description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip pres
 [package.dependencies]
 "ruamel.ordereddict" = "*"
 [[package]]
-category = "dev"
+category = "main"
 platform = "*"
 version = "1.11.0"
 name = "six"
@@ -88,7 +99,7 @@ description = "Python 2 and 3 compatibility utilities"
 [metadata]
 platform = "*"
 python-versions = "^3.5"
-content-hash = "bec55f91fc771d3b7b2093ad92e20bf49337daebc0a1610d2ce7df598d048301"
+content-hash = "d682c9cd4d6c86a324cb9091566a949e2de1b9d96f82a0086e0ad58739ef8123"
 
 [metadata.hashes]
 more-itertools = [ "11a625025954c20145b37ff6309cd54e39ca94f72f6bb9576d1195db6fa2442e", "0dd8f72eeab0d2c3bd489025bb2f6a1b8342f9b198f6fc37b52d15cfa4531fea", "c9ce7eccdcb901a2c75d326ea134e0886abfbea5f93e91cc95de9507c0816c44",]
@@ -96,6 +107,7 @@ six = [ "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb", "70e
 ruamel-yaml = [ "e4d53f6a0c21d8effc23371927e8569096d0364d7c703b2e6956c6281b6bde2c", "4b1929101d09612e0c7a42fbe06b0f929a4a89e1d14832353c1eb073580d3ba6", "181699cc08b157ef8a59a77e96a01b5ffa150044ed4e49fd98428ab9ac0e6ed9", "b6bc5f434d72a672dbe48471e70771789d5d93603716c9e36963fe1dc7a35718", "6932e1ad63c805a41665a94e5d7b70808e9e25943f72afba6d327fede2aeb43d", "dc051cd1fe541e321f6846bddba8e2c0de8ca409d51a6d9917c7b970d8d89a3d", "656dcd3d30774ffe252e46db96f4cf24b284d42c904b93f9cbe6b234028f7d2e", "039bb5b50a2f3b17c969ed1d381e050bca851e3c13fe8c2a9ad18f605ca111a5", "f5ef82b8efe378de6abb7042263d6f407b0760ad923ed477fa26007b1fa0e563", "cea830caa479ae083f51ffdb55fe430a2763e853a7b06195f203db6d28bf5264", "882cacb8af5f7009780da75041ef131d0ec80d9e0b81d3cf8d4b49a0a33fe6ef", "1d46053cb7acf0cd6b375e34abfb94f2e97c39269c17eb8b0226fe8a470c4ced", "2d1df676ac75fb5e0af7b91f7718a4b4f469a5d8ac4150edecc61f063283bbee", "759b485e8cda260bd87b7cdd2ad936a0ec359ee6154a9d856357446792b3faf5", "7afefe5dab4381393a2aa7ccb585ffd6080d52e7cd05f1df3788e9d0e4dfcea9", "766ee90985c667f77bf34950b1d945624c263ecb82d859961f78effb3355c946", "509842d96fb194f79b57483b76429f8956d8f7ade3cb49d1e5aeb5c5e9ef4918",]
 py = [ "983f77f3331356039fdd792e9220b7b8ee1aa6bd2b25f567a963ff1de5a64f6a", "29c9fab495d7528e80ba1e343b958684f4ace687327e6f789a94bf3d1915f881",]
 pytest = [ "829230122facf05a5f81a6d4dfe6454a04978ea3746853b2b84567ecf8e5c526", "54713b26c97538db6ff0703a12b19aeaeb60b5e599de542e7fca0ec83b9038e8",]
-colorama = [ "463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda", "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1",]
+ensure = [ "3f6f0d47178042a8a30d491735a9561c21795d49486911271d0f732ea73cea00", "4f792b032e7a4e5dcbf64bfe74130b60e13e030c29dcd68e3ae1d0e5b837b0d0",]
 attrs = [ "4b90b09eeeb9b88c35bc642cbac057e45a5fd85367b985bd2809c62b7b939265", "e0d0eb91441a3b53dab4d9b743eafc1ac44476296a2053b6ca3af0b139faf87b",]
+colorama = [ "463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda", "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1",]
 pluggy = [ "d345c8fe681115900d6da8d048ba67c25df42973bda370783cd58826442dcd7c", "e160a7fcf25762bb60efc7e171d4497ff1d8d2d75a3d0df7a21b76821ecbf5c5", "7f8ae7f5bdf75671a718d2daf0a64b7885f74510bcd98b1a0bb420eb9a9d0cff",]
