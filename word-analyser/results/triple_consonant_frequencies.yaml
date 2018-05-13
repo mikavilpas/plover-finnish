@@ -1,0 +1,447 @@
+- str:
+    matched_words_preview:
+    - abstrahoida
+    - abstrakti
+    - abstraktinen
+    - abstraktio
+    count: 204
+- ntr:
+    matched_words_preview:
+    - antraniili=happo
+    - antrasiitti
+    - antrasykliini
+    - antrooppinen
+    count: 130
+- rsk:
+    matched_words_preview:
+    - förskotti
+    - hurskas
+    - hurskastella
+    - hyrske
+    count: 76
+- nst:
+    matched_words_preview:
+    - bronko=konstriktio
+    - de=konstruktiivinen
+    - de=konstruktio
+    - de=konstruktionismi
+    count: 64
+- kst:
+    matched_words_preview:
+    - alku=peräis=teksti
+    - ambidekstria
+    - dekstraani
+    - dekstro=amfetamiini
+    count: 45
+- ktr:
+    matched_words_preview:
+    - di=elektrinen
+    - doktriini
+    - ekso=elektroni
+    - ekso=elektroninen
+    count: 40
+- rst:
+    matched_words_preview:
+    - braatvursti
+    - bratwurst
+    - eversti
+    - everstinna
+    count: 39
+- nts:
+    matched_words_preview:
+    - amino=bentsoe=happo
+    - bentseeni
+    - bentsiili
+    - bentsiini
+    count: 37
+- nkt:
+    matched_words_preview:
+    - akupunktio
+    - akupunktuuri
+    - arkus=funktio
+    - disjunktiivi=konjunktio
+    count: 32
+- lsk:
+    matched_words_preview:
+    - falskata
+    - falski
+    - helskyttää
+    - helskytys
+    count: 31
+- rts:
+    matched_words_preview:
+    - bermuda=shortsi
+    - bermuda=sortsi
+    - bermuda=šortsi
+    - bilhartsia
+    count: 27
+- mpl:
+    matched_words_preview:
+    - amplitudi
+    - immuno=kompleksi
+    - implantaatio
+    - implantaatti
+    count: 25
+- mpr:
+    matched_words_preview:
+    - akamprosaatti
+    - amprenaviiri
+    - de=kompressio
+    - de=kompressoida
+    count: 22
+- nsk:
+    matched_words_preview:
+    - finski
+    - hanska
+    - jänskä
+    - penska
+    count: 19
+- skl:
+    matched_words_preview:
+    - arterio=skleroosi
+    - atero=skleroosi
+    - atero=skleroottinen
+    - epi=skleriitti
+    count: 18
+- nkr:
+    matched_words_preview:
+    - asynkroninen
+    - idio=synkraattinen
+    - idiosynkrasia
+    - inkrementaalinen
+    count: 17
+- ksp:
+    matched_words_preview:
+    - dekspantenoli
+    - ekspansiivinen
+    - ekspansio
+    - ekspansionistinen
+    count: 15
+- ltr:
+    matched_words_preview:
+    - altruismi
+    - altruisti
+    - eltrombopagi
+    - filtraatio
+    count: 14
+- mps:
+    matched_words_preview:
+    - eklampsia
+    - humpsahtaa
+    - hömpsy
+    - hömpsöttää
+    count: 14
+- skr:
+    matched_words_preview:
+    - deskriptiivi=sana
+    - deskriptiivinen
+    - deskriptio
+    - diskriminantti
+    count: 12
+- lst:
+    matched_words_preview:
+    - halstari
+    - halstaroida
+    - halsteri
+    - halsteroida
+    count: 11
+- spl:
+    matched_words_preview:
+    - dysplastinen
+    - eksploraatio
+    - eksploratiivinen
+    - eksploroida
+    count: 11
+- mpt:
+    matched_words_preview:
+    - asymptomaattinen
+    - asymptootti
+    - asymptotiikka
+    - im=promptu
+    count: 9
+- nsl:
+    matched_words_preview:
+    - hanslankari
+    - kansleri
+    - kanslerius
+    - kanslia
+    count: 9
+- nsp:
+    matched_words_preview:
+    - inspehtori
+    - inspektio
+    - inspiraatio
+    - inspiratorinen
+    count: 9
+- spr:
+    matched_words_preview:
+    - dysprosium
+    - ekspressio
+    - lispro=insuliini
+    - spray
+    count: 9
+- tsk:
+    matched_words_preview:
+    - jutsku
+    - jätski
+    - litsku
+    - matsku
+    count: 9
+- nks:
+    matched_words_preview:
+    - anksio=lyytti
+    - bänks
+    - henkseli
+    - lonksahtaa
+    count: 8
+- rkt:
+    matched_words_preview:
+    - antarktinen
+    - arktinen
+    - infarkti
+    - koarktaatio
+    count: 8
+- rpt:
+    matched_words_preview:
+    - absorptio
+    - adsorptio
+    - desorptio
+    - mal=absorptio
+    count: 7
+- lts:
+    matched_words_preview:
+    - maltsa
+    - pultsari
+    - streltsi
+    - sultsina
+    count: 5
+- nkl:
+    matched_words_preview:
+    - enkliittinen
+    - inklinaatio
+    - konklaavi
+    - sprinkleri
+    count: 5
+- rks:
+    matched_words_preview:
+    - marksilainen
+    - marksismi
+    - marksismi-leninismi
+    - marksisti
+    count: 5
+- ksh:
+    matched_words_preview:
+    - ekshaustio
+    - ekshibitionismi
+    - ekshibitionisti
+    - yorkshire=sika
+    count: 4
+- nsm:
+    matched_words_preview:
+    - neuro=transmissio
+    - neuro=transmitteri
+    - transmissio
+    - transmittanssi
+    count: 4
+- lsh:
+    matched_words_preview:
+    - bolshevikki
+    - bolshevismi
+    - bolshevistinen
+    count: 3
+- mst:
+    matched_words_preview:
+    - hamsteri
+    - hamstrata
+    - semstvo
+    count: 3
+- rnh:
+    matched_words_preview:
+    - bernhardilainen
+    - bernhardin=koira
+    - herrnhutilainen
+    count: 3
+- rth:
+    matched_words_preview:
+    - apartheid
+    - karthaginem
+    - mccarthyismi
+    count: 3
+- stm:
+    matched_words_preview:
+    - astma
+    - astmaatikko
+    - astmaattinen
+    count: 3
+- ntl:
+    matched_words_preview:
+    - gentlemanni
+    - hantlankari
+    count: 2
+- pst:
+    matched_words_preview:
+    - hipsteri
+    - vipstaaki
+    count: 2
+- rkl:
+    matched_words_preview:
+    - rkl
+    - sirklata
+    count: 2
+- rsh:
+    matched_words_preview:
+    - ayrshire=lehmä
+    - ayrshire=rotu
+    count: 2
+- shm:
+    matched_words_preview:
+    - kashmirin=uuni=lintu
+    - leishmaniaasi
+    count: 2
+- sth:
+    matched_words_preview:
+    - rusthollari
+    - rustholli
+    count: 2
+- thl:
+    matched_words_preview:
+    - triathlon
+    - triathlonisti
+    count: 2
+- tsh:
+    matched_words_preview:
+    - tshekki
+    - tshetsheeni
+    count: 2
+- htr:
+    matched_words_preview:
+    - vihtrilli
+    count: 1
+- khm:
+    matched_words_preview:
+    - khmer
+    count: 1
+- kpl:
+    matched_words_preview:
+    - kpl
+    count: 1
+- krs:
+    matched_words_preview:
+    - krs
+    count: 1
+- ksl:
+    matched_words_preview:
+    - vekslata
+    count: 1
+- ksm:
+    matched_words_preview:
+    - saksmanni
+    count: 1
+- ksr:
+    matched_words_preview:
+    - deksratsoksaani
+    count: 1
+- kts:
+    matched_words_preview:
+    - kts
+    count: 1
+- lkm:
+    matched_words_preview:
+    - lkm.
+    count: 1
+- lph:
+    matched_words_preview:
+    - alpha
+    count: 1
+- lpr:
+    matched_words_preview:
+    - valproiini=happo
+    count: 1
+- lsm:
+    matched_words_preview:
+    - engelsmanni
+    count: 1
+- lsn:
+    matched_words_preview:
+    - pilsneri
+    count: 1
+- mrk:
+    matched_words_preview:
+    - mrk
+    count: 1
+- msk:
+    matched_words_preview:
+    - limska
+    count: 1
+- mts:
+    matched_words_preview:
+    - umts
+    count: 1
+- nsh:
+    matched_words_preview:
+    - menshevikki
+    count: 1
+- pth:
+    matched_words_preview:
+    - pthyi
+    count: 1
+- ptr:
+    matched_words_preview:
+    - dioptria
+    count: 1
+- rkm:
+    matched_words_preview:
+    - turkmeeni
+    count: 1
+- rml:
+    matched_words_preview:
+    - vrml
+    count: 1
+- rsl:
+    matched_words_preview:
+    - porsliini
+    count: 1
+- rsm:
+    matched_words_preview:
+    - horsma
+    count: 1
+- rsp:
+    matched_words_preview:
+    - antiperspirantti
+    count: 1
+- rtl:
+    matched_words_preview:
+    - portland=sementti
+    count: 1
+- rtn:
+    matched_words_preview:
+    - partneri
+    count: 1
+- snt:
+    matched_words_preview:
+    - snt
+    count: 1
+- stn:
+    matched_words_preview:
+    - postnataali
+    count: 1
+- stp:
+    matched_words_preview:
+    - postpositio
+    count: 1
+- tlk:
+    matched_words_preview:
+    - tlk
+    count: 1
+- tms:
+    matched_words_preview:
+    - tms.
+    count: 1
+- trl:
+    matched_words_preview:
+    - ctrl
+    count: 1
+- tsl:
+    matched_words_preview:
+    - tsl
+    count: 1

@@ -1,0 +1,469 @@
+- st:
+    matched_words_preview:
+    - a=systolia
+    - aakkosisto
+    - aakkostaa
+    - aakkosto
+    count: 3780
+- nt:
+    matched_words_preview:
+    - aberrantti
+    - abiturientti
+    - absintti
+    - absorbentti
+    count: 1884
+- tr:
+    matched_words_preview:
+    - a=traumaattinen
+    - aatra
+    - abstrahoida
+    - abstrakti
+    count: 1086
+- ks:
+    matched_words_preview:
+    - a=praksia
+    - a=refleksia
+    - a=seksuaalinen
+    - aamu=kahdeksan
+    count: 1061
+- sk:
+    matched_words_preview:
+    - a=vaskulaarinen
+    - abskissa
+    - alas=laskettava
+    - alaskaan=päin
+    count: 983
+- ht:
+    matched_words_preview:
+    - ahnehtia
+    - ahtaa
+    - ahtaan=paikan=kammo
+    - ahtauma
+    count: 679
+- rt:
+    matched_words_preview:
+    - aaronin=parta
+    - aarteisto
+    - abortoida
+    - abortti
+    count: 662
+- nk:
+    matched_words_preview:
+    - aarni=honka
+    - ahdinko
+    - akupunktio
+    - akupunktuuri
+    count: 657
+- ns:
+    matched_words_preview:
+    - absorbanssi
+    - abstinenssi
+    - adenyyli=transferaasi
+    - adherenssi
+    count: 610
+- ts:
+    matched_words_preview:
+    - aamu=seitsemän
+    - aasian=metsä=pyy
+    - al=pra=tsolaami
+    - alemtutsumabi
+    count: 589
+- pr:
+    matched_words_preview:
+    - a=praksia
+    - aaprotti
+    - akamprosaatti
+    - al=pra=tsolaami
+    count: 564
+- kt:
+    matched_words_preview:
+    - abduktiivinen
+    - abduktio
+    - abstrakti
+    - abstraktinen
+    count: 563
+- rk:
+    matched_words_preview:
+    - aivo=kurkiainen
+    - anarkia
+    - anarkismi
+    - anarkisti
+    count: 552
+- lt:
+    matched_words_preview:
+    - aalto
+    - aaltoilla
+    - aaltonen
+    - akkulturaatio
+    count: 539
+- mp:
+    matched_words_preview:
+    - aida=trumpetti
+    - aiempi
+    - akamprosaatti
+    - alas=ampuminen
+    count: 509
+- lk:
+    matched_words_preview:
+    - aarni=valkea
+    - aavikko=tulkku
+    - alk.
+    - alkaa
+    count: 479
+- sm:
+    matched_words_preview:
+    - abolitionismi
+    - absolutismi
+    - adventismi
+    - aforismi
+    count: 448
+- rm:
+    matched_words_preview:
+    - a=spermato=geneesi
+    - a=spermia
+    - ab=normaali
+    - abnormi
+    count: 430
+- lm:
+    matched_words_preview:
+    - aamu=kolme
+    - aatelma
+    - ahdas=kulma=glaukooma
+    - ahto=ilma
+    count: 410
+- kr:
+    matched_words_preview:
+    - a=kromaatti
+    - a=kromaattinen
+    - ak=kreditoida
+    - akraalinen
+    count: 390
+- rs:
+    matched_words_preview:
+    - aasian=norsu
+    - adeno=karsinooma
+    - adversatiivinen
+    - afrikan=norsu
+    count: 387
+- hk:
+    matched_words_preview:
+    - acajou=pähkinä
+    - ahkera
+    - ahkera=liisa
+    - ahkeroida
+    count: 319
+- kl:
+    matched_words_preview:
+    - adenylaatti=syklaasi
+    - ak=klimatisoida
+    - akklimatisaatio
+    - ammonium=kloridi
+    count: 293
+- tk:
+    matched_words_preview:
+    - aarni=kotka
+    - alaston=tutkielma
+    - amerikan=tukka=sotka
+    - atk
+    count: 282
+- pl:
+    matched_words_preview:
+    - a=plasia
+    - akromio=plastia
+    - akso=plasma
+    - allo=plastinen
+    count: 267
+- sp:
+    matched_words_preview:
+    - a=spell
+    - a=spermato=geneesi
+    - a=spermia
+    - antiperspirantti
+    count: 243
+- ps:
+    matched_words_preview:
+    - akromatopsia
+    - anapsidi
+    - anopsia
+    - anti=psykootti
+    count: 242
+- pt:
+    matched_words_preview:
+    - abatasepti
+    - absorptio
+    - adaptaatio
+    - adapteri
+    count: 184
+- rp:
+    matched_words_preview:
+    - absorptio
+    - adsorptio
+    - arpa
+    - arpa=jainen
+    count: 167
+- ls:
+    matched_words_preview:
+    - alfa=kalsidoli
+    - alsike=apila
+    - anti=konvulsantti
+    - anti=konvulsiivi
+    count: 160
+- rn:
+    matched_words_preview:
+    - aarni
+    - aarni=alue
+    - aarni=hauta
+    - aarni=honka
+    count: 160
+- lp:
+    matched_words_preview:
+    - alpakka
+    - alpha
+    - alpiininen
+    - alpinismi
+    count: 130
+- rh:
+    matched_words_preview:
+    - aamu=varhain
+    - aito=perhonen
+    - apollo=perhonen
+    - aurora=perhonen
+    count: 128
+- hm:
+    matched_words_preview:
+    - ahma
+    - ahmaista
+    - ahmatti
+    - ahmia
+    count: 124
+- sl:
+    matched_words_preview:
+    - aldesleukiini
+    - asla
+    - dislokaatio
+    - dysleksia
+    count: 76
+- nh:
+    matched_words_preview:
+    - anhedonia
+    - anhydriitti
+    - bernhardilainen
+    - bernhardin=koira
+    count: 63
+- sh:
+    matched_words_preview:
+    - ayrshire=lehmä
+    - ayrshire=rotu
+    - bash
+    - bermuda=shortsi
+    count: 58
+- hr:
+    matched_words_preview:
+    - ahrain
+    - bohrium
+    - fahrenheit=aste
+    - hra
+    count: 50
+- hl:
+    matched_words_preview:
+    - haahla
+    - hahla
+    - hahlo
+    - helka=juhla
+    count: 46
+- lh:
+    matched_words_preview:
+    - alhaa
+    - alhainen
+    - alhais=aateli
+    - alhais=aatelisto
+    count: 46
+- hn:
+    matched_words_preview:
+    - ahnas
+    - ahne
+    - ahnehtia
+    - durum=vehnä
+    count: 37
+- kn:
+    matched_words_preview:
+    - akne
+    - araknoidaalinen
+    - araknoidiitti
+    - esitys=tekninen
+    count: 33
+- tm:
+    matched_words_preview:
+    - a=rytminen
+    - algoritmi
+    - aritmeettinen
+    - aritmetiikka
+    count: 29
+- rl:
+    matched_words_preview:
+    - berliinin=makkara
+    - berliinin=munkki
+    - burleski
+    - charleston
+    count: 28
+- mn:
+    matched_words_preview:
+    - alumni
+    - amnesia
+    - amnestia
+    - amnestinen
+    count: 26
+- pn:
+    matched_words_preview:
+    - apnea
+    - bronko=pneumonia
+    - dys=pnea
+    - elektro=pneumaattinen
+    count: 25
+- sn:
+    matched_words_preview:
+    - bisnes
+    - bosnia
+    - glasnost
+    - läsnä
+    count: 25
+- th:
+    matched_words_preview:
+    - apartheid
+    - ethernet
+    - gthumb
+    - hemo=thorax
+    count: 24
+- ms:
+    matched_words_preview:
+    - famsikloviiri
+    - gemsitabiini
+    - hamsteri
+    - hamstrata
+    count: 22
+- tl:
+    matched_words_preview:
+    - atlas
+    - atleetikko
+    - atleetti
+    - euro=atlanttinen
+    count: 19
+- tn:
+    matched_words_preview:
+    - etninen
+    - etno
+    - etno=grafi
+    - etno=grafia
+    count: 15
+- kh:
+    matched_words_preview:
+    - kh.
+    - khaki
+    - khii
+    - khmer
+    count: 10
+- ml:
+    matched_words_preview:
+    - amlodipiini
+    - amlodipiini=besilaatti
+    - amlodipiini=maleaatti
+    - kremlologi
+    count: 9
+- nr:
+    matched_words_preview:
+    - genre
+    - henry
+    - kenraali
+    - kenraalisto
+    count: 9
+- km:
+    matched_words_preview:
+    - drakma
+    - km
+    - lakmus
+    - lkm.
+    count: 6
+- mr:
+    matched_words_preview:
+    - kamreeri
+    - kamrikki=jyrä
+    - kimröökki
+    - kymri
+    count: 6
+- nl:
+    matched_words_preview:
+    - enlightenment
+    - grönlannin=lokki
+    - grönlannin=valas
+    - online
+    count: 6
+- np:
+    matched_words_preview:
+    - input
+    - kunpa
+    - nonparelli
+    - takaakaanpäin
+    count: 6
+- sr:
+    matched_words_preview:
+    - deksratsoksaani
+    - dysrytmia
+    - isradipiini
+    - israeliitta
+    count: 6
+- ln:
+    matched_words_preview:
+    - kölnin=vesi
+    - milnasi=praani
+    - mindfulness
+    - telnet
+    count: 5
+- mt:
+    matched_words_preview:
+    - alemtutsumabi
+    - emt.
+    - jämtti
+    - triamtereeni
+    count: 5
+- ph:
+    matched_words_preview:
+    - alpha
+    - apheli
+    - hiphop
+    - phui
+    count: 5
+- tp:
+    matched_words_preview:
+    - ftp
+    - http
+    - postpositio
+    - potpuri
+    count: 4
+- nm:
+    matched_words_preview:
+    - edutainment
+    - enlightenment
+    - nm
+    count: 3
+- lr:
+    matched_words_preview:
+    - alruuna
+    - malrotaatio
+    count: 2
+- mk:
+    matched_words_preview:
+    - kumkvatti
+    - mk
+    count: 2
+- kp:
+    matched_words_preview:
+    - kpl
+    count: 1
+- pk:
+    matched_words_preview:
+    - pk-yritys
+    count: 1
+- pm:
+    matched_words_preview:
+    - pm
+    count: 1

@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import sys
@@ -28,7 +27,7 @@ def main():
 
     results = analysis.frequency_analysis(vowel_permutations,
                                           word_filter = non_name_with_ending_vowels)
-    tools.save_results_into_file(results, "results/ending_vowel_frequencies.yaml")
+    tools.save_results_into_file(results, "../results/ending_vowel_frequencies.yaml")
 
     return 0 # no error
 

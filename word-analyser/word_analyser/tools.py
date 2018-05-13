@@ -21,7 +21,7 @@ def get_wordlist(path):
                 if not l == u""]
 
 def get_finnish_wordlist():
-    return get_wordlist("../wordlists/joukahainen.txt")
+    return get_wordlist("../../wordlists/joukahainen.txt")
 
 def characters_anywhere_in_word(word, chars):
     return chars in word

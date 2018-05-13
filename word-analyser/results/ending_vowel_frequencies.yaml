@@ -1,0 +1,221 @@
+- ia:
+    matched_words_preview:
+    - a=gamma=globulinemia
+    - a=kinesia
+    - a=plasia
+    - a=praksia
+    count: 1213
+- ua:
+    matched_words_preview:
+    - aavikoitua
+    - ahavoitua
+    - ahtautua
+    - aiheutua
+    count: 915
+- io:
+    matched_words_preview:
+    - aarnio
+    - abduktio
+    - aberraatio
+    - ablaatio
+    count: 826
+- yä:
+    matched_words_preview:
+    - ali=jäähtyä
+    - arki=päiväistyä
+    - eheytyä
+    - ehtyä
+    count: 371
+- iä:
+    matched_words_preview:
+    - bylsiä
+    - ehtiä
+    - elehtiä
+    - empiä
+    count: 169
+- ea:
+    matched_words_preview:
+    - a=menorrea
+    - aarni=valkea
+    - ankea
+    - apea
+    count: 155
+- oa:
+    matched_words_preview:
+    - aikoa
+    - ainoa
+    - aitoa
+    - anoa
+    count: 128
+- eä:
+    matched_words_preview:
+    - aamu=äreä
+    - eheä
+    - elin=tärkeä
+    - hehkeä
+    count: 106
+- ai:
+    matched_words_preview:
+    - ai
+    - aijai
+    - australian=sarvi=hai
+    - biljardi=hai
+    count: 62
+- ija:
+    matched_words_preview:
+    - akileija
+    - alaston=tanssija
+    - alkuun=panija
+    - alulle=panija
+    count: 61
+- iö:
+    matched_words_preview:
+    - ehiö
+    - eliö
+    - ensiö
+    - eriö
+    count: 57
+- ue:
+    matched_words_preview:
+    - aarni=alue
+    - airue
+    - alue
+    - avenue
+    count: 27
+- uo:
+    matched_words_preview:
+    - bitti=vuo
+    - duo
+    - energia=vuo
+    - fotoni=vuo
+    count: 27
+- oi:
+    matched_words_preview:
+    - aamu=koi
+    - aamun=koi
+    - aito=koi
+    - herukka=koi
+    count: 23
+- ijä:
+    matched_words_preview:
+    - edellä=kävijä
+    - esitelmöitsijä
+    - huorin=tekijä
+    - hyvän=tekijä
+    count: 18
+- ie:
+    matched_words_preview:
+    - aie
+    - brie
+    - caddie
+    - collie
+    count: 13
+- ie:
+    matched_words_preview:
+    - aie
+    - brie
+    - caddie
+    - collie
+    count: 13
+- yö:
+    matched_words_preview:
+    - halpa=työ
+    - ilki=työ
+    - karkeis=työ
+    - salvu=työ
+    count: 11
+- ei:
+    matched_words_preview:
+    - ehei
+    - hei
+    - koettei
+    - milt'ei
+    count: 10
+- ei:
+    matched_words_preview:
+    - ehei
+    - hei
+    - koettei
+    - milt'ei
+    count: 10
+- äi:
+    matched_words_preview:
+    - ihmis=täi
+    - kala=täi
+    - kana=täi
+    - kirja=täi
+    count: 8
+- eo:
+    matched_words_preview:
+    - censeo
+    - geo
+    - lyseo
+    - museo
+    count: 7
+- oe:
+    matched_words_preview:
+    - aaloe
+    - koe
+    - koe
+    - oboe
+    count: 5
+- ey:
+    matched_words_preview:
+    - jersey
+    - jockey
+    - maa=hockey
+    - puuvilla=jersey
+    count: 4
+- ae:
+    matched_words_preview:
+    - jae
+    - rae
+    - reggae
+    - tae
+    count: 4
+- ao:
+    matched_words_preview:
+    - faarao
+    - farao
+    - kaakao
+    - tao
+    count: 4
+- ye:
+    matched_words_preview:
+    - pesye
+    - tiehye
+    - yhtye
+    count: 3
+- yi:
+    matched_words_preview:
+    - hyi
+    - phyi
+    - pthyi
+    count: 3
+- au:
+    matched_words_preview:
+    - mau
+    - nau
+    - tau
+    count: 3
+- ui:
+    matched_words_preview:
+    - hui
+    - phui
+    - tui
+    count: 3
+- äe:
+    matched_words_preview:
+    - silo=säe
+    - säe
+    count: 2
+- öä:
+    matched_words_preview:
+    - säilöä
+    - tyköä
+    count: 2
+- iu:
+    matched_words_preview:
+    - muna=tiu
+    - tiu
+    count: 2

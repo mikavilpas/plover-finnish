@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import sys
@@ -13,7 +12,7 @@ def main():
     consonant_permutations = tools.all_character_pairs(consonants, length = 2)
     results = analysis.frequency_analysis(consonant_permutations,
                                           word_filter = analysis.not_a_name)
-    tools.save_results_into_file(results, "results/double_consonant_frequencies.yaml")
+    tools.save_results_into_file(results, "../results/double_consonant_frequencies.yaml")
 
     return 0 # no error
 

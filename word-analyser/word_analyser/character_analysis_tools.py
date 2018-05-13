@@ -14,7 +14,7 @@ def compactify(permutation):
     return {name: properties}
 
 def count_of_words(a):
-    (char_pair, properties) = list(a.iteritems())[0]
+    (char_pair, properties) = list(a.items())[0]
     return properties["count"]
 
 def has_matches(consonant_group):
