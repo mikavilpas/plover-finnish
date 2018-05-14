@@ -215,10 +215,11 @@ to end a word.
 | ----    | ----       | ----     |
 | `-NKS`  | nn         | kannu    |
 | `-NKH`  | kk         | akka     |
-| `-KHS`  | mm         | kummi    |
+| `-KSH`  | mm         | kummi    |
 | `-NSH`  | ss         | kassi    |
 | `-STR`  | tt         | Matti    |
 | `-HTR`  | rr         | kurre    |
+| `-SHR`  | pp         | ulappa   |
 
 # Suffix system
 
