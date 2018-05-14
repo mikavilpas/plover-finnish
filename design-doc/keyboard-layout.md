@@ -214,6 +214,11 @@ to end a word.
 | Strokes | characters | Examples |
 | ----    | ----       | ----     |
 | `-NKS`  | nn         | kannu    |
+| `-NKH`  | kk         | akka     |
+| `-KHS`  | mm         | kummi    |
+| `-NSH`  | ss         | kassi    |
+| `-STR`  | tt         | Matti    |
+| `-HTR`  | rr         | kurre    |
 
 # Suffix system
 
