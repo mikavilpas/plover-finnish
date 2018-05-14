@@ -70,12 +70,5 @@ sounds.*
 
 ## Frequency of characters
 
-To be done. There is some research into this, but it seems to take affixes into
-account, which isn't necessary with a two phase system.
-
-http://jkorpela.fi/kielikello/kirjtil.html
-
-This is likely to be the most important factor in designing the layout.
-
-This can be done by compiling the dictionary and analysing its syllables, giving
+This was done by compiling the dictionary and analysing its syllables, giving
 more importance, and hence a more favorable position to the more common ones.
