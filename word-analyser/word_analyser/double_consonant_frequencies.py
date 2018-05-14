@@ -3,16 +3,21 @@
 import sys
 import tools
 import character_analysis_tools as analysis
+from collections import namedtuple
 
 # Not all consonants are present, since many have multiple meanings.
 # These are described in the design documentation.
 consonants = "hklmnprst"
 
+NeighboringCharacters = namedtuple("NeighboringCharacters",
+                                   ["preceding_character",
+                                    "trailing_character"])
+
 def consonant(character) -> bool:
     all_consonants = "bcdfghjklmnpqrstvwxz"
     return character in all_consonants
 
-def find_neighboring_characters_in_word(word, chars):
+def find_neighboring_characters_in_word(word, chars) -> NeighboringCharacters:
     if len(word) == len(chars):
         return None
 
@@ -24,16 +29,16 @@ def find_neighboring_characters_in_word(word, chars):
     preceding_character = word[index - 1] if not word.startswith(chars) else Nothing
     trailing_character = word[index - 1 + len(chars) + 1] if not word.endswith(chars) else Nothing
 
-    return dict(preceding_character = preceding_character,
-                trailing_character = trailing_character)
+    return NeighboringCharacters(preceding_character = preceding_character,
+                                 trailing_character = trailing_character)
 
 def after_vowel(word, chars) -> bool:
     neighbors = find_neighboring_characters_in_word(word, chars)
-    return neighbors and not consonant(neighbors["preceding_character"])
+    return neighbors and not consonant(neighbors.preceding_character)
 
 def before_vowel(word, chars) -> bool:
     neighbors = find_neighboring_characters_in_word(word, chars)
-    return neighbors and not consonant(neighbors["trailing_character"])
+    return neighbors and not consonant(neighbors.trailing_character)
 
 def is_a_two_consonant_cluster(word, chars) -> bool:
     # Triple consonants are either loan words (abstraktio for example from
