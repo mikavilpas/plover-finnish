@@ -192,19 +192,28 @@ The initial consonant has almost the same layout as in English.
 
 Not all consonants are supported on this side.
 
-| Strokes | character | Notes                       |
-| ----    | ----      | ----                        |
-| `-PK`   | h         |                             |
-| `-K`    | k         | k                           |
-| `-NST`  | l         |                             |
-| `-SH`   | m         |                             |
-| `-N`    | n         |                             |
-| `-HR`   | p         |                             |
-| `-R`    | r         |                             |
-| `-S`    | s         |                             |
-| `-T`    | t         |                             |
-| `-SR`   | v         | same as on the initial side |
+| Strokes | character | Notes                                  |
+| ----    | ----      | ----                                   |
+| `-H`    | h         |                                        |
+| `-K`    | k         | k                                      |
+| `-NST`  | l         |                                        |
+| `-SH`   | m         |                                        |
+| `-N`    | n         |                                        |
+| `-HR`   | p         |                                        |
+| `-R`    | r         |                                        |
+| `-S`    | s         |                                        |
+| `-T`    | t         |                                        |
+| `-SR`   | v         | same characters as on the initial side |
 
+## Doubling of the final consonant
+
+In Finnish it's very common to indicate the length of the consonant by having it
+written as a doubled consonant. There is a shortcut for this, which can be used
+to end a word.
+
+| Strokes | characters | Examples |
+| ----    | ----       | ----     |
+| `-NKS`  | nn         | kannu    |
 
 # Suffix system
 
