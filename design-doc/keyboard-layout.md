@@ -33,6 +33,7 @@ This page describes the design and layout of the Finnish steno keyboard.
 - [Consonant system](#consonant-system)
     - [Initial consonant](#initial-consonant)
     - [Final consonant](#final-consonant)
+    - [Doubling of the final consonant](#doubling-of-the-final-consonant)
 - [Suffix system](#suffix-system)
 
 <!-- markdown-toc end -->
