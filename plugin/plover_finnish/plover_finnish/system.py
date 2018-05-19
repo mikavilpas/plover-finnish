@@ -1,6 +1,5 @@
-# S T K P V H R A O * E I N K S H T R e o i a
+# STKPVHRAO*EINKSHTReoia
 
-# new Finnish keys
 KEYS = (
     '#',
     'S-', 'T-', 'K-', 'P-', 'V-', 'H-', 'R-',
@@ -204,5 +203,5 @@ KEYMAPS = {
     },
 }
 
-DICTIONARIES_ROOT = 'asset:plover:assets'
-DEFAULT_DICTIONARIES = ()
+DICTIONARIES_ROOT = 'asset:plover_finnish:assets'
+DEFAULT_DICTIONARIES = ('user_finnish.json',)
