@@ -1,31 +1,34 @@
-# SKTFPLRAO*EURWBPGHTSDZ
+# S T K P V H R A O * E I N K S H T R e o i a
 
+# new Finnish keys
 KEYS = (
     '#',
-    'S-', 'K-', 'T-', 'F-', 'P-', 'L-', 'R-',
+    'S-', 'T-', 'K-', 'P-', 'V-', 'H-', 'R-',
     'A-', 'O-',
     '*',
-    '-E', '-U',
-    '-R', '-W', '-B', '-P', '-G', '-H', '-T', '-S', '-D', '-Z',
+    '-E', '-I',
+    '-N', '-K', '-S', '-H', '-T', '-R', '-e', '-o', '-i', '-a',
 )
 
-IMPLICIT_HYPHEN_KEYS = ('A-', 'O-', '5-', '0-', '-E', '-U', '*')
+IMPLICIT_HYPHEN_KEYS = ('A-', 'O-', '5-', '0-', '-E', '-I', '*')
 
-SUFFIX_KEYS = ('-S', '-G', '-Z', '-D')
+# TODO end vowels could be considered suffixes
+# SUFFIX_KEYS = ('-S', '-G', '-Z', '-D')
+SUFFIX_KEYS = ()
 
 NUMBER_KEY = '#'
 
 NUMBERS = {
     'S-': '1-',
-    'K-': '2-',
-    'T-': '3-',
-    'F-': '4-',
+    'T-': '2-',
+    'P-': '3-',
+    'H-': '4-',
     'A-': '5-',
     'O-': '0-',
-    '-R': '-6',
-    '-B': '-7',
-    '-G': '-8',
-    '-T': '-9',
+    '-N': '-6',
+    '-S': '-7',
+    '-T': '-8',
+    '-e': '-9',
 }
 
 UNDO_STROKE_STENO = '*'
@@ -34,7 +37,7 @@ ORTHOGRAPHY_RULES = [
     # Collapse vowels in suffixes
     # como + endo = comendo
     # cai + iria = cairia
-    (r'^(.+)[aeouiáéíóúãõâêôàü] \^ ([aeouiáéíóúãõâêôàü]\w*)$', r'\1\2'),
+    # (r'^(.+)[aeouiáéíóúãõâêôàü] \^ ([aeouiáéíóúãõâêôàü]\w*)$', r'\1\2'),
 ]
 
 ORTHOGRAPHY_RULES_ALIASES = {}
