@@ -38,10 +38,17 @@
 "{^seen}" : "S*EN" # pohjoiseen (to the North)
 "{^in}"   :   "IN" # koti+in (to home)
 "{^hin}"  :  "HIN" # koti+hin (to home)
-"{^siin}" : "S*IN" # lapsiin (to children)
+"{^siin}" : "S*IN" # kotoisiin (to the homely)
 
 "{^lla}": "L-La" # adessive
 "{^lta}": "L-Ta" # ablative
 "{^lle}": "L-Le" # allative
 "{^tta}": "T-Ta" # abessive
 "{^ne}" : "-Ne"  # comitative
+
+# possessive suffixes
+"{^ni}": "-Ni"
+"{^si}": "-Si"
+"{^nsa}": "-NSa"
+"{^mme}": "-SHe"
+"{^nne}": "-Ne"
