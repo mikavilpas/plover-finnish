@@ -90,6 +90,28 @@ attrs = ">= 17.4.0.0"
 setuptools = "*"
 pluggy = "< 0.7.0.0, >= 0.5.0.0"
 [[package]]
+category = "main"
+platform = "*"
+version = "0.4.13"
+name = "ruamel-ordereddict"
+python-versions = "*"
+optional = false
+description = "a version of dict that keeps keys in insertion resp. sorted order"
+
+[package.requirements]
+python = "<=2.7"
+[[package]]
+category = "main"
+platform = "*"
+version = "0.15.37"
+name = "ruamel-yaml"
+python-versions = "*"
+optional = false
+description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
+
+[package.dependencies]
+"ruamel.ordereddict" = "*"
+[[package]]
 category = "dev"
 platform = "*"
 version = "1.11.0"
@@ -97,6 +119,15 @@ name = "six"
 python-versions = "*"
 optional = false
 description = "Python 2 and 3 compatibility utilities"
+
+[[package]]
+category = "main"
+platform = "*"
+version = "0.9.0"
+name = "toolz"
+python-versions = "*"
+optional = false
+description = "List processing tools and functional utilities"
 
 [[package]]
 category = "main"
@@ -110,12 +141,14 @@ description = "Python 3 version of libvoikko and the word inflecting library"
 [metadata]
 platform = "*"
 python-versions = "*"
-content-hash = "4ba5577f9208cab2cacbc717460131cce67751196b84b8072b94a5349f8f7f00"
+content-hash = "c2bf99719dfa4dcbef581d0c4af587ed8456cd5361450181a8915612fbcb2c77"
 
 [metadata.hashes]
+ruamel-ordereddict = [ "150ce8e6c514a2a2b62753622a75874962561f8e5eeec81a3172ab952807bf0b", "45541836cbfdde630033cae7bbbe35acbac87a0ceec79f944b7a3bedd940fe78", "aee2fa23e884249b4284b728888c553d551e5bfd4de2731f10153fd7813ec55f", "08b4b19fe518d32251a5338e039c4dc9eb0876f2919f94c9b8d2f9446ea80806", "bf0a198c8ce5d973c24e5dba12d3abc254996788ca6ad8448eabc6aa710db149",]
 more-itertools = [ "11a625025954c20145b37ff6309cd54e39ca94f72f6bb9576d1195db6fa2442e", "0dd8f72eeab0d2c3bd489025bb2f6a1b8342f9b198f6fc37b52d15cfa4531fea", "c9ce7eccdcb901a2c75d326ea134e0886abfbea5f93e91cc95de9507c0816c44",]
 six = [ "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb", "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",]
 funcsigs = [ "330cc27ccbf7f1e992e69fef78261dc7c6569012cf397db8d3de0234e6c937ca", "a7bb0f2cf3a3fd1ab2732cb49eba4252c2af4240442415b4abce3b87022a8f50",]
+ruamel-yaml = [ "e4d53f6a0c21d8effc23371927e8569096d0364d7c703b2e6956c6281b6bde2c", "4b1929101d09612e0c7a42fbe06b0f929a4a89e1d14832353c1eb073580d3ba6", "181699cc08b157ef8a59a77e96a01b5ffa150044ed4e49fd98428ab9ac0e6ed9", "b6bc5f434d72a672dbe48471e70771789d5d93603716c9e36963fe1dc7a35718", "6932e1ad63c805a41665a94e5d7b70808e9e25943f72afba6d327fede2aeb43d", "dc051cd1fe541e321f6846bddba8e2c0de8ca409d51a6d9917c7b970d8d89a3d", "656dcd3d30774ffe252e46db96f4cf24b284d42c904b93f9cbe6b234028f7d2e", "039bb5b50a2f3b17c969ed1d381e050bca851e3c13fe8c2a9ad18f605ca111a5", "f5ef82b8efe378de6abb7042263d6f407b0760ad923ed477fa26007b1fa0e563", "cea830caa479ae083f51ffdb55fe430a2763e853a7b06195f203db6d28bf5264", "882cacb8af5f7009780da75041ef131d0ec80d9e0b81d3cf8d4b49a0a33fe6ef", "1d46053cb7acf0cd6b375e34abfb94f2e97c39269c17eb8b0226fe8a470c4ced", "2d1df676ac75fb5e0af7b91f7718a4b4f469a5d8ac4150edecc61f063283bbee", "759b485e8cda260bd87b7cdd2ad936a0ec359ee6154a9d856357446792b3faf5", "7afefe5dab4381393a2aa7ccb585ffd6080d52e7cd05f1df3788e9d0e4dfcea9", "766ee90985c667f77bf34950b1d945624c263ecb82d859961f78effb3355c946", "509842d96fb194f79b57483b76429f8956d8f7ade3cb49d1e5aeb5c5e9ef4918",]
 py = [ "983f77f3331356039fdd792e9220b7b8ee1aa6bd2b25f567a963ff1de5a64f6a", "29c9fab495d7528e80ba1e343b958684f4ace687327e6f789a94bf3d1915f881",]
 voikko = [ "c1e2b2f12374c208e8b2834c98569de3a2c137c9c8ba4000fe93acac7e0fb48f", "47b15b3e6b9335f99e155b6d7d571e73e880065f5579e3d8d3fa8d0270e254ba",]
 pytest = [ "829230122facf05a5f81a6d4dfe6454a04978ea3746853b2b84567ecf8e5c526", "54713b26c97538db6ff0703a12b19aeaeb60b5e599de542e7fca0ec83b9038e8",]
@@ -123,3 +156,4 @@ colorama = [ "463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda",
 attrs = [ "4b90b09eeeb9b88c35bc642cbac057e45a5fd85367b985bd2809c62b7b939265", "e0d0eb91441a3b53dab4d9b743eafc1ac44476296a2053b6ca3af0b139faf87b",]
 ordereddict = [ "1c35b4ac206cef2d24816c89f89cf289dd3d38cf7c449bb3fab7bf6d43f01b1f",]
 pluggy = [ "d345c8fe681115900d6da8d048ba67c25df42973bda370783cd58826442dcd7c", "e160a7fcf25762bb60efc7e171d4497ff1d8d2d75a3d0df7a21b76821ecbf5c5", "7f8ae7f5bdf75671a718d2daf0a64b7885f74510bcd98b1a0bb420eb9a9d0cff",]
+toolz = [ "929f0a7ea7f61c178bd951bdae93920515d3fbdbafc8e6caf82d752b9b3b31c9",]
