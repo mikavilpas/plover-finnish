@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "stroke_dictionary_creator"
+version = "0.1.0"
+description = ""
+authors = ["Mika Vilpas <mika.vilpas@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+voikko = "^0.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"

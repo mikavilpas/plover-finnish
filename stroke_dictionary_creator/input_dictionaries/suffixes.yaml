@@ -1,0 +1,47 @@
+# single ending vowels
+"{^a}": "-a"
+"{^e}": "-e"
+"{^i}": "-i"
+"{^o}": "-o"
+"{^u}": "-u"
+
+# ending diphtongs
+"{^ui}": "-ui"
+"{^ua}": "-ua"
+"{^ei}": "-ei"
+"{^ea}": "-ea"
+"{^oi}": "-oi"
+"{^oa}": "-oa"
+"{^ia}": "-ia"
+
+# ending vowel sound shortcuts.
+"{^-oia}": "-oja" # kutoja (weaver)
+"{^-eia}": "-eja" # lakeja (laws)
+"{^-eoia}": "-uja" # hattuja (hats)
+
+"{^n}": "-N"
+"{^t}": "-T"
+
+# genitive
+"{^en}": "-EN" # koirien (dogs')
+"{^in}": "-IN"
+"{^den}": "TKEN"
+"{^ten}": "-TEN"
+
+"{^ta}": "-Ta" # partitive
+"{^na}": "-Na" # essive
+"{^ksi}": "-KSi" # translative
+"{^ssa}": "SSa" # inessive
+"{^sta}": "STa" # elative
+
+# illative
+"{^seen}" : "S*EN" # pohjoiseen (to the North)
+"{^in}"   :   "IN" # koti+in (to home)
+"{^hin}"  :  "HIN" # koti+hin (to home)
+"{^siin}" : "S*IN" # lapsiin (to children)
+
+"{^lla}": "L-La" # adessive
+"{^lta}": "L-Ta" # ablative
+"{^lle}": "L-Le" # allative
+"{^tta}": "T-Ta" # abessive
+"{^ne}" : "-Ne"  # comitative
