@@ -11,9 +11,7 @@ KEYS = (
 
 IMPLICIT_HYPHEN_KEYS = ('A-', 'O-', '5-', '0-', '-E', '-I', '*')
 
-# TODO end vowels could be considered suffixes
-# SUFFIX_KEYS = ('-S', '-G', '-Z', '-D')
-SUFFIX_KEYS = ()
+SUFFIX_KEYS = ["-e", "-o", "-i", "-a"]
 
 NUMBER_KEY = '#'
 

@@ -1,3 +1,13 @@
 {
-    "EI": "ei"
+    "EI": "ei",
+    "KOIRa": "koira",
+    "KOIRi": "koiri",
+    "S-Sa": "{^ssa}",
+    "-STa": "{^sta}",
+    "AN": "{^an}",
+    "IN": "{^in}",
+    "ON": "on",
+    "EN": "{^en}",
+    "HR-NSTa": "{^lla}",
+    "HR-NSTe": "{^lle}"
 }
