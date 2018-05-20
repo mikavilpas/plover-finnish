@@ -203,5 +203,8 @@ KEYMAPS = {
     },
 }
 
-DICTIONARIES_ROOT = 'asset:plover_finnish:assets'
-DEFAULT_DICTIONARIES = ('user_finnish.json',)
+# DICTIONARIES_ROOT and DEFAULT_DICTIONARIES define the location of
+# the dictionaries included to be used with this system by default.
+# The dictionaries listed earlier have priority when used.
+DICTIONARIES_ROOT = 'asset:plover_finnish:dictionaries'
+DEFAULT_DICTIONARIES = [ 'user_finnish.json', 'plover_finnish.json' ]
