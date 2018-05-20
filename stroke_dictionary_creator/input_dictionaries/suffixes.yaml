@@ -36,7 +36,8 @@
 
 # illative
 "{^seen}" : "S*EN" # pohjoiseen (to the North)
-"{^in}"   :   "IN" # koti+in (to home)
+# already defined for the genitive
+# "{^in}"   :   "IN" # koti+in (to home)
 "{^hin}"  :  "HIN" # koti+hin (to home)
 "{^siin}" : "S*IN" # kotoisiin (to the homely)
 
