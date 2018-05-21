@@ -14,7 +14,10 @@ def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
                   indent = 2,
                   sort_keys = False)
 
-def merge_dictionaries(dictionaries):
+def reverse_keys_and_values(dictionaries):
+    return {v: k for k, v in dictionaries.items()}
+
+def combine(dictionaries):
     # in case of conflicts, keeps the values specified earlier in the order of
     # dicts
 
@@ -38,7 +41,8 @@ def main():
 
     flat_dictionary = functoolz.thread_first(
         load_dictionaries_from_path(input_path),
-        merge_dictionaries)
+        combine,
+        reverse_keys_and_values)
 
     output_path = "../output/plover_finnish_output.json"
     print("Input dictionaries read.")
