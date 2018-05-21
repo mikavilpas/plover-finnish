@@ -3,11 +3,11 @@
 "{^e}": "-e"
 "{^i}": "-i"
 "{^o}": "-o"
-"{^u}": "-u"
+"{^u}": "-eo"
 
 # ending diphtongs
-"{^ui}": "-ui"
-"{^ua}": "-ua"
+"{^ui}": "-eoi"
+"{^ua}": "-eoa"
 "{^ei}": "-ei"
 "{^ea}": "-ea"
 "{^oi}": "-oi"
@@ -15,9 +15,9 @@
 "{^ia}": "-ia"
 
 # ending vowel sound shortcuts.
-"{^-oia}": "-oja" # kutoja (weaver)
-"{^-eia}": "-eja" # lakeja (laws)
-"{^-eoia}": "-uja" # hattuja (hats)
+"{^oja}": "-oia" # kutoja (weaver)
+"{^eja}": "-eia" # lakeja (laws)
+"{^uja}": "-eoia" # hattuja (hats)
 
 "{^n}": "-N"
 "{^t}": "-T"
