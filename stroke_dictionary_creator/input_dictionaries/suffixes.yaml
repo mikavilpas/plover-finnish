@@ -53,3 +53,13 @@
 "{^nsa}": "-NSa"
 "{^mme}": "-SHe"
 "{^nne}": "-Ne"
+
+# clitics
+# https://fi.wikipedia.org/wiki/Liitepartikkeli
+"{^ko}" : "-Ko"
+"{^ka}" : "-Ka"
+"{^kin}" : "KIN"
+"{^kaan}": "KA*N"
+"{^pa}": "P-a"
+"{^han}": "HAN"
+"{^s}": "-S"
