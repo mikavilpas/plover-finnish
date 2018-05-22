@@ -37,14 +37,13 @@
 
 # illative
 "{^seen}" : S*EN # pohjoiseen (to the North)
-# already defined for the genitive
-# "{^in}"   :   IN # koti+in (to home)
+# "in" is already defined for the genitive
 "{^hin}"  :  HIN # koti+hin (to home)
 "{^siin}" : S*IN # kotoisiin (to the homely)
 
-"{^lla}": L-La # adessive
-"{^lta}": L-Ta # ablative
-"{^lle}": L-Le # allative
+"{^lla}": HR-NSTa # adessive
+"{^lta}": HR-Ta # ablative
+"{^lle}": HR-NSTe # allative
 "{^tta}": T-Ta # abessive
 "{^ne}" : -Ne  # comitative
 
