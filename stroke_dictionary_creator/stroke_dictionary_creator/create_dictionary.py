@@ -22,14 +22,16 @@ def reverse_keys_and_values(dictionaries):
 # can be found in the file /plugin/plover_finnish/plover_finnish/system.py
 finnish_steno_order = "STKPVHRAO*EINKSHTReoia"
 
-def assert_stroke_has_valid_keys(word, stroke):
+def assert_stroke_has_valid_characters(word, stroke):
+    # consider - a valid character
+    valid_characters = finnish_steno_order + "-"
     for c in stroke:
-        check(c)\
-            .is_in(finnish_steno_order)\
-            .or_raise(Exception, "The word '%s' with the stroke '%s' contains an unknown character '%s'" % (word, stroke, c))
+        if not check(c).is_in(valid_characters):
+            error_msg = "The word {} and its stroke {} contains the unknown character {}".format(word, stroke, c)
+            raise Exception(error_msg)
 
 def assert_stroke_writable(word, stroke):
-    assert_stroke_has_valid_keys(word, stroke)
+    assert_stroke_has_valid_characters(word, stroke)
 
 def assert_dictionary_valid(dictionary):
     for word, stroke in dictionary.items():
@@ -74,7 +76,7 @@ def main():
     write_as_json_stroke_dictionary(output_path, flat_dictionary)
     print("")
     print("%s strokes total." % len(flat_dictionary))
-    return 0 # no error
+    return 0 # no error_msg
 
 if __name__ == '__main__':
     sys.exit(main())
