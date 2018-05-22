@@ -23,8 +23,8 @@
 
 # genitive
 "{^n}": -N
-"{^en}": -EN # koirien (dogs')
-"{^in}": -IN
+"{^en}": EN # koirien (dogs')
+"{^in}": IN
 "{^den}": TKEN
 "{^dän}": TKAN
 "{^ten}": TEN

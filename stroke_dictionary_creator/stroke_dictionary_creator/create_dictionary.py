@@ -53,7 +53,7 @@ def main():
 
     output_path = "../../plugin/plover_finnish/plover_finnish/dictionaries/plover_finnish.json"
     print("")
-    print("Input dictionaries read.")
+    print("Input dictionaries read. All strokes valid.")
     write_as_json_stroke_dictionary(output_path, flat_dictionary)
     print("")
     print("%s strokes total." % len(flat_dictionary))
