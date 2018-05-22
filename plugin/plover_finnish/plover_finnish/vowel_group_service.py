@@ -37,3 +37,22 @@ def switch_vowel_group(word):
 
     # group not recognized, cannot switch it
     return word
+
+def change_to_same_vowel_group(reference_word, word):
+    """Changes word to the same vowel group reference_word is in. For example,
+    paasto+ssa -> paastossa, but päästö+ssa -> päästössä (ending a and ä
+    match).
+
+    Returns the changed word, or unchanged if it's in the same group already,
+    or in neither group.
+
+    """
+    reference_group = vowel_group(reference_word)
+    word_group = vowel_group(word)
+
+    if reference_group is None or word_group is None:
+        return word # cannot determine a change to be made
+    if reference_group == word_group:
+        return word
+    else:
+        return switch_vowel_group(word)

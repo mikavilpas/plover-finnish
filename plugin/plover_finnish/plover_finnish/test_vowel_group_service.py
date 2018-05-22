@@ -20,3 +20,8 @@ class TestVowelGroupService(unittest.TestCase):
 
         # a word that belongs to neither group should be unchanged
         ensure(switch_vowel_group("kiire")).equals("kiire")
+
+    def test_change_to_same_vowel_group(self):
+        ensure(change_to_same_vowel_group("paasto", "ssa")).equals("ssa")
+        ensure(change_to_same_vowel_group("päästö", "ssa")).equals("ssä")
+        ensure(change_to_same_vowel_group("päästö", "ssa")).equals("ssä")
