@@ -90,9 +90,9 @@ The diphtong "ae" doesn't exist in Finnish, so it can be used for other things.
 
 ## A stroke to switch the vocal harmony group to the opposite one
 
-In the following, the Finnish vowel harmony is accounted for with the notation
-`2(4)`, indicating 4 different vowel sounds (for example `a, u, ä, y`), but
-which is possible to reduce down to 2 forms of writing.
+Finnish has 8 vowels: `auo,ei,äyö`. To save space on the layout,
+only the first 5 can be written explicitly. The others are reachable only in
+specific words, or by switching the left and right vowel groups:
 
 | Strokes        | Finnish          | English                         | Notes |
 | ----           | ----             | ----                            | ----  |
@@ -101,11 +101,10 @@ which is possible to reduce down to 2 forms of writing.
 
 This is based on the idea that:
 
-* `A` and `Ä` both never occur in the same word
-* in case of a stroke conflict, the more common word is chosen
+* `AUO` and `ÄYÖ` never occur in the same word
+* in case of a stroke conflict, the more common word is chosen (it has the stroke)
 * if a common word is not found, use the AOU variant if it exists
-* if one doesn't exist, use the ÄÖY variant
-* in case the wrong word was guessed, the writer can change the vowel group to
+* in case the wrong word was written, the user can change the vowel group to
   the opposite one. For example the word "paasto" (fast, as in the act of
   fasting) could be chosen, but can be changed afterward to be the word "päästö"
   (emission)
