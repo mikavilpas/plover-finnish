@@ -4,7 +4,6 @@ import os
 from ruamel.yaml import YAML
 import glob
 from toolz import functoolz
-from functools import reduce
 import json
 
 def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
@@ -25,10 +24,10 @@ def validate(dictionary):
 def combine(dictionaries):
     # in case of conflicts, keeps the values specified earlier in the order of
     # dicts
-
-    # TODO report if there are any duplicates
-
-    return reduce(lambda result, x: result.update(x), dictionaries)
+    combined = {}
+    for d in dictionaries:
+        combined.update(d)
+    return combined
 
 def load_file_as_yaml(filepath):
     with open(filepath) as f:
