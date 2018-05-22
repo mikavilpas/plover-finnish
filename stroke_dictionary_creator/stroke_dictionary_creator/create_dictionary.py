@@ -5,6 +5,7 @@ from ruamel.yaml import YAML
 import glob
 from toolz import functoolz
 import json
+from ensure import check
 
 def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
     print("Writing output to: %s" % destination)
@@ -18,7 +19,21 @@ def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
 def reverse_keys_and_values(dictionaries):
     return {v: k for k, v in dictionaries.items()}
 
-def validate(dictionary):
+# can be found in the file /plugin/plover_finnish/plover_finnish/system.py
+finnish_steno_order = "STKPVHRAO*EINKSHTReoia"
+
+def assert_stroke_has_valid_keys(word, stroke):
+    for c in stroke:
+        check(c)\
+            .is_in(finnish_steno_order)\
+            .or_raise(Exception, "The word '%s' with the stroke '%s' contains an unknown character '%s'" % (word, stroke, c))
+
+def assert_stroke_writable(word, stroke):
+    assert_stroke_has_valid_keys(word, stroke)
+
+def assert_dictionary_valid(dictionary):
+    for word, stroke in dictionary.items():
+        assert_stroke_writable(word, stroke)
     return dictionary
 
 def combine(dictionaries):
@@ -49,8 +64,8 @@ def main():
 
     flat_dictionary = functoolz.thread_first(
         load_dictionaries_from_path(input_path),
-        validate,
         combine,
+        assert_dictionary_valid,
         reverse_keys_and_values)
 
     output_path = "../../plugin/plover_finnish/plover_finnish/dictionaries/plover_finnish.json"
