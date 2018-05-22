@@ -9,6 +9,9 @@ def steno_sequence(charmap):
     # - not present in the given charmap
     # - given in the reverse (steno) order defined in charmap
     # If nothing matches, raises a ParseError like most parsers by default.
+
+    # Create successive and optional parsers for each successive steno key.
+    # Then join their results into one string.
     char_sequence_parsers = [(string(c) | success("")) for c in charmap]
     return seq(*char_sequence_parsers).map(join)
 
