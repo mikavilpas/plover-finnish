@@ -59,5 +59,6 @@
   "KIN": "{^kin}",
   "KA*N": "{^kaan}",
   "P-a": "{^pa}",
-  "-S": "{^s}"
+  "-S": "{^s}",
+  "AE": "{:change_vowel_harmony_group:args}"
 }

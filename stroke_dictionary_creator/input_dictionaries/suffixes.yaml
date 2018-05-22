@@ -63,3 +63,5 @@
 "{^pa}": P-a
 "{^han}": HAN
 "{^s}": -S
+
+"{:change_vowel_harmony_group:args}": AE
