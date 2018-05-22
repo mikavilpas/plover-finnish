@@ -26,8 +26,8 @@ class TestParser(unittest.TestCase):
         ensure(middle_keys.parse("A*E")).equals("A*E")
         ensure(middle_keys.parse("*I")).equals("*I")
 
-        # A missing middle vowel is a "-"
-        ensure(middle_keys.parse("")).equals("-")
+        # A missing middle key is a "-"
+        ensure(middle_keys.parse("-")).equals("-")
 
     def test_end_keys(self):
         ensure(end_keys.parse("NKST")).equals("NKST")
@@ -36,4 +36,10 @@ class TestParser(unittest.TestCase):
         ensure(end_keys.parse("")).equals("")
 
     def test_stroke(self):
-        ensure(end_keys.parse("MIKa")).equals("MIKa")
+        # combinations of left, middle and right keys should work
+        ensure(stroke.parse("P-")).equals("P-")
+        ensure(stroke.parse("I")).equals("I")
+        ensure(stroke.parse("-i")).equals("-i")
+
+        # Mika
+        ensure(stroke.parse("PHIKa")).equals("PHIKa")
