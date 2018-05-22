@@ -41,5 +41,7 @@ class TestParser(unittest.TestCase):
         ensure(stroke.parse("I")).equals("I")
         ensure(stroke.parse("-i")).equals("-i")
 
-        # Mika
+        # mikä
         ensure(stroke.parse("PHIKa")).equals("PHIKa")
+        # Miika
+        ensure(stroke.parse("PH*IKa")).equals("PH*IKa")
