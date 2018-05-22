@@ -1,0 +1,25 @@
+from ensure import check
+import parser
+
+# can be found in the file /plugin/plover_finnish/plover_finnish/system.py
+finnish_steno_order = "STKPVHRAO*EINKSHTReoia"
+
+def assert_stroke_has_valid_characters(word, stroke):
+    # consider - a valid character
+    valid_characters = finnish_steno_order + "-"
+    for c in stroke:
+        if not check(c).is_in(valid_characters):
+            error_msg = "The word {} and its stroke {} contains the unknown character {}".format(word, stroke, c)
+            raise Exception(error_msg)
+
+def assert_stroke_writable(word, stroke):
+    assert_stroke_has_valid_characters(word, stroke)
+
+def assert_no_duplicate_keys_used(word, stroke):
+    pass
+
+def assert_dictionary_valid(dictionary):
+    for word, stroke in dictionary.items():
+        assert_stroke_writable(word, stroke)
+        assert_no_duplicate_keys_used(word, stroke)
+    return dictionary
