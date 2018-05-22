@@ -2,3 +2,4 @@
 __pycache__
 /stroke_dictionary_creator/.pytest_cache
 /stroke_dictionary_creator/stroke_dictionary_creator/.pytest_cache/
+/plugin/plover_finnish/.pytest_cache/
