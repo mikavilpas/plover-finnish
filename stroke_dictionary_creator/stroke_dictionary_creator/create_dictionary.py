@@ -5,7 +5,7 @@ from ruamel.yaml import YAML
 import glob
 from toolz import functoolz
 import json
-from ensure import check
+import stroke_validation as validation
 
 def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
     print("Writing output to: %s" % destination)
@@ -18,25 +18,6 @@ def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
 
 def reverse_keys_and_values(dictionaries):
     return {v: k for k, v in dictionaries.items()}
-
-# can be found in the file /plugin/plover_finnish/plover_finnish/system.py
-finnish_steno_order = "STKPVHRAO*EINKSHTReoia"
-
-def assert_stroke_has_valid_characters(word, stroke):
-    # consider - a valid character
-    valid_characters = finnish_steno_order + "-"
-    for c in stroke:
-        if not check(c).is_in(valid_characters):
-            error_msg = "The word {} and its stroke {} contains the unknown character {}".format(word, stroke, c)
-            raise Exception(error_msg)
-
-def assert_stroke_writable(word, stroke):
-    assert_stroke_has_valid_characters(word, stroke)
-
-def assert_dictionary_valid(dictionary):
-    for word, stroke in dictionary.items():
-        assert_stroke_writable(word, stroke)
-    return dictionary
 
 def combine(dictionaries):
     # in case of conflicts, keeps the values specified earlier in the order of
@@ -67,7 +48,7 @@ def main():
     flat_dictionary = functoolz.thread_first(
         load_dictionaries_from_path(input_path),
         combine,
-        assert_dictionary_valid,
+        validation.assert_dictionary_valid,
         reverse_keys_and_values)
 
     output_path = "../../plugin/plover_finnish/plover_finnish/dictionaries/plover_finnish.json"

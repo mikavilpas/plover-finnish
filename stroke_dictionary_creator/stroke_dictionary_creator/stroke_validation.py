@@ -1,5 +1,6 @@
 from ensure import check
-import parser
+import stroke_parser
+import parsy
 
 # can be found in the file /plugin/plover_finnish/plover_finnish/system.py
 finnish_steno_order = "STKPVHRAO*EINKSHTReoia"
@@ -16,7 +17,11 @@ def assert_stroke_writable(word, stroke):
     assert_stroke_has_valid_characters(word, stroke)
 
 def assert_no_duplicate_keys_used(word, stroke):
-    pass
+    try:
+        stroke_parser.stroke.parse(stroke)
+    except parsy.ParseError as e:
+        msg = "Error with the word {} and its stroke {}".format(word, stroke)
+        raise Exception(msg, e)
 
 def assert_dictionary_valid(dictionary):
     for word, stroke in dictionary.items():
