@@ -1,9 +1,17 @@
 # pronouns
-# HAN is used for the -han and -hän clitics.
-# that is what gave the idea to have the all "logically" briefed the same way.
-"minä": "PH-"
-"sinä": "S-"
-"hän": "H-"
-"me": "PH-e"
-"te": "T-e"
-"he": "H-e"
+minä: PHINa
+minu: PHINu
+minua: PHINua
+sinä: SINa
+sinu: SINu
+sinua: SINua
+hän: HAn
+häne: HAne
+me: PH-e
+mei: PH-ei
+te: T-e
+tei: T-ei
+he: H-e
+hei: H-ei
+ne: TPH-e
+nii: TPHIi

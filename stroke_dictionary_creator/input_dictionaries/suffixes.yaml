@@ -1,65 +1,65 @@
 # single ending vowels
-"{^a}": "-a"
-"{^e}": "-e"
-"{^i}": "-i"
-"{^o}": "-o"
-"{^u}": "-eo"
+"{^a}": -a
+"{^e}": -e
+"{^i}": -i
+"{^o}": -o
+"{^u}": -eo
 
 # ending diphtongs
-"{^ui}": "-eoi"
-"{^ua}": "-eoa"
-"{^ei}": "-ei"
-"{^ea}": "-ea"
-"{^oi}": "-oi"
-"{^oa}": "-oa"
-"{^ia}": "-ia"
+"{^ui}": -eoi
+"{^ua}": -eoa
+"{^ei}": -ei
+"{^ea}": -ea
+"{^oi}": -oi
+"{^oa}": -oa
+"{^ia}": -ia
 
 # ending vowel sound shortcuts.
-"{^oja}": "-oia" # kutoja (weaver)
-"{^eja}": "-eia" # lakeja (laws)
-"{^uja}": "-eoia" # hattuja (hats)
+"{^oja}": -oia # kutoja (weaver)
+"{^eja}": -eia # lakeja (laws)
+"{^uja}": -eoia # hattuja (hats)
 
-"{^n}": "-N"
-"{^t}": "-T"
+"{^n}": -N
+"{^t}": -T
 
 # genitive
-"{^en}": "-EN" # koirien (dogs')
-"{^in}": "-IN"
-"{^den}": "TKEN"
-"{^ten}": "-TEN"
+"{^en}": -EN # koirien (dogs')
+"{^in}": -IN
+"{^den}": TKEN
+"{^ten}": -TEN
 
-"{^ta}": "-Ta" # partitive
-"{^na}": "-Na" # essive
-"{^ksi}": "-KSi" # translative
-"{^ssa}": "SSa" # inessive
-"{^sta}": "STa" # elative
+"{^ta}": -Ta # partitive
+"{^na}": -Na # essive
+"{^ksi}": -KSi # translative
+"{^ssa}": SSa # inessive
+"{^sta}": STa # elative
 
 # illative
-"{^seen}" : "S*EN" # pohjoiseen (to the North)
+"{^seen}" : S*EN # pohjoiseen (to the North)
 # already defined for the genitive
-# "{^in}"   :   "IN" # koti+in (to home)
-"{^hin}"  :  "HIN" # koti+hin (to home)
-"{^siin}" : "S*IN" # kotoisiin (to the homely)
+# "{^in}"   :   IN # koti+in (to home)
+"{^hin}"  :  HIN # koti+hin (to home)
+"{^siin}" : S*IN # kotoisiin (to the homely)
 
-"{^lla}": "L-La" # adessive
-"{^lta}": "L-Ta" # ablative
-"{^lle}": "L-Le" # allative
-"{^tta}": "T-Ta" # abessive
-"{^ne}" : "-Ne"  # comitative
+"{^lla}": L-La # adessive
+"{^lta}": L-Ta # ablative
+"{^lle}": L-Le # allative
+"{^tta}": T-Ta # abessive
+"{^ne}" : -Ne  # comitative
 
 # possessive suffixes
-"{^ni}": "-Ni"
-"{^si}": "-Si"
-"{^nsa}": "-NSa"
-"{^mme}": "-SHe"
-"{^nne}": "-Ne"
+"{^ni}": -Ni
+"{^si}": -Si
+"{^nsa}": -NSa
+"{^mme}": -SHe
+"{^nne}": -Ne
 
 # clitics
 # https://fi.wikipedia.org/wiki/Liitepartikkeli
-"{^ko}" : "-Ko"
-"{^ka}" : "-Ka"
-"{^kin}" : "KIN"
-"{^kaan}": "KA*N"
-"{^pa}": "P-a"
-"{^han}": "HAN"
-"{^s}": "-S"
+"{^ko}" : -Ko
+"{^ka}" : -Ka
+"{^kin}" : KIN
+"{^kaan}": KA*N
+"{^pa}": P-a
+"{^han}": HAN
+"{^s}": -S
