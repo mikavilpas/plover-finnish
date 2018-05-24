@@ -26,3 +26,19 @@ def change_vowel_harmony_group(context, meta_args: str):
     action.trailing_space = ''
 
     return action
+
+def suffix_in_same_vowel_harmony_group(context, suffix: str):
+    """Adds a suffix to the current word that has the matching vocal harmony group
+    as the word. For example, paasto+ssa -> paastossa, but päästö+ssa ->
+    päästössä (notice the ending a and ä are matched to the word).
+    """
+    last_word = context.last_action.word or ''
+    action = context.new_action()
+    action.prev_attach = True
+
+    new_suffix = vowel_group_service.change_to_same_vowel_group(last_word, suffix)
+    new_word = last_word + new_suffix
+
+    action.word = action.text = new_word
+
+    return action

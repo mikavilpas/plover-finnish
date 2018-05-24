@@ -32,7 +32,7 @@
 "{^ta}": -Ta # partitive
 "{^na}": -Na # essive
 "{^ksi}": -KSi # translative
-"{^ssa}": S-Sa # inessive
+"{:suffix_in_same_vowel_harmony_group:ssä}": S-Sa # inessive
 "{^sta}": S-Ta # elative
 
 # illative
