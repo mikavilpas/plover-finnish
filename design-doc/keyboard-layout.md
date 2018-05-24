@@ -191,7 +191,7 @@ Not all consonants are supported on this side.
 | Strokes | character | Notes                                  |
 | ----    | ----      | ----                                   |
 | `-H`    | h         |                                        |
-| `-K`    | k         | k                                      |
+| `-K`    | k         |                                        |
 | `-NST`  | l         |                                        |
 | `-SH`   | m         |                                        |
 | `-N`    | n         |                                        |
