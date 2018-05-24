@@ -12,3 +12,9 @@ class TestGenerators(unittest.TestCase):
         ensure(middle_vowel.parse("y")).equals("AO")
         ensure(middle_vowel.parse("ä")).equals("A")
         ensure(middle_vowel.parse("ö")).equals("O")
+
+    def test_end_vowel(self):
+        ensure(end_vowel.parse("e")).equals("e")
+        ensure(end_vowel.parse("o")).equals("o")
+        ensure(end_vowel.parse("i")).equals("i")
+        ensure(end_vowel.parse("a")).equals("a")

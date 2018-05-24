@@ -1,8 +1,7 @@
 from parsy import *
 
-def chord(keys): return lambda _: keys.upper()
-def vowel(key, steno_key):
-    return string(key).map(chord(steno_key))
+def vowel(key, chord):
+    return string(key).map(lambda _: chord)
 
 vowel_A = vowel("a", "A")
 vowel_O = vowel("o", "O")
@@ -14,3 +13,10 @@ vowel_Ä = vowel("ä", "A")
 vowel_Ö = vowel("ö", "O")
 
 middle_vowel = vowel_A | vowel_O | vowel_E | vowel_I | vowel_U | vowel_Y | vowel_Ä | vowel_Ö
+
+end_vowel_e = vowel("e", "e")
+end_vowel_o = vowel("o", "o")
+end_vowel_i = vowel("i", "i")
+end_vowel_a = vowel("a", "a")
+
+end_vowel = end_vowel_e | end_vowel_o | end_vowel_i | end_vowel_a
