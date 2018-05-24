@@ -19,11 +19,24 @@ def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
 def reverse_keys_and_values(dictionaries):
     return {v: k for k, v in dictionaries.items()}
 
+def warn_about_conflicts(new_dict, target_dict):
+    new_strokes = set(new_dict.values())
+    target_strokes = set(target_dict.values())
+
+    conflicting_strokes = new_strokes.intersection(target_strokes)
+
+    for stroke in conflicting_strokes:
+        new_words = [w for w, s in new_dict.items() if s == stroke]
+        target_words = [w for w, s in target_dict.items() if s == stroke]
+        print("Warning: multiple words defined for the stroke {}".format(stroke))
+        print(list(set(new_words + target_words)))
+
 def combine(dictionaries):
-    # in case of conflicts, keeps the values specified earlier in the order of
+    # in case of conflicting_strokes, keeps the values specified earlier in the order of
     # dicts
     combined = {}
     for d in dictionaries:
+        warn_about_conflicts(d, combined)
         combined.update(d)
     return combined
 
