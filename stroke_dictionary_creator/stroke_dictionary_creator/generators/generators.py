@@ -85,6 +85,10 @@ end_triphtong = end_triphtong_uja | end_triphtong_ija | end_triphtong_oja
 
 
 
+final_consonant_l = morpheme("l", "NST")
+final_consonant_m = morpheme("m", "SH")
+final_consonant_p = morpheme("p", "HR")
+final_consonant_v = morpheme("v", "SR")
 final_consonant_n = morpheme("n", "N")
 final_consonant_k = morpheme("k", "K")
 final_consonant_s = morpheme("s", "S")
@@ -92,7 +96,9 @@ final_consonant_h = morpheme("h", "H")
 final_consonant_t = morpheme("t", "T")
 final_consonant_r = morpheme("r", "R")
 
-final_consonant = final_consonant_n | final_consonant_k | final_consonant_s \
+final_consonant = final_consonant_l | final_consonant_m | final_consonant_p \
+                  | final_consonant_v \
+                  | final_consonant_n | final_consonant_k | final_consonant_s \
                   | final_consonant_h | final_consonant_t | final_consonant_r
 
 

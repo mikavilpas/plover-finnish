@@ -64,6 +64,11 @@ class TestGenerators(unittest.TestCase):
         ensure(end_triphtong.parse("oja")).equals("oia")
 
     def test_final_consonant(self):
+        ensure(final_consonant.parse("l")).equals("NST")
+        ensure(final_consonant.parse("m")).equals("SH")
+        ensure(final_consonant.parse("p")).equals("HR")
+        ensure(final_consonant.parse("v")).equals("SR")
+
         ensure(final_consonant.parse("n")).equals("N")
         ensure(final_consonant.parse("k")).equals("K")
         ensure(final_consonant.parse("s")).equals("S")
