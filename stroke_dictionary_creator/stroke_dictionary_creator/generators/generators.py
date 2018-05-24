@@ -71,3 +71,25 @@ end_triphtong_ija = morpheme("ija", "eia")
 end_triphtong_oja = morpheme("oja", "oia")
 
 end_triphtong = end_triphtong_uja | end_triphtong_ija | end_triphtong_oja
+
+
+
+final_consonant_n = morpheme("n", "N")
+final_consonant_k = morpheme("k", "K")
+final_consonant_s = morpheme("s", "S")
+final_consonant_h = morpheme("h", "H")
+final_consonant_t = morpheme("t", "T")
+final_consonant_r = morpheme("r", "R")
+
+final_consonant = final_consonant_n | final_consonant_k | final_consonant_s \
+                  | final_consonant_h | final_consonant_t | final_consonant_r
+
+
+
+long_vowel_a = morpheme("aa", "A*")
+long_vowel_u = morpheme("uu", "AO*")
+long_vowel_o = morpheme("oo", "O*")
+long_vowel_e = morpheme("ee", "*E")
+long_vowel_i = morpheme("ii", "*I")
+
+long_vowel = long_vowel_a | long_vowel_u | long_vowel_o | long_vowel_e | long_vowel_i

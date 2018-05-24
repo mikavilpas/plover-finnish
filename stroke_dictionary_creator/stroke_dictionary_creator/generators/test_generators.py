@@ -54,3 +54,18 @@ class TestGenerators(unittest.TestCase):
         ensure(end_triphtong.parse("ija")).equals("eia")
         ensure(end_triphtong.parse("uja")).equals("eoia")
         ensure(end_triphtong.parse("oja")).equals("oia")
+
+    def test_final_consonant(self):
+        ensure(final_consonant.parse("n")).equals("N")
+        ensure(final_consonant.parse("k")).equals("K")
+        ensure(final_consonant.parse("s")).equals("S")
+        ensure(final_consonant.parse("h")).equals("H")
+        ensure(final_consonant.parse("t")).equals("T")
+        ensure(final_consonant.parse("r")).equals("R")
+
+    def test_long_vowel(self):
+        ensure(long_vowel.parse("aa")).equals("A*")
+        ensure(long_vowel.parse("uu")).equals("AO*")
+        ensure(long_vowel.parse("oo")).equals("O*")
+        ensure(long_vowel.parse("ee")).equals("*E")
+        ensure(long_vowel.parse("ii")).equals("*I")
