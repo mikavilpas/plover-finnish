@@ -1,0 +1,4 @@
+{
+  "test_generators.py::test_char": true,
+  "test_generators.py::test_item": true
+}

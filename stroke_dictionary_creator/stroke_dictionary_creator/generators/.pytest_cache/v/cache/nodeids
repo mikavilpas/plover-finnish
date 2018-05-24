@@ -1,0 +1,5 @@
+[
+  "test_generators.py::test_item",
+  "test_generators.py::test_char",
+  "test_generators.py::TestGenerators::test_middle_vowel"
+]
