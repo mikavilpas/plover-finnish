@@ -35,3 +35,22 @@ class TestGenerators(unittest.TestCase):
         ensure(middle_diphtong.parse("ue")).equals("AOE")
         ensure(middle_diphtong.parse("ui")).equals("AOI")
         ensure(middle_diphtong.parse("ei")).equals("EI")
+
+    def test_end_diphtong(self):
+        ensure(end_diphtong.parse("ei")).equals("ei")
+        ensure(end_diphtong.parse("eo")).equals("eo")
+        ensure(end_diphtong.parse("ea")).equals("ea")
+        ensure(end_diphtong.parse("ui")).equals("ui")
+        ensure(end_diphtong.parse("ua")).equals("ua")
+        ensure(end_diphtong.parse("oi")).equals("oi")
+        ensure(end_diphtong.parse("oa")).equals("oa")
+
+        # This is an exception to the rule.
+        # The intention is to write words like "kulkija" (traveller) with a
+        # single stroke.
+        ensure(end_diphtong.parse("ja")).equals("ia")
+
+    def test_end_triphtong(self):
+        ensure(end_triphtong.parse("ija")).equals("eia")
+        ensure(end_triphtong.parse("uja")).equals("eoia")
+        ensure(end_triphtong.parse("oja")).equals("oia")

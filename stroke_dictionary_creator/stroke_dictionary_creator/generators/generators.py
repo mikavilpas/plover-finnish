@@ -41,3 +41,22 @@ middle_diphtong_ei = morpheme("ei", "EI")
 
 middle_diphtong = middle_diphtong_ae | middle_diphtong_ai | middle_diphtong_ue \
                   | middle_diphtong_ui | middle_diphtong_ei
+
+end_diphtong_ei = morpheme("ei", "ei")
+end_diphtong_eo = morpheme("eo", "eo")
+end_diphtong_ea = morpheme("ea", "ea")
+end_diphtong_ui = morpheme("ui", "ui")
+end_diphtong_ua = morpheme("ua", "ua")
+end_diphtong_oi = morpheme("oi", "oi")
+end_diphtong_oa = morpheme("oa", "oa")
+end_diphtong_ja = morpheme("ja", "ia")
+
+end_diphtong = end_diphtong_ei | end_diphtong_eo | end_diphtong_ea | end_diphtong_ui \
+               | end_diphtong_ua | end_diphtong_oi | end_diphtong_oa \
+               | end_diphtong_ja
+
+end_triphtong_uja = morpheme("uja", "eoia")
+end_triphtong_ija = morpheme("ija", "eia")
+end_triphtong_oja = morpheme("oja", "oia")
+
+end_triphtong = end_triphtong_uja | end_triphtong_ija | end_triphtong_oja
