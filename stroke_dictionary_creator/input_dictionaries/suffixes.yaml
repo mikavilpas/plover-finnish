@@ -32,8 +32,8 @@
 "{^ta}": -Ta # partitive
 "{^na}": -Na # essive
 "{^ksi}": -KSi # translative
-"{^ssa}": SSa # inessive
-"{^sta}": STa # elative
+"{^ssa}": S-Sa # inessive
+"{^sta}": S-Ta # elative
 
 # illative
 "{^seen}" : S*EN # pohjoiseen (to the North)
