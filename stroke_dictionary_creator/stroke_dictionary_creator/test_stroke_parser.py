@@ -1,6 +1,6 @@
 import unittest
 from ensure import ensure
-from .parser import *
+from stroke_dictionary_creator.stroke_parser import *
 
 class TestParser(unittest.TestCase):
     def test_initial_consonants(self):
@@ -10,6 +10,8 @@ class TestParser(unittest.TestCase):
 
         # in order but not all keys pressed consecutively
         ensure(initial_consonants.parse("SR")).equals("SR")
+
+        # the initial consonant may be left out
         ensure(initial_consonants.parse("")).equals("")
 
         # using a consonant twice should crash
@@ -18,6 +20,7 @@ class TestParser(unittest.TestCase):
 
     def test_middle_keys(self):
         ensure(middle_keys.parse("A")).equals("A")
+        ensure(middle_keys.parse("-")).equals("-")
         ensure(middle_keys.parse("AOEI")).equals("AOEI")
 
         # some strokes that include the asterisk
@@ -28,11 +31,13 @@ class TestParser(unittest.TestCase):
 
         # A missing middle key is a "-"
         ensure(middle_keys.parse("-")).equals("-")
+        ensure(middle_keys.parse).called_with("").raises(Exception)
 
     def test_end_keys(self):
         ensure(end_keys.parse("NKST")).equals("NKST")
         ensure(end_keys.parse("NKSHTReoia")).equals("NKSHTReoia")
 
+        # the end key may be left out
         ensure(end_keys.parse("")).equals("")
 
     def test_stroke(self):
@@ -45,3 +50,6 @@ class TestParser(unittest.TestCase):
         ensure(stroke.parse("PHIKa")).equals("PHIKa")
         # Miika
         ensure(stroke.parse("PH*IKa")).equals("PH*IKa")
+
+
+        ensure(stroke.parse).called_with("SSa").raises(Exception)
