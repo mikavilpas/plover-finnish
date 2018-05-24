@@ -12,7 +12,8 @@ vowel_Y = morpheme("y", "AO")
 vowel_Ä = morpheme("ä", "A")
 vowel_Ö = morpheme("ö", "O")
 
-middle_vowel = vowel_A | vowel_O | vowel_E | vowel_I | vowel_U | vowel_Y | vowel_Ä | vowel_Ö
+middle_vowel = vowel_A | vowel_O | vowel_E | vowel_I \
+               | vowel_U | vowel_Y | vowel_Ä | vowel_Ö
 
 end_vowel_e = morpheme("e", "e")
 end_vowel_o = morpheme("o", "o")
