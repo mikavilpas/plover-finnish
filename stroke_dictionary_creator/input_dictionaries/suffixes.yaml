@@ -32,7 +32,7 @@
 "{^en}": EN # koirien (dogs')
 "{^in}": IN
 "{^den}": TKEN
-"{^dän}": TKAN
+"{:suffix_in_same_vowel_harmony_group:dän}": TKAN
 "{^ten}": TEN
 
 "{:suffix_in_same_vowel_harmony_group:tä}": -Ta # partitive
@@ -67,7 +67,7 @@
 "{^kin}" : KIN
 "{:suffix_in_same_vowel_harmony_group:kään}": KA*N
 "{:suffix_in_same_vowel_harmony_group:pä}": P-a
-"{:suffix_in_same_vowel_harmony_group:hän}": HAN
+"{:suffix_in_same_vowel_harmony_group:hän}": H-N
 "{^s}": -S
 
 "{:change_vowel_harmony_group:args}": AE

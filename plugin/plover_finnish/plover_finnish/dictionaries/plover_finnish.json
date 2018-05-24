@@ -5,7 +5,7 @@
   "SINa": "sinä",
   "SINeo": "sinu",
   "SINeoa": "sinua",
-  "HAN": "{:suffix_in_same_vowel_harmony_group:hän}",
+  "HAN": "hän",
   "HANe": "häne",
   "PH-e": "me",
   "PH-ei": "mei",
@@ -35,7 +35,7 @@
   "EN": "{^en}",
   "IN": "{^in}",
   "TKEN": "{^den}",
-  "TKAN": "{^dän}",
+  "TKAN": "{:suffix_in_same_vowel_harmony_group:dän}",
   "TEN": "{^ten}",
   "-Ta": "{:suffix_in_same_vowel_harmony_group:tä}",
   "-Na": "{:suffix_in_same_vowel_harmony_group:nä}",
@@ -59,6 +59,7 @@
   "KIN": "{^kin}",
   "KA*N": "{:suffix_in_same_vowel_harmony_group:kään}",
   "P-a": "{:suffix_in_same_vowel_harmony_group:pä}",
+  "H-N": "{:suffix_in_same_vowel_harmony_group:hän}",
   "-S": "{^s}",
   "AE": "{:change_vowel_harmony_group:args}"
 }
