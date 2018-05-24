@@ -28,3 +28,10 @@ class TestGenerators(unittest.TestCase):
         ensure(initial_consonant.parse("v")).equals("V")
         ensure(initial_consonant.parse("h")).equals("H")
         ensure(initial_consonant.parse("r")).equals("R")
+
+    def test_middle_diphtong(self):
+        ensure(middle_diphtong.parse("ae")).equals("AE")
+        ensure(middle_diphtong.parse("ai")).equals("AI")
+        ensure(middle_diphtong.parse("ue")).equals("AOE")
+        ensure(middle_diphtong.parse("ui")).equals("AOI")
+        ensure(middle_diphtong.parse("ei")).equals("EI")

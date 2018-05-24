@@ -32,3 +32,12 @@ initial_r = morpheme("r", "R")
 
 initial_consonant =   initial_s | initial_t | initial_k | initial_p | initial_v \
                     | initial_h | initial_r
+
+middle_diphtong_ae = morpheme("ae", "AE")
+middle_diphtong_ai = morpheme("ai", "AI")
+middle_diphtong_ue = morpheme("ue", "AOE")
+middle_diphtong_ui = morpheme("ui", "AOI")
+middle_diphtong_ei = morpheme("ei", "EI")
+
+middle_diphtong = middle_diphtong_ae | middle_diphtong_ai | middle_diphtong_ue \
+                  | middle_diphtong_ui | middle_diphtong_ei
