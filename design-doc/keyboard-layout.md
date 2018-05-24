@@ -127,11 +127,10 @@ Ones using only the middle vowels:
 
 | Strokes | Finnish example | English        | Notes      |
 | ----    | ----            | ----           | ----       |
-| `AU`    | kaula, käy      | neck, running  |            |
-| `EI-`   | ei              | no             |            |
-| `OI-`   | koira, töin     | dog, with jobs | öi is rare |
-| `AI-`   | kaivo, äiti     | well, mother   |            |
-| `AOI-`  | ui, hyi         | swim, ew       |            |
+| `EI`    | ei              | no             |            |
+| `OI`    | koira, töin     | dog, with jobs | öi is rare |
+| `AI`    | kaivo, äiti     | well, mother   |            |
+| `AOI`   | ui, hyi         | swim, ew       |            |
 
 Ones that are only possible to stroke using the final vowels:
 
