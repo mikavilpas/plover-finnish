@@ -37,8 +37,7 @@ def suffix_in_same_vowel_harmony_group(context, suffix: str):
     action.prev_attach = True
 
     new_suffix = vowel_group_service.change_to_same_vowel_group(last_word, suffix)
-    new_word = last_word + new_suffix
-
-    action.word = action.text = new_word
+    action.word = last_word + new_suffix
+    action.text = new_suffix
 
     return action
