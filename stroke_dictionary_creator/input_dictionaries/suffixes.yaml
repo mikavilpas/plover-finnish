@@ -1,23 +1,29 @@
+# Suffixes default to the yäö vocal harmony group. This is because words that
+# can be deduced to belong to either the left or right group will be
+# automatically given the correct suffix, and words that cannot, e.g. tie
+# (road), usually belong to the yäö group (tie -> tiessä). This should allow a
+# good rate of guessing correctly, with minimal effort on the writer's part.
+
 # single ending vowels
-"{^a}": -a
+"{:suffix_in_same_vowel_harmony_group:ä}": -a
 "{^e}": -e
 "{^i}": -i
-"{^o}": -o
-"{^u}": -eo
+"{:suffix_in_same_vowel_harmony_group:ö}": -o
+"{:suffix_in_same_vowel_harmony_group:y}": -eo
 
 # ending diphtongs
-"{^ui}": -eoi
-"{^ua}": -eoa
+"{:suffix_in_same_vowel_harmony_group:yi}": -eoi
+"{:suffix_in_same_vowel_harmony_group:yä}": -eoa
 "{^ei}": -ei
-"{^ea}": -ea
-"{^oi}": -oi
-"{^oa}": -oa
-"{^ia}": -ia
+"{:suffix_in_same_vowel_harmony_group:eä}": -ea
+"{:suffix_in_same_vowel_harmony_group:öi}": -oi
+"{:suffix_in_same_vowel_harmony_group:öä}": -oa
+"{:suffix_in_same_vowel_harmony_group:iä}": -ia
 
 # ending vowel sound shortcuts.
-"{^oja}": -oia # kutoja (weaver)
-"{^eja}": -eia # lakeja (laws)
-"{^uja}": -eoia # hattuja (hats)
+"{:suffix_in_same_vowel_harmony_group:öjä}": -oia # lähtöjä (leavings), kutoja (weaver)
+"{:suffix_in_same_vowel_harmony_group:ejä}": -eia # lakeja (laws)
+"{:suffix_in_same_vowel_harmony_group:yjä}": -eoia # nähtyjä (seen, plural), hattuja (hats)
 
 "{^t}": -T
 
@@ -29,11 +35,11 @@
 "{^dän}": TKAN
 "{^ten}": TEN
 
-"{^ta}": -Ta # partitive
-"{^na}": -Na # essive
+"{:suffix_in_same_vowel_harmony_group:tä}": -Ta # partitive
+"{:suffix_in_same_vowel_harmony_group:nä}": -Na # essive
 "{^ksi}": -KSi # translative
 "{:suffix_in_same_vowel_harmony_group:ssä}": S-Sa # inessive
-"{^sta}": S-Ta # elative
+"{:suffix_in_same_vowel_harmony_group:stä}": S-Ta # elative
 
 # illative
 "{^seen}" : S*EN # pohjoiseen (to the North)
@@ -41,27 +47,27 @@
 "{^hin}"  :  HIN # koti+hin (to home)
 "{^siin}" : S*IN # kotoisiin (to the homely)
 
-"{^lla}": HR-NSTa # adessive
-"{^lta}": HR-Ta # ablative
+"{:suffix_in_same_vowel_harmony_group:llä}": HR-NSTa # adessive
+"{:suffix_in_same_vowel_harmony_group:ltä}": HR-Ta # ablative
 "{^lle}": HR-NSTe # allative
-"{^tta}": T-Ta # abessive
+"{:suffix_in_same_vowel_harmony_group:ttä}": T-Ta # abessive
 "{^ne}" : -Ne  # comitative
 
 # possessive suffixes
 "{^ni}": -Ni
 "{^si}": -Si
-"{^nsa}": -NSa
+"{:suffix_in_same_vowel_harmony_group:nsä}": -NSa
 "{^mme}": -SHe
 "{^nne}": -Ne
 
 # clitics
 # https://fi.wikipedia.org/wiki/Liitepartikkeli
-"{^ko}" : -Ko
-"{^ka}" : -Ka
+"{:suffix_in_same_vowel_harmony_group:kö}" : -Ko
+"{:suffix_in_same_vowel_harmony_group:kä}" : -Ka
 "{^kin}" : KIN
-"{^kaan}": KA*N
-"{^pa}": P-a
-"{^han}": HAN
+"{:suffix_in_same_vowel_harmony_group:kään}": KA*N
+"{:suffix_in_same_vowel_harmony_group:pä}": P-a
+"{:suffix_in_same_vowel_harmony_group:hän}": HAN
 "{^s}": -S
 
 "{:change_vowel_harmony_group:args}": AE
