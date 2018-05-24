@@ -18,3 +18,13 @@ class TestGenerators(unittest.TestCase):
         ensure(end_vowel.parse("o")).equals("o")
         ensure(end_vowel.parse("i")).equals("i")
         ensure(end_vowel.parse("a")).equals("a")
+        ensure(end_vowel.parse("u")).equals("eo")
+
+    def test_initial_consonant(self):
+        ensure(initial_consonant.parse("s")).equals("S")
+        ensure(initial_consonant.parse("t")).equals("T")
+        ensure(initial_consonant.parse("k")).equals("K")
+        ensure(initial_consonant.parse("p")).equals("P")
+        ensure(initial_consonant.parse("v")).equals("V")
+        ensure(initial_consonant.parse("h")).equals("H")
+        ensure(initial_consonant.parse("r")).equals("R")
