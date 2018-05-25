@@ -14,7 +14,8 @@ def read_words(data):
 def convert_word(word_datum):
     form = word_datum.findtext("forms/form")
     infclass = word_datum.findtext("inflection/infclass")
-    data = "{};{}".format(form, infclass)
+    wordclass = word_datum.findtext("classes/wclass")
+    data = "{};{}-{}".format(form, wordclass, infclass)
     return data
 
 def write_to_file(filepath, lines):
