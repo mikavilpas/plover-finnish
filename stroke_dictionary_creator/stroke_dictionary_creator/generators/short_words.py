@@ -12,5 +12,4 @@ consonant_vowel_word = initial_consonant + no_middle_key + end_vowel
 vowel_end_diphtong_word    = middle_vowel + end_diphtong
 consonant_vowel_vowel_word = initial_consonant + middle_vowel + end_vowel
 consonant_vowel_c_w_word   = initial_consonant + middle_vowel + final_consonant + end_vowel
-# TODO test
 vowel_consonant_v_v_word   = middle_vowel + final_consonant + end_diphtong

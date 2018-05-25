@@ -16,9 +16,12 @@ class TestGenerators(unittest.TestCase):
     def test_end_vowel(self):
         ensure(end_vowel.parse("e")).equals("e")
         ensure(end_vowel.parse("o")).equals("o")
+        ensure(end_vowel.parse("ö")).equals("o")
         ensure(end_vowel.parse("i")).equals("i")
         ensure(end_vowel.parse("a")).equals("a")
+        ensure(end_vowel.parse("ä")).equals("a")
         ensure(end_vowel.parse("u")).equals("eo")
+        ensure(end_vowel.parse("y")).equals("eo")
 
     def test_initial_consonant(self):
         ensure(initial_consonant.parse("g")).equals("TKPV")
@@ -41,29 +44,43 @@ class TestGenerators(unittest.TestCase):
 
     def test_middle_diphtong(self):
         ensure(middle_diphtong.parse("ae")).equals("AE")
+        ensure(middle_diphtong.parse("äe")).equals("AE")
         ensure(middle_diphtong.parse("ai")).equals("AI")
+        ensure(middle_diphtong.parse("äi")).equals("AI")
         ensure(middle_diphtong.parse("ue")).equals("AOE")
+        ensure(middle_diphtong.parse("ye")).equals("AOE")
         ensure(middle_diphtong.parse("ui")).equals("AOI")
+        ensure(middle_diphtong.parse("yi")).equals("AOI")
         ensure(middle_diphtong.parse("ei")).equals("EI")
 
     def test_end_diphtong(self):
         ensure(end_diphtong.parse("ei")).equals("ei")
         ensure(end_diphtong.parse("eo")).equals("eo")
+        ensure(end_diphtong.parse("eö")).equals("eo")
         ensure(end_diphtong.parse("ea")).equals("ea")
+        ensure(end_diphtong.parse("eä")).equals("ea")
         ensure(end_diphtong.parse("ui")).equals("ui")
+        ensure(end_diphtong.parse("yi")).equals("ui")
         ensure(end_diphtong.parse("ua")).equals("ua")
+        ensure(end_diphtong.parse("yä")).equals("ua")
         ensure(end_diphtong.parse("oi")).equals("oi")
+        ensure(end_diphtong.parse("öi")).equals("oi")
         ensure(end_diphtong.parse("oa")).equals("oa")
+        ensure(end_diphtong.parse("öä")).equals("oa")
 
         # This is an exception to the rule.
         # The intention is to write words like "kulkija" (traveller) with a
         # single stroke.
         ensure(end_diphtong.parse("ja")).equals("ia")
+        ensure(end_diphtong.parse("jä")).equals("ia")
 
     def test_end_triphtong(self):
         ensure(end_triphtong.parse("ija")).equals("eia")
+        ensure(end_triphtong.parse("ijä")).equals("eia")
         ensure(end_triphtong.parse("uja")).equals("eoia")
+        ensure(end_triphtong.parse("yjä")).equals("eoia")
         ensure(end_triphtong.parse("oja")).equals("oia")
+        ensure(end_triphtong.parse("öjä")).equals("oia")
 
     def test_final_consonant(self):
         ensure(final_consonant.parse("l")).equals("NST")
@@ -80,7 +97,10 @@ class TestGenerators(unittest.TestCase):
 
     def test_long_vowel(self):
         ensure(long_vowel.parse("aa")).equals("A*")
+        ensure(long_vowel.parse("ää")).equals("A*")
         ensure(long_vowel.parse("uu")).equals("AO*")
+        ensure(long_vowel.parse("yy")).equals("AO*")
         ensure(long_vowel.parse("oo")).equals("O*")
+        ensure(long_vowel.parse("öö")).equals("O*")
         ensure(long_vowel.parse("ee")).equals("*E")
         ensure(long_vowel.parse("ii")).equals("*I")

@@ -20,3 +20,6 @@ class TestShortWords(unittest.TestCase):
 
     def test_consonant_vowel_c_w_word(self):
         ensure(consonant_vowel_c_w_word.parse("tina")).equals("TINa")
+
+    def test_vowel_consonant_v_v_word(self):
+        ensure(vowel_consonant_v_v_word.parse("äreä")).equals("ARea")
