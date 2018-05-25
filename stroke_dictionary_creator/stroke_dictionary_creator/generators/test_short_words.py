@@ -3,23 +3,23 @@ from ensure import ensure
 from stroke_dictionary_creator.generators.short_words import *
 
 class TestShortWords(unittest.TestCase):
-    def test_two_vowel_word(self):
-        ensure(two_vowel_word.parse("ai")).equals("Ai")
+    def test_word_vv(self):
+        ensure(word_vv.parse("ai")).equals("Ai")
 
-    def test_vowel_consonant_word(self):
-        ensure(vowel_consonant_word.parse("on")).equals("ON")
+    def test_word_vc(self):
+        ensure(word_vc.parse("on")).equals("ON")
 
-    def test_consonant_vowel_word(self):
-        ensure(consonant_vowel_word.parse("no")).equals("TPH-o")
+    def test_word_cv(self):
+        ensure(word_cv.parse("no")).equals("TPH-o")
 
-    def test_consonant_vowel_vowel_word(self):
-        ensure(consonant_vowel_vowel_word.parse("joo")).equals("SKVROo")
+    def test_word_cvv(self):
+        ensure(word_cvv.parse("joo")).equals("SKVROo")
 
-    def test_vowel_end_diphtong_word(self):
-        ensure(vowel_end_diphtong_word.parse("oja")).equals("Oia")
+    def test_word_v_end_diphtong(self):
+        ensure(word_v_end_diphtong.parse("oja")).equals("Oia")
 
-    def test_consonant_vowel_c_w_word(self):
-        ensure(consonant_vowel_c_w_word.parse("tina")).equals("TINa")
+    def test_word_cvcv(self):
+        ensure(word_cvcv.parse("tina")).equals("TINa")
 
-    def test_vowel_consonant_v_v_word(self):
-        ensure(vowel_consonant_v_v_word.parse("äreä")).equals("ARea")
+    def test_word_vcvv(self):
+        ensure(word_vcvv.parse("äreä")).equals("ARea")
