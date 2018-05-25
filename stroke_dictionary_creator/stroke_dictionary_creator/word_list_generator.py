@@ -33,9 +33,10 @@ def main(args):
     word_ids  = functoolz.thread_first(map(convert_word, word_data),
                                        sorted,
                                        remove_abbreviations)
-    print(word_ids)
 
-    write_to_file("../../wordlists/joukahainen.txt", word_ids)
+    filepath = "../../wordlists/joukahainen.txt"
+    write_to_file(filepath, word_ids)
+    print("Wrote {} words with inflection information to file {}".format(len(word_ids), filepath))
 
 if __name__ == '__main__':
     sys.exit(main(args = sys.argv))
