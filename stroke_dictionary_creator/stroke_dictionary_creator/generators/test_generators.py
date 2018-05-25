@@ -22,10 +22,12 @@ class TestGenerators(unittest.TestCase):
 
     def test_initial_consonant(self):
         ensure(initial_consonant.parse("g")).equals("TKPV")
+        ensure(initial_consonant.parse("j")).equals("SKVR")
         ensure(initial_consonant.parse("d")).equals("TK")
         ensure(initial_consonant.parse("b")).equals("PV")
         ensure(initial_consonant.parse("q")).equals("KV")
         ensure(initial_consonant.parse("m")).equals("PH")
+        ensure(initial_consonant.parse("y")).equals("KVR")
         ensure(initial_consonant.parse("y")).equals("KVR")
         ensure(initial_consonant.parse("l")).equals("HR")
 

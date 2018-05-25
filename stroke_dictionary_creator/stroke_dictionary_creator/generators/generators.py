@@ -28,6 +28,7 @@ end_vowel = end_vowel_e | end_vowel_o | end_vowel_u | end_vowel_i | end_vowel_a
 
 
 initial_g = morpheme("g", "TKPV")
+initial_j = morpheme("j", "SKVR")
 initial_n = morpheme("n", "TPH")
 initial_d = morpheme("d", "TK")
 initial_b = morpheme("b", "PV")
@@ -44,8 +45,8 @@ initial_v = morpheme("v", "V")
 initial_h = morpheme("h", "H")
 initial_r = morpheme("r", "R")
 
-initial_consonant = initial_g | initial_n | initial_b | initial_d | initial_q \
-                    | initial_m | initial_y | initial_l \
+initial_consonant = initial_g | initial_j | initial_n | initial_b | initial_d \
+                    | initial_q | initial_m | initial_y | initial_l \
                     | initial_s | initial_t | initial_k | initial_p | initial_v \
                     | initial_h | initial_r
 
