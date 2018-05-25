@@ -15,6 +15,10 @@ class TestShortWords(unittest.TestCase):
     def test_word_cvv(self):
         ensure(word_cvv.parse("joo")).equals("SKVROo")
 
+    def test_word_cvc(self):
+        ensure(word_cvc.parse("hah")).equals("HAH")
+        ensure(word_cvc.parse("höh")).equals("HOH")
+
     def test_word_v_end_diphtong(self):
         ensure(word_v_end_diphtong.parse("oja")).equals("Oia")
 
