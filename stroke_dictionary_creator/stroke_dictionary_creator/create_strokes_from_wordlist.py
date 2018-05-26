@@ -4,9 +4,9 @@ from toolz import functoolz
 from toolz import itertoolz
 import inflection_service as infl
 from operator import concat
-import asyncio
 import math
 from multiprocessing import Pool
+import collections
 
 sys.path.append("../../word-analyser/")
 import word_analyser.tools as tools
@@ -31,7 +31,10 @@ def flatten_dictify_matched(subprocess_data):
                      for inflections_and_strokes in words_and_strokes
                      for w,s in inflections_and_strokes
                      if stroke_found(w, s)}
-    return found_strokes
+
+    # Force the words to always be in the same order. Otherwise git diffs will
+    # be inconsistent.
+    return collections.OrderedDict(sorted(found_strokes.items()))
 
 def write_to_yaml_file(target_file, strokes):
     return tools.save_results_into_file(strokes, target_file)
@@ -62,16 +65,15 @@ def main():
     words_raw = tools.get_finnish_wordlist()
     print("Loaded {} Finnish language words and abbreviations.".format(len(words_raw)))
 
-    # "map" step
     cores = 8 # I have 8 processor cores
+    # Let each core process an ~equal amount of work
     chunks = list(chunkify(n = cores, sequence = words_raw))
     print("Processing all words on {} cores with {} words per core".format(
         cores, len(chunks[0])))
 
     with Pool(cores) as pool:
+        # "map" step
         strokes = pool.map(create_strokes_for_words, chunks)
-
-        print("Got strokes: {}".format(strokes))
 
         # "reduce" step
         word_stroke_dict = flatten_dictify_matched(strokes)

@@ -1,827 +1,828 @@
-ah: AH
-ahoa: AHoa
-ai: Ai
-alea: ANSTea
-anoi: ANoi
-anoa: ANoa
-apea: AHRea
-apua: AHRua
-aroa: ARoa
-asoa: ASoa
-asua: ASua
-asui: ASui
-avoa: ASRoa
-avua: ASRua
-ay: Aeo
-bar: PVAR
-beta: PVETa
-bile: PVINSTe
-bio: PVIo
-bäne: PVANe
-bänä: PVANa
-data: TKATa
-demo: TKESHo
-desi: TKESi
-dia: TKIa
-duo: TKAOo
-dösä: TKOSa
-ehei: EHei
-eheä: EHea
-ehjä: EHia
-ehoa: EHoa
-emoa: ESHoa
-emua: ESHua
-enoa: ENoa
-epoa: EHRoa
-eroa: ERoa
-etoa: EToa
-etoi: EToi
-etua: ETua
-geo: TKPVEo
-ges: TKPVES
-gini: TKPVINi
-giro: TKPVIRo
-gis: TKPVIS
-guru: TKPVAOReo
-ha: H-a
-haa: HAa
-hah: HAH
-haha: HAHa
-hai: HAi
-haka: HAKa
-hake: HAKe
-haki: HAKi
-hako: HAKo
-haku: HAKeo
-hali: HANSTi
-halo: HANSTo
-halu: HANSTeo
-hama: HASHa
-hame: HASHe
-hana: HANa
-hara: HARa
-havu: HASReo
-heh: HEH
-hei: HEi
-heko: HEKo
-hela: HENSTa
-helo: HENSTo
-hely: HENSTeo
-hep: HEHR
-hepo: HEHRo
-hera: HERa
-hete: HETe
-heti: HETi
-hevi: HESRi
-hie: HIe
-hiha: HIHa
-hik: HIK
-hiki: HIKi
-hila: HINSTa
-hile: HINSTe
-hilu: HINSTeo
-hima: HISHa
-himo: HISHo
-hitu: HITeo
-hoh: HOH
-hoi: HOi
-hoki: HOKi
-home: HOSHe
-homo: HOSHo
-hoo: HOo
-hop: HOHR
-hovi: HOSRi
-huh: HAOH
-huhu: HAOHeo
-hui: HAOi
-humu: HAOSHeo
-hupa: HAOHRa
-hupi: HAOHRi
-hus: HAOS
-huti: HAOTi
-hutu: HAOTeo
-huvi: HAOSRi
-hyi: HAOi
-hymy: HAOSHeo
-hynä: HAONa
-hyve: HAOSRe
-hyvä: HAOSRa
-häh: HAH
-häkä: HAKa
-häly: HANSTeo
-hämi: HASHi
-hämy: HASHeo
-häpy: HAHReo
-hätä: HATa
-hää: HAa
-höh: HOH
-hölö: HONSTo
-hönö: HONo
-höpö: HOHRo
-hörö: HORo
-höö: HOo
-ihoa: IHoa
-iloa: INSToa
-imeä: ISHea
-imua: ISHua
-isoa: ISoa
-it: IT
-itua: ITua
-ja: SKVR-a
-jaa: SKVRAa
-jae: SKVRAe
-jaha: SKVRAHa
-jako: SKVRAKo
-jalo: SKVRANSTo
-jama: SKVRASHa
-jami: SKVRASHi
-jana: SKVRANa
-jano: SKVRANo
-jee: SKVREe
-jehu: SKVREHeo
-jeni: SKVRENi
-jo: SKVR-o
-joki: SKVROKi
-joko: SKVROKo
-jono: SKVRONo
-joo: SKVROo
-joro: SKVRORo
-joru: SKVROReo
-jos: SKVROS
-jumi: SKVRAOSHi
-juna: SKVRAONa
-joi: SKVROi
-jura: SKVRAORa
-juro: SKVRAORo
-jury: SKVRAOReo
-juu: SKVRAOeo
-jyly: SKVRAONSTeo
-jymy: SKVRAOSHeo
-jyry: SKVRAOReo
-jyrä: SKVRAORa
-jytä: SKVRAOTa
-jyvä: SKVRAOSRa
-jämä: SKVRASHa
-jänö: SKVRANo
-jäte: SKVRATe
-jää: SKVRAa
-jäi: SKVRAi
-jörö: SKVRORo
-kah: KAH
-kai: KAi
-kala: KANSTa
-kali: KANSTi
-kalu: KANSTeo
-kama: KASHa
-kamu: KASHeo
-kana: KANa
-kani: KANi
-kapi: KAHRi
-kara: KARa
-kare: KARe
-kari: KARi
-karu: KAReo
-kas: KAS
-kasa: KASa
-kasi: KASi
-kate: KATe
-kato: KATo
-katu: KATeo
-kehi: KEHi
-keho: KEHo
-kehu: KEHeo
-kehä: KEHa
-keko: KEKo
-kela: KENSTa
-keli: KENSTi
-kelo: KENSTo
-kemu: KESHeo
-keno: KENo
-kepu: KEHReo
-keri: KERi
-kero: KERo
-kerä: KERa
-kesi: KESi
-kesy: KESeo
-kesä: KESa
-keto: KETo
-kiho: KIHo
-kihu: KIHeo
-kili: KINSTi
-kilo: KINSTo
-kimo: KISHo
-kina: KINa
-kino: KINo
-kipu: KIHReo
-kiri: KIRi
-kiro: KIRo
-kisa: KISa
-kisu: KISeo
-kita: KITa
-kitu: KITeo
-kiva: KISRa
-kivi: KISRi
-koe: KOe
-koho: KOHo
-kohu: KOHeo
-koi: KOi
-koki: KOKi
-koko: KOKo
-kola: KONSTa
-koli: KONSTi
-kolo: KONSTo
-komi: KOSHi
-komu: KOSHeo
-kone: KONe
-koni: KONi
-kopu: KOHReo
-kori: KORi
-koro: KORo
-koru: KOReo
-kosi: KOSi
-kota: KOTa
-koti: KOTi
-koto: KOTo
-kova: KOSRa
-kuha: KAOHa
-kuli: KAONSTi
-kulo: KAONSTo
-kulu: KAONSTeo
-kumi: KAOSHi
-kumo: KAOSHo
-kumu: KAOSHeo
-kun: KAON
-kupo: KAOHRo
-kupu: KAOHReo
-kura: KAORa
-kure: KAORe
-kuri: KAORi
-kuru: KAOReo
-kusi: KAOSi
-kuti: KAOTi
-kutu: KAOTeo
-kuu: KAOeo
-kuva: KAOSRa
-kuve: KAOSRe
-kyky: KAOKeo
-kyl: KAONST
-kyly: KAONSTeo
-kylä: KAONSTa
-kymi: KAOSHi
-kyni: KAONi
-kynä: KAONa
-kyse: KAOSe
-kyti: KAOTi
-kyty: KAOTeo
-kytö: KAOTo
-kyy: KAOeo
-käki: KAKi
-käly: KANSTeo
-käpy: KAHReo
-käry: KAReo
-käsi: KASi
-köhi: KOHi
-köhä: KOHa
-köli: KONSTi
-laho: HRAHo
-laki: HRAKi
-lako: HRAKo
-laku: HRAKeo
-lama: HRASHa
-lana: HRANa
-lapa: HRAHRa
-lape: HRAHRe
-lari: HRARi
-lasi: HRASi
-lato: HRATo
-latu: HRATeo
-lava: HRASRa
-leka: HREKa
-lelu: HRENSTeo
-lemu: HRESHeo
-lepo: HREHRo
-lese: HRESe
-levy: HRESReo
-levä: HRESRa
-liha: HRIHa
-lika: HRIKa
-like: HRIKe
-liki: HRIKi
-lila: HRINSTa
-lima: HRISHa
-lime: HRISHe
-limu: HRISHeo
-liri: HRIRi
-liro: HRIRo
-liru: HRIReo
-lisä: HRISa
-litu: HRITeo
-lohi: HROHi
-loka: HROKa
-loki: HROKi
-loma: HROSHa
-lori: HRORi
-loru: HROReo
-loso: HROSo
-lovi: HROSRi
-luki: HRAOKi
-luku: HRAOKeo
-lume: HRAOSHe
-lumi: HRAOSHi
-lumo: HRAOSHo
-luo: HRAOo
-loi: HROi
-lupa: HRAOHRa
-lusi: HRAOSi
-luu: HRAOeo
-lyhä: HRAOHa
-lyly: HRAONSTeo
-lymy: HRAOSHeo
-löi: HROi
-lähe: HRAHe
-lähi: HRAHi
-läpi: HRAHRi
-läsi: HRASi
-löpö: HROHRo
-maa: PHAa
-maha: PHAHa
-maho: PHAHo
-maki: PHAKi
-maku: PHAKeo
-mana: PHANa
-mani: PHANi
-mara: PHARa
-mare: PHARe
-masu: PHASeo
-mato: PHATo
-mau: PHAeo
-mehu: PHEHeo
-mela: PHENSTa
-melu: PHENSTeo
-meni: PHENi
-meno: PHENo
-menu: PHENeo
-meri: PHERi
-mesi: PHESi
-meta: PHETa
-mime: PHISHe
-mini: PHINi
-minä: PHINa
-misu: PHISeo
-moi: PHOi
-moka: PHOKa
-mol: PHONST
-moni: PHONi
-mono: PHONo
-mopo: PHOHRo
-mora: PHORa
-moro: PHORo
-muhi: PHAOHi
-muka: PHAOKa
-muki: PHAOKi
-muli: PHAONSTi
-muna: PHAONa
-muni: PHAONi
-mura: PHAORa
-mure: PHAORe
-muro: PHAORo
-muru: PHAOReo
-musa: PHAOSa
-muta: PHAOTa
-mutu: PHAOTeo
-myky: PHAOKeo
-myi: PHAOi
-möi: PHOi
-mäki: PHAKi
-märe: PHARe
-mäsä: PHASa
-mäti: PHATi
-mätä: PHATa
-mää: PHAa
-mökä: PHOKa
-möly: PHONSTeo
-mölö: PHONSTo
-nai: TPHAi
-naku: TPHAKeo
-nami: TPHASHi
-namu: TPHASHeo
-nano: TPHANo
-napa: TPHAHRa
-naru: TPHAReo
-nasu: TPHASeo
-nata: TPHATa
-nato: TPHATo
-nau: TPHAeo
-neli: TPHENSTi
-nenu: TPHENeo
-nenä: TPHENa
-nero: TPHERo
-neva: TPHESRa
-nila: TPHINSTa
-nile: TPHINSTe
-nimi: TPHISHi
-nisu: TPHISeo
-nisä: TPHISa
-niva: TPHISRa
-no: TPH-o
-noki: TPHOKi
-nolo: TPHONSTo
-noro: TPHORo
-nova: TPHOSRa
-nuha: TPHAOHa
-nupi: TPHAOHRi
-nupo: TPHAOHRo
-nupu: TPHAOHReo
-nuti: TPHAOTi
-nyhä: TPHAOHa
-nyki: TPHAOKi
-nyky: TPHAOKeo
-nysä: TPHAOSa
-nyt: TPHAOT
-nyy: TPHAOeo
-näky: TPHAKeo
-näkö: TPHAKo
-näre: TPHARe
-närä: TPHARa
-nökö: TPHOKo
-ohja: OHia
-ohoi: OHoi
-oi: Oi
-oja: Oia
-okei: OKei
-oloa: ONSToa
-opea: OHRea
-opoa: OHRoa
-orja: ORia
-osua: OSua
-osui: OSui
-ovea: OSRea
-oy: Oeo
-paha: PAHa
-pahe: PAHe
-pako: PAKo
-pala: PANSTa
-palo: PANSTo
-pani: PANi
-pano: PANo
-papu: PAHReo
-para: PARa
-pari: PARi
-pata: PATa
-pato: PATo
-peli: PENSTi
-peni: PENi
-peri: PERi
-peru: PEReo
-perä: PERa
-pesi: PESi
-peso: PESo
-pesu: PESeo
-pesä: PESa
-peta: PETa
-peti: PETi
-peto: PETo
-piha: PIHa
-pihi: PIHi
-pii: PIi
-pika: PIKa
-piki: PIKi
-piko: PIKo
-pila: PINSTa
-pimu: PISHeo
-pine: PINe
-pino: PINo
-pipi: PIHRi
-pipo: PIHRo
-piri: PIRi
-piru: PIReo
-pisi: PISi
-pisu: PISeo
-pito: PITo
-piti: PITi
-pivo: PISRo
-poka: POKa
-poli: PONSTi
-polo: PONSTo
-poly: PONSTeo
-pomo: POSHo
-poni: PONi
-pora: PORa
-pore: PORe
-poro: PORo
-poru: POReo
-pose: POSe
-povi: POSRi
-puhe: PAOHe
-pui: PAOi
-puki: PAOKi
-puku: PAOKeo
-pula: PAONSTa
-puli: PAONSTi
-pulu: PAONSTeo
-puna: PAONa
-pune: PAONe
-pupu: PAOHReo
-puro: PAORo
-puru: PAOReo
-pusi: PAOSi
-pusu: PAOSeo
-puu: PAOeo
-pyhä: PAOHa
-pyki: PAOKi
-pyre: PAORe
-pyry: PAOReo
-pyy: PAOeo
-päkä: PAKa
-päre: PARe
-päti: PATi
-pää: PAa
-pöh: POH
-pöhö: POHo
-pökä: POKa
-pökö: POKo
-pöly: PONSTeo
-pöpi: POHRi
-pöpö: POHRo
-pösö: POSo
-pöty: POTeo
-rae: RAe
-raha: RAHa
-rahi: RAHi
-rako: RAKo
-rapa: RAHRa
-rapu: RAHReo
-rasi: RASi
-rata: RATa
-ravi: RASRi
-retä: RETa
-ret: RET
-re: R-e
-ren: REN
-renä: RENa
-rehu: REHeo
-reki: REKi
-rele: RENSTe
-remu: RESHeo
-repi: REHRi
-repo: REHRo
-resu: RESeo
-reti: RETi
-reva: RESRa
-rike: RIKe
-rima: RISHa
-rio: RIo
-ripa: RIHRa
-ripe: RIHRe
-risa: RISa
-risu: RISeo
-rivi: RISRi
-rivo: RISRo
-romu: ROSHeo
-ropo: ROHRo
-roso: ROSo
-rotu: ROTeo
-rove: ROSRe
-ruho: RAOHo
-ruko: RAOKo
-ruma: RAOSHa
-runo: RAONo
-rupi: RAOHRi
-ruti: RAOTi
-ry: R-eo
-ryki: RAOKi
-rypi: RAOHRi
-rysy: RAOSeo
-rysä: RAOSa
-ryty: RAOTeo
-rytö: RAOTo
-räki: RAKi
-räkä: RAKa
-räme: RASHe
-rämä: RASHa
-räsy: RASeo
-rösö: ROSo
-sai: SAi
-saha: SAHa
-sake: SAKe
-sako: SAKo
-saku: SAKeo
-sala: SANSTa
-sali: SANSTi
-salo: SANSTo
-sama: SASHa
-sana: SANa
-sane: SANe
-sara: SARa
-sari: SARi
-sato: SATo
-satu: SATeo
-savi: SASRi
-savo: SASRo
-savu: SASReo
-sei: SEi
-seka: SEKa
-seko: SEKo
-sekä: SEKa
-setä: SETa
-sika: SIKa
-sila: SINSTa
-silo: SINSTo
-sima: SISHa
-sini: SINi
-siro: SIRo
-siru: SIReo
-sisu: SISeo
-sisä: SISa
-sivu: SISReo
-sohi: SOHi
-soi: SOi
-sola: SONSTa
-solu: SONSTeo
-soma: SOSHa
-sopi: SOHRi
-sopu: SOHReo
-sora: SORa
-sose: SOSe
-sota: SOTa
-soti: SOTi
-sotu: SOTeo
-suhu: SAOHeo
-suka: SAOKa
-suki: SAOKi
-suko: SAOKo
-suku: SAOKeo
-sula: SAONSTa
-suli: SAONSTi
-sulo: SAONSTo
-suma: SAOSHa
-sumo: SAOSHo
-sumu: SAOSHeo
-suo: SAOo
-supi: SAOHRi
-suru: SAOReo
-sus: SAOS
-susi: SAOSi
-suti: SAOTi
-suu: SAOeo
-suvi: SAOSRi
-syke: SAOKe
-syli: SAONSTi
-syna: SAONa
-sysi: SAOSi
-syti: SAOTi
-syvä: SAOSRa
-syy: SAOeo
-söi: SOi
-säe: SAe
-säkä: SAKa
-säle: SANSTe
-säly: SANSTeo
-sälä: SANSTa
-sälö: SANSTo
-särä: SARa
-särö: SARo
-sävy: SASReo
-sää: SAa
-söpö: SOHRo
-taa: TAa
-tae: TAe
-tahi: TAHi
-taho: TAHo
-tai: TAi
-taka: TAKa
-tali: TANSTi
-talo: TANSTo
-tao: TAo
-tapa: TAHRa
-taro: TARo
-taru: TAReo
-tasa: TASa
-tase: TASe
-taso: TASo
-tau: TAeo
-tavi: TASRi
-tavu: TASReo
-tee: TEe
-teho: TEHo
-teko: TEKo
-tela: TENSTa
-tele: TENSTe
-teli: TENSTi
-tenu: TENeo
-tenä: TENa
-tera: TERa
-tere: TERe
-terä: TERa
-tihu: TIHeo
-tila: TINSTa
-tili: TINSTi
-tina: TINa
-tipu: TIHReo
-tisu: TISeo
-toka: TOKa
-toki: TOKi
-tola: TONSTa
-tomu: TOSHeo
-tora: TORa
-tori: TORi
-toru: TOReo
-toti: TOTi
-toto: TOTo
-tovi: TOSRi
-tuho: TAOHo
-tui: TAOi
-tuke: TAOKe
-tuki: TAOKi
-tuli: TAONSTi
-tulo: TAONSTo
-tuma: TAOSHa
-toi: TOi
-tupa: TAOHRa
-tupo: TAOHRo
-tura: TAORa
-turo: TAORo
-tuti: TAOTi
-ty: T-eo
-tykö: TAOKo
-tyly: TAONSTeo
-typö: TAOHRo
-tyri: TAORi
-tyrä: TAORa
-tyvi: TAOSRi
-työ: TAOo
-täh: TAH
-täi: TAi
-täky: TAKeo
-täpö: TAHRo
-täry: TAReo
-täti: TATi
-töni: TONi
-tönö: TONo
-töpö: TOHRo
-törö: TORo
-uhoa: AOHoa
-ui: AOi
-upea: AOHRea
-upoa: AOHRoa
-urea: AORea
-usea: AOSea
-utua: AOTua
-uvea: AOSRea
-vaha: VAHa
-vai: VAi
-vako: VAKo
-vala: VANSTa
-vale: VANSTe
-valo: VANSTo
-valu: VANSTeo
-vana: VANa
-vanu: VANeo
-vapa: VAHRa
-vara: VARa
-varo: VARo
-vasa: VASa
-vasu: VASeo
-vati: VATi
-vene: VENe
-veri: VERi
-vero: VERo
-vesa: VESa
-vesi: VESi
-veto: VETo
-vety: VETeo
-veti: VETi
-via: VIa
-vei: VEi
-viha: VIHa
-vihi: VIHi
-vika: VIKa
-vilu: VINSTeo
-vino: VINo
-vipu: VIHReo
-vire: VIRe
-viri: VIRi
-viro: VIRo
-visa: VISa
-visu: VISeo
-vita: VITa
-viti: VITi
-voi: VOi
-voro: VORo
-vuo: VAOo
-vyö: VAOo
-vähä: VAHa
-väki: VAKi
-väli: VANSTi
-väre: VARe
-väri: VARi
-väry: VAReo
-väsy: VASeo
-vävy: VASReo
-ytyä: AOTua
-yum: KVRAOSH
-yäk: KVRAK
-äkeä: AKea
-älyä: ANSTua
-äreä: ARea
-öh: OH
+!!omap
+- ah: AH
+- ahoa: AHoa
+- ai: Ai
+- alea: ANSTea
+- anoa: ANoa
+- anoi: ANoi
+- apea: AHRea
+- apua: AHRua
+- aroa: ARoa
+- asoa: ASoa
+- asua: ASua
+- asui: ASui
+- avoa: ASRoa
+- avua: ASRua
+- ay: Aeo
+- bar: PVAR
+- beta: PVETa
+- bile: PVINSTe
+- bio: PVIo
+- bäne: PVANe
+- bänä: PVANa
+- data: TKATa
+- demo: TKESHo
+- desi: TKESi
+- dia: TKIa
+- duo: TKAOo
+- dösä: TKOSa
+- ehei: EHei
+- eheä: EHea
+- ehjä: EHia
+- ehoa: EHoa
+- emoa: ESHoa
+- emua: ESHua
+- enoa: ENoa
+- epoa: EHRoa
+- eroa: ERoa
+- etoa: EToa
+- etoi: EToi
+- etua: ETua
+- geo: TKPVEo
+- ges: TKPVES
+- gini: TKPVINi
+- giro: TKPVIRo
+- gis: TKPVIS
+- guru: TKPVAOReo
+- ha: H-a
+- haa: HAa
+- hah: HAH
+- haha: HAHa
+- hai: HAi
+- haka: HAKa
+- hake: HAKe
+- haki: HAKi
+- hako: HAKo
+- haku: HAKeo
+- hali: HANSTi
+- halo: HANSTo
+- halu: HANSTeo
+- hama: HASHa
+- hame: HASHe
+- hana: HANa
+- hara: HARa
+- havu: HASReo
+- heh: HEH
+- hei: HEi
+- heko: HEKo
+- hela: HENSTa
+- helo: HENSTo
+- hely: HENSTeo
+- hep: HEHR
+- hepo: HEHRo
+- hera: HERa
+- hete: HETe
+- heti: HETi
+- hevi: HESRi
+- hie: HIe
+- hiha: HIHa
+- hik: HIK
+- hiki: HIKi
+- hila: HINSTa
+- hile: HINSTe
+- hilu: HINSTeo
+- hima: HISHa
+- himo: HISHo
+- hitu: HITeo
+- hoh: HOH
+- hoi: HOi
+- hoki: HOKi
+- home: HOSHe
+- homo: HOSHo
+- hoo: HOo
+- hop: HOHR
+- hovi: HOSRi
+- huh: HAOH
+- huhu: HAOHeo
+- hui: HAOi
+- humu: HAOSHeo
+- hupa: HAOHRa
+- hupi: HAOHRi
+- hus: HAOS
+- huti: HAOTi
+- hutu: HAOTeo
+- huvi: HAOSRi
+- hyi: HAOi
+- hymy: HAOSHeo
+- hynä: HAONa
+- hyve: HAOSRe
+- hyvä: HAOSRa
+- häh: HAH
+- häkä: HAKa
+- häly: HANSTeo
+- hämi: HASHi
+- hämy: HASHeo
+- häpy: HAHReo
+- hätä: HATa
+- hää: HAa
+- höh: HOH
+- hölö: HONSTo
+- hönö: HONo
+- höpö: HOHRo
+- hörö: HORo
+- höö: HOo
+- ihoa: IHoa
+- iloa: INSToa
+- imeä: ISHea
+- imua: ISHua
+- isoa: ISoa
+- it: IT
+- itua: ITua
+- ja: SKVR-a
+- jaa: SKVRAa
+- jae: SKVRAe
+- jaha: SKVRAHa
+- jako: SKVRAKo
+- jalo: SKVRANSTo
+- jama: SKVRASHa
+- jami: SKVRASHi
+- jana: SKVRANa
+- jano: SKVRANo
+- jee: SKVREe
+- jehu: SKVREHeo
+- jeni: SKVRENi
+- jo: SKVR-o
+- joi: SKVROi
+- joki: SKVROKi
+- joko: SKVROKo
+- jono: SKVRONo
+- joo: SKVROo
+- joro: SKVRORo
+- joru: SKVROReo
+- jos: SKVROS
+- jumi: SKVRAOSHi
+- juna: SKVRAONa
+- jura: SKVRAORa
+- juro: SKVRAORo
+- jury: SKVRAOReo
+- juu: SKVRAOeo
+- jyly: SKVRAONSTeo
+- jymy: SKVRAOSHeo
+- jyry: SKVRAOReo
+- jyrä: SKVRAORa
+- jytä: SKVRAOTa
+- jyvä: SKVRAOSRa
+- jäi: SKVRAi
+- jämä: SKVRASHa
+- jänö: SKVRANo
+- jäte: SKVRATe
+- jää: SKVRAa
+- jörö: SKVRORo
+- kah: KAH
+- kai: KAi
+- kala: KANSTa
+- kali: KANSTi
+- kalu: KANSTeo
+- kama: KASHa
+- kamu: KASHeo
+- kana: KANa
+- kani: KANi
+- kapi: KAHRi
+- kara: KARa
+- kare: KARe
+- kari: KARi
+- karu: KAReo
+- kas: KAS
+- kasa: KASa
+- kasi: KASi
+- kate: KATe
+- kato: KATo
+- katu: KATeo
+- kehi: KEHi
+- keho: KEHo
+- kehu: KEHeo
+- kehä: KEHa
+- keko: KEKo
+- kela: KENSTa
+- keli: KENSTi
+- kelo: KENSTo
+- kemu: KESHeo
+- keno: KENo
+- kepu: KEHReo
+- keri: KERi
+- kero: KERo
+- kerä: KERa
+- kesi: KESi
+- kesy: KESeo
+- kesä: KESa
+- keto: KETo
+- kiho: KIHo
+- kihu: KIHeo
+- kili: KINSTi
+- kilo: KINSTo
+- kimo: KISHo
+- kina: KINa
+- kino: KINo
+- kipu: KIHReo
+- kiri: KIRi
+- kiro: KIRo
+- kisa: KISa
+- kisu: KISeo
+- kita: KITa
+- kitu: KITeo
+- kiva: KISRa
+- kivi: KISRi
+- koe: KOe
+- koho: KOHo
+- kohu: KOHeo
+- koi: KOi
+- koki: KOKi
+- koko: KOKo
+- kola: KONSTa
+- koli: KONSTi
+- kolo: KONSTo
+- komi: KOSHi
+- komu: KOSHeo
+- kone: KONe
+- koni: KONi
+- kopu: KOHReo
+- kori: KORi
+- koro: KORo
+- koru: KOReo
+- kosi: KOSi
+- kota: KOTa
+- koti: KOTi
+- koto: KOTo
+- kova: KOSRa
+- kuha: KAOHa
+- kuli: KAONSTi
+- kulo: KAONSTo
+- kulu: KAONSTeo
+- kumi: KAOSHi
+- kumo: KAOSHo
+- kumu: KAOSHeo
+- kun: KAON
+- kupo: KAOHRo
+- kupu: KAOHReo
+- kura: KAORa
+- kure: KAORe
+- kuri: KAORi
+- kuru: KAOReo
+- kusi: KAOSi
+- kuti: KAOTi
+- kutu: KAOTeo
+- kuu: KAOeo
+- kuva: KAOSRa
+- kuve: KAOSRe
+- kyky: KAOKeo
+- kyl: KAONST
+- kyly: KAONSTeo
+- kylä: KAONSTa
+- kymi: KAOSHi
+- kyni: KAONi
+- kynä: KAONa
+- kyse: KAOSe
+- kyti: KAOTi
+- kyty: KAOTeo
+- kytö: KAOTo
+- kyy: KAOeo
+- käki: KAKi
+- käly: KANSTeo
+- käpy: KAHReo
+- käry: KAReo
+- käsi: KASi
+- köhi: KOHi
+- köhä: KOHa
+- köli: KONSTi
+- laho: HRAHo
+- laki: HRAKi
+- lako: HRAKo
+- laku: HRAKeo
+- lama: HRASHa
+- lana: HRANa
+- lapa: HRAHRa
+- lape: HRAHRe
+- lari: HRARi
+- lasi: HRASi
+- lato: HRATo
+- latu: HRATeo
+- lava: HRASRa
+- leka: HREKa
+- lelu: HRENSTeo
+- lemu: HRESHeo
+- lepo: HREHRo
+- lese: HRESe
+- levy: HRESReo
+- levä: HRESRa
+- liha: HRIHa
+- lika: HRIKa
+- like: HRIKe
+- liki: HRIKi
+- lila: HRINSTa
+- lima: HRISHa
+- lime: HRISHe
+- limu: HRISHeo
+- liri: HRIRi
+- liro: HRIRo
+- liru: HRIReo
+- lisä: HRISa
+- litu: HRITeo
+- lohi: HROHi
+- loi: HROi
+- loka: HROKa
+- loki: HROKi
+- loma: HROSHa
+- lori: HRORi
+- loru: HROReo
+- loso: HROSo
+- lovi: HROSRi
+- luki: HRAOKi
+- luku: HRAOKeo
+- lume: HRAOSHe
+- lumi: HRAOSHi
+- lumo: HRAOSHo
+- luo: HRAOo
+- lupa: HRAOHRa
+- lusi: HRAOSi
+- luu: HRAOeo
+- lyhä: HRAOHa
+- lyly: HRAONSTeo
+- lymy: HRAOSHeo
+- lähe: HRAHe
+- lähi: HRAHi
+- läpi: HRAHRi
+- läsi: HRASi
+- löi: HROi
+- löpö: HROHRo
+- maa: PHAa
+- maha: PHAHa
+- maho: PHAHo
+- maki: PHAKi
+- maku: PHAKeo
+- mana: PHANa
+- mani: PHANi
+- mara: PHARa
+- mare: PHARe
+- masu: PHASeo
+- mato: PHATo
+- mau: PHAeo
+- mehu: PHEHeo
+- mela: PHENSTa
+- melu: PHENSTeo
+- meni: PHENi
+- meno: PHENo
+- menu: PHENeo
+- meri: PHERi
+- mesi: PHESi
+- meta: PHETa
+- mime: PHISHe
+- mini: PHINi
+- minä: PHINa
+- misu: PHISeo
+- moi: PHOi
+- moka: PHOKa
+- mol: PHONST
+- moni: PHONi
+- mono: PHONo
+- mopo: PHOHRo
+- mora: PHORa
+- moro: PHORo
+- muhi: PHAOHi
+- muka: PHAOKa
+- muki: PHAOKi
+- muli: PHAONSTi
+- muna: PHAONa
+- muni: PHAONi
+- mura: PHAORa
+- mure: PHAORe
+- muro: PHAORo
+- muru: PHAOReo
+- musa: PHAOSa
+- muta: PHAOTa
+- mutu: PHAOTeo
+- myi: PHAOi
+- myky: PHAOKeo
+- mäki: PHAKi
+- märe: PHARe
+- mäsä: PHASa
+- mäti: PHATi
+- mätä: PHATa
+- mää: PHAa
+- möi: PHOi
+- mökä: PHOKa
+- möly: PHONSTeo
+- mölö: PHONSTo
+- nai: TPHAi
+- naku: TPHAKeo
+- nami: TPHASHi
+- namu: TPHASHeo
+- nano: TPHANo
+- napa: TPHAHRa
+- naru: TPHAReo
+- nasu: TPHASeo
+- nata: TPHATa
+- nato: TPHATo
+- nau: TPHAeo
+- neli: TPHENSTi
+- nenu: TPHENeo
+- nenä: TPHENa
+- nero: TPHERo
+- neva: TPHESRa
+- nila: TPHINSTa
+- nile: TPHINSTe
+- nimi: TPHISHi
+- nisu: TPHISeo
+- nisä: TPHISa
+- niva: TPHISRa
+- no: TPH-o
+- noki: TPHOKi
+- nolo: TPHONSTo
+- noro: TPHORo
+- nova: TPHOSRa
+- nuha: TPHAOHa
+- nupi: TPHAOHRi
+- nupo: TPHAOHRo
+- nupu: TPHAOHReo
+- nuti: TPHAOTi
+- nyhä: TPHAOHa
+- nyki: TPHAOKi
+- nyky: TPHAOKeo
+- nysä: TPHAOSa
+- nyt: TPHAOT
+- nyy: TPHAOeo
+- näky: TPHAKeo
+- näkö: TPHAKo
+- näre: TPHARe
+- närä: TPHARa
+- nökö: TPHOKo
+- ohja: OHia
+- ohoi: OHoi
+- oi: Oi
+- oja: Oia
+- okei: OKei
+- oloa: ONSToa
+- opea: OHRea
+- opoa: OHRoa
+- orja: ORia
+- osua: OSua
+- osui: OSui
+- ovea: OSRea
+- oy: Oeo
+- paha: PAHa
+- pahe: PAHe
+- pako: PAKo
+- pala: PANSTa
+- palo: PANSTo
+- pani: PANi
+- pano: PANo
+- papu: PAHReo
+- para: PARa
+- pari: PARi
+- pata: PATa
+- pato: PATo
+- peli: PENSTi
+- peni: PENi
+- peri: PERi
+- peru: PEReo
+- perä: PERa
+- pesi: PESi
+- peso: PESo
+- pesu: PESeo
+- pesä: PESa
+- peta: PETa
+- peti: PETi
+- peto: PETo
+- piha: PIHa
+- pihi: PIHi
+- pii: PIi
+- pika: PIKa
+- piki: PIKi
+- piko: PIKo
+- pila: PINSTa
+- pimu: PISHeo
+- pine: PINe
+- pino: PINo
+- pipi: PIHRi
+- pipo: PIHRo
+- piri: PIRi
+- piru: PIReo
+- pisi: PISi
+- pisu: PISeo
+- piti: PITi
+- pito: PITo
+- pivo: PISRo
+- poka: POKa
+- poli: PONSTi
+- polo: PONSTo
+- poly: PONSTeo
+- pomo: POSHo
+- poni: PONi
+- pora: PORa
+- pore: PORe
+- poro: PORo
+- poru: POReo
+- pose: POSe
+- povi: POSRi
+- puhe: PAOHe
+- pui: PAOi
+- puki: PAOKi
+- puku: PAOKeo
+- pula: PAONSTa
+- puli: PAONSTi
+- pulu: PAONSTeo
+- puna: PAONa
+- pune: PAONe
+- pupu: PAOHReo
+- puro: PAORo
+- puru: PAOReo
+- pusi: PAOSi
+- pusu: PAOSeo
+- puu: PAOeo
+- pyhä: PAOHa
+- pyki: PAOKi
+- pyre: PAORe
+- pyry: PAOReo
+- pyy: PAOeo
+- päkä: PAKa
+- päre: PARe
+- päti: PATi
+- pää: PAa
+- pöh: POH
+- pöhö: POHo
+- pökä: POKa
+- pökö: POKo
+- pöly: PONSTeo
+- pöpi: POHRi
+- pöpö: POHRo
+- pösö: POSo
+- pöty: POTeo
+- rae: RAe
+- raha: RAHa
+- rahi: RAHi
+- rako: RAKo
+- rapa: RAHRa
+- rapu: RAHReo
+- rasi: RASi
+- rata: RATa
+- ravi: RASRi
+- re: R-e
+- rehu: REHeo
+- reki: REKi
+- rele: RENSTe
+- remu: RESHeo
+- ren: REN
+- renä: RENa
+- repi: REHRi
+- repo: REHRo
+- resu: RESeo
+- ret: RET
+- reti: RETi
+- retä: RETa
+- reva: RESRa
+- rike: RIKe
+- rima: RISHa
+- rio: RIo
+- ripa: RIHRa
+- ripe: RIHRe
+- risa: RISa
+- risu: RISeo
+- rivi: RISRi
+- rivo: RISRo
+- romu: ROSHeo
+- ropo: ROHRo
+- roso: ROSo
+- rotu: ROTeo
+- rove: ROSRe
+- ruho: RAOHo
+- ruko: RAOKo
+- ruma: RAOSHa
+- runo: RAONo
+- rupi: RAOHRi
+- ruti: RAOTi
+- ry: R-eo
+- ryki: RAOKi
+- rypi: RAOHRi
+- rysy: RAOSeo
+- rysä: RAOSa
+- ryty: RAOTeo
+- rytö: RAOTo
+- räki: RAKi
+- räkä: RAKa
+- räme: RASHe
+- rämä: RASHa
+- räsy: RASeo
+- rösö: ROSo
+- saha: SAHa
+- sai: SAi
+- sake: SAKe
+- sako: SAKo
+- saku: SAKeo
+- sala: SANSTa
+- sali: SANSTi
+- salo: SANSTo
+- sama: SASHa
+- sana: SANa
+- sane: SANe
+- sara: SARa
+- sari: SARi
+- sato: SATo
+- satu: SATeo
+- savi: SASRi
+- savo: SASRo
+- savu: SASReo
+- sei: SEi
+- seka: SEKa
+- seko: SEKo
+- sekä: SEKa
+- setä: SETa
+- sika: SIKa
+- sila: SINSTa
+- silo: SINSTo
+- sima: SISHa
+- sini: SINi
+- siro: SIRo
+- siru: SIReo
+- sisu: SISeo
+- sisä: SISa
+- sivu: SISReo
+- sohi: SOHi
+- soi: SOi
+- sola: SONSTa
+- solu: SONSTeo
+- soma: SOSHa
+- sopi: SOHRi
+- sopu: SOHReo
+- sora: SORa
+- sose: SOSe
+- sota: SOTa
+- soti: SOTi
+- sotu: SOTeo
+- suhu: SAOHeo
+- suka: SAOKa
+- suki: SAOKi
+- suko: SAOKo
+- suku: SAOKeo
+- sula: SAONSTa
+- suli: SAONSTi
+- sulo: SAONSTo
+- suma: SAOSHa
+- sumo: SAOSHo
+- sumu: SAOSHeo
+- suo: SAOo
+- supi: SAOHRi
+- suru: SAOReo
+- sus: SAOS
+- susi: SAOSi
+- suti: SAOTi
+- suu: SAOeo
+- suvi: SAOSRi
+- syke: SAOKe
+- syli: SAONSTi
+- syna: SAONa
+- sysi: SAOSi
+- syti: SAOTi
+- syvä: SAOSRa
+- syy: SAOeo
+- säe: SAe
+- säkä: SAKa
+- säle: SANSTe
+- säly: SANSTeo
+- sälä: SANSTa
+- sälö: SANSTo
+- särä: SARa
+- särö: SARo
+- sävy: SASReo
+- sää: SAa
+- söi: SOi
+- söpö: SOHRo
+- taa: TAa
+- tae: TAe
+- tahi: TAHi
+- taho: TAHo
+- tai: TAi
+- taka: TAKa
+- tali: TANSTi
+- talo: TANSTo
+- tao: TAo
+- tapa: TAHRa
+- taro: TARo
+- taru: TAReo
+- tasa: TASa
+- tase: TASe
+- taso: TASo
+- tau: TAeo
+- tavi: TASRi
+- tavu: TASReo
+- tee: TEe
+- teho: TEHo
+- teko: TEKo
+- tela: TENSTa
+- tele: TENSTe
+- teli: TENSTi
+- tenu: TENeo
+- tenä: TENa
+- tera: TERa
+- tere: TERe
+- terä: TERa
+- tihu: TIHeo
+- tila: TINSTa
+- tili: TINSTi
+- tina: TINa
+- tipu: TIHReo
+- tisu: TISeo
+- toi: TOi
+- toka: TOKa
+- toki: TOKi
+- tola: TONSTa
+- tomu: TOSHeo
+- tora: TORa
+- tori: TORi
+- toru: TOReo
+- toti: TOTi
+- toto: TOTo
+- tovi: TOSRi
+- tuho: TAOHo
+- tui: TAOi
+- tuke: TAOKe
+- tuki: TAOKi
+- tuli: TAONSTi
+- tulo: TAONSTo
+- tuma: TAOSHa
+- tupa: TAOHRa
+- tupo: TAOHRo
+- tura: TAORa
+- turo: TAORo
+- tuti: TAOTi
+- ty: T-eo
+- tykö: TAOKo
+- tyly: TAONSTeo
+- typö: TAOHRo
+- tyri: TAORi
+- tyrä: TAORa
+- tyvi: TAOSRi
+- työ: TAOo
+- täh: TAH
+- täi: TAi
+- täky: TAKeo
+- täpö: TAHRo
+- täry: TAReo
+- täti: TATi
+- töni: TONi
+- tönö: TONo
+- töpö: TOHRo
+- törö: TORo
+- uhoa: AOHoa
+- ui: AOi
+- upea: AOHRea
+- upoa: AOHRoa
+- urea: AORea
+- usea: AOSea
+- utua: AOTua
+- uvea: AOSRea
+- vaha: VAHa
+- vai: VAi
+- vako: VAKo
+- vala: VANSTa
+- vale: VANSTe
+- valo: VANSTo
+- valu: VANSTeo
+- vana: VANa
+- vanu: VANeo
+- vapa: VAHRa
+- vara: VARa
+- varo: VARo
+- vasa: VASa
+- vasu: VASeo
+- vati: VATi
+- vei: VEi
+- vene: VENe
+- veri: VERi
+- vero: VERo
+- vesa: VESa
+- vesi: VESi
+- veti: VETi
+- veto: VETo
+- vety: VETeo
+- via: VIa
+- viha: VIHa
+- vihi: VIHi
+- vika: VIKa
+- vilu: VINSTeo
+- vino: VINo
+- vipu: VIHReo
+- vire: VIRe
+- viri: VIRi
+- viro: VIRo
+- visa: VISa
+- visu: VISeo
+- vita: VITa
+- viti: VITi
+- voi: VOi
+- voro: VORo
+- vuo: VAOo
+- vyö: VAOo
+- vähä: VAHa
+- väki: VAKi
+- väli: VANSTi
+- väre: VARe
+- väri: VARi
+- väry: VAReo
+- väsy: VASeo
+- vävy: VASReo
+- ytyä: AOTua
+- yum: KVRAOSH
+- yäk: KVRAK
+- äkeä: AKea
+- älyä: ANSTua
+- äreä: ARea
+- öh: OH
