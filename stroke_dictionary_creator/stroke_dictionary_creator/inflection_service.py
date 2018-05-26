@@ -5,7 +5,13 @@ from parsy import *
 from operator import concat
 
 compound_word_separator = string("=")
-word_char = letter | whitespace | digit | char_from(".,-_") | compound_word_separator
+
+# E.g. "Ruthenberg" is defined as Ruthen|berg, showing the morpheme boundary of
+# the Swedish word "berg". This holds no meaning in Finnish, so this is best
+# ignored.
+empty_char = char_from("|").result("")
+word_char =   letter | whitespace | digit | char_from(".,-_'") \
+            | compound_word_separator | empty_char
 
 # the classes require a specific format in Finnish that must be honored
 noun      = string("noun").result("subst")
@@ -22,7 +28,8 @@ pronoun = pronoun_fst | pronoun_lst | pronoun_misc | pronoun_place
 class_with_no_inflection = string_from("abbreviation",
                                        "adverb",
                                        "conjunction",
-                                       "interjection")
+                                       "interjection",
+                                       "prefix")
 
 word_class = noun | adjective | verb | pronoun | class_with_no_inflection
 
