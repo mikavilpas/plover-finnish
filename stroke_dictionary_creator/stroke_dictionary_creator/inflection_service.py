@@ -4,7 +4,8 @@ from voikko import inflect_word
 from parsy import *
 from operator import concat
 
-word_char = letter | whitespace | digit | char_from(".,-_")
+compound_word_separator = string("=")
+word_char = letter | whitespace | digit | char_from(".,-_") | compound_word_separator
 
 # the classes require a specific format in Finnish that must be honored
 noun      = string("noun").result("subst")
@@ -16,7 +17,7 @@ pronoun_lst   = string("pnoun_lastname").result("subst")
 pronoun_misc  = string("pnoun_misc").result("subst")
 pronoun_place = string("pnoun_place").result("subst")
 
-pronoun = pronoun_fst | pronoun_lst | pronoun_misc
+pronoun = pronoun_fst | pronoun_lst | pronoun_misc | pronoun_place
 
 class_with_no_inflection = string_from("abbreviation",
                                        "adverb",
@@ -58,8 +59,10 @@ def inflected_forms(word_and_infclass):
     if not_inflectable(word, infclass):
         # this could be allowed later, since they actually technically can be
         # inflected
-        if is_custom_compound_noun(word): return []
-        return [word]
+        if is_custom_compound_noun(word):
+            print("    skipping custom compound word {}".format(word))
+            return set()
+        return set([word])
     else:
         inflections = inflect_word.inflect_word(word, infclass).values()
         return set(inflections)
