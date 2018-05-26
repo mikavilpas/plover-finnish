@@ -2,12 +2,9 @@
 
 from voikko import inflect_word
 from parsy import *
-
-not_available = lambda inflections: inflections == {}
+from operator import concat
 
 word_char = letter | whitespace | digit | char_from(".,-_")
-
-no_inflection = None
 
 # the classes require a specific format in Finnish that must be honored
 noun      = string("noun").result("subst")
@@ -24,7 +21,7 @@ pronoun = pronoun_fst | pronoun_lst | pronoun_misc
 class_with_no_inflection = string_from("abbreviation",
                                        "adverb",
                                        "conjunction",
-                                       "interjection").result(no_inflection)
+                                       "interjection")
 
 word_class = noun | adjective | verb | pronoun | class_with_no_inflection
 
@@ -38,14 +35,31 @@ def word_and_class():
 
     return [word, klass + "-" + reference_word]
 
+def is_custom_compound_noun(word):
+    return "=" in word
+
+def not_inflectable(word, infclass):
+    no_inflectable_reference_word = infclass.endswith("None")
+
+    # this could be allowed later, since they actually technically can be
+    # inflected
+    custom_compound_noun = is_custom_compound_noun(word)
+
+    return no_inflectable_reference_word or custom_compound_noun
+
 def inflected_forms(word_and_infclass):
     (word, infclass) = word_and_class.parse(word_and_infclass)
-    print(word, infclass)
-    inflections = inflect_word.inflect_word(word, infclass)
 
     # The inflections for all words cannot be retrieved. Some words have very
     # irregular forms that the inflector can only parse, not produce.
     #
     # An example: yö (night) - yön (the night's), öin (with nights) - öiden
     # (nights')
-    return None if not_available(inflections) else inflections
+    if not_inflectable(word, infclass):
+        # this could be allowed later, since they actually technically can be
+        # inflected
+        if is_custom_compound_noun(word): return []
+        return [word]
+    else:
+        inflections = inflect_word.inflect_word(word, infclass).values()
+        return set(inflections)

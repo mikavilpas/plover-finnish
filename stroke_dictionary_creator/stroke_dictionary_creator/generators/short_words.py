@@ -5,11 +5,11 @@ from .generators import *
 no_middle_key = success("-")
 
 # all words of length 2
-word_vv       = middle_vowel + end_vowel
+word_vv = middle_vowel + end_vowel
 word_vc = middle_vowel + final_consonant
 word_cv = initial_consonant + no_middle_key + end_vowel
 
-word_v_end_diphtong    = middle_vowel + end_diphtong
+word_v_end_diphtong = middle_vowel + end_diphtong
 
 word_cvv = initial_consonant + middle_vowel + end_vowel
 word_cvc = initial_consonant + middle_vowel + final_consonant
@@ -22,7 +22,6 @@ short_word =   word_vcvv | word_cvcv | word_cvc | word_cvv \
 
 def safe_parse_short_word(word):
     try:
-        print(word)
         return short_word.parse(word)
     except ParseError:
         pass
