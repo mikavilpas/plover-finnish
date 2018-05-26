@@ -24,3 +24,7 @@ class TestInflectionService(unittest.TestCase):
         # can parse umlauts
         ensure(word_and_class.parse("käheä;adjective-korkea"))\
             .equals(["käheä", "adjective-korkea"])
+
+        # can parse underscores
+        ensure(word_and_class.parse("ARA;pnoun_misc-kala"))\
+            .equals(["ARA", "pnoun_misc-kala"])

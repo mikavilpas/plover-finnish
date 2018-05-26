@@ -5,7 +5,7 @@ from parsy import *
 
 not_available = lambda inflections: inflections == {}
 
-word_char = letter | whitespace | digit | char_from(".,-")
+word_char = letter | whitespace | digit | char_from(".,-_")
 
 @generate
 def word_and_class():
