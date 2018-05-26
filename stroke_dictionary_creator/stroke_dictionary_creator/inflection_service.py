@@ -67,7 +67,7 @@ def inflected_forms(word_and_infclass):
         # this could be allowed later, since they actually technically can be
         # inflected
         if is_custom_compound_noun(word):
-            print("    skipping custom compound word {}".format(word))
+            # print("    skipping custom compound word {}".format(word))
             return set()
         return set([word])
     else:
