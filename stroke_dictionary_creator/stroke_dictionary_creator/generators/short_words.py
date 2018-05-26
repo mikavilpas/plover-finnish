@@ -1,6 +1,6 @@
 from parsy import *
 
-from stroke_dictionary_creator.generators.generators import *
+from .generators import *
 
 no_middle_key = success("-")
 
@@ -16,3 +16,13 @@ word_cvc = initial_consonant + middle_vowel + final_consonant
 
 word_cvcv = initial_consonant + middle_vowel + final_consonant + end_vowel
 word_vcvv = middle_vowel + final_consonant + end_diphtong
+
+short_word =   word_vcvv | word_cvcv | word_cvc | word_cvv \
+             | word_v_end_diphtong | word_cv | word_vc | word_vv
+
+def safe_parse_short_word(word):
+    try:
+        print(word)
+        return short_word.parse(word)
+    except ParseError:
+        pass

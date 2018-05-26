@@ -12,11 +12,6 @@ class TestInflectionService(unittest.TestCase):
         forms = inflected_forms("koettaa;verb-aavistaa-av1")
         ensure(forms["imperfekti_pass"]).equals("koetettiin")
 
-        # fails for irregular words, which have to be added manually. There are
-        # only about 40 of them.
-        forms = inflected_forms("yö")
-        ensure(forms).equals(None)
-
     def test_word_and_class_parser(self):
         ensure(word_and_class.parse("koe;noun-hame-av6"))\
             .equals(["koe", "subst-hame-av6"])
@@ -27,4 +22,4 @@ class TestInflectionService(unittest.TestCase):
 
         # can parse underscores
         ensure(word_and_class.parse("ARA;pnoun_misc-kala"))\
-            .equals(["ARA", "pnoun_misc-kala"])
+            .equals(["ARA", "subst-kala"])
