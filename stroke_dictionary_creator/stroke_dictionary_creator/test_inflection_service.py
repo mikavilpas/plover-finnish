@@ -18,8 +18,9 @@ class TestInflectionService(unittest.TestCase):
         ensure(forms).equals(None)
 
     def test_word_and_class_parser(self):
-        ensure(word_and_class.parse("koe;subst-hame-av6"))\
-            .equals(["koe", "subst-hame-av6"])
+        ensure(word_and_class.parse("koe;noun-hame-av6"))\
+            .equals(["koe", "noun-hame-av6"])
 
-        ensure(word_and_class.parse("koe-eläin;subst-hame-av6"))\
-            .equals(["koe-eläin", "subst-hame-av6"])
+        # can parse umlauts
+        ensure(word_and_class.parse("käheä;adjective-korkea"))\
+            .equals(["käheä", "adjective-korkea"])
