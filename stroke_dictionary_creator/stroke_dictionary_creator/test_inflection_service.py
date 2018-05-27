@@ -7,10 +7,10 @@ class TestInflectionService(unittest.TestCase):
     def test_inflected_forms(self):
         # must be able to distinguish nouns ans verbos based on the class of the word
         forms = inflected_forms("koe;noun-hame-av6")
-        ensure(forms["genetiivi"]).equals("kokeen")
+        ensure(forms).contains("kokeen")
 
         forms = inflected_forms("koettaa;verb-aavistaa-av1")
-        ensure(forms["imperfekti_pass"]).equals("koetettiin")
+        ensure(forms).contains("koetettiin")
 
     def test_word_and_class_parser(self):
         ensure(word_and_class.parse("koe;noun-hame-av6"))\
