@@ -137,6 +137,8 @@ long_vowel_i = morpheme("ii", "*I")
 long_vowel =   long_vowel_a | long_vowel_ä | long_vowel_u | long_vowel_y \
              | long_vowel_o | long_vowel_ö | long_vowel_e | long_vowel_i
 
+end_vocal_sound = end_triphtong | end_diphtong | end_vowel
+
 
 
 final_double_consonant_nn = morpheme("nn", "NKS")
