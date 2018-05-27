@@ -28,5 +28,8 @@ class TestShortWords(unittest.TestCase):
     def test_word_cvcv(self):
         ensure(word_cvcv.parse("tina")).equals("TINa")
 
+    def test_word_vccv(self):
+        ensure(word_vccv.parse("uhka")).equals("AOHKa")
+
     def test_word_vcvv(self):
         ensure(word_vcvv.parse("äreä")).equals("ARea")
