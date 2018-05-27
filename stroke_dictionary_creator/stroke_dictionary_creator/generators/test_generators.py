@@ -111,9 +111,9 @@ class TestGenerators(unittest.TestCase):
         combinations = itertools.combinations(keys, 2)
         return list(map(lambda c: "".join(c), combinations))
 
-    def test_two_final_consonants(self):
+    def test_final_two_consonants(self):
         # try all combinations of 2 final consonants, and see that the stroke
-        # parser is able to parse all combinations that two_final_consonants
+        # parser is able to parse all combinations that final_two_consonants
         # reports as valid. stroke_parser is thus the reference implementation
         # that is presumed correct.
         consonants = "NKSHTR"
@@ -121,10 +121,10 @@ class TestGenerators(unittest.TestCase):
 
         for comb in combinations:
             stroke_parser_result = self.parse_or_none(stroke_parser.end_keys, comb)
-            two_final_consonants_result = self.parse_or_none(two_final_consonants,
+            final_two_consonants_result = self.parse_or_none(final_two_consonants,
                                                              comb.lower())
 
-            ensure(stroke_parser_result).equals(two_final_consonants_result)
+            ensure(stroke_parser_result).equals(final_two_consonants_result)
 
     def parse_or_none(self, p, input_string):
         try:

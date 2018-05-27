@@ -30,6 +30,7 @@ class TestShortWords(unittest.TestCase):
 
     def test_word_vccv(self):
         ensure(word_vccv.parse("onko")).equals("ONKo")
+        ensure(word_vccv.parse("ukko")).equals("AONKHo")
         ensure(word_vccv.parse).called_with("ahma").raises(Exception)
 
     def test_word_vcvv(self):

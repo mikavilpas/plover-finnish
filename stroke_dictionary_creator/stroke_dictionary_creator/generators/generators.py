@@ -139,19 +139,6 @@ long_vowel =   long_vowel_a | long_vowel_ä | long_vowel_u | long_vowel_y \
 
 
 
-two_final_consonants = \
-      final_consonant_n + (final_consonant_k | final_consonant_s \
-                           | final_consonant_h | final_consonant_t \
-                           | final_consonant_r) \
-    | final_consonant_k + (final_consonant_s | final_consonant_h \
-                           | final_consonant_t | final_consonant_r) \
-    | final_consonant_s + (final_consonant_h | final_consonant_t \
-                           | final_consonant_r) \
-    | final_consonant_h + (final_consonant_t | final_consonant_r) \
-    | final_consonant_t + (final_consonant_r)
-
-
-
 final_double_consonant_nn = morpheme("nn", "NKS")
 final_double_consonant_kk = morpheme("kk", "NKH")
 final_double_consonant_mm = morpheme("mm", "KSH")
@@ -162,3 +149,16 @@ final_double_consonant_pp = morpheme("pp", "SHR")
 final_double_consonant = final_double_consonant_nn | final_double_consonant_kk \
                          | final_double_consonant_mm | final_double_consonant_ss \
                          | final_double_consonant_rr | final_double_consonant_pp
+
+final_two_diferent_consonants = \
+      final_consonant_n + (final_consonant_k | final_consonant_s \
+                           | final_consonant_h | final_consonant_t \
+                           | final_consonant_r) \
+    | final_consonant_k + (final_consonant_s | final_consonant_h \
+                           | final_consonant_t | final_consonant_r) \
+    | final_consonant_s + (final_consonant_h | final_consonant_t \
+                           | final_consonant_r) \
+    | final_consonant_h + (final_consonant_t | final_consonant_r) \
+    | final_consonant_t + (final_consonant_r)
+
+final_two_consonants = final_double_consonant | final_two_diferent_consonants
