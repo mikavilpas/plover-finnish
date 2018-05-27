@@ -120,7 +120,6 @@ class TestGenerators(unittest.TestCase):
         combinations = self.key_combinations(consonants)
 
         for comb in combinations:
-            print(comb)
             stroke_parser_result = self.parse_or_none(stroke_parser.end_keys, comb)
             two_final_consonants_result = self.parse_or_none(two_final_consonants,
                                                              comb.lower())
