@@ -131,3 +131,11 @@ class TestGenerators(unittest.TestCase):
             return p.parse(input_string)
         except Exception as e:
             return None
+
+    def test_final_double_consonant(self):
+        ensure(final_double_consonant.parse("nn")).equals("NKS")
+        ensure(final_double_consonant.parse("kk")).equals("NKH")
+        ensure(final_double_consonant.parse("mm")).equals("KSH")
+        ensure(final_double_consonant.parse("ss")).equals("NSH")
+        ensure(final_double_consonant.parse("rr")).equals("HTR")
+        ensure(final_double_consonant.parse("pp")).equals("SHR")
