@@ -20,7 +20,7 @@ word_vccv = middle_vowel + two_final_consonants + end_vowel
 word_vcvv = middle_vowel + final_consonant + end_diphtong
 word_vvcv = (long_vowel | middle_diphtong) + final_consonant + end_vowel
 
-short_word = word_vcvv | word_cvcv | word_vccv | word_cvc | \
+short_word = word_vcvv | word_vvcv | word_cvcv | word_vccv | word_cvc | \
              word_cvv | word_vcv | word_v_end_diphtong | \
              word_cv | word_vc | word_vv
 
