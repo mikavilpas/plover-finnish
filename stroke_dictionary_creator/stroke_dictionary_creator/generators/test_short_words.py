@@ -12,6 +12,9 @@ class TestShortWords(unittest.TestCase):
     def test_word_cv(self):
         ensure(word_cv.parse("no")).equals("TPH-o")
 
+    def test_word_vcv(self):
+        ensure(word_vcv.parse("aha")).equals("AHa")
+
     def test_word_cvv(self):
         ensure(word_cvv.parse("joo")).equals("SKVROo")
 
