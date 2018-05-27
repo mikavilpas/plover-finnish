@@ -35,3 +35,7 @@ class TestShortWords(unittest.TestCase):
 
     def test_word_vcvv(self):
         ensure(word_vcvv.parse("äreä")).equals("ARea")
+
+    def test_word_cvvccv(self):
+        ensure(word_cvvccv.parse("paikka")).equals("PAINKHa")
+        ensure(word_cvvccv.parse("paikkoja")).equals("PAINKHoia")
