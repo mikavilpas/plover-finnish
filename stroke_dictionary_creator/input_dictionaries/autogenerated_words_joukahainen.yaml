@@ -21,7 +21,7 @@
 - ape: AHRe
 - apea: AHRea
 - apu: AHReo
-- apua: AHRua
+- apua: AHReoa
 - aro: ARo
 - aroa: ARoa
 - ase: ASe
@@ -29,12 +29,12 @@
 - asoa: ASoa
 - aste: ASTe
 - asu: ASeo
-- asua: ASua
-- asui: ASui
+- asua: ASeoa
+- asui: ASeoi
 - avo: ASRo
 - avoa: ASRoa
 - avu: ASReo
-- avua: ASRua
+- avua: ASReoa
 - ay: Aeo
 - bar: PVAR
 - beta: PVETa
@@ -64,7 +64,7 @@
 - emo: ESHo
 - emoa: ESHoa
 - emu: ESHeo
-- emua: ESHua
+- emua: ESHeoa
 - emä: ESHa
 - eno: ENo
 - enoa: ENoa
@@ -84,7 +84,7 @@
 - etoa: EToa
 - etoi: EToi
 - etu: ETeo
-- etua: ETua
+- etua: ETeoa
 - etä: ETa
 - evä: ESRa
 - geo: TKPVEo
@@ -180,7 +180,7 @@
 - imeä: ISHea
 - imi: ISHi
 - imu: ISHeo
-- imua: ISHua
+- imua: ISHeoa
 - inha: INHa
 - inho: INHo
 - inka: INKa
@@ -192,7 +192,7 @@
 - it: IT
 - iti: ITi
 - itu: ITeo
-- itua: ITua
+- itua: ITeoa
 - itä: ITa
 - iva: ISRa
 - ja: SKVR-a
@@ -538,8 +538,8 @@
 - osa: OSa
 - osti: OSTi
 - osto: OSTo
-- osua: OSua
-- osui: OSui
+- osua: OSeoa
+- osui: OSeoi
 - ote: OTe
 - otra: OTRa
 - ovea: OSRea
@@ -864,7 +864,7 @@
 - usea: AOSea
 - utra: AOTRa
 - utu: AOTeo
-- utua: AOTua
+- utua: AOTeoa
 - uvea: AOSRea
 - vaha: VAHa
 - vai: VAi
@@ -922,14 +922,14 @@
 - ylä: AONSTa
 - ypö: AOHRo
 - yty: AOTeo
-- ytyä: AOTua
+- ytyä: AOTeoa
 - yum: KVRAOSH
 - yäk: KVRAK
 - ähä: AHa
 - äkeä: AKea
 - äksy: AKSeo
 - äly: ANSTeo
-- älyä: ANSTua
+- älyä: ANSTeoa
 - älä: ANSTa
 - äreä: ARea
 - öh: OH
