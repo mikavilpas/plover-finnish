@@ -1,6 +1,8 @@
 import unittest
 from ensure import ensure
 from stroke_dictionary_creator.generators.generators import *
+import itertools
+import stroke_dictionary_creator.stroke_parser as stroke_parser
 
 class TestGenerators(unittest.TestCase):
     def test_middle_vowel(self):
@@ -104,3 +106,29 @@ class TestGenerators(unittest.TestCase):
         ensure(long_vowel.parse("öö")).equals("O*")
         ensure(long_vowel.parse("ee")).equals("*E")
         ensure(long_vowel.parse("ii")).equals("*I")
+
+    def key_combinations(self, keys):
+        combinations = itertools.combinations(keys, 2)
+        return list(map(lambda c: "".join(c), combinations))
+
+    def test_two_final_consonants(self):
+        # try all combinations of 2 final consonants, and see that the stroke
+        # parser is able to parse all combinations that two_final_consonants
+        # reports as valid. stroke_parser is thus the reference implementation
+        # that is presumed correct.
+        consonants = "NKSHTR"
+        combinations = self.key_combinations(consonants)
+
+        for comb in combinations:
+            print(comb)
+            stroke_parser_result = self.parse_or_none(stroke_parser.end_keys, comb)
+            two_final_consonants_result = self.parse_or_none(two_final_consonants,
+                                                             comb.lower())
+
+            ensure(stroke_parser_result).equals(two_final_consonants_result)
+
+    def parse_or_none(self, p, input_string):
+        try:
+            return p.parse(input_string)
+        except Exception as e:
+            return None

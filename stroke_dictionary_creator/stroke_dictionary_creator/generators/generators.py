@@ -107,16 +107,16 @@ end_triphtong =   end_triphtong_uja | end_triphtong_yjä | end_triphtong_ija \
 
 
 
-final_consonant_l = morpheme("l", "NST")
-final_consonant_m = morpheme("m", "SH")
-final_consonant_p = morpheme("p", "HR")
-final_consonant_v = morpheme("v", "SR")
 final_consonant_n = morpheme("n", "N")
 final_consonant_k = morpheme("k", "K")
 final_consonant_s = morpheme("s", "S")
 final_consonant_h = morpheme("h", "H")
 final_consonant_t = morpheme("t", "T")
 final_consonant_r = morpheme("r", "R")
+final_consonant_l = morpheme("l", "NST")
+final_consonant_m = morpheme("m", "SH")
+final_consonant_p = morpheme("p", "HR")
+final_consonant_v = morpheme("v", "SR")
 
 final_consonant =   final_consonant_l | final_consonant_m | final_consonant_p \
                   | final_consonant_v | final_consonant_n | final_consonant_k \
@@ -136,3 +136,16 @@ long_vowel_i = morpheme("ii", "*I")
 
 long_vowel =   long_vowel_a | long_vowel_ä | long_vowel_u | long_vowel_y \
              | long_vowel_o | long_vowel_ö | long_vowel_e | long_vowel_i
+
+
+
+two_final_consonants = \
+      final_consonant_n + (final_consonant_k | final_consonant_s \
+                           | final_consonant_h | final_consonant_t \
+                           | final_consonant_r) \
+    | final_consonant_k + (final_consonant_s | final_consonant_h \
+                           | final_consonant_t | final_consonant_r) \
+    | final_consonant_s + (final_consonant_h | final_consonant_t \
+                           | final_consonant_r) \
+    | final_consonant_h + (final_consonant_t | final_consonant_r) \
+    | final_consonant_t + (final_consonant_r)
