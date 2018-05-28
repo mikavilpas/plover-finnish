@@ -139,6 +139,7 @@ class TestGenerators(unittest.TestCase):
         ensure(final_double_consonant.parse("ss")).equals("NSH")
         ensure(final_double_consonant.parse("rr")).equals("HTR")
         ensure(final_double_consonant.parse("pp")).equals("SHR")
+        ensure(final_double_consonant.parse("tt")).equals("STR")
 
     def end_vocal_sound(self):
         ensure(end_vocal_sound.parse("a")).equals("a")

@@ -143,16 +143,10 @@ end_vocal_sound = end_triphtong | end_diphtong | end_vowel
 
 
 
-final_double_consonant_nn = morpheme("nn", "NKS")
-final_double_consonant_kk = morpheme("kk", "NKH")
-final_double_consonant_mm = morpheme("mm", "KSH")
-final_double_consonant_ss = morpheme("ss", "NSH")
-final_double_consonant_rr = morpheme("rr", "HTR")
-final_double_consonant_pp = morpheme("pp", "SHR")
-
-final_double_consonant = final_double_consonant_nn | final_double_consonant_kk \
-                         | final_double_consonant_mm | final_double_consonant_ss \
-                         | final_double_consonant_rr | final_double_consonant_pp
+final_double_consonant = alt(morpheme("nn", "NKS"), morpheme("kk", "NKH"),
+                             morpheme("mm", "KSH"), morpheme("ss", "NSH"),
+                             morpheme("tt", "STR"), morpheme("rr", "HTR"),
+                             morpheme("pp", "SHR"))
 
 final_two_diferent_consonants = \
       final_consonant_n + (final_consonant_k | final_consonant_s \
