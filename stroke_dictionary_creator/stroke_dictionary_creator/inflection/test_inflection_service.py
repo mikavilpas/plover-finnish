@@ -12,6 +12,9 @@ class TestInflectionService(unittest.TestCase):
         forms = inflected_forms("koettaa;verb-aavistaa-av1")
         ensure(forms).contains("koetettiin")
 
+        # print(inflected_forms("koettaa;verb-aavistaa-av1"))
+        print(inflected_forms("kuunnella;verb-katsella-av2"))
+
     def test_word_and_class_parser(self):
         ensure(word_and_class.parse("koe;noun-hame-av6"))\
             .equals(["koe", "subst-hame-av6"])

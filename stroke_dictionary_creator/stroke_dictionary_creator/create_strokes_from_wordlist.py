@@ -2,7 +2,7 @@ import sys
 import generators.short_words as sw
 from toolz import functoolz
 from toolz import itertoolz
-import inflection_service as infl
+import inflection.inflection_service as infl
 from operator import concat
 import math
 from multiprocessing import Pool
