@@ -145,3 +145,5 @@ class TestGenerators(unittest.TestCase):
         ensure(end_vocal_sound.parse("a")).equals("a")
         ensure(end_vocal_sound.parse("ei")).equals("ei")
         ensure(end_vocal_sound.parse("ijä")).equals("eia")
+        ensure(end_vocal_sound.parse("iä")).equals("ia")
+        ensure(end_vocal_sound.parse("ia")).equals("ia")

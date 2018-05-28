@@ -88,10 +88,16 @@ end_diphtong_öä = morpheme("öä", "oa")
 end_diphtong_ja = morpheme("ja", "ia")
 end_diphtong_jä = morpheme("jä", "ia")
 
-end_diphtong =   end_diphtong_ei | end_diphtong_eo | end_diphtong_eö | end_diphtong_ea \
-               | end_diphtong_eä | end_diphtong_ui | end_diphtong_yi | end_diphtong_ua \
-               | end_diphtong_yä | end_diphtong_oi | end_diphtong_öi | end_diphtong_oa \
-               | end_diphtong_öä | end_diphtong_ja | end_diphtong_jä
+# TODO possible risk of word conflict?
+end_diphtong_ia = morpheme("ia", "ia")
+end_diphtong_iä = morpheme("iä", "ia")
+
+end_diphtong = alt(end_diphtong_ei, end_diphtong_eo, end_diphtong_eö,
+                   end_diphtong_ea, end_diphtong_eä, end_diphtong_ui,
+                   end_diphtong_yi, end_diphtong_ua, end_diphtong_yä,
+                   end_diphtong_oi, end_diphtong_öi, end_diphtong_oa,
+                   end_diphtong_öä, end_diphtong_ja, end_diphtong_jä,
+                   end_diphtong_ia, end_diphtong_iä)
 
 
 
