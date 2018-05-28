@@ -1,5 +1,10 @@
 from parsy import *
 
+# todo: add
+# ei
+# mene
+# mennyt
+
 def morpheme(key, chord):
     return string(key).map(lambda _: chord)
 

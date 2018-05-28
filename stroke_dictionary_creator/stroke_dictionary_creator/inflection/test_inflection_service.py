@@ -1,6 +1,6 @@
 import unittest
 from ensure import ensure
-from stroke_dictionary_creator.inflection_service import *
+from stroke_dictionary_creator.inflection.inflection_service import *
 
 class TestInflectionService(unittest.TestCase):
 
