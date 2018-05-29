@@ -1,6 +1,7 @@
 import unittest
 from ensure import ensure
 from stroke_dictionary_creator.inflection.roots.root_word_service import *
+from .gradation import *
 
 class TestRootWordService(unittest.TestCase):
     def test_kotus_noun_1_valo_full_cases(self):
@@ -55,12 +56,6 @@ class TestRootWordService(unittest.TestCase):
 
         data = kotus_noun_1_valo("öljy")
         ensure(data.abessive_plural).equals("öljyittä")
-
-    def test_gradate_kotus_i_ilta_illan_sivellin_siveltimen(self):
-        gradate = gradate_kotus_i_ilta_illan_sivellin_siveltimen
-
-        ensure(gradate("ilta")).equals("illa")
-        ensure(gradate("sivellin")).equals("siveltin")
 
     def test_kotus_noun_1_valo_gradation(self):
         data = kotus_noun_1_valo("aalto",
