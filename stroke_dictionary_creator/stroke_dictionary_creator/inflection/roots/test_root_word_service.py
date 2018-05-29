@@ -49,4 +49,6 @@ class TestRootWordService(unittest.TestCase):
 
         ensure(data.comitative_plural).equals("aamuine")
 
-        # print(kotus_noun_1_valo("dödö"))
+    def test_kotus_noun_1_valo_umlauts(self):
+        data = kotus_noun_1_valo("emännistö")
+        ensure(data.abessive_plural).equals("emännistöittä")

@@ -1,4 +1,6 @@
 from parsy import *
+sys.path.append("../../../../plugin/plover_finnish/")
+from plover_finnish.vowel_group_service import change_to_same_vowel_group
 
 vowel = char_from("aeiouyäö")
 consonant = char_from("bcdfghjklmnpqrstvwxz")
@@ -42,34 +44,38 @@ InflectionInfo = namedtuple("InflectionInfo",
                              "comitative_plural"])
 
 def kotus_noun_1_valo(word):
+    # suffix
+    def s(text): return change_to_same_vowel_group(word, text)
+
     (root, data) = reverse_parse(word, kotus_noun_1_valo_parser)
+
     v = data["end_vowel"]
     return InflectionInfo(nominative         = word,
                           nominative_plural  = word + "jen",
                           genitive           = word + "n",
                           genitive_plural    = word + "jen",
-                          partitive          = word + "a",
-                          partitive_plural   = word + "j" + "a",
+                          partitive          = word + s("a"),
+                          partitive_plural   = word + s("ja"),
                           accusatives        = [word, word + "n"],
-                          accusative_plural  = word + "ja",
-                          inessive           = word + "ssa",
-                          inessive_plural    = word + "issa",
-                          elative            = word + "sta",
-                          elative_plural     = word + "ista",
+                          accusative_plural  = word + s("ja"),
+                          inessive           = word + s("ssa"),
+                          inessive_plural    = word + s("issa"),
+                          elative            = word + s("sta"),
+                          elative_plural     = word + s("ista"),
                           illative           = word + v + "n",
                           illative_plural    = word + "ihin",
-                          adessive           = word + "lla",
-                          adessive_plural    = word + "illa",
-                          ablative           = word + "lta",
-                          ablative_plural    = word + "ilta",
+                          adessive           = word + s("lla"),
+                          adessive_plural    = word + s("illa"),
+                          ablative           = word + s("lta"),
+                          ablative_plural    = word + s("ilta"),
                           allative           = word + "lle",
                           allative_plural    = word + "ille",
-                          essive             = word + "na",
-                          essive_plural      = word + "ina",
+                          essive             = word + s("na"),
+                          essive_plural      = word + s("ina"),
                           translative        = word + "ksi",
                           translative_plural = word + "iksi",
-                          abessive           = word + "tta",
-                          abessive_plural    = word + "itta",
+                          abessive           = word + s("tta"),
+                          abessive_plural    = word + s("itta"),
                           instructive_plural = word + "in",
                           comitative_plural  = word + "ine",
     )
