@@ -7,7 +7,7 @@ class TestRootWordService(unittest.TestCase):
         data = kotus_noun_1_valo("aamu")
 
         ensure(data.nominative).equals("aamu")
-        ensure(data.nominative_plural).equals("aamujen")
+        ensure(data.nominative_plural).equals("aamut")
 
         ensure(data.genitive).equals("aamun")
         ensure(data.genitive_plural).equals("aamujen")
@@ -52,3 +52,26 @@ class TestRootWordService(unittest.TestCase):
     def test_kotus_noun_1_valo_umlauts(self):
         data = kotus_noun_1_valo("emännistö")
         ensure(data.abessive_plural).equals("emännistöittä")
+
+        data = kotus_noun_1_valo("öljy")
+        ensure(data.abessive_plural).equals("öljyittä")
+
+    def test_gradate_kotus_i_ilta_illan_sivellin_siveltimen(self):
+        gradate = gradate_kotus_i_ilta_illan_sivellin_siveltimen
+
+        ensure(gradate("ilta")).equals("illa")
+        ensure(gradate("sivellin")).equals("siveltin")
+
+    def test_kotus_noun_1_valo_gradation(self):
+        data = kotus_noun_1_valo("aalto",
+                                 gradate_kotus_i_ilta_illan_sivellin_siveltimen)
+        ensure(data.nominative_plural).equals("aallot")
+        ensure(data.genitive).equals("aallon")
+        ensure(data.genitive_plural).equals("aaltojen")
+
+
+        data = kotus_noun_1_valo("sisältö",
+                                 gradate_kotus_i_ilta_illan_sivellin_siveltimen)
+        ensure(data.nominative_plural).equals("sisällöt")
+        ensure(data.genitive).equals("sisällön")
+        ensure(data.genitive_plural).equals("sisältöjen")
