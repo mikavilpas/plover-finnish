@@ -1,9 +1,9 @@
 import unittest
 from ensure import ensure
-from stroke_dictionary_creator.inflection.roots.root_word_service import *
-from .gradation import *
+from .kotus_noun_1_valo import *
+from ..gradation import *
 
-class TestRootWordService(unittest.TestCase):
+class TestInflectionType1(unittest.TestCase):
     def test_kotus_noun_1_valo_full_cases(self):
         data = kotus_noun_1_valo("aamu")
 
