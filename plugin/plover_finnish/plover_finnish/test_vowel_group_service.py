@@ -25,3 +25,6 @@ class TestVowelGroupService(unittest.TestCase):
         ensure(change_to_same_vowel_group("paasto", "ssa")).equals("ssa")
         ensure(change_to_same_vowel_group("päästö", "ssa")).equals("ssä")
         ensure(change_to_same_vowel_group("päästö", "ssa")).equals("ssä")
+
+        # partitive suffix
+        ensure(change_to_same_vowel_group("päästö", "a")).equals("ä")

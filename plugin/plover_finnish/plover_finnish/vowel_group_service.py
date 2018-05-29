@@ -6,11 +6,13 @@ aou = "aou"
 
 def find(word, char):
     index = word.find(char)
-    return index if index > 0 else None
+    return index if index >= 0 else None
 
 def contains_char(word, character_candidates):
     matches = partial(find, word)
-    return any(filter(matches, character_candidates))
+    # return any(filter(matches, character_candidates))
+    return any(True for c in character_candidates
+               if matches(c) is not None)
 
 def vowel_group(word):
     if contains_char(word, aou):
