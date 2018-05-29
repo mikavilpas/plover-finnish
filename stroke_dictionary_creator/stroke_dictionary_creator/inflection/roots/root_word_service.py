@@ -61,9 +61,36 @@ def replace_first(target, replacement):
 
     return replacer
 
-def gradate_kotus_i_ilta_illan_sivellin_siveltimen(word):
-    p = replace_first("lt", "ll") | replace_first("ll", "lt")
-    return reverse_parse(word, p)
+def gradation(word, target, replacement):
+    p = replace_first(target, replacement) | replace_first(replacement, target)
+
+    def parser(word):
+        return reverse_parse(word, p)
+    return parser
+
+def gradation_one_way(word, target, replacement):
+    p = replace_first(target, replacement)
+
+    def parser(word):
+        return reverse_parse(word, p)
+    return parser
+
+gradate_kotus_a_takki_takin_hake_hakkeen  = gradation("kk", "k")
+gradate_kotus_b_kaappi_kaapin_opas_oppaan = gradation("pp", "p")
+gradate_kotus_c_tyttö_tytön_kate_katteen  = gradation("tt", "t")
+
+# TODO how to know at which position in the word to apply the gradation?
+# gradate_kotus_d_reikä_reiän_kate_katteen = gradation("k", "")
+
+gradate_kotus_e_sopu_sovun_taive_taipeen        = gradation("p", "v")
+gradate_kotus_f_satu_sadun_keidas_keitaan       = gradation("t", "d")
+gradate_kotus_g_aurinko_auringon_rengas_renkaan = gradation("nk", "ng")
+gradate_kotus_h_kumpi_kumman_lumme_lumpeen      = gradation("mp", "mm")
+gradate_kotus_i_ilta_illan_sivellin_siveltimen  = gradation("lt", "ll")
+gradate_kotus_j_hento_hennon_vanne_vanteen      = gradation("nt", "nn")
+gradate_kotus_k_virta_virran_porras_portaan     = gradation("rt", "rr")
+gradate_kotus_l_arki_arjen_hylje_hylkeen        = gradation("k", "j")
+gradate_kotus_m_suku_suvun                      = gradation_one_way("k", "v")
 
 identity = lambda a: a
 
