@@ -8,19 +8,19 @@ sys.path.append("../../../../plugin/plover_finnish/")
 from plover_finnish.vowel_group_service import change_to_same_vowel_group
 
 @generate
-def kotus_noun_1_valo_parser():
-    v = yield vowel
+def root_and_end_vowel():
+    end_vowel = yield vowel
     rest = yield character.at_least(1).concat()
-    return [rest, dict(end_vowel = v)]
+    return [rest, end_vowel]
 
 def kotus_noun_1_valo(word, gradation_fn = identity):
     # suffix
     def s(text): return change_to_same_vowel_group(word, text)
 
-    (root, data) = reverse_parse(word, kotus_noun_1_valo_parser)
+    (root, end_vowel) = reverse_parse(word, root_and_end_vowel)
     word_alt = gradation_fn(word)
 
-    v = data["end_vowel"]
+    v = end_vowel
     return InflectionInfo(nominative         = word,
                           nominative_plural  = word_alt + "t",
                           genitive           = word_alt + "n",
