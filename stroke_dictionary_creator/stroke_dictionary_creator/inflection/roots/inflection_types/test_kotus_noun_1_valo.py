@@ -1,8 +1,9 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_1_valo import *
-from ..gradation import *
+from .kotus_noun_1_valo import kotus_noun_1_valo
+from ..gradation import gradate_kotus_i_ilta_illan_sivellin_siveltimen
 from .test_utils import ensure_inflections_equal
+from ..noun_inflection_info import InflectionInfo
 
 class TestInflectionType1(unittest.TestCase):
     def test_kotus_noun_1_valo_full_cases(self):

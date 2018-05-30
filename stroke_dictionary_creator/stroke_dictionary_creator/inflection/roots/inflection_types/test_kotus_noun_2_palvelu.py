@@ -1,57 +1,46 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_2_palvelu import *
-from ..gradation import *
+from .kotus_noun_2_palvelu import kotus_noun_2_palvelu
+from ..noun_inflection_info import InflectionInfo
+from .test_utils import ensure_inflections_equal
 
 class TestInflectionType2(unittest.TestCase):
     def test_kotus_noun_2_palvelu_full_cases(self):
         data = kotus_noun_2_palvelu("palvelu")
-
-        ensure(data.nominative).equals("palvelu")
-        ensure(data.nominative_plural).equals("palvelut")
-
-        ensure(data.genitive).equals("palvelun")
-        ensure(data.genitives_plural).equals(["palvelujen",
-                                              "palveluiden",
-                                              "palveluitten"])
-
-        ensure(data.partitive).equals("palvelua")
-        ensure(data.partitives_plural).equals(["palveluita",
-                                               "palveluja"])
-
-        ensure(data.accusatives).equals(["palvelu", "palvelun"])
-        ensure(data.accusative_plural).equals("palvelut")
-
-        ensure(data.inessive).equals("palvelussa")
-        ensure(data.inessive_plural).equals("palveluissa")
-
-        ensure(data.elative).equals("palvelusta")
-        ensure(data.elative_plural).equals("palveluista")
-
-        ensure(data.illative).equals("palveluun")
-        ensure(data.illatives_plural).equals(["palveluihin"])
-
-        ensure(data.adessive).equals("palvelulla")
-        ensure(data.adessive_plural).equals("palveluilla")
-
-        ensure(data.ablative).equals("palvelulta")
-        ensure(data.ablative_plural).equals("palveluilta")
-
-        ensure(data.allative).equals("palvelulle")
-        ensure(data.allative_plural).equals("palveluille")
-
-        ensure(data.essive).equals("palveluna")
-        ensure(data.essive_plural).equals("palveluina")
-
-        ensure(data.translative).equals("palveluksi")
-        ensure(data.translative_plural).equals("palveluiksi")
-
-        ensure(data.abessive).equals("palvelutta")
-        ensure(data.abessive_plural).equals("palveluitta")
-
-        ensure(data.instructive_plural).equals("palveluin")
-
-        ensure(data.comitative_plural).equals("palveluine")
+        print(data)
+        expected = InflectionInfo(nominative='palvelu',
+                                  nominative_plural='palvelut',
+                                  genitive='palvelun',
+                                  genitives_plural=['palvelujen',
+                                                    'palveluiden',
+                                                    'palveluitten'],
+                                  partitive='palvelua',
+                                  partitives_plural=['palveluita',
+                                                     'palveluja'],
+                                  accusatives=['palvelu',
+                                               'palvelun'],
+                                  accusative_plural='palvelut',
+                                  inessive='palvelussa',
+                                  inessive_plural='palveluissa',
+                                  elative='palvelusta',
+                                  elative_plural='palveluista',
+                                  illative='palveluun',
+                                  illatives_plural=['palveluihin'],
+                                  adessive='palvelulla',
+                                  adessive_plural='palveluilla',
+                                  ablative='palvelulta',
+                                  ablative_plural='palveluilta',
+                                  allative='palvelulle',
+                                  allative_plural='palveluille',
+                                  essive='palveluna',
+                                  essive_plural='palveluina',
+                                  translative='palveluksi',
+                                  translative_plural='palveluiksi',
+                                  abessive='palvelutta',
+                                  abessive_plural='palveluitta',
+                                  instructive_plural='palveluin',
+                                  comitative_plural='palveluine')
+        ensure_inflections_equal(expected, data)
 
     def test_kotus_noun_2_palvelu_umlauts(self):
         data = kotus_noun_2_palvelu("epäily")
