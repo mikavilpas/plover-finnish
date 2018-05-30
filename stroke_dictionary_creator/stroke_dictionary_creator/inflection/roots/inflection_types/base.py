@@ -12,3 +12,12 @@ def root_and_end_vowel():
     end_vowel = yield vowel
     rest = yield character.at_least(1).concat()
     return [rest, end_vowel]
+
+def root_and_optional_end_vowel(fallback_vowel):
+    @generate
+    def parser():
+        end_vowel = yield vowel.optional()
+        end_vowel = end_vowel if end_vowel is not None else fallback_vowel
+        rest = yield character.at_least(1).concat()
+        return [rest, end_vowel]
+    return parser

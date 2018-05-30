@@ -3,52 +3,44 @@ from ensure import ensure
 from .kotus_noun_5_risti import *
 from ..gradation import *
 
+def ensure_inflections_equal(expected, actual):
+    for k,v in expected._asdict().items():
+        ensure((k,v)).equals((k, getattr(actual, k)))
+
 class TestInflectionType5(unittest.TestCase):
     def test_kotus_noun_5_risti_full_cases(self):
         data = kotus_noun_5_risti("risti")
+        expected = InflectionInfo(nominative='risti',
+                                  nominative_plural='ristit',
+                                  genitive='ristin',
+                                  genitives_plural=['ristien'],
+                                  partitive='ristiä',
+                                  partitives_plural=['ristejä'],
+                                  accusatives=['risti',
+                                               'ristin'],
+                                  accusative_plural='ristit',
+                                  inessive='ristissä',
+                                  inessive_plural='risteissä',
+                                  elative='rististä',
+                                  elative_plural='risteistä',
+                                  illative='ristiin',
+                                  illatives_plural=['risteihin'],
+                                  adessive='ristillä',
+                                  adessive_plural='risteillä',
+                                  ablative='ristiltä',
+                                  ablative_plural='risteiltä',
+                                  allative='ristille',
+                                  allative_plural='risteille',
+                                  essive='ristinä',
+                                  essive_plural='risteinä',
+                                  translative='ristiksi',
+                                  translative_plural='risteiksi',
+                                  abessive='ristittä',
+                                  abessive_plural='risteittä',
+                                  instructive_plural='ristein',
+                                  comitative_plural='risteine')
 
-        ensure(data.nominative).equals("risti")
-        ensure(data.nominative_plural).equals("ristit")
-
-        ensure(data.genitive).equals("ristin")
-        ensure(data.genitives_plural).equals(["ristien"])
-
-        ensure(data.partitive).equals("ristiä")
-        ensure(data.partitives_plural).equals(["ristejä"])
-
-        ensure(data.accusatives).equals(["risti", "ristin"])
-        ensure(data.accusative_plural).equals("ristit")
-
-        ensure(data.inessive).equals("ristissä")
-        ensure(data.inessive_plural).equals("risteissä")
-
-        ensure(data.elative).equals("rististä")
-        ensure(data.elative_plural).equals("risteistä")
-
-        ensure(data.illative).equals("ristiin")
-        ensure(data.illatives_plural).equals(["risteihin"])
-
-        ensure(data.adessive).equals("ristillä")
-        ensure(data.adessive_plural).equals("risteillä")
-
-        ensure(data.ablative).equals("ristiltä")
-        ensure(data.ablative_plural).equals("risteiltä")
-
-        ensure(data.allative).equals("ristille")
-        ensure(data.allative_plural).equals("risteille")
-
-        ensure(data.essive).equals("ristinä")
-        ensure(data.essive_plural).equals("risteinä")
-
-        ensure(data.translative).equals("ristiksi")
-        ensure(data.translative_plural).equals("risteiksi")
-
-        ensure(data.abessive).equals("ristittä")
-        ensure(data.abessive_plural).equals("risteittä")
-
-        ensure(data.instructive_plural).equals("ristein")
-
-        ensure(data.comitative_plural).equals("risteine")
+        ensure_inflections_equal(expected, data)
 
     def test_kotus_noun_5_risti_umlauts_and_gradation(self):
         data = kotus_noun_5_risti("käpälöinti",
@@ -82,4 +74,39 @@ class TestInflectionType5(unittest.TestCase):
                                   abessive_plural="käpälöinneittä",
                                   instructive_plural="käpälöinnein",
                                   comitative_plural="käpälöinteine")
-        ensure(data).equals(expected)
+
+        ensure_inflections_equal(expected, data)
+
+    def test_with_word_ending_in_consonant(self):
+        data = kotus_noun_5_risti("beat")
+        expected = InflectionInfo(nominative='beat',
+                                  nominative_plural='beatit',
+                                  genitive='beatin',
+                                  genitives_plural=['beatien'],
+                                  partitive='beata',
+                                  partitives_plural=['beateja'],
+                                  accusatives=['beat',
+                                               'beatin'],
+                                  accusative_plural='beatit',
+                                  inessive='beatissa',
+                                  inessive_plural='beateissa',
+                                  elative='beatista',
+                                  elative_plural='beateista',
+                                  illative='beatin',
+                                  illatives_plural=['beateihin'],
+                                  adessive='beatilla',
+                                  adessive_plural='beateilla',
+                                  ablative='beatilta',
+                                  ablative_plural='beateilta',
+                                  allative='beatille',
+                                  allative_plural='beateille',
+                                  essive='beatina',
+                                  essive_plural='beateina',
+                                  translative='beatiksi',
+                                  translative_plural='beateiksi',
+                                  abessive='beatitta',
+                                  abessive_plural='beateitta',
+                                  instructive_plural='beatein',
+                                  comitative_plural='beateine')
+
+        ensure_inflections_equal(expected, data)
