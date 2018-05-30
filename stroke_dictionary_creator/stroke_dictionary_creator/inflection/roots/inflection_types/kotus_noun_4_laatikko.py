@@ -3,7 +3,7 @@ from .kotus_noun_1_valo import kotus_noun_1_valo
 
 def kotus_noun_4_laatikko(word, gradation_fn = identity):
     # suffix
-    def s(text): return change_to_same_vowel_group(word, text)
+    def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
 
     word_alt = gradation_fn(word)
     (root, end_vowel) = reverse_parse(word, root_and_end_vowel)
