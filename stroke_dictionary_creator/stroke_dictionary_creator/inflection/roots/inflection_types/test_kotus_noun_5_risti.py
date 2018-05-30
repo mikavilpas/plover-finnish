@@ -1,8 +1,9 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_5_risti import *
-from ..gradation import *
+from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
+from ..gradation import gradate_kotus_j_hento_hennon_vanne_vanteen
+from .kotus_noun_5_risti import kotus_noun_5_risti
 
 class TestInflectionType5(unittest.TestCase):
     def test_kotus_noun_5_risti_full_cases(self):

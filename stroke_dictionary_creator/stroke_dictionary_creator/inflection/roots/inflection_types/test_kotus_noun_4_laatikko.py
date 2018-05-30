@@ -1,9 +1,9 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_4_laatikko import kotus_noun_4_laatikko
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
 from ..gradation import gradate_kotus_a_takki_takin_hake_hakkeen
+from .kotus_noun_4_laatikko import kotus_noun_4_laatikko
 
 class TestInflectionType4(unittest.TestCase):
     # all the cases seem to belong to the gradation class A
