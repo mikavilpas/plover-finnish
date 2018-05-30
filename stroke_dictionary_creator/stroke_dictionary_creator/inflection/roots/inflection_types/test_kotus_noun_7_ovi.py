@@ -6,7 +6,7 @@ from ..gradation import gradate_kotus_e_sopu_sovun_taive_taipeen, gradate_kotus_
 from .kotus_noun_7_ovi import kotus_noun_7_ovi
 
 class TestInflectionType7(unittest.TestCase):
-    def test_kotus_noun_6_ove_full_cases(self):
+    def test_basic_example(self):
         data = kotus_noun_7_ovi("ovi")
 
         expected = InflectionInfo(nominative="ovi",
