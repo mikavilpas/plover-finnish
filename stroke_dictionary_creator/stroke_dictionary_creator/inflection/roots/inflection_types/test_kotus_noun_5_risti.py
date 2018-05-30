@@ -2,10 +2,7 @@ import unittest
 from ensure import ensure
 from .kotus_noun_5_risti import *
 from ..gradation import *
-
-def ensure_inflections_equal(expected, actual):
-    for k,v in expected._asdict().items():
-        ensure((k,v)).equals((k, getattr(actual, k)))
+from .test_utils import ensure_inflections_equal
 
 class TestInflectionType5(unittest.TestCase):
     def test_kotus_noun_5_risti_full_cases(self):
