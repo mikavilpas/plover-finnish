@@ -11,10 +11,10 @@ class TestInflectionType1(unittest.TestCase):
         ensure(data.nominative_plural).equals("aamut")
 
         ensure(data.genitive).equals("aamun")
-        ensure(data.genitive_plural).equals("aamujen")
+        ensure(data.genitives_plural).equals(["aamujen"])
 
         ensure(data.partitive).equals("aamua")
-        ensure(data.partitive_plural).equals("aamuja")
+        ensure(data.partitives_plural).equals(["aamuja"])
 
         ensure(data.accusatives).equals(["aamu", "aamun"])
         ensure(data.accusative_plural).equals("aamuja")
@@ -62,11 +62,11 @@ class TestInflectionType1(unittest.TestCase):
                                  gradate_kotus_i_ilta_illan_sivellin_siveltimen)
         ensure(data.nominative_plural).equals("aallot")
         ensure(data.genitive).equals("aallon")
-        ensure(data.genitive_plural).equals("aaltojen")
+        ensure(data.genitives_plural).equals(["aaltojen"])
 
 
         data = kotus_noun_1_valo("sisältö",
                                  gradate_kotus_i_ilta_illan_sivellin_siveltimen)
         ensure(data.nominative_plural).equals("sisällöt")
         ensure(data.genitive).equals("sisällön")
-        ensure(data.genitive_plural).equals("sisältöjen")
+        ensure(data.genitives_plural).equals(["sisältöjen"])

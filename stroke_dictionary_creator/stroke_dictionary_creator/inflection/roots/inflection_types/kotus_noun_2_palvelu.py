@@ -1,6 +1,6 @@
 from .base import *
 
-def kotus_noun_1_valo(word, gradation_fn = identity):
+def kotus_noun_2_palvelu(word, gradation_fn = identity):
     # suffix
     def s(text): return change_to_same_vowel_group(word, text)
 
@@ -11,11 +11,15 @@ def kotus_noun_1_valo(word, gradation_fn = identity):
     return InflectionInfo(nominative         = word,
                           nominative_plural  = word_alt + "t",
                           genitive           = word_alt + "n",
-                          genitives_plural   = [word + "jen"],
+                          genitives_plural   = [word + "jen",
+                                                word + "iden",
+                                                word + "itten"],
                           partitive          = word + s("a"),
-                          partitives_plural  = [word + s("ja")],
-                          accusatives        = [word, word_alt + "n"],
-                          accusative_plural  = word + s("ja"),
+                          partitives_plural  = [word + s("ita"),
+                                                word + s("ja")],
+                          accusatives        = [word,
+                                                word_alt + "n"],
+                          accusative_plural  = word + "t",
                           inessive           = word_alt + s("ssa"),
                           inessive_plural    = word_alt + s("issa"),
                           elative            = word_alt + s("sta"),

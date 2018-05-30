@@ -2,8 +2,8 @@ from collections import namedtuple
 
 InflectionInfo = namedtuple("InflectionInfo",
                             ["nominative",         "nominative_plural",
-                             "genitive",           "genitive_plural",
-                             "partitive",          "partitive_plural",
+                             "genitive",           "genitives_plural",
+                             "partitive",          "partitives_plural",
                              "accusatives",        "accusative_plural",
                              "inessive",           "inessive_plural",
                              "elative",            "elative_plural",
