@@ -57,4 +57,3 @@ class TestInflectionType4(unittest.TestCase):
     def test_kotus_noun_4_laatikko_umlauts(self):
         data = kotus_noun_4_laatikko("älykkö", gradate_kotus_a_takki_takin_hake_hakkeen)
         ensure(data.genitives_plural).equals(["älyköiden", "älyköitten", "älykköjen"])
-        print(data)
