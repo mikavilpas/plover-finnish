@@ -2,7 +2,7 @@ from .base import *
 
 def kotus_noun_1_valo(word, gradation_fn = identity):
     # suffix
-    def s(text): return change_to_same_vowel_group(word, text)
+    def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
 
     (root, end_vowel) = reverse_parse(word, root_and_end_vowel)
     word_alt = gradation_fn(word)

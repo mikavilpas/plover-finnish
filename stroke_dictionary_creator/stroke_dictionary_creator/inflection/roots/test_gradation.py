@@ -47,6 +47,7 @@ class TestGradation(unittest.TestCase):
         gradate = gradate_kotus_j_hento_hennon_vanne_vanteen
         ensure(gradate("hento")).equals("henno")
         ensure(gradate("vanne")).equals("vante")
+        ensure(gradate("käpälöinti")).equals("käpälöinni")
 
     def test_gradate_kotus_k_virta_virran_porras_portaan(self):
         gradate = gradate_kotus_k_virta_virran_porras_portaan
