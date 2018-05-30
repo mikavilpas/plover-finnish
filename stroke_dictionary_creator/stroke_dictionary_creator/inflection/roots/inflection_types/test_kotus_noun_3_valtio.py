@@ -27,7 +27,7 @@ class TestInflectionType3(unittest.TestCase):
         ensure(data.elative_plural).equals("valtioista")
 
         ensure(data.illative).equals("valtioon")
-        ensure(data.illative_plural).equals("valtioihin")
+        ensure(data.illatives_plural).equals(["valtioihin"])
 
         ensure(data.adessive).equals("valtiolla")
         ensure(data.adessive_plural).equals("valtioilla")

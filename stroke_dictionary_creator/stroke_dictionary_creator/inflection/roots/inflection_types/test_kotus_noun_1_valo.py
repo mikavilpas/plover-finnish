@@ -26,7 +26,7 @@ class TestInflectionType1(unittest.TestCase):
         ensure(data.elative_plural).equals("aamuista")
 
         ensure(data.illative).equals("aamuun")
-        ensure(data.illative_plural).equals("aamuihin")
+        ensure(data.illatives_plural).equals(["aamuihin"])
 
         ensure(data.adessive).equals("aamulla")
         ensure(data.adessive_plural).equals("aamuilla")

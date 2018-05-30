@@ -29,7 +29,7 @@ class TestInflectionType2(unittest.TestCase):
         ensure(data.elative_plural).equals("palveluista")
 
         ensure(data.illative).equals("palveluun")
-        ensure(data.illative_plural).equals("palveluihin")
+        ensure(data.illatives_plural).equals(["palveluihin"])
 
         ensure(data.adessive).equals("palvelulla")
         ensure(data.adessive_plural).equals("palveluilla")
