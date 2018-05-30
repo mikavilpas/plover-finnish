@@ -1,8 +1,9 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_6_paperi import *
-from ..gradation import *
+from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
+from ..gradation import gradate_kotus_j_hento_hennon_vanne_vanteen
+from .kotus_noun_6_paperi import kotus_noun_6_paperi
 
 class TestInflectionType6(unittest.TestCase):
     # There are no words with gradation in this class.
