@@ -30,5 +30,7 @@ class TestVowelGroupService(unittest.TestCase):
         ensure(change_to_same_vowel_group("päästö", "a")).equals("ä")
 
     def test_change_to_same_vowel_group_prefer_umlauts(self):
+        ensure(change_to_same_vowel_group_prefer_umlauts("päästö", "ssa")).equals("ssä")
+        ensure(change_to_same_vowel_group_prefer_umlauts("laatikko", "ssa")).equals("ssa")
         ensure(change_to_same_vowel_group_prefer_umlauts("risti", "ssa")).equals("ssä")
         ensure(change_to_same_vowel_group_prefer_umlauts("risti", "a")).equals("ä")

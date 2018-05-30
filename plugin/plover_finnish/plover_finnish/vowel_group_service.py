@@ -62,10 +62,13 @@ def change_to_same_vowel_group(reference_word, word):
 def change_to_same_vowel_group_prefer_umlauts(reference_word, word):
     """Like change_to_same_vowel_group, but if the target group cannot be
     found, uses the äöy group."""
-    result = change_to_same_vowel_group(reference_word, word)
-    was_changed = reference_word == result
+    reference_group = vowel_group(reference_word)
+    word_group = vowel_group(word)
 
-    if was_changed:
-        return result
-    else:
+    if reference_group is None or word_group is None:
+        # prefer äöy, it's very common (the only one that is correct?)
         return switch_char_groups(word, aou, äöy)
+    if reference_group == word_group:
+        return word
+    else:
+        return switch_vowel_group(word)
