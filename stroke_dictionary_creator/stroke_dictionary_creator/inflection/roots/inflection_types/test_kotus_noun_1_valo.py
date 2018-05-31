@@ -19,33 +19,33 @@ class TestInflectionType1(unittest.TestCase):
                                                'aamun'],
                                   accusative_plural='aamuja',
                                   inessive='aamussa',
-                                  inessive_plural='aamuissa',
+                                  inessives_plural=['aamuissa'],
                                   elative='aamusta',
-                                  elative_plural='aamuista',
+                                  elatives_plural=['aamuista'],
                                   illative='aamuun',
                                   illatives_plural=['aamuihin'],
                                   adessive='aamulla',
-                                  adessive_plural='aamuilla',
+                                  adessives_plural=['aamuilla'],
                                   ablative='aamulta',
-                                  ablative_plural='aamuilta',
+                                  ablatives_plural=['aamuilta'],
                                   allative='aamulle',
-                                  allative_plural='aamuille',
+                                  allatives_plural=['aamuille'],
                                   essive='aamuna',
-                                  essive_plural='aamuina',
+                                  essives_plural=['aamuina'],
                                   translative='aamuksi',
-                                  translative_plural='aamuiksi',
+                                  translatives_plural=['aamuiksi'],
                                   abessive='aamutta',
-                                  abessive_plural='aamuitta',
-                                  instructive_plural='aamuin',
-                                  comitative_plural='aamuine')
+                                  abessives_plural=['aamuitta'],
+                                  instructives_plural=['aamuin'],
+                                  comitatives_plural=['aamuine'])
         ensure_inflections_equal(expected, data)
 
     def test_kotus_noun_1_valo_umlauts(self):
         data = kotus_noun_1_valo("emännistö")
-        ensure(data.abessive_plural).equals("emännistöittä")
+        ensure(data.abessives_plural).equals(["emännistöittä"])
 
         data = kotus_noun_1_valo("öljy")
-        ensure(data.abessive_plural).equals("öljyittä")
+        ensure(data.abessives_plural).equals(["öljyittä"])
 
     def test_kotus_noun_1_valo_gradation(self):
         data = kotus_noun_1_valo("aalto",
