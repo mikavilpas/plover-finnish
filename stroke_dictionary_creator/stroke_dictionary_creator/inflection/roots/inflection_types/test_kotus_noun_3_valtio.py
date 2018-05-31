@@ -18,29 +18,29 @@ class TestInflectionType3(unittest.TestCase):
                                                'valtion'],
                                   accusative_plural='valtiot',
                                   inessive='valtiossa',
-                                  inessive_plural='valtioissa',
+                                  inessives_plural=['valtioissa'],
                                   elative='valtiosta',
-                                  elative_plural='valtioista',
+                                  elatives_plural=['valtioista'],
                                   illative='valtioon',
                                   illatives_plural=['valtioihin'],
                                   adessive='valtiolla',
-                                  adessive_plural='valtioilla',
+                                  adessives_plural=['valtioilla'],
                                   ablative='valtiolta',
-                                  ablative_plural='valtioilta',
+                                  ablatives_plural=['valtioilta'],
                                   allative='valtiolle',
-                                  allative_plural='valtioille',
+                                  allatives_plural=['valtioille'],
                                   essive='valtiona',
-                                  essive_plural='valtioina',
+                                  essives_plural=['valtioina'],
                                   translative='valtioksi',
-                                  translative_plural='valtioiksi',
+                                  translatives_plural=['valtioiksi'],
                                   abessive='valtiotta',
-                                  abessive_plural='valtioitta',
-                                  instructive_plural='valtioin',
-                                  comitative_plural='valtioine')
+                                  abessives_plural=['valtioitta'],
+                                  instructives_plural=['valtioin'],
+                                  comitatives_plural=['valtioine'])
 
     def test_kotus_noun_3_valtio_umlauts(self):
         data = kotus_noun_3_valtio("häiriö")
-        ensure(data.comitative_plural).equals("häiriöine")
+        ensure(data.comitatives_plural).equals(["häiriöine"])
 
     # The kotus wordlist does not contain any words that belong to class 3 and
     # have a gradation class. Have to skip testing that.
