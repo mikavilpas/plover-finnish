@@ -21,7 +21,7 @@ def kotus_noun_11_omena(word, gradation_fn = identity):
                                                 root + s("oitten"),
                                                 root + s("ojen"),
                                                 root + v + s("in")],
-                          partitive           = root + v + s("a"),
+                          partitives           = [root + v + s("a")],
                           partitives_plural   = [root + s("ia"),
                                                 root + s("oita"),
                                                 root + s("oja")],

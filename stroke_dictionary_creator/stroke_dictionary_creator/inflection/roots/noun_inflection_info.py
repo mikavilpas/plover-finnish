@@ -3,7 +3,7 @@ from collections import namedtuple
 InflectionInfo = namedtuple("InflectionInfo",
                             ["nominative",         "nominative_plural",
                              "genitive",           "genitives_plural",
-                             "partitive",          "partitives_plural",
+                             "partitives",         "partitives_plural",
                              "accusatives",        "accusative_plural",
                              "inessive",           "inessives_plural",
                              "elative",            "elatives_plural",
