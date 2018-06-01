@@ -41,3 +41,6 @@ def main(args):
 
 if __name__ == '__main__':
     sys.exit(main(args = sys.argv))
+
+    # TODO support words like aerobinen and anaerobinen, which share the same
+    # <forms> parent element
