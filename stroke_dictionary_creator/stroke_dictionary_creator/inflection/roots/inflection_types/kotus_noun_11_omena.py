@@ -60,4 +60,4 @@ def kotus_noun_11_omena(word, gradation_fn = identity):
                           comitatives_plural  = [root + s("oine"),
                                                  root + s("ine")])
 
-    # there are no words in the kotus wordlist with gradition in this class
+    # there are no words in the kotus wordlist with gradation in this class
