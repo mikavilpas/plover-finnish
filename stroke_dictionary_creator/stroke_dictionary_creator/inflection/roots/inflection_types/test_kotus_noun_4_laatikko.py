@@ -16,7 +16,7 @@ class TestInflectionType4(unittest.TestCase):
                                   genitives_plural=['laatikoiden',
                                                     'laatikoitten',
                                                     'laatikkojen'],
-                                  partitive='laatikkoa',
+                                  partitives=['laatikkoa'],
                                   partitives_plural=['laatikkoja',
                                                      'laatikoita'],
                                   accusatives=['laatikko',

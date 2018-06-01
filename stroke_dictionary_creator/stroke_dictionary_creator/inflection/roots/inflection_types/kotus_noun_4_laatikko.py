@@ -11,7 +11,7 @@ def kotus_noun_4_laatikko(word, gradation_fn = identity):
     return inflections._replace(genitives_plural  = [word_alt + "iden",
                                                      word_alt + "itten",
                                                      word + "jen"],
-                                partitive         = word + s("a"),
+                                partitives        = [word + s("a")],
                                 partitives_plural = [word + s("ja"),
                                                      word_alt + s("ita")],
                                 illative          = word + end_vowel + "n",

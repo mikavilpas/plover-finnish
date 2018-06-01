@@ -15,7 +15,7 @@ def kotus_noun_8_nalle(word, gradation_fn = identity):
                           genitive            = root_alt + s("en"),
                           genitives_plural    = [root + s("ejen"),
                                                 root + s("ein")],
-                          partitive           = root + s("ea"),
+                          partitives          = [root + s("ea")],
                           partitives_plural   = [root + s("eja")],
                           accusatives         = [word,
                                                 root_alt + s("en")],

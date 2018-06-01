@@ -11,7 +11,7 @@ def kotus_noun_6_paperi(word, gradation_fn = identity):
     return inflections._replace(genitives_plural    = [root + s("ien"),
                                                        root + s("eiden"),
                                                        root + s("eitten")],
-                                partitive           = root + end_vowel + s("a"),
+                                partitives          = [root + end_vowel + s("a")],
                                 partitives_plural   = [root + s("eita"),
                                                        root + s("eja")],
                                 inessives_plural    = [root + s("eissa")],

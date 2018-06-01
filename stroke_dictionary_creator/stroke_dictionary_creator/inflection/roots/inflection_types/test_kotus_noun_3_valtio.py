@@ -12,7 +12,7 @@ class TestInflectionType3(unittest.TestCase):
                                   genitive='valtion',
                                   genitives_plural=['valtioiden',
                                                     'valtioitten'],
-                                  partitive='valtiota',
+                                  partitives=['valtiota'],
                                   partitives_plural=['valtioita'],
                                   accusatives=['valtio',
                                                'valtion'],

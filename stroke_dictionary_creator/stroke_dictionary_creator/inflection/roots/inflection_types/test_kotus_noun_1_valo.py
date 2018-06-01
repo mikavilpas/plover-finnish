@@ -13,7 +13,7 @@ class TestInflectionType1(unittest.TestCase):
                                   nominative_plural='aamut',
                                   genitive='aamun',
                                   genitives_plural=['aamujen'],
-                                  partitive='aamua',
+                                  partitives=['aamua'],
                                   partitives_plural=['aamuja'],
                                   accusatives=['aamu',
                                                'aamun'],

@@ -16,7 +16,7 @@ def kotus_noun_9_kala(word, gradation_fn = identity):
                           genitive            = root_alt + v + s("n"),
                           genitives_plural    = [root + s("ojen"),
                                                 root + v + s("in")],
-                          partitive           = root + v + s("a"),
+                          partitives          = [root + v + s("a")],
                           partitives_plural   = [root + s("oja")],
                           accusatives         = [word,
                                                 root_alt + v + s("n")],

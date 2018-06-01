@@ -13,7 +13,7 @@ class TestInflectionType2(unittest.TestCase):
                                   genitives_plural=['palvelujen',
                                                     'palveluiden',
                                                     'palveluitten'],
-                                  partitive='palvelua',
+                                  partitives=['palvelua'],
                                   partitives_plural=['palveluita',
                                                      'palveluja'],
                                   accusatives=['palvelu',

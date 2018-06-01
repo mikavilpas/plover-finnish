@@ -16,7 +16,7 @@ def kotus_noun_10_koira(word, gradation_fn = identity):
                           genitive            = root_alt + v + s("n"),
                           genitives_plural    = [root + s("ien"),
                                                 root + v + s("in")],
-                          partitive           = root + v + s("a"),
+                          partitives          = [root + v + s("a")],
                           partitives_plural   = [root + s("ia")],
                           accusatives         = [word,
                                                 root_alt + v + s("n")],
