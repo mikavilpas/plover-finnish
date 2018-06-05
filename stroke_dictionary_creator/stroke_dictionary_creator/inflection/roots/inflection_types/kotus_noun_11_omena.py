@@ -34,7 +34,7 @@ def kotus_noun_11_omena(word, gradation_fn = identity):
                           elative             = root_alt + v + s("sta"),
                           elatives_plural     = [root_alt + s("oista"),
                                                  root_alt + s("ista")],
-                          illative            = root + v + s("an"),
+                          illatives           = [root + v + s("an")],
                           illatives_plural    = [root + s("oihin"),
                                                 root + s("iin")],
                           adessive            = root_alt + v + s("lla"),
