@@ -23,7 +23,7 @@ class TestInflectionType2(unittest.TestCase):
                                   inessives_plural=['palveluissa'],
                                   elative='palvelusta',
                                   elatives_plural=['palveluista'],
-                                  illative='palveluun',
+                                  illatives=['palveluun'],
                                   illatives_plural=['palveluihin'],
                                   adessive='palvelulla',
                                   adessives_plural=['palveluilla'],

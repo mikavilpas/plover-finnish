@@ -13,5 +13,5 @@ def kotus_noun_18_maa(word, gradation_fn = identity):
     v = end_vowel
 
     reference = kotus_noun_17_vapaa(word, gradation_fn)
-    return reference._replace(illative = root + v + s("han"),
+    return reference._replace(illatives = [root + v + s("han")],
                               illatives_plural = [root + s("ihin")])

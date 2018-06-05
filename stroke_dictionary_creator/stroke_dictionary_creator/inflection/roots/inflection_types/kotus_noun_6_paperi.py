@@ -16,7 +16,7 @@ def kotus_noun_6_paperi(word, gradation_fn = identity):
                                                        root + s("eja")],
                                 inessives_plural    = [root + s("eissa")],
                                 elatives_plural     = [root + s("eista")],
-                                illative            = root + end_vowel + end_vowel + s("n"),
+                                illatives           = [root + end_vowel + end_vowel + s("n")],
                                 illatives_plural    = [root + s("eihin")],
                                 adessives_plural    = [root + s("eilla")],
                                 ablatives_plural    = [root + s("eilta")],

@@ -22,7 +22,7 @@ class TestInflectionType1(unittest.TestCase):
                                   inessives_plural=['aamuissa'],
                                   elative='aamusta',
                                   elatives_plural=['aamuista'],
-                                  illative='aamuun',
+                                  illatives=['aamuun'],
                                   illatives_plural=['aamuihin'],
                                   adessive='aamulla',
                                   adessives_plural=['aamuilla'],

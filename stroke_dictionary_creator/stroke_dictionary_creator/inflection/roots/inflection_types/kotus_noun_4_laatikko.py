@@ -14,7 +14,7 @@ def kotus_noun_4_laatikko(word, gradation_fn = identity):
                                 partitives        = [word + s("a")],
                                 partitives_plural = [word + s("ja"),
                                                      word_alt + s("ita")],
-                                illative          = word + end_vowel + "n",
+                                illatives         = [word + end_vowel + "n"],
                                 illatives_plural  = [word + "ihin",
                                                      word_alt + "ihin"],
                                 essives_plural    = [word_alt + s("ina")],

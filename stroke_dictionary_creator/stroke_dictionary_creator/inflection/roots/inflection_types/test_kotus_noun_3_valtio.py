@@ -21,7 +21,7 @@ class TestInflectionType3(unittest.TestCase):
                                   inessives_plural=['valtioissa'],
                                   elative='valtiosta',
                                   elatives_plural=['valtioista'],
-                                  illative='valtioon',
+                                  illatives=['valtioon'],
                                   illatives_plural=['valtioihin'],
                                   adessive='valtiolla',
                                   adessives_plural=['valtioilla'],

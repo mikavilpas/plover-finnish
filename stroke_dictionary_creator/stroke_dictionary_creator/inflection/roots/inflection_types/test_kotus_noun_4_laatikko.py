@@ -26,7 +26,7 @@ class TestInflectionType4(unittest.TestCase):
                                   inessives_plural=['laatikoissa'],
                                   elative='laatikosta',
                                   elatives_plural=['laatikoista'],
-                                  illative='laatikkoon',
+                                  illatives=['laatikkoon'],
                                   illatives_plural=['laatikkoihin',
                                                     'laatikoihin'],
                                   adessive='laatikolla',
