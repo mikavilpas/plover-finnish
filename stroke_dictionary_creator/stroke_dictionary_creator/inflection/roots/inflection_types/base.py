@@ -13,6 +13,13 @@ def root_and_end_vowel():
     rest = yield character.at_least(1).concat()
     return [rest, end_vowel]
 
+@generate
+def optional_consonant_double_vowel():
+    start_consonant = yield consonant.optional()
+    middle_vowel = yield vowel
+    end_vowel = yield vowel
+    return [start_consonant, middle_vowel, end_vowel]
+
 def root_and_optional_end_vowel(fallback_vowel):
     @generate
     def parser():
