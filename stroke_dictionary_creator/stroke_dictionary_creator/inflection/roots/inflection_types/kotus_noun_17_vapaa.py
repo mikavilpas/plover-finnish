@@ -10,7 +10,6 @@ def kotus_noun_17_vapaa(word, gradation_fn = identity):
     # all words in this class end in a double vowel
     (root, end_vowel) = reverse_parse(word, root_and_end_vowel)
     (root_alt, _) = reverse_parse(word_alt, root_and_end_vowel)
-    print(root)
     v = end_vowel
 
     reference = kotus_noun_13_katiska(word, gradation_fn)
