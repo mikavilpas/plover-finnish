@@ -236,3 +236,43 @@ class TestParticiples(unittest.TestCase):
                                   comitatives_plural=['tapettuine'])
 
         ensure_inflections_equal(expected, data)
+
+    def test_group_6_negation(self):
+        data = KotusVerb56Laulaa("tappaa",
+                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 .participles() \
+                                 .group_6_negation()
+        print(data)
+
+        expected = InflectionInfo(nominative='tappamaton',
+                                  nominative_plural='tappamattomat',
+                                  genitive='tappamattoman',
+                                  genitives_plural=['tappamattomien',
+                                                    'tappamatonten'],
+                                  partitives=['tappamatonta'],
+                                  partitives_plural=['tappamattomia'],
+                                  accusatives=['tappamaton',
+                                               'tappamattoman'],
+                                  accusative_plural='tappamattomat',
+                                  inessive='tappamattomassa',
+                                  inessives_plural=['tappamattomissa'],
+                                  elative='tappamattomasta',
+                                  elatives_plural=['tappamattomista'],
+                                  illatives=['tappamattomaan'],
+                                  illatives_plural=['tappamattomiin'],
+                                  adessive='tappamattomalla',
+                                  adessives_plural=['tappamattomilla'],
+                                  ablative='tappamattomalta',
+                                  ablatives_plural=['tappamattomilta'],
+                                  allative='tappamattomalle',
+                                  allatives_plural=['tappamattomille'],
+                                  essive='tappamattomana',
+                                  essives_plural=['tappamattomina'],
+                                  translative='tappamattomaksi',
+                                  translatives_plural=['tappamattomiksi'],
+                                  abessive='tappamattomatta',
+                                  abessives_plural=['tappamattomitta'],
+                                  instructives_plural=['tappamattomin'],
+                                  comitatives_plural=['tappamattomine'])
+
+        ensure_inflections_equal(expected, data)

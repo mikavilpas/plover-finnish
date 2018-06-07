@@ -1,6 +1,7 @@
 from collections import namedtuple
 from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel, identity
 from ...noun_inflection_info import InflectionInfo
+from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
 
 VerbRoots = namedtuple("VerbRoots",
                        ["present", "present_passive"])
@@ -26,8 +27,6 @@ class VerbParticiples():
     # Participles are verbs that are made into adjectives.
     # For example, draw -> drawn: piirtää -> piirretty
 
-    from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
-
     def __init__(self, word, roots, gradation_fn, moduses):
         self.word = word
         self.roots = roots
@@ -35,17 +34,23 @@ class VerbParticiples():
         self.moduses = moduses
 
     def group_1_VA(self):
+        from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
         word_va = self.roots.present + self.s("va")
         # gradation is not used in this participle
         return kotus_noun_12_kulkija(word_va, gradation_fn = identity)
 
     def group_5_TU_passive(self):
         from ..kotus_noun_1_valo import kotus_noun_1_valo
-        from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
 
         word_passive = self.moduses.indicative_perfect().passive
         return kotus_noun_1_valo(word_passive,
                                  gradate_kotus_c_tyttö_tytön_kate_katteen)
+
+    def group_6_negation(self):
+        from ..kotus_noun_34_onneton import kotus_noun_34_onneton
+        word_maton = self.roots.present + self.s("maton")
+        return kotus_noun_34_onneton(word_maton,
+                                     gradate_kotus_c_tyttö_tytön_kate_katteen)
 
     # suffix
     def s(self, text):
