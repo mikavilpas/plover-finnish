@@ -6,3 +6,5 @@ Big todos
 
 - adjective inflection. The kotus wordlist does not differentiate between nouns
   and adjectives, for example. The voikko list does, however.
+
+- honorific "Te" conjugations for verbs
