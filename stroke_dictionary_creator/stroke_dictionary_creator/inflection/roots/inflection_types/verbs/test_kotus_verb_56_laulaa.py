@@ -6,7 +6,7 @@ from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan
 from ...noun_inflection_info import InflectionInfo
 
 class TestBasic(unittest.TestCase):
-    moduses = KotusVerb56Laulaa().moduses("laulaa")
+    moduses = KotusVerb56Laulaa("laulaa").moduses()
 
     def test_indicative_present(self):
         conjugations = self.moduses.indicative_present()
@@ -134,8 +134,9 @@ class TestBasic(unittest.TestCase):
 # No umlauts to test
 
 class TestGradation(unittest.TestCase):
-    moduses = KotusVerb56Laulaa().moduses("tappaa",
-                                          gradate_kotus_b_kaappi_kaapin_opas_oppaan)
+    moduses = KotusVerb56Laulaa("tappaa",
+                                gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                .moduses()
 
     def test_potential_present(self):
         conjugations = self.moduses.potential_present()
@@ -159,7 +160,10 @@ class TestGradation(unittest.TestCase):
 
 class TestParticiples(unittest.TestCase):
     def test_basic(self):
-        data = KotusVerb56Laulaa().participles("tappaa").group_VA()
+        data = KotusVerb56Laulaa("tappaa",
+                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 .participles() \
+                                 .group_1_VA()
 
         expected = InflectionInfo(nominative='tappava',
                                 nominative_plural='tappavat',

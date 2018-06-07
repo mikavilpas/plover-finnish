@@ -31,7 +31,7 @@ class VerbParticiples():
         self.roots = roots
         self.gradation_fn = gradation_fn
 
-    def group_VA(self):
+    def group_1_VA(self):
         from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
         word_va = self.roots.present + self.s("va")
         # gradation is not used
