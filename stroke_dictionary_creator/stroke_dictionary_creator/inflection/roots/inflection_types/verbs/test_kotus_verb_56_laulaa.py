@@ -159,7 +159,7 @@ class TestGradation(unittest.TestCase):
         ensure_inflections_equal(expected, conjugations)
 
 class TestParticiples(unittest.TestCase):
-    def test_basic(self):
+    def test_group_1_va(self):
         data = KotusVerb56Laulaa("tappaa",
                                  gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
                                  .participles() \
@@ -196,5 +196,43 @@ class TestParticiples(unittest.TestCase):
                                 abessives_plural=['tappavoitta'],
                                 instructives_plural=['tappavoin'],
                                 comitatives_plural=['tappavoine'])
+
+        ensure_inflections_equal(expected, data)
+
+    def test_group_5_tu(self):
+        data = KotusVerb56Laulaa("tappaa",
+                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 .participles() \
+                                 .group_5_TU_passive()
+
+        expected = InflectionInfo(nominative='tapettu',
+                                  nominative_plural='tapetut',
+                                  genitive='tapetun',
+                                  genitives_plural=['tapettujen'],
+                                  partitives=['tapettua'],
+                                  partitives_plural=['tapettuja'],
+                                  accusatives=['tapettu',
+                                               'tapetun'],
+                                  accusative_plural='tapettuja',
+                                  inessive='tapetussa',
+                                  inessives_plural=['tapetuissa'],
+                                  elative='tapetusta',
+                                  elatives_plural=['tapetuista'],
+                                  illatives=['tapettuun'],
+                                  illatives_plural=['tapettuihin'],
+                                  adessive='tapetulla',
+                                  adessives_plural=['tapetuilla'],
+                                  ablative='tapetulta',
+                                  ablatives_plural=['tapetuilta'],
+                                  allative='tapetulle',
+                                  allatives_plural=['tapetuille'],
+                                  essive='tapettuna',
+                                  essives_plural=['tapettuina'],
+                                  translative='tapetuksi',
+                                  translatives_plural=['tapetuiksi'],
+                                  abessive='tapetutta',
+                                  abessives_plural=['tapetuitta'],
+                                  instructives_plural=['tapetuin'],
+                                  comitatives_plural=['tapettuine'])
 
         ensure_inflections_equal(expected, data)

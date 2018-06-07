@@ -12,7 +12,10 @@ class KotusVerb56Laulaa():
 
     def participles(self):
         roots = self._roots()
-        return VerbParticiples(self.word, roots, self.gradation_fn)
+        return VerbParticiples(self.word,
+                               roots,
+                               self.gradation_fn,
+                               self.moduses())
 
     def _roots(self):
         word_alt = self.gradation_fn(self.word)

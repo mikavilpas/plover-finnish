@@ -26,16 +26,26 @@ class VerbParticiples():
     # Participles are verbs that are made into adjectives.
     # For example, draw -> drawn: piirtää -> piirretty
 
-    def __init__(self, word, roots, gradation_fn):
+    from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
+
+    def __init__(self, word, roots, gradation_fn, moduses):
         self.word = word
         self.roots = roots
         self.gradation_fn = gradation_fn
+        self.moduses = moduses
 
     def group_1_VA(self):
-        from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
         word_va = self.roots.present + self.s("va")
-        # gradation is not used
+        # gradation is not used in this participle
         return kotus_noun_12_kulkija(word_va, gradation_fn = identity)
+
+    def group_5_TU_passive(self):
+        from ..kotus_noun_1_valo import kotus_noun_1_valo
+        from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+
+        word_passive = self.moduses.indicative_perfect().passive
+        return kotus_noun_1_valo(word_passive,
+                                 gradate_kotus_c_tyttö_tytön_kate_katteen)
 
     # suffix
     def s(self, text):
