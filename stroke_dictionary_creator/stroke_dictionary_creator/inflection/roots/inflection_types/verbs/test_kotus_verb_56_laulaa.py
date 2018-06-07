@@ -2,8 +2,10 @@ import unittest
 from ensure import ensure
 from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPersonalFormsImperativePresent
 from ..test_utils import ensure_inflections_equal
+from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan
+from ...noun_inflection_info import InflectionInfo
 
-class TestClass(unittest.TestCase):
+class TestBasic(unittest.TestCase):
     moduses = KotusVerb56Laulaa().moduses("laulaa")
 
     def test_indicative_present(self):
@@ -127,3 +129,68 @@ class TestClass(unittest.TestCase):
             passive_negative   = "laulettako",)
 
         ensure_inflections_equal(expected, conjugations)
+
+
+# No umlauts to test
+
+class TestGradation(unittest.TestCase):
+    moduses = KotusVerb56Laulaa().moduses("tappaa",
+                                          gradate_kotus_b_kaappi_kaapin_opas_oppaan)
+
+    def test_potential_present(self):
+        conjugations = self.moduses.potential_present()
+
+        expected = VerbPersonalForms(singular1          = "tappanen",
+                                     singular2          = "tappanet",
+                                     singular3          = "tappanee",
+                                     singular1_negative = "tappane",
+                                     singular2_negative = "tappane",
+                                     singular3_negative = "tappane",
+                                     plural1            = "tappanemme",
+                                     plural2            = "tappanette",
+                                     plural3            = "tappanevat",
+                                     plural1_negative   = "tappane",
+                                     plural2_negative   = "tappane",
+                                     plural3_negative   = "tappane",
+                                     passive            = "tapettaneen",
+                                     passive_negative   = "tapettane",)
+
+        ensure_inflections_equal(expected, conjugations)
+
+class TestParticiples(unittest.TestCase):
+    def test_basic(self):
+        data = KotusVerb56Laulaa().participles("tappaa").group_VA()
+
+        expected = InflectionInfo(nominative='tappava',
+                                nominative_plural='tappavat',
+                                genitive='tappavan',
+                                genitives_plural=['tappavoiden',
+                                                    'tappavoitten',
+                                                    'tappavain'],
+                                partitives=['tappavaa'],
+                                partitives_plural=['tappavoita'],
+                                accusatives=['tappava',
+                                            'tappavan'],
+                                accusative_plural='tappavat',
+                                inessive='tappavassa',
+                                inessives_plural=['tappavoissa'],
+                                elative='tappavasta',
+                                elatives_plural=['tappavoista'],
+                                illatives=['tappavaan'],
+                                illatives_plural=['tappavoihin'],
+                                adessive='tappavalla',
+                                adessives_plural=['tappavoilla'],
+                                ablative='tappavalta',
+                                ablatives_plural=['tappavoilta'],
+                                allative='tappavalle',
+                                allatives_plural=['tappavoille'],
+                                essive='tappavana',
+                                essives_plural=['tappavoina'],
+                                translative='tappavaksi',
+                                translatives_plural=['tappavoiksi'],
+                                abessive='tappavatta',
+                                abessives_plural=['tappavoitta'],
+                                instructives_plural=['tappavoin'],
+                                comitatives_plural=['tappavoine'])
+
+        ensure_inflections_equal(expected, data)

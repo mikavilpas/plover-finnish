@@ -1,5 +1,6 @@
 from collections import namedtuple
-from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel
+from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel, identity
+from ...noun_inflection_info import InflectionInfo
 
 VerbRoots = namedtuple("VerbRoots",
                        ["present", "present_passive"])
@@ -20,6 +21,25 @@ VerbPersonalFormsImperativePresent = namedtuple("VerbPersonalFormsImperativePres
                                                  "plural2", "plural2_negative",
                                                  "plural3", "plural3_negative",
                                                  "passive", "passive_negative",])
+
+class VerbParticiples():
+    # Participles are verbs that are made into adjectives.
+    # For example, draw -> drawn: piirtää -> piirretty
+
+    def __init__(self, word, roots, gradation_fn):
+        self.word = word
+        self.roots = roots
+        self.gradation_fn = gradation_fn
+
+    def group_VA(self):
+        from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
+        word_va = self.roots.present + self.s("va")
+        # gradation is not used
+        return kotus_noun_12_kulkija(word_va, gradation_fn = identity)
+
+    # suffix
+    def s(self, text):
+        return change_to_same_vowel_group_prefer_umlauts(self.roots.present, text)
 
 class VerbModuses():
 
