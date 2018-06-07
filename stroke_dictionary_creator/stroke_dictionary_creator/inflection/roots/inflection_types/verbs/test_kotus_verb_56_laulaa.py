@@ -1,11 +1,10 @@
 import unittest
 from ensure import ensure
-from .kotus_verb_56_laulaa import VerbConjugation, VerbPersonalForms, VerbPersonalFormsImperativePresent
+from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPersonalFormsImperativePresent
 from ..test_utils import ensure_inflections_equal
 
 class TestClass(unittest.TestCase):
-    conjugation = VerbConjugation()
-    moduses = conjugation.moduses()
+    moduses = KotusVerb56Laulaa().moduses("laulaa")
 
     def test_indicative_present(self):
         conjugations = self.moduses.indicative_present()

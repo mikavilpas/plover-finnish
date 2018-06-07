@@ -14,6 +14,13 @@ def root_and_end_vowel():
     return [rest, end_vowel]
 
 @generate
+def root_and_double_end_vowel():
+    end_vowel = yield vowel
+    yield vowel
+    root = yield character.at_least(1).concat()
+    return [root, end_vowel]
+
+@generate
 def optional_consonant_double_vowel():
     start_consonant = yield consonant.optional()
     middle_vowel = yield vowel
