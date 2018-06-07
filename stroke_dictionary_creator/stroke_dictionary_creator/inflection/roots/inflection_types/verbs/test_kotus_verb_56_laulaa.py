@@ -168,34 +168,33 @@ class TestParticiples(unittest.TestCase):
         expected = InflectionInfo(nominative='tappava',
                                 nominative_plural='tappavat',
                                 genitive='tappavan',
-                                genitives_plural=['tappavoiden',
-                                                    'tappavoitten',
-                                                    'tappavain'],
+                                genitives_plural=['tappavien',
+                                                  'tappavain'],
                                 partitives=['tappavaa'],
-                                partitives_plural=['tappavoita'],
+                                partitives_plural=['tappavia'],
                                 accusatives=['tappava',
                                             'tappavan'],
                                 accusative_plural='tappavat',
                                 inessive='tappavassa',
-                                inessives_plural=['tappavoissa'],
+                                inessives_plural=['tappavissa'],
                                 elative='tappavasta',
-                                elatives_plural=['tappavoista'],
+                                elatives_plural=['tappavista'],
                                 illatives=['tappavaan'],
-                                illatives_plural=['tappavoihin'],
+                                illatives_plural=['tappaviin'],
                                 adessive='tappavalla',
-                                adessives_plural=['tappavoilla'],
+                                adessives_plural=['tappavilla'],
                                 ablative='tappavalta',
-                                ablatives_plural=['tappavoilta'],
+                                ablatives_plural=['tappavilta'],
                                 allative='tappavalle',
-                                allatives_plural=['tappavoille'],
+                                allatives_plural=['tappaville'],
                                 essive='tappavana',
-                                essives_plural=['tappavoina'],
+                                essives_plural=['tappavina'],
                                 translative='tappavaksi',
-                                translatives_plural=['tappavoiksi'],
+                                translatives_plural=['tappaviksi'],
                                 abessive='tappavatta',
-                                abessives_plural=['tappavoitta'],
-                                instructives_plural=['tappavoin'],
-                                comitatives_plural=['tappavoine'])
+                                abessives_plural=['tappavitta'],
+                                instructives_plural=['tappavin'],
+                                comitatives_plural=['tappavine'])
 
         ensure_inflections_equal(expected, data)
 
@@ -242,7 +241,6 @@ class TestParticiples(unittest.TestCase):
                                  gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
                                  .participles() \
                                  .group_6_negation()
-        print(data)
 
         expected = InflectionInfo(nominative='tappamaton',
                                   nominative_plural='tappamattomat',

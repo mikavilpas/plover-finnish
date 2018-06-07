@@ -34,10 +34,10 @@ class VerbParticiples():
         self.moduses = moduses
 
     def group_1_VA(self):
-        from ..kotus_noun_12_kulkija import kotus_noun_12_kulkija
+        from ..kotus_noun_10_koira import kotus_noun_10_koira
         word_va = self.roots.present + self.s("va")
         # gradation is not used in this participle
-        return kotus_noun_12_kulkija(word_va, gradation_fn = identity)
+        return kotus_noun_10_koira(word_va, gradation_fn = identity)
 
     def group_5_TU_passive(self):
         from ..kotus_noun_1_valo import kotus_noun_1_valo
