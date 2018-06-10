@@ -198,6 +198,45 @@ class TestParticiples(unittest.TestCase):
 
         ensure_inflections_equal(expected, data)
 
+    def test_group_2_nut(self):
+        data = KotusVerb56Laulaa("tappaa",
+                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 .participles() \
+                                 .group_2_NUT()
+        expected = InflectionInfo(nominative='tappanut',
+                                  nominative_plural='tappaneet',
+                                  genitive='tappaneen',
+                                  genitives_plural=['tappaneiden',
+                                                    'tappaneitten'],
+                                  partitives=['tappanutta'],
+                                  partitives_plural=['tappaneita'],
+                                  accusatives=['tappanut',
+                                               'tappaneen'],
+                                  accusative_plural='tappaneet',
+                                  inessive='tappaneessa',
+                                  inessives_plural=['tappaneissa'],
+                                  elative='tappaneesta',
+                                  elatives_plural=['tappaneista'],
+                                  illatives=['tappaneeseen'],
+                                  illatives_plural=['tappaneisiin',
+                                                    'tappaneihin'],
+                                  adessive='tappaneella',
+                                  adessives_plural=['tappaneilla'],
+                                  ablative='tappaneelta',
+                                  ablatives_plural=['tappaneilta'],
+                                  allative='tappaneelle',
+                                  allatives_plural=['tappaneille'],
+                                  essive='tappaneena',
+                                  essives_plural=['tappaneina'],
+                                  translative='tappaneeksi',
+                                  translatives_plural=['tappaneiksi'],
+                                  abessive='tappaneetta',
+                                  abessives_plural=['tappaneitta'],
+                                  instructives_plural=['tappanein'],
+                                  comitatives_plural=['tappaneine'])
+
+        ensure_inflections_equal(expected, data)
+
     def test_group_5_tu(self):
         data = KotusVerb56Laulaa("tappaa",
                                  gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
