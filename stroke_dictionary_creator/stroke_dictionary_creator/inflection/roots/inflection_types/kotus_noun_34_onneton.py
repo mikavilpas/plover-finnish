@@ -17,10 +17,8 @@ def kotus_noun_34_onneton(word, gradation_fn = identity):
 
     word_alt = gradation_fn(word)
 
-    # all words in this class end in a double vowel
     (root, on_ending) = reverse_parse(word, word_on_ending)
     (root_alt, _) = reverse_parse(word_alt, word_on_ending)
-    print(root, root_alt)
     v = ""
 
     return InflectionInfo(nominative          = word,
