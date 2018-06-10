@@ -277,6 +277,45 @@ class TestParticiples(unittest.TestCase):
 
         ensure_inflections_equal(expected, data)
 
+    def test_group_4_va_passive(self):
+        data = KotusVerb56Laulaa("kantaa",
+                                 gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                 .participles() \
+                                 .group_4_VA_passive()
+
+        expected = InflectionInfo(nominative='kannettava',
+                                  nominative_plural='kannettavat',
+                                  genitive='kannettavan',
+                                  genitives_plural=['kannettavien',
+                                                    'kannettavain'],
+                                  partitives=['kannettavaa'],
+                                  partitives_plural=['kannettavia'],
+                                  accusatives=['kannettava',
+                                               'kannettavan'],
+                                  accusative_plural='kannettavat',
+                                  inessive='kannettavassa',
+                                  inessives_plural=['kannettavissa'],
+                                  elative='kannettavasta',
+                                  elatives_plural=['kannettavista'],
+                                  illatives=['kannettavaan'],
+                                  illatives_plural=['kannettaviin'],
+                                  adessive='kannettavalla',
+                                  adessives_plural=['kannettavilla'],
+                                  ablative='kannettavalta',
+                                  ablatives_plural=['kannettavilta'],
+                                  allative='kannettavalle',
+                                  allatives_plural=['kannettaville'],
+                                  essive='kannettavana',
+                                  essives_plural=['kannettavina'],
+                                  translative='kannettavaksi',
+                                  translatives_plural=['kannettaviksi'],
+                                  abessive='kannettavatta',
+                                  abessives_plural=['kannettavitta'],
+                                  instructives_plural=['kannettavin'],
+                                  comitatives_plural=['kannettavine'])
+
+        ensure_inflections_equal(expected, data)
+
     def test_group_5_tu(self):
         data = KotusVerb56Laulaa("tappaa",
                                  gradate_kotus_b_kaappi_kaapin_opas_oppaan) \

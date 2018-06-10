@@ -36,19 +36,21 @@ class VerbParticiples():
     def group_1_VA(self):
         from ..kotus_noun_10_koira import kotus_noun_10_koira
         word_va = self.roots.present + self.s("va")
-        # gradation is not used in this participle
         return kotus_noun_10_koira(word_va, gradation_fn = identity)
 
     def group_2_NUT(self):
         from ..kotus_noun_47_kuollut import kotus_noun_47_kuollut
         word_nut = self.moduses.indicative_perfect().singular1
-        # gradation is not used in this participle
         return kotus_noun_47_kuollut(word_nut, gradation_fn = identity)
 
     def group_3_MA_agent_participle(self):
         from ..kotus_noun_10_koira import kotus_noun_10_koira
         word_va = self.roots.present + self.s("ma")
-        # gradation is not used in this participle
+        return kotus_noun_10_koira(word_va, gradation_fn = identity)
+
+    def group_4_VA_passive(self):
+        from ..kotus_noun_10_koira import kotus_noun_10_koira
+        word_va = self.roots.present_passive + self.s("ttava")
         return kotus_noun_10_koira(word_va, gradation_fn = identity)
 
     def group_5_TU_passive(self):
