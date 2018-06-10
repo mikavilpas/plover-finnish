@@ -45,6 +45,12 @@ class VerbParticiples():
         # gradation is not used in this participle
         return kotus_noun_47_kuollut(word_nut, gradation_fn = identity)
 
+    def group_3_MA_agent_participle(self):
+        from ..kotus_noun_10_koira import kotus_noun_10_koira
+        word_va = self.roots.present + self.s("ma")
+        # gradation is not used in this participle
+        return kotus_noun_10_koira(word_va, gradation_fn = identity)
+
     def group_5_TU_passive(self):
         from ..kotus_noun_1_valo import kotus_noun_1_valo
 

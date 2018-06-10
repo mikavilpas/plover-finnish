@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPersonalFormsImperativePresent
 from ..test_utils import ensure_inflections_equal
-from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan
+from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
 
 class TestBasic(unittest.TestCase):
@@ -203,6 +203,7 @@ class TestParticiples(unittest.TestCase):
                                  gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
                                  .participles() \
                                  .group_2_NUT()
+
         expected = InflectionInfo(nominative='tappanut',
                                   nominative_plural='tappaneet',
                                   genitive='tappaneen',
@@ -234,6 +235,45 @@ class TestParticiples(unittest.TestCase):
                                   abessives_plural=['tappaneitta'],
                                   instructives_plural=['tappanein'],
                                   comitatives_plural=['tappaneine'])
+
+        ensure_inflections_equal(expected, data)
+
+    def test_group_3_ma(self):
+        data = KotusVerb56Laulaa("kantaa",
+                                 gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                 .participles() \
+                                 .group_3_MA_agent_participle()
+
+        expected = InflectionInfo(nominative='kantama',
+                                  nominative_plural='kantamat',
+                                  genitive='kantaman',
+                                  genitives_plural=['kantamien',
+                                                    'kantamain'],
+                                  partitives=['kantamaa'],
+                                  partitives_plural=['kantamia'],
+                                  accusatives=['kantama',
+                                               'kantaman'],
+                                  accusative_plural='kantamat',
+                                  inessive='kantamassa',
+                                  inessives_plural=['kantamissa'],
+                                  elative='kantamasta',
+                                  elatives_plural=['kantamista'],
+                                  illatives=['kantamaan'],
+                                  illatives_plural=['kantamiin'],
+                                  adessive='kantamalla',
+                                  adessives_plural=['kantamilla'],
+                                  ablative='kantamalta',
+                                  ablatives_plural=['kantamilta'],
+                                  allative='kantamalle',
+                                  allatives_plural=['kantamille'],
+                                  essive='kantamana',
+                                  essives_plural=['kantamina'],
+                                  translative='kantamaksi',
+                                  translatives_plural=['kantamiksi'],
+                                  abessive='kantamatta',
+                                  abessives_plural=['kantamitta'],
+                                  instructives_plural=['kantamin'],
+                                  comitatives_plural=['kantamine'])
 
         ensure_inflections_equal(expected, data)
 
