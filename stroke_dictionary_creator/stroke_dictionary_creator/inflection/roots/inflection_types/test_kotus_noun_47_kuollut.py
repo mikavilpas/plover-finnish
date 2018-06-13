@@ -44,7 +44,6 @@ class TestInflection(unittest.TestCase):
     def test_other_vowel_harmony_group(self):
         # this doesn't exist in the word list, but it's a real and common word
         data = kotus_noun_47_kuollut("nähnyt")
-        print(data)
 
         expected = InflectionInfo(nominative='nähnyt',
                                   nominative_plural='nähneet',
