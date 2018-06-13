@@ -1,5 +1,6 @@
 from .moduses import *
 from ...gradation import identity
+from .participles import VerbParticiples
 
 class KotusVerb56Laulaa():
     def __init__(self, word, gradation_fn = identity):

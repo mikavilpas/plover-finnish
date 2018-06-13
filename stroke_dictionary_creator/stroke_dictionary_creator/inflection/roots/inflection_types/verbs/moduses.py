@@ -1,7 +1,6 @@
 from collections import namedtuple
-from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel, identity
+from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel
 from ...noun_inflection_info import InflectionInfo
-from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
 
 VerbRoots = namedtuple("VerbRoots",
                        ["present", "present_passive"])
@@ -22,53 +21,6 @@ VerbPersonalFormsImperativePresent = namedtuple("VerbPersonalFormsImperativePres
                                                  "plural2", "plural2_negative",
                                                  "plural3", "plural3_negative",
                                                  "passive", "passive_negative",])
-
-class VerbParticiples():
-    # Participles are verbs that are made into adjectives.
-    # For example, draw -> drawn: piirtää -> piirretty
-
-    def __init__(self, word, roots, gradation_fn, moduses):
-        self.word = word
-        self.roots = roots
-        self.gradation_fn = gradation_fn
-        self.moduses = moduses
-
-    def group_1_VA(self):
-        from ..kotus_noun_10_koira import kotus_noun_10_koira
-        word_va = self.roots.present + self.s("va")
-        return kotus_noun_10_koira(word_va, gradation_fn = identity)
-
-    def group_2_NUT(self):
-        from ..kotus_noun_47_kuollut import kotus_noun_47_kuollut
-        word_nut = self.moduses.indicative_perfect().singular1
-        return kotus_noun_47_kuollut(word_nut, gradation_fn = identity)
-
-    def group_3_MA_agent_participle(self):
-        from ..kotus_noun_10_koira import kotus_noun_10_koira
-        word_va = self.roots.present + self.s("ma")
-        return kotus_noun_10_koira(word_va, gradation_fn = identity)
-
-    def group_4_VA_passive(self):
-        from ..kotus_noun_10_koira import kotus_noun_10_koira
-        word_va = self.roots.present_passive + self.s("ttava")
-        return kotus_noun_10_koira(word_va, gradation_fn = identity)
-
-    def group_5_TU_passive(self):
-        from ..kotus_noun_1_valo import kotus_noun_1_valo
-
-        word_passive = self.moduses.indicative_perfect().passive
-        return kotus_noun_1_valo(word_passive,
-                                 gradate_kotus_c_tyttö_tytön_kate_katteen)
-
-    def group_6_negation(self):
-        from ..kotus_noun_34_onneton import kotus_noun_34_onneton
-        word_maton = self.roots.present + self.s("maton")
-        return kotus_noun_34_onneton(word_maton,
-                                     gradate_kotus_c_tyttö_tytön_kate_katteen)
-
-    # suffix
-    def s(self, text):
-        return change_to_same_vowel_group_prefer_umlauts(self.roots.present, text)
 
 class VerbModuses():
 
