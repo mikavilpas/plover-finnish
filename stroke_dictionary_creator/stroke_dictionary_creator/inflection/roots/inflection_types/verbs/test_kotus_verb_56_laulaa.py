@@ -4,6 +4,7 @@ from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPers
 from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
+from .infinitives import VerbInfinitive_1_A, VerbInfinitiveAPersonalForms
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb56Laulaa("laulaa").moduses()
@@ -166,35 +167,35 @@ class TestParticiples(unittest.TestCase):
                                  .group_1_VA()
 
         expected = InflectionInfo(nominative='tappava',
-                                nominative_plural='tappavat',
-                                genitive='tappavan',
-                                genitives_plural=['tappavien',
-                                                  'tappavain'],
-                                partitives=['tappavaa'],
-                                partitives_plural=['tappavia'],
-                                accusatives=['tappava',
-                                            'tappavan'],
-                                accusative_plural='tappavat',
-                                inessive='tappavassa',
-                                inessives_plural=['tappavissa'],
-                                elative='tappavasta',
-                                elatives_plural=['tappavista'],
-                                illatives=['tappavaan'],
-                                illatives_plural=['tappaviin'],
-                                adessive='tappavalla',
-                                adessives_plural=['tappavilla'],
-                                ablative='tappavalta',
-                                ablatives_plural=['tappavilta'],
-                                allative='tappavalle',
-                                allatives_plural=['tappaville'],
-                                essive='tappavana',
-                                essives_plural=['tappavina'],
-                                translative='tappavaksi',
-                                translatives_plural=['tappaviksi'],
-                                abessive='tappavatta',
-                                abessives_plural=['tappavitta'],
-                                instructives_plural=['tappavin'],
-                                comitatives_plural=['tappavine'])
+                                  nominative_plural='tappavat',
+                                  genitive='tappavan',
+                                  genitives_plural=['tappavien',
+                                                    'tappavain'],
+                                  partitives=['tappavaa'],
+                                  partitives_plural=['tappavia'],
+                                  accusatives=['tappava',
+                                               'tappavan'],
+                                  accusative_plural='tappavat',
+                                  inessive='tappavassa',
+                                  inessives_plural=['tappavissa'],
+                                  elative='tappavasta',
+                                  elatives_plural=['tappavista'],
+                                  illatives=['tappavaan'],
+                                  illatives_plural=['tappaviin'],
+                                  adessive='tappavalla',
+                                  adessives_plural=['tappavilla'],
+                                  ablative='tappavalta',
+                                  ablatives_plural=['tappavilta'],
+                                  allative='tappavalle',
+                                  allatives_plural=['tappaville'],
+                                  essive='tappavana',
+                                  essives_plural=['tappavina'],
+                                  translative='tappavaksi',
+                                  translatives_plural=['tappaviksi'],
+                                  abessive='tappavatta',
+                                  abessives_plural=['tappavitta'],
+                                  instructives_plural=['tappavin'],
+                                  comitatives_plural=['tappavine'])
 
         ensure_inflections_equal(expected, data)
 
@@ -390,5 +391,21 @@ class TestParticiples(unittest.TestCase):
                                   abessives_plural=['tappamattomitta'],
                                   instructives_plural=['tappamattomin'],
                                   comitatives_plural=['tappamattomine'])
+
+        ensure_inflections_equal(expected, data)
+
+
+class TestInfinitives(unittest.TestCase):
+    def test_group_1_A(self):
+        data = KotusVerb56Laulaa("tappaa").infinitives().group_1_A()
+
+        expected = VerbInfinitive_1_A\
+                   (basic_form='tappaa',
+                    translative=VerbInfinitiveAPersonalForms(singular1='tappaakseni',
+                                                             singular2='tappaaksesi',
+                                                             singular3='tappaakseen',
+                                                             plural1='tappaaksemme',
+                                                             plural2='tappaaksenne',
+                                                             plural3='tappaakseen'))
 
         ensure_inflections_equal(expected, data)
