@@ -399,14 +399,15 @@ class TestInfinitives(unittest.TestCase):
     def test_group_1_A(self):
         data = KotusVerb56Laulaa("tappaa").infinitives().group_1_A()
 
-        expected = VerbInfinitive_1_A\
-                   (basic_form='tappaa',
-                    translative=VerbInfinitiveAPersonalForms(singular1='tappaakseni',
-                                                             singular2='tappaaksesi',
-                                                             singular3='tappaakseen',
-                                                             plural1='tappaaksemme',
-                                                             plural2='tappaaksenne',
-                                                             plural3='tappaakseen'))
+        expected = VerbInfinitive_1_A(
+            basic_form='tappaa',
+            translative=VerbInfinitiveAPersonalForms(
+                singular1='tappaakseni',
+                singular2='tappaaksesi',
+                singular3='tappaakseen',
+                plural1='tappaaksemme',
+                plural2='tappaaksenne',
+                plural3='tappaakseen'))
 
         ensure_inflections_equal(expected, data)
 
