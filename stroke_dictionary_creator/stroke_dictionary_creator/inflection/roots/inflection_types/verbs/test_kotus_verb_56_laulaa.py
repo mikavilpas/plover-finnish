@@ -4,7 +4,7 @@ from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPers
 from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
-from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms
+from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb56Laulaa("laulaa").moduses()
@@ -424,5 +424,19 @@ class TestInfinitives(unittest.TestCase):
             inessive_passive = "laulettaessa",
             instructive = "laulaen",
             elative = "laulaesta")
+
+        ensure_inflections_equal(expected, data)
+
+    def test_group_5_MAINEN(self):
+        data = KotusVerb56Laulaa("laulaa").infinitives().group_5_MAINEN()
+
+        expected = VerbInfinitive_5_MAINEN(
+            adessive = VerbInfinitiveAPersonalForms(
+                singular1 = 'laulamaisillani',
+                singular2 = 'laulamaisillasi',
+                singular3 = 'laulamaisillaan',
+                plural1   = 'laulamaisillamme',
+                plural2   = 'laulamaisillanne',
+                plural3   = 'laulamaisillaan'))
 
         ensure_inflections_equal(expected, data)

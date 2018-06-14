@@ -20,6 +20,9 @@ VerbInfinitive_2_E = namedtuple("VerbInfinitive_2_E",
                                  "instructive",
                                  "elative",])
 
+VerbInfinitive_5_MAINEN = namedtuple("VerbInfinitive_5_MAINEN",
+                                     ["adessive"])
+
 class VerbInfinitives():
 
     def __init__(self, word, roots: VerbRoots, moduses: VerbModuses):
@@ -56,6 +59,18 @@ class VerbInfinitives():
             inessive_passive = self.roots.present_passive + s("ttaessa"),
             instructive      = self.roots.present + s("en"),
             elative          = self.roots.present + s("esta"))
+
+    def group_5_MAINEN(self) -> VerbInfinitive_5_MAINEN:
+        s = self.s
+
+        return VerbInfinitive_5_MAINEN(
+            adessive = VerbInfinitiveAPersonalForms(
+                singular1 = self.roots.present + s("maisillani"),
+                singular2 = self.roots.present + s("maisillasi"),
+                singular3 = self.roots.present + s("maisillaan"),
+                plural1   = self.roots.present + s("maisillamme"),
+                plural2   = self.roots.present + s("maisillanne"),
+                plural3   = self.roots.present + s("maisillaan"),))
 
     # suffix
     def s(self, text):
