@@ -4,7 +4,7 @@ from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPers
 from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
-from .infinitives import VerbInfinitive_1_A, VerbInfinitiveAPersonalForms
+from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb56Laulaa("laulaa").moduses()
@@ -407,5 +407,22 @@ class TestInfinitives(unittest.TestCase):
                                                              plural1='tappaaksemme',
                                                              plural2='tappaaksenne',
                                                              plural3='tappaakseen'))
+
+        ensure_inflections_equal(expected, data)
+
+    def test_group_2_E(self):
+        data = KotusVerb56Laulaa("laulaa").infinitives().group_2_E()
+
+        expected = VerbInfinitive_2_E(
+            inessive = VerbInfinitiveAPersonalForms(
+                singular1='laulaessani',
+                singular2='laulaessasi',
+                singular3='laulaessaan',
+                plural1='laulaessamme',
+                plural2='laulaessanne',
+                plural3='laulaessaan'),
+            inessive_passive = "laulettaessa",
+            instructive = "laulaen",
+            elative = "laulaesta")
 
         ensure_inflections_equal(expected, data)
