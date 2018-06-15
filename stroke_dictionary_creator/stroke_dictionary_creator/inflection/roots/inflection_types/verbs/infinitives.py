@@ -20,6 +20,15 @@ VerbInfinitive_2_E = namedtuple("VerbInfinitive_2_E",
                                  "instructive",
                                  "elative",])
 
+VerbInfinitive_3_MA = namedtuple("VerbInfinitive_3_MA",
+                                 # This has the forms that are also present in
+                                 # the participle 3 (the agent participle).
+                                 # They are not repeated here, however.
+                                 #
+                                 # This is the one extra form that is not
+                                 # present in the participle 3.
+                                 ["instructive_passive"])
+
 VerbInfinitive_5_MAINEN = namedtuple("VerbInfinitive_5_MAINEN",
                                      ["adessive"])
 
@@ -35,13 +44,7 @@ class VerbInfinitives():
 
         return VerbInfinitive_1_A(
             basic_form = self.word,
-            translative = VerbInfinitiveAPersonalForms(
-                singular1 = self.word + s("kseni"),
-                singular2 = self.word + s("ksesi"),
-                singular3 = self.word + s("kseen"),
-                plural1   = self.word + s("ksemme"),
-                plural2   = self.word + s("ksenne"),
-                plural3   = self.word + s("kseen"),))
+            translative = self.word + s("kse"))
 
     def group_2_E(self) -> VerbInfinitive_2_E:
         s = self.s
@@ -49,28 +52,22 @@ class VerbInfinitives():
         # TODO also also the third forms can be -ssansa
 
         return VerbInfinitive_2_E(
-            inessive = VerbInfinitiveAPersonalForms(
-                singular1 = self.roots.present + s("essani"),
-                singular2 = self.roots.present + s("essasi"),
-                singular3 = self.roots.present + s("essaan"),
-                plural1   = self.roots.present + s("essamme"),
-                plural2   = self.roots.present + s("essanne"),
-                plural3   = self.roots.present + s("essaan"),),
+            inessive         = self.roots.present + s("essa"),
             inessive_passive = self.roots.present_passive + s("ttaessa"),
             instructive      = self.roots.present + s("en"),
             elative          = self.roots.present + s("esta"))
+
+    def group_3_MA(self) -> VerbInfinitive_3_MA:
+        s = self.s
+
+        return VerbInfinitive_3_MA(
+            instructive_passive = self.roots.present_passive + s("ttaman"))
 
     def group_5_MAINEN(self) -> VerbInfinitive_5_MAINEN:
         s = self.s
 
         return VerbInfinitive_5_MAINEN(
-            adessive = VerbInfinitiveAPersonalForms(
-                singular1 = self.roots.present + s("maisillani"),
-                singular2 = self.roots.present + s("maisillasi"),
-                singular3 = self.roots.present + s("maisillaan"),
-                plural1   = self.roots.present + s("maisillamme"),
-                plural2   = self.roots.present + s("maisillanne"),
-                plural3   = self.roots.present + s("maisillaan"),))
+            adessive = self.roots.present + s("maisilla"))
 
     # suffix
     def s(self, text):

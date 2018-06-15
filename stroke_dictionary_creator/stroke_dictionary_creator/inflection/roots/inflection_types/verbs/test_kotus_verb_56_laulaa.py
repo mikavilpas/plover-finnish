@@ -4,7 +4,7 @@ from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPers
 from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
-from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN
+from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb56Laulaa("laulaa").moduses()
@@ -396,48 +396,37 @@ class TestParticiples(unittest.TestCase):
 
 
 class TestInfinitives(unittest.TestCase):
-    def test_group_1_A(self):
+    def test_group_1(self):
         data = KotusVerb56Laulaa("tappaa").infinitives().group_1_A()
 
         expected = VerbInfinitive_1_A(
             basic_form='tappaa',
-            translative=VerbInfinitiveAPersonalForms(
-                singular1='tappaakseni',
-                singular2='tappaaksesi',
-                singular3='tappaakseen',
-                plural1='tappaaksemme',
-                plural2='tappaaksenne',
-                plural3='tappaakseen'))
+            translative='tappaakse')
 
         ensure_inflections_equal(expected, data)
 
-    def test_group_2_E(self):
+    def test_group_2(self):
         data = KotusVerb56Laulaa("laulaa").infinitives().group_2_E()
 
         expected = VerbInfinitive_2_E(
-            inessive = VerbInfinitiveAPersonalForms(
-                singular1='laulaessani',
-                singular2='laulaessasi',
-                singular3='laulaessaan',
-                plural1='laulaessamme',
-                plural2='laulaessanne',
-                plural3='laulaessaan'),
+            inessive         = "laulaessa",
             inessive_passive = "laulettaessa",
-            instructive = "laulaen",
-            elative = "laulaesta")
+            instructive      = "laulaen",
+            elative          = "laulaesta")
 
         ensure_inflections_equal(expected, data)
 
-    def test_group_5_MAINEN(self):
+    def test_group_3(self):
+        data = KotusVerb56Laulaa("laulaa").infinitives().group_3_MA()
+
+        expected = VerbInfinitive_3_MA(instructive_passive = "laulettaman")
+
+        ensure_inflections_equal(expected, data)
+
+    def test_group_5(self):
         data = KotusVerb56Laulaa("laulaa").infinitives().group_5_MAINEN()
 
         expected = VerbInfinitive_5_MAINEN(
-            adessive = VerbInfinitiveAPersonalForms(
-                singular1 = 'laulamaisillani',
-                singular2 = 'laulamaisillasi',
-                singular3 = 'laulamaisillaan',
-                plural1   = 'laulamaisillamme',
-                plural2   = 'laulamaisillanne',
-                plural3   = 'laulamaisillaan'))
+            adessive = "laulamaisilla")
 
         ensure_inflections_equal(expected, data)
