@@ -423,6 +423,43 @@ class TestInfinitives(unittest.TestCase):
 
         ensure_inflections_equal(expected, data)
 
+    def test_group_4(self):
+        data = KotusVerb56Laulaa("laulaa").infinitives().group_4_MINEN()
+        print(data)
+
+        expected = InflectionInfo(nominative='laulaminen',
+                                  nominative_plural='laulamiset',
+                                  genitive='laulamisen',
+                                  genitives_plural=['laulamisten',
+                                                    'laulamisien'],
+                                  partitives=['laulamista'],
+                                  partitives_plural=['laulamisia'],
+                                  accusatives=['laulaminen',
+                                               'laulamisen'],
+                                  accusative_plural='laulamiset',
+                                  inessive='laulamisessa',
+                                  inessives_plural=['laulamisissa'],
+                                  elative='laulamisesta',
+                                  elatives_plural=['laulamisista'],
+                                  illatives=['laulamiseen'],
+                                  illatives_plural=['laulamisiin'],
+                                  adessive='laulamisella',
+                                  adessives_plural=['laulamisilla'],
+                                  ablative='laulamiselta',
+                                  ablatives_plural=['laulamisilta'],
+                                  allative='laulamiselle',
+                                  allatives_plural=['laulamisille'],
+                                  essive='laulamisena',
+                                  essives_plural=['laulamisina'],
+                                  translative='laulamiseksi',
+                                  translatives_plural=['laulamisiksi'],
+                                  abessive='laulamisetta',
+                                  abessives_plural=['laulamisitta'],
+                                  instructives_plural=['laulamisin'],
+                                  comitatives_plural=['laulamisine'])
+
+        ensure_inflections_equal(expected, data)
+
     def test_group_5(self):
         data = KotusVerb56Laulaa("laulaa").infinitives().group_5_MAINEN()
 

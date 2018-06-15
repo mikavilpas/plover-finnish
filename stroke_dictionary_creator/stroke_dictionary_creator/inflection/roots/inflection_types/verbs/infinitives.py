@@ -3,6 +3,7 @@ from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group
 from ...noun_inflection_info import InflectionInfo
 from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
 from .moduses import VerbPersonalForms, VerbRoots, VerbModuses
+from ..kotus_noun_38_nainen import kotus_noun_38_nainen
 
 VerbInfinitiveAPersonalForms = namedtuple("VerbInfinitiveAPersonalForms",
                                           ["singular1", "singular2", "singular3",
@@ -62,6 +63,12 @@ class VerbInfinitives():
 
         return VerbInfinitive_3_MA(
             instructive_passive = self.roots.present_passive + s("ttaman"))
+
+    def group_4_MINEN(self) -> InflectionInfo:
+        s = self.s
+
+        word_minen = self.roots.present + s("minen")
+        return kotus_noun_38_nainen(word_minen)
 
     def group_5_MAINEN(self) -> VerbInfinitive_5_MAINEN:
         s = self.s
