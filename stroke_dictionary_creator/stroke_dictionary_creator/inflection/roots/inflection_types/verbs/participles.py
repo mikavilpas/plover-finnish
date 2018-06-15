@@ -19,19 +19,19 @@ class VerbParticiples():
 
     def group_1_VA(self) -> InflectionInfo:
         word_va = self.roots.present + self.s("va")
-        return kotus_noun_10_koira(word_va, gradation_fn = identity)
+        return kotus_noun_10_koira(word_va)
 
     def group_2_NUT(self) -> InflectionInfo:
         word_nut = self.moduses.indicative_perfect().singular1
-        return kotus_noun_47_kuollut(word_nut, gradation_fn = identity)
+        return kotus_noun_47_kuollut(word_nut)
 
     def group_3_MA_agent_participle(self) -> InflectionInfo:
         word_va = self.roots.present + self.s("ma")
-        return kotus_noun_10_koira(word_va, gradation_fn = identity)
+        return kotus_noun_10_koira(word_va)
 
     def group_4_VA_passive(self) -> InflectionInfo:
         word_va = self.roots.present_passive + self.s("ttava")
-        return kotus_noun_10_koira(word_va, gradation_fn = identity)
+        return kotus_noun_10_koira(word_va)
 
     def group_5_TU_passive(self) -> InflectionInfo:
         word_passive = self.moduses.indicative_perfect().passive
