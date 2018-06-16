@@ -425,7 +425,6 @@ class TestInfinitives(unittest.TestCase):
 
     def test_group_4(self):
         data = KotusVerb56Laulaa("laulaa").infinitives().group_4_MINEN()
-        print(data)
 
         expected = InflectionInfo(nominative='laulaminen',
                                   nominative_plural='laulamiset',
