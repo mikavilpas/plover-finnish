@@ -27,3 +27,7 @@ class VerbBase():
     def _roots(self) -> VerbRoots:
         # override this in the subclass!
         raise Exception("_roots not implemented. This verb class cannot be used.")
+
+    # suffix
+    def s(self, text):
+        return change_to_same_vowel_group_prefer_umlauts(self.word, text)

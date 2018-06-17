@@ -8,10 +8,16 @@ class KotusVerb56Laulaa(VerbBase):
 
     def _roots(self) -> VerbRoots:
         word_alt = self.gradation_fn(self.word)
-        [root, v]         = reverse_parse(self.word, root_and_double_end_vowel)
-        [root_alt, v_alt] = reverse_parse(word_alt, root_and_double_end_vowel)
 
-        return VerbRoots(root_weak = root + v,
-                         root_strong = root_alt + "e",
-                         root_weak_passive = root_alt + "e",
-                         singular3 = self.word)
+        # the examples use the word tappaa (gradation b: tappaa-tapan)
+        [tapp, a] = reverse_parse(self.word, root_and_double_end_vowel)
+        [tap, _]  = reverse_parse(word_alt, root_and_double_end_vowel)
+
+        return VerbRoots(root_strong        = tapp + a,
+                         root_weak          = tap + a,
+                         root_passive       = tap + self.s("e"),
+                         singular1_past     = tap + self.s("o"),
+                         singular3          = tapp + a + a,
+                         singular3_past     = tapp + self.s("o"),
+                         conditional_strong = tapp + a,
+                         participle_root    = tapp + a)

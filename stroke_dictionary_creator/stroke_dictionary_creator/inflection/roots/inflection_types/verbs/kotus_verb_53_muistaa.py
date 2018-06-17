@@ -23,7 +23,3 @@ class KotusVerb53Muistaa(VerbBase):
                          singular3_past = esitt,
                          conditional_strong = esitt + v,
                          participle_root = esitt + v)
-
-    # suffix
-    def s(self, text):
-        return change_to_same_vowel_group_prefer_umlauts(self.word, text)
