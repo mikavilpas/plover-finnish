@@ -53,29 +53,29 @@ class VerbInfinitives():
         # TODO also also the third forms can be -ssansa
 
         return VerbInfinitive_2_E(
-            inessive         = self.roots.present + s("essa"),
-            inessive_passive = self.roots.present_passive + s("ttaessa"),
-            instructive      = self.roots.present + s("en"),
-            elative          = self.roots.present + s("esta"))
+            inessive         = self.roots.root_strong + s("essa"),
+            inessive_passive = self.roots.root_passive + s("ttaessa"),
+            instructive      = self.roots.root_strong + s("en"),
+            elative          = self.roots.root_strong + s("esta"))
 
     def group_3_MA(self) -> VerbInfinitive_3_MA:
         s = self.s
 
         return VerbInfinitive_3_MA(
-            instructive_passive = self.roots.present_passive + s("ttaman"))
+            instructive_passive = self.roots.root_passive + s("ttaman"))
 
     def group_4_MINEN(self) -> InflectionInfo:
         s = self.s
 
-        word_minen = self.roots.present + s("minen")
+        word_minen = self.roots.root_strong + s("minen")
         return kotus_noun_38_nainen(word_minen)
 
     def group_5_MAINEN(self) -> VerbInfinitive_5_MAINEN:
         s = self.s
 
         return VerbInfinitive_5_MAINEN(
-            adessive = self.roots.present + s("maisilla"))
+            adessive = self.roots.root_strong + s("maisilla"))
 
     # suffix
     def s(self, text):
-        return change_to_same_vowel_group_prefer_umlauts(self.roots.present, text)
+        return change_to_same_vowel_group_prefer_umlauts(self.roots.root_weak, text)

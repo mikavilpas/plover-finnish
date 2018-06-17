@@ -11,5 +11,7 @@ class KotusVerb56Laulaa(VerbBase):
         [root, v]         = reverse_parse(self.word, root_and_double_end_vowel)
         [root_alt, v_alt] = reverse_parse(word_alt, root_and_double_end_vowel)
 
-        return VerbRoots(present = root + v,
-                         present_passive = root_alt + "e")
+        return VerbRoots(root_weak = root + v,
+                         root_strong = root_alt + "e",
+                         root_weak_passive = root_alt + "e",
+                         singular3 = self.word)

@@ -8,4 +8,9 @@ def reverse_parse(word, p):
     if len(return_value) == 2:
         (root, data) = return_value
         return (reverse(root), data)
+
+    if len(return_value) == 3:
+        (root, data, d2) = return_value
+        return (reverse(root), data, d2)
+
     return reverse(return_value)

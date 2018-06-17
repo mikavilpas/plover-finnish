@@ -18,7 +18,7 @@ class VerbParticiples():
         self.moduses = moduses
 
     def group_1_VA(self) -> InflectionInfo:
-        word_va = self.roots.present + self.s("va")
+        word_va = self.roots.root_strong + self.s("va")
         return kotus_noun_10_koira(word_va)
 
     def group_2_NUT(self) -> InflectionInfo:
@@ -26,11 +26,11 @@ class VerbParticiples():
         return kotus_noun_47_kuollut(word_nut)
 
     def group_3_MA_agent_participle(self) -> InflectionInfo:
-        word_va = self.roots.present + self.s("ma")
+        word_va = self.roots.root_strong + self.s("ma")
         return kotus_noun_10_koira(word_va)
 
     def group_4_VA_passive(self) -> InflectionInfo:
-        word_va = self.roots.present_passive + self.s("ttava")
+        word_va = self.roots.root_passive + self.s("ttava")
         return kotus_noun_10_koira(word_va)
 
     def group_5_TU_passive(self) -> InflectionInfo:
@@ -39,10 +39,10 @@ class VerbParticiples():
                                  gradate_kotus_c_tyttö_tytön_kate_katteen)
 
     def group_6_negation(self) -> InflectionInfo:
-        word_maton = self.roots.present + self.s("maton")
+        word_maton = self.roots.root_strong + self.s("maton")
         return kotus_noun_34_onneton(word_maton,
                                      gradate_kotus_c_tyttö_tytön_kate_katteen)
 
     # suffix
     def s(self, text):
-        return change_to_same_vowel_group_prefer_umlauts(self.roots.present, text)
+        return change_to_same_vowel_group_prefer_umlauts(self.roots.root_strong, text)
