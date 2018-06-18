@@ -15,11 +15,12 @@ class KotusVerb52Sanoa(VerbBase):
         [eheyt, y, ä] = reverse_parse(self.word, root_and_vowel_vowel_ending)
         [eheyd, _, _] = reverse_parse(word_alt, root_and_vowel_vowel_ending)
 
-        return VerbRoots(root_strong = eheyt + y,
-                         root_weak = eheyd + y,
-                         root_passive = eheyd + y,
-                         singular1_past = eheyd + y,
-                         singular3 = eheyt + y + y,
-                         singular3_past = eheyt + y,
+        return VerbRoots(root_strong        = eheyt + y,
+                         root_weak          = eheyd + y,
+                         root_passive       = eheyd + y,
+                         singular1_past     = eheyd + y,
+                         singular3          = eheyt + y + y,
+                         singular3_past     = eheyt + y,
+                         plural3            = eheyt + y,
                          conditional_strong = eheyt + y,
-                         participle_root = eheyt + y)
+                         participle_root    = eheyt + y)

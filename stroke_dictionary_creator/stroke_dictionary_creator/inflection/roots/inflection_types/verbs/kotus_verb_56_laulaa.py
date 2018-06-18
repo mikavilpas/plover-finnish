@@ -19,5 +19,6 @@ class KotusVerb56Laulaa(VerbBase):
                          singular1_past     = tap + self.s("o"),
                          singular3          = tapp + a + a,
                          singular3_past     = tapp + self.s("o"),
+                         plural3            = tapp + a,
                          conditional_strong = tapp + a,
                          participle_root    = tapp + a)
