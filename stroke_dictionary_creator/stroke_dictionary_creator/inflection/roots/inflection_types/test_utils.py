@@ -11,6 +11,7 @@ def isnamedtupleinstance(x):
     return all(type(n)==str for n in f)
 
 def ensure_inflections_equal(expected, actual):
+    ensure(expected).is_a(type(actual))
     for k,expected_value in expected._asdict().items():
         actual_value = getattr(actual, k)
 

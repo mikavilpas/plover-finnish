@@ -5,7 +5,7 @@ from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_i_ilta_illan_sivellin_siveltimen, gradate_kotus_f_satu_sadun_keidas_keitaan
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
-from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent
+from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb55Soutaa("yltää",
@@ -35,20 +35,21 @@ class TestBasic(unittest.TestCase):
     def test_indicative_past(self):
         conjugations = self.moduses.indicative_past()
 
-        expected = VerbPersonalForms(singular1          = ["yllin", "ylsin"],
-                                     singular2          = ["yllit", "ylsit"],
-                                     singular3          = ["ylti", "ylsi"],
-                                     singular1_negative = "yltänyt",
-                                     singular2_negative = "yltänyt",
-                                     singular3_negative = "yltänyt",
-                                     plural1            = ["yllimme", "ylsimme"],
-                                     plural2            = ["yllitte", "ylsitte"],
-                                     plural3            = ["yltivät", "ylsivät"],
-                                     plural1_negative   = "yltäneet",
-                                     plural2_negative   = "yltäneet",
-                                     plural3_negative   = "yltäneet",
-                                     passive            = "yllettiin",
-                                     passive_negative   = "ylletty",)
+        expected = VerbPersonalFormsMultipleRoots(
+            singular1s         = ["yllin", "ylsin"],
+            singular2s         = ["yllit", "ylsit"],
+            singular3s         = ["ylti", "ylsi"],
+            singular1_negative = "yltänyt",
+            singular2_negative = "yltänyt",
+            singular3_negative = "yltänyt",
+            plural1s           = ["yllimme", "ylsimme"],
+            plural2s           = ["yllitte", "ylsitte"],
+            plural3s           = ["yltivät", "ylsivät"],
+            plural1_negative   = "yltäneet",
+            plural2_negative   = "yltäneet",
+            plural3_negative   = "yltäneet",
+            passive            = "yllettiin",
+            passive_negative   = "ylletty",)
 
         ensure_inflections_equal(expected, conjugations)
 
