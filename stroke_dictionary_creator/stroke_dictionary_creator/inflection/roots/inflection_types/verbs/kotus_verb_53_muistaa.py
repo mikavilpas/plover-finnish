@@ -12,14 +12,15 @@ class KotusVerb53Muistaa(VerbBase):
         # all words in this class end in "aa" or "ää"
 
         # examples use the word "esittää"
-        [esitt, v] = reverse_parse(self.word, root_and_double_end_vowel)
+        [esitt, ä] = reverse_parse(self.word, root_and_double_end_vowel)
         [esit, v_alt] = reverse_parse(word_alt, root_and_double_end_vowel)
 
-        return VerbRoots(root_strong = esitt + v,
-                         root_weak = esit + v,
-                         root_passive = esit + self.s("e"),
-                         singular1_past = esit,
-                         singular3 = esitt + v + v,
-                         singular3_past = esitt,
-                         conditional_strong = esitt + v,
-                         participle_root = esitt + v)
+        return VerbRoots(root_strong        = esitt + ä,
+                         root_weak          = esit + ä,
+                         root_passive       = esit + self.s("e"),
+                         singular1_past     = esit,
+                         singular3          = esitt + ä + ä,
+                         plural3            = esitt + ä,
+                         singular3_past     = esitt,
+                         conditional_strong = esitt + ä,
+                         participle_root    = esitt + ä)

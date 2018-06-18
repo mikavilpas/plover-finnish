@@ -23,7 +23,7 @@ class TestBasic(unittest.TestCase):
                                      singular3_negative = "esitä",
                                      plural1            = "esitämme",
                                      plural2            = "esitätte",
-                                     plural3            = "esitävät",
+                                     plural3            = "esittävät",
                                      plural1_negative   = "esitä",
                                      plural2_negative   = "esitä",
                                      plural3_negative   = "esitä",
