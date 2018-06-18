@@ -5,7 +5,7 @@ from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
-from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent
+from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb53Muistaa("esittää",
@@ -35,20 +35,21 @@ class TestBasic(unittest.TestCase):
     def test_indicative_past(self):
         conjugations = self.moduses.indicative_past()
 
-        expected = VerbPersonalForms(singular1          = "esitin",
-                                     singular2          = "esitit",
-                                     singular3          = "esitti",
-                                     singular1_negative = "esittänyt",
-                                     singular2_negative = "esittänyt",
-                                     singular3_negative = "esittänyt",
-                                     plural1            = "esitimme",
-                                     plural2            = "esititte",
-                                     plural3            = "esittivät",
-                                     plural1_negative   = "esittäneet",
-                                     plural2_negative   = "esittäneet",
-                                     plural3_negative   = "esittäneet",
-                                     passive            = "esitettiin",
-                                     passive_negative   = "esitetty",)
+        expected = VerbPersonalFormsMultipleRoots(
+            singular1s         = ["esitin"],
+            singular2s         = ["esitit"],
+            singular3s         = ["esitti"],
+            singular1_negative = "esittänyt",
+            singular2_negative = "esittänyt",
+            singular3_negative = "esittänyt",
+            plural1s           = ["esitimme"],
+            plural2s           = ["esititte"],
+            plural3s           = ["esittivät"],
+            plural1_negative   = "esittäneet",
+            plural2_negative   = "esittäneet",
+            plural3_negative   = "esittäneet",
+            passive            = "esitettiin",
+            passive_negative   = "esitetty",)
 
         ensure_inflections_equal(expected, conjugations)
 

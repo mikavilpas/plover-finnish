@@ -5,6 +5,7 @@ from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_f_satu_sadun_keidas_keitaan
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
+from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb52Sanoa("sanoa").moduses()
@@ -32,20 +33,21 @@ class TestBasic(unittest.TestCase):
     def test_indicative_past(self):
         conjugations = self.moduses.indicative_past()
 
-        expected = VerbPersonalForms(singular1          = "sanoin",
-                                     singular2          = "sanoit",
-                                     singular3          = "sanoi",
-                                     singular1_negative = "sanonut",
-                                     singular2_negative = "sanonut",
-                                     singular3_negative = "sanonut",
-                                     plural1            = "sanoimme",
-                                     plural2            = "sanoitte",
-                                     plural3            = "sanoivat",
-                                     plural1_negative   = "sanoneet",
-                                     plural2_negative   = "sanoneet",
-                                     plural3_negative   = "sanoneet",
-                                     passive            = "sanottiin",
-                                     passive_negative   = "sanottu",)
+        expected = VerbPersonalFormsMultipleRoots(
+            singular1s         = ["sanoin"],
+            singular2s         = ["sanoit"],
+            singular3s         = ["sanoi"],
+            singular1_negative = "sanonut",
+            singular2_negative = "sanonut",
+            singular3_negative = "sanonut",
+            plural1s           = ["sanoimme"],
+            plural2s           = ["sanoitte"],
+            plural3s           = ["sanoivat"],
+            plural1_negative   = "sanoneet",
+            plural2_negative   = "sanoneet",
+            plural3_negative   = "sanoneet",
+            passive            = "sanottiin",
+            passive_negative   = "sanottu",)
 
         ensure_inflections_equal(expected, conjugations)
 

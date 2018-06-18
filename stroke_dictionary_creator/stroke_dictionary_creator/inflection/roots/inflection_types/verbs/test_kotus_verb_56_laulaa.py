@@ -1,6 +1,6 @@
 import unittest
 from ensure import ensure
-from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPersonalFormsImperativePresent
+from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
@@ -32,20 +32,21 @@ class TestBasic(unittest.TestCase):
     def test_indicative_past(self):
         conjugations = self.moduses.indicative_past()
 
-        expected = VerbPersonalForms(singular1          = "lauloin",
-                                     singular2          = "lauloit",
-                                     singular3          = "lauloi",
-                                     singular1_negative = "laulanut",
-                                     singular2_negative = "laulanut",
-                                     singular3_negative = "laulanut",
-                                     plural1            = "lauloimme",
-                                     plural2            = "lauloitte",
-                                     plural3            = "lauloivat",
-                                     plural1_negative   = "laulaneet",
-                                     plural2_negative   = "laulaneet",
-                                     plural3_negative   = "laulaneet",
-                                     passive            = "laulettiin",
-                                     passive_negative   = "laulettu",)
+        expected = VerbPersonalFormsMultipleRoots(
+            singular1s         = ["lauloin"],
+            singular2s         = ["lauloit"],
+            singular3s         = ["lauloi"],
+            singular1_negative = "laulanut",
+            singular2_negative = "laulanut",
+            singular3_negative = "laulanut",
+            plural1s           = ["lauloimme"],
+            plural2s           = ["lauloitte"],
+            plural3s           = ["lauloivat"],
+            plural1_negative   = "laulaneet",
+            plural2_negative   = "laulaneet",
+            plural3_negative   = "laulaneet",
+            passive            = "laulettiin",
+            passive_negative   = "laulettu",)
 
         ensure_inflections_equal(expected, conjugations)
 

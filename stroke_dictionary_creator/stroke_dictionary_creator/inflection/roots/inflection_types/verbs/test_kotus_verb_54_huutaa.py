@@ -5,7 +5,7 @@ from ..test_utils import ensure_inflections_equal
 from ...gradation import gradate_kotus_f_satu_sadun_keidas_keitaan, gradate_kotus_j_hento_hennon_vanne_vanteen
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
-from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent
+from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb54Huutaa("vääntää",
@@ -35,20 +35,21 @@ class TestBasic(unittest.TestCase):
     def test_indicative_past(self):
         conjugations = self.moduses.indicative_past()
 
-        expected = VerbPersonalForms(singular1          = "väänsin",
-                                     singular2          = "väänsit",
-                                     singular3          = "väänsi",
-                                     singular1_negative = "vääntänyt",
-                                     singular2_negative = "vääntänyt",
-                                     singular3_negative = "vääntänyt",
-                                     plural1            = "väänsimme",
-                                     plural2            = "väänsitte",
-                                     plural3            = "väänsivät",
-                                     plural1_negative   = "vääntäneet",
-                                     plural2_negative   = "vääntäneet",
-                                     plural3_negative   = "vääntäneet",
-                                     passive            = "väännettiin",
-                                     passive_negative   = "väännetty",)
+        expected = VerbPersonalFormsMultipleRoots(
+            singular1s         = ["väänsin"],
+            singular2s         = ["väänsit"],
+            singular3s         = ["väänsi"],
+            singular1_negative = "vääntänyt",
+            singular2_negative = "vääntänyt",
+            singular3_negative = "vääntänyt",
+            plural1s           = ["väänsimme"],
+            plural2s           = ["väänsitte"],
+            plural3s           = ["väänsivät"],
+            plural1_negative   = "vääntäneet",
+            plural2_negative   = "vääntäneet",
+            plural3_negative   = "vääntäneet",
+            passive            = "väännettiin",
+            passive_negative   = "väännetty",)
 
         ensure_inflections_equal(expected, conjugations)
 
