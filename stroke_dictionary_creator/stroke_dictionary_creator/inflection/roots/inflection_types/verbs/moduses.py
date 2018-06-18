@@ -5,7 +5,7 @@ from ...noun_inflection_info import InflectionInfo
 class VerbRoots():
     def __init__(self, root_weak, root_strong, root_passive,
                  singular3, singular3_past, singular1_past,
-                 conditional_strong, participle_root):
+                 conditional_strong, participle_root, plural3):
         self.root_weak          = root_weak
         self.root_strong        = root_strong
         self.root_passive       = root_passive
@@ -14,6 +14,7 @@ class VerbRoots():
         self.singular1_past     = singular1_past
         self.conditional_strong = conditional_strong
         self.participle_root    = participle_root
+        self.plural3            = plural3
 
 VerbPersonalForms = namedtuple("VerbPersonalForms",
                                ["singular1", "singular1_negative",
@@ -53,7 +54,7 @@ class VerbModuses():
                                  singular3_negative = r.root_weak,
                                  plural1            = r.root_weak + s("mme"),
                                  plural2            = r.root_weak + s("tte"),
-                                 plural3            = r.root_weak + s("vat"),
+                                 plural3            = r.plural3 + s("vat"),
                                  plural1_negative   = r.root_weak,
                                  plural2_negative   = r.root_weak,
                                  plural3_negative   = r.root_weak,
@@ -63,8 +64,6 @@ class VerbModuses():
     def indicative_past(self):
         r = self.roots
         s = self.s
-
-        [pres_root, pres_v] = reverse_parse(r.root_strong, root_and_end_vowel)
 
         return VerbPersonalForms(singular1          = r.singular1_past + s("in"),
                                  singular2          = r.singular1_past + s("it"),
