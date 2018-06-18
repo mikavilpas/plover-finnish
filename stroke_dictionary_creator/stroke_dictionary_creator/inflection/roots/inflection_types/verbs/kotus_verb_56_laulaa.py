@@ -16,9 +16,9 @@ class KotusVerb56Laulaa(VerbBase):
         return VerbRoots(root_strong        = tapp + a,
                          root_weak          = tap + a,
                          root_passive       = tap + self.s("e"),
-                         singular1_past     = tap + self.s("o"),
                          singular3          = tapp + a + a,
-                         singular3_past     = tapp + self.s("o"),
                          plural3            = tapp + a,
+                         singular1_past     = [tap + self.s("o")],
+                         singular3_past     = [tapp + self.s("o")],
                          conditional_strong = tapp + a,
                          participle_root    = tapp + a)

@@ -18,9 +18,9 @@ class KotusVerb52Sanoa(VerbBase):
         return VerbRoots(root_strong        = eheyt + y,
                          root_weak          = eheyd + y,
                          root_passive       = eheyd + y,
-                         singular1_past     = eheyd + y,
+                         singular1_past     = [eheyd + y],
+                         singular3_past     = [eheyt + y],
                          singular3          = eheyt + y + y,
-                         singular3_past     = eheyt + y,
                          plural3            = eheyt + y,
                          conditional_strong = eheyt + y,
                          participle_root    = eheyt + y)

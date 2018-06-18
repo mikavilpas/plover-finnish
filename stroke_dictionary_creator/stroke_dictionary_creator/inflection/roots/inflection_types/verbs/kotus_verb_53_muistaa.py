@@ -1,6 +1,6 @@
 from .moduses import *
 from ...gradation import identity
-from ..base import root_and_ccvv_ending, change_to_same_vowel_group_prefer_umlauts
+from ..base import root_and_cvv_ending, change_to_same_vowel_group_prefer_umlauts
 from .verb import VerbBase
 
 class KotusVerb53Muistaa(VerbBase):
@@ -18,9 +18,9 @@ class KotusVerb53Muistaa(VerbBase):
         return VerbRoots(root_strong        = esitt + ä,
                          root_weak          = esit + ä,
                          root_passive       = esit + self.s("e"),
-                         singular1_past     = esit,
                          singular3          = esitt + ä + ä,
                          plural3            = esitt + ä,
-                         singular3_past     = esitt,
+                         singular1_past     = [esit],
+                         singular3_past     = [esitt],
                          conditional_strong = esitt + ä,
                          participle_root    = esitt + ä)

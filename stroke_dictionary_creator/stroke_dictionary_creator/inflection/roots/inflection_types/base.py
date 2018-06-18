@@ -28,7 +28,7 @@ def root_and_double_end_vowel():
     return [root, end_vowel]
 
 @generate
-def root_and_ccvv_ending():
+def root_and_cvv_ending():
     # a word like esittää, returns the root as "esit"
 
     end_vowel = yield vowel

@@ -38,13 +38,11 @@ class VerbModuses():
     def __init__(self, roots: VerbRoots):
         self.roots = roots
 
-    # suffix
-    def s(self, text):
-        return change_to_same_vowel_group_prefer_umlauts(self.roots.root_weak, text)
-
     def indicative_present(self):
         r = self.roots
         s = self.s
+
+        # TODO allow verb bodies as a list
 
         return VerbPersonalForms(singular1          = r.root_weak + s("n"),
                                  singular2          = r.root_weak + s("t"),
@@ -65,20 +63,23 @@ class VerbModuses():
         r = self.roots
         s = self.s
 
-        return VerbPersonalForms(singular1          = r.singular1_past + s("in"),
-                                 singular2          = r.singular1_past + s("it"),
-                                 singular3          = r.singular3_past + s("i"),
-                                 singular1_negative = r.root_strong + s("nut"),
-                                 singular2_negative = r.root_strong + s("nut"),
-                                 singular3_negative = r.root_strong + s("nut"),
-                                 plural1            = r.singular1_past + s("imme"),
-                                 plural2            = r.singular1_past + s("itte"),
-                                 plural3            = r.singular3_past + s("ivat"),
-                                 plural1_negative   = r.root_strong + s("neet"),
-                                 plural2_negative   = r.root_strong + s("neet"),
-                                 plural3_negative   = r.root_strong + s("neet"),
-                                 passive            = r.root_passive + s("ttiin"),
-                                 passive_negative   = r.root_passive + s("ttu"),)
+        # TODO allow verb bodies as a list
+
+        return VerbPersonalForms(
+            singular1          = self.many(r.singular1_past, s("in")),
+            singular2          = self.many(r.singular1_past, s("it")),
+            singular3          = self.many(r.singular3_past, s("i")),
+            singular1_negative = r.root_strong + s("nut"),
+            singular2_negative = r.root_strong + s("nut"),
+            singular3_negative = r.root_strong + s("nut"),
+            plural1            = self.many(r.singular1_past, s("imme")),
+            plural2            = self.many(r.singular1_past, s("itte")),
+            plural3            = self.many(r.singular3_past, s("ivat")),
+            plural1_negative   = r.root_strong + s("neet"),
+            plural2_negative   = r.root_strong + s("neet"),
+            plural3_negative   = r.root_strong + s("neet"),
+            passive            = r.root_passive + s("ttiin"),
+            passive_negative   = r.root_passive + s("ttu"),)
 
     def indicative_perfect(self):
         r = self.roots
@@ -163,3 +164,11 @@ class VerbModuses():
             plural3_negative   = ko,
             passive            = r.root_passive + s("ttakoon"),
             passive_negative   = r.root_passive + s("ttako"),)
+
+    def many(self, roots: [str], suffix: str):
+        # some verb forms have multiple root forms, like yltää:ylti/ylsi
+        return [r + suffix for r in roots]
+
+    # suffix
+    def s(self, text):
+        return change_to_same_vowel_group_prefer_umlauts(self.roots.root_weak, text)
