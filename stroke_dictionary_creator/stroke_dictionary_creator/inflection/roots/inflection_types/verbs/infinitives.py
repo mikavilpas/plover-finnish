@@ -41,11 +41,9 @@ class VerbInfinitives():
         self.moduses = moduses
 
     def group_1_A(self) -> VerbInfinitive_1_A:
-        s = self.s
-
         return VerbInfinitive_1_A(
             basic_form = self.word,
-            translative = self.word + s("kse"))
+            translative = self.word + self.s("kse"))
 
     def group_2_E(self) -> VerbInfinitive_2_E:
         s = self.s
@@ -59,22 +57,16 @@ class VerbInfinitives():
             elative          = self.roots.root_strong + s("esta"))
 
     def group_3_MA(self) -> VerbInfinitive_3_MA:
-        s = self.s
-
         return VerbInfinitive_3_MA(
-            instructive_passive = self.roots.root_passive + s("ttaman"))
+            instructive_passive = self.roots.root_passive + self.s("ttaman"))
 
     def group_4_MINEN(self) -> InflectionInfo:
-        s = self.s
-
-        word_minen = self.roots.root_strong + s("minen")
+        word_minen = self.roots.root_strong + self.s("minen")
         return kotus_noun_38_nainen(word_minen)
 
     def group_5_MAINEN(self) -> VerbInfinitive_5_MAINEN:
-        s = self.s
-
         return VerbInfinitive_5_MAINEN(
-            adessive = self.roots.root_strong + s("maisilla"))
+            adessive = self.roots.root_strong + self.s("maisilla"))
 
     # suffix
     def s(self, text):
