@@ -13,3 +13,8 @@ each word, and creates strokes according to the Finnish steno theory.
 Reads in all the dictionaries in the ../input_dictionaries/ directory, checks
 that each stroke is valid, and finally writes the strokes to a JSON file that
 Plover can read and use.
+
+# Dependencies
+
+To compile the strokes, you need to install libvoikko on your system. For Linux
+systems, there usually is a package called libvoikko available.

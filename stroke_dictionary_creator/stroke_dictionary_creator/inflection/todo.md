@@ -8,3 +8,5 @@ Big todos
   and adjectives, for example. The voikko list does, however.
 
 - honorific "Te" conjugations for verbs
+
+- derivations for verbs: laulaa-laulella and others

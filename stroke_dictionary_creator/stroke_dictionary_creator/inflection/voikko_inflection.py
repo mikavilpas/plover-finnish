@@ -1,4 +1,4 @@
-from voikko import inflect_word
+from voikko import inflect_word, voikkoinfl, voikkoutils
 
 def is_custom_compound_noun(word):
     return "=" in word
@@ -28,3 +28,21 @@ def inflected_forms(word, infclass):
     else:
         inflections = inflect_word.inflect_word(word, infclass).values()
         return set(inflections)
+
+nouns = inflect_word.noun_types
+verbs = inflect_word.verb_types
+nouns_and_verbs = nouns + verbs
+
+def joukahainen_gradation_to_kotus(word: str,
+                                   joukahainen_refword: str,
+                                   joukahainen_gradation: str) -> str:
+    # Joukahainen (the Finnish word list) has its own gradation classes for an
+    # unknown reason. To properly apply gradation, the more official (I guess)
+    # class of the word is needed. The class can be converted with this
+    # function for this purpose.
+
+    # this algorithm is a bit stupid but seems to work in practice
+    for kl in nouns_and_verbs:
+        gradation: str = kl.kotusGradClass(word, joukahainen_gradation)
+        if gradation not in ["", None]:
+            return gradation
