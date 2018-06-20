@@ -5,7 +5,8 @@ from ...noun_inflection_info import InflectionInfo
 class VerbRoots():
     def __init__(self, root_weak, root_strong, root_passive,
                  singular3, singular3_past, singular1_past,
-                 conditional_strong, participle_root, plural3):
+                 conditional_strong, participle_root, plural3,
+                 infinitive_root = None):
         self.root_weak          = root_weak
         self.root_strong        = root_strong
         self.root_passive       = root_passive
@@ -15,6 +16,8 @@ class VerbRoots():
         self.conditional_strong = conditional_strong
         self.participle_root    = participle_root
         self.plural3            = plural3
+        # many verbs don't have this separately
+        self.infinitive_root    = infinitive_root or root_strong
 
 VerbPersonalForms = namedtuple("VerbPersonalForms",
                                ["singular1", "singular1_negative",

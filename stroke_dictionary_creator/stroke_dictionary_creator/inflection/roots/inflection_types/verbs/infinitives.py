@@ -51,10 +51,10 @@ class VerbInfinitives():
         # TODO also also the third forms can be -ssansa
 
         return VerbInfinitive_2_E(
-            inessive         = self.roots.root_strong + s("essa"),
+            inessive         = self.roots.infinitive_root + s("essa"),
             inessive_passive = self.roots.root_passive + s("ttaessa"),
-            instructive      = self.roots.root_strong + s("en"),
-            elative          = self.roots.root_strong + s("esta"))
+            instructive      = self.roots.infinitive_root + s("en"),
+            elative          = self.roots.infinitive_root + s("esta"))
 
     def group_3_MA(self) -> VerbInfinitive_3_MA:
         return VerbInfinitive_3_MA(
