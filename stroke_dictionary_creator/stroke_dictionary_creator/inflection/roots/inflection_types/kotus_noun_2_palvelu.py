@@ -1,14 +1,25 @@
 from .base import *
-from .kotus_noun_1_valo import kotus_noun_1_valo
 
-def kotus_noun_2_palvelu(word, gradation_fn = identity):
-    # suffix
-    def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
+class KotusNoun2Palvelu(Noun):
+    def __init__(self, word: str, gradation_fn = identity):
+        self.word = word
 
-    inflections = kotus_noun_1_valo(word, gradation_fn)
-    return inflections._replace(genitives_plural = [word + "jen",
-                                                    word + "iden",
-                                                    word + "itten"],
-                                partitives_plural = [word + s("ita"),
-                                                     word + s("ja")],
-                                accusative_plural = word + "t")
+        # these examples use the word palvelu (no gradation in this class)
+        palvelu = word
+        (palvel, u) = reverse_parse(palvelu, root_and_end_vowel)
+
+        super().__init__(
+            NounStems(
+                nominative         = palvelu,
+                genitive           = palvelu,
+                partitives         = [palvelu],
+                partitives_plural  = [palvelu + self.s("it"),
+                                      palvelu + self.s("j")],
+                locationals_plural = [palvelu + self.s("i")],
+                essive             = palvelu,
+                plural             = palvelu,
+                illatives          = [palvelu + u]),
+            genitives_plural = [palvelu + self.s("jen"),
+                                palvelu + self.s("iden"),
+                                palvelu + self.s("itten")],
+            illatives_plural = [palvelu + self.s("ihin")])
