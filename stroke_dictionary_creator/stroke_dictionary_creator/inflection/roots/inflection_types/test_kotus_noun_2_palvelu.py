@@ -1,12 +1,12 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_2_palvelu import KotusNoun2Palvelu
+from .kotus_noun_2_palvelu import kotus_noun_2_palvelu
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
 
 class TestInflectionType2(unittest.TestCase):
     def test_kotus_noun_2_palvelu_full_cases(self):
-        data = KotusNoun2Palvelu("palvelu").inflections()
+        data = kotus_noun_2_palvelu("palvelu")
         expected = InflectionInfo(nominative='palvelu',
                                   nominative_plural='palvelut',
                                   genitive='palvelun',
@@ -42,7 +42,7 @@ class TestInflectionType2(unittest.TestCase):
         ensure_inflections_equal(expected, data)
 
     def test_kotus_noun_2_palvelu_umlauts(self):
-        data = KotusNoun2Palvelu("epäily").inflections()
+        data = kotus_noun_2_palvelu("epäily")
         ensure(data.comitatives_plural).equals(["epäilyine"])
 
     # The kotus wordlist does not contain any words that belong to class 2 and

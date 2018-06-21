@@ -1,6 +1,6 @@
 from parsy import *
 from ..tokens import *
-from ..noun_inflection_info import InflectionInfo, Noun, NounStems
+from ..noun_inflection_info import InflectionInfo
 from ..gradation import identity
 from ..parse_utils import reverse_parse
 
