@@ -21,6 +21,21 @@ def root_and_vowel_vowel_ending():
     return [root, second_to_last_vowel, last_vowel]
 
 @generate
+def root_and_ccvv_ending():
+    # for the word "tuntea"
+
+    last_vowel           = yield vowel
+    second_to_last_vowel = yield vowel
+    last_consonant       = yield consonant
+    root                 = yield character.at_least(1).concat()
+
+    return [root,
+            last_consonant,
+            second_to_last_vowel,
+            last_vowel]
+
+
+@generate
 def root_and_double_end_vowel():
     end_vowel = yield vowel
     yield vowel
