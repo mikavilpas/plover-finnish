@@ -3,13 +3,16 @@ from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
 from ..gradation import gradate_kotus_a_takki_takin_hake_hakkeen
-from .kotus_noun_4_laatikko import kotus_noun_4_laatikko
+from .kotus_noun_4_laatikko import KotusNoun4Laatikko
 
 class TestInflectionType4(unittest.TestCase):
     # all the cases seem to belong to the gradation class A
 
     def test_kotus_noun_4_laatikko_full_cases(self):
-        data = kotus_noun_4_laatikko("laatikko", gradate_kotus_a_takki_takin_hake_hakkeen)
+        data = KotusNoun4Laatikko(
+            "laatikko",
+            gradate_kotus_a_takki_takin_hake_hakkeen).inflections()
+
         expected = InflectionInfo(nominative='laatikko',
                                   nominative_plural='laatikot',
                                   genitive='laatikon',
@@ -46,5 +49,7 @@ class TestInflectionType4(unittest.TestCase):
         ensure_inflections_equal(expected, data)
 
     def test_kotus_noun_4_laatikko_umlauts(self):
-        data = kotus_noun_4_laatikko("älykkö", gradate_kotus_a_takki_takin_hake_hakkeen)
+        data = KotusNoun4Laatikko(
+            "älykkö",
+            gradate_kotus_a_takki_takin_hake_hakkeen).inflections()
         ensure(data.genitives_plural).equals(["älyköiden", "älyköitten", "älykköjen"])

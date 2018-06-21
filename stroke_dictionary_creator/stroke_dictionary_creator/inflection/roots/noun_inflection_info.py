@@ -53,7 +53,7 @@ class Noun():
             partitives          = many(stems.partitives, s("a")),
             partitives_plural   = many(stems.partitives_plural, s("a")),
             accusatives         = [stems.nominative, stems.genitive + "n"],
-            accusative_plural   = stems.nominative + s("t"),
+            accusative_plural   = stems.genitive + s("t"),
             inessive            = stems.genitive + s("ssa"),
             inessives_plural    = many(stems.locationals_plural, s("ssa")),
             elative             = stems.genitive + s("sta"),
@@ -66,14 +66,14 @@ class Noun():
             ablatives_plural    = many(stems.locationals_plural, s("lta")),
             allative            = stems.genitive + "lle",
             allatives_plural    = many(stems.locationals_plural, s("lle")),
-            essive              = stems.genitive + s("na"),
+            essive              = stems.essive + s("na"),
             essives_plural      = many(stems.locationals_plural, s("na")),
             translative         = stems.genitive + "ksi",
             translatives_plural = many(stems.locationals_plural, s("ksi")),
             abessive            = stems.genitive + s("tta"),
             abessives_plural    = [stems.genitive + s("itta")],
             instructives_plural = [stems.genitive + "in"],
-            comitatives_plural  = [stems.genitive + "ine"],
+            comitatives_plural  = [stems.nominative + "ine"],
         )
 
     def many(self, roots: [str], suffix: str) -> [str]:
