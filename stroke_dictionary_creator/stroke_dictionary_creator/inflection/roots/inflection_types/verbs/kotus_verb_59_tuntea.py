@@ -12,11 +12,12 @@ class KotusVerb59Tuntea(VerbBase):
 
         # there is only one word in this class, "tuntea"!
         # So that is what we'll uses is the example too.
-        [tun, t, e, a] = reverse_parse(self.word, root_and_ccvv_ending)
+        [tu, n, t, e, a] = reverse_parse(self.word, root_and_ccvv_ending)
         [tunn, _, _]   = reverse_parse(word_alt, root_and_vowel_vowel_ending)
 
+        tun   = tu + n
         tunt  = tun + t
-        tuns  = tun + "s"
+        tuns  = tun + self.s("s")
         tunne = tunn + e
         tunte = tunt + e
         tunti = tunt + self.s("i")

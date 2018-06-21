@@ -57,8 +57,6 @@ class VerbModuses():
         r = self.roots
         s = self.s
 
-        # TODO allow verb bodies as a list
-
         return VerbPersonalForms(singular1          = r.root_weak + s("n"),
                                  singular2          = r.root_weak + s("t"),
                                  singular3          = r.singular3,

@@ -17,4 +17,8 @@ def reverse_parse(word, p):
         (root, data, d2, d3) = return_value
         return (reverse(root), data, d2, d3)
 
+    if len(return_value) == 5:
+        (root, data, d2, d3, d4) = return_value
+        return (reverse(root), data, d2, d3, d4)
+
     return reverse(return_value)

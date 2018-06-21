@@ -24,13 +24,15 @@ def root_and_vowel_vowel_ending():
 def root_and_ccvv_ending():
     # for the word "tuntea"
 
-    last_vowel           = yield vowel
-    second_to_last_vowel = yield vowel
-    last_consonant       = yield consonant
-    root                 = yield character.at_least(1).concat()
+    last_vowel               = yield vowel
+    second_to_last_vowel     = yield vowel
+    second_to_last_consonant = yield consonant
+    last_consonant           = yield consonant
+    root                     = yield character.at_least(1).concat()
 
     return [root,
             last_consonant,
+            second_to_last_consonant,
             second_to_last_vowel,
             last_vowel]
 
