@@ -1,13 +1,23 @@
 from .base import *
-from .kotus_noun_1_valo import kotus_noun_1_valo
 
-def kotus_noun_3_valtio(word, gradation_fn = identity):
-    # suffix
-    def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
+class KotusNoun3Valtio(Noun):
+    def __init__(self, word: str, gradation_fn = identity):
+        self.word = word
 
-    inflections = kotus_noun_1_valo(word, gradation_fn)
-    return inflections._replace(genitives_plural = [word + "iden",
-                                                    word + "itten"],
-                                partitives = [word + s("ta")],
-                                partitives_plural = [word + s("ita")],
-                                accusative_plural = word + "t")
+        # these examples use the word valtio (no gradation in this class)
+        valtio = word
+        (valti, o) = reverse_parse(valtio, root_and_end_vowel)
+
+        super().__init__(
+            NounStems(
+                nominative         = valtio,
+                genitive           = valtio,
+                partitives         = [valtio],
+                partitives_plural  = [valtio + self.s("it")],
+                locationals_plural = [valtio + self.s("i")],
+                essive             = valtio,
+                plural             = valtio,
+                illatives          = [valtio + o]),
+            genitives_plural = [valtio + self.s("den"),
+                                valtio + self.s("itten")],
+            illatives_plural = [valtio + self.s("ihin")])

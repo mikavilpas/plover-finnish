@@ -1,12 +1,12 @@
 import unittest
 from ensure import ensure
-from .kotus_noun_3_valtio import kotus_noun_3_valtio
+from .kotus_noun_3_valtio import KotusNoun3Valtio
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
 
 class TestInflectionType3(unittest.TestCase):
     def test_kotus_noun_3_valtio_full_cases(self):
-        data = kotus_noun_3_valtio("valtio")
+        data = KotusNoun3Valtio("valtio").inflections()
         expected = InflectionInfo(nominative='valtio',
                                   nominative_plural='valtiot',
                                   genitive='valtion',
@@ -39,7 +39,7 @@ class TestInflectionType3(unittest.TestCase):
                                   comitatives_plural=['valtioine'])
 
     def test_kotus_noun_3_valtio_umlauts(self):
-        data = kotus_noun_3_valtio("häiriö")
+        data = KotusNoun3Valtio("häiriö").inflections()
         ensure(data.comitatives_plural).equals(["häiriöine"])
 
     # The kotus wordlist does not contain any words that belong to class 3 and
