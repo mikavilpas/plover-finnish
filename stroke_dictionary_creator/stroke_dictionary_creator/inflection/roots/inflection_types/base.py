@@ -10,15 +10,29 @@ from plover_finnish.vowel_group_service import change_to_same_vowel_group, chang
 @generate
 def root_and_end_vowel():
     end_vowel = yield vowel
-    rest = yield character.at_least(1).concat()
+    rest      = yield character.at_least(1).concat()
     return [rest, end_vowel]
 
 @generate
 def root_and_vowel_vowel_ending():
-    last_vowel = yield vowel
+    last_vowel           = yield vowel
     second_to_last_vowel = yield vowel
-    root = yield character.at_least(1).concat()
+    root                 = yield character.at_least(1).concat()
     return [root, second_to_last_vowel, last_vowel]
+
+@generate
+def root_and_ccv_ending():
+    # for the word "kynsi"
+
+    last_vowel               = yield vowel
+    second_to_last_consonant = yield consonant
+    last_consonant           = yield consonant
+    root                     = yield character.at_least(1).concat()
+
+    return [root,
+            last_consonant,
+            second_to_last_consonant,
+            last_vowel]
 
 @generate
 def root_and_ccvv_ending():
