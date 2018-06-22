@@ -46,7 +46,7 @@ def kotus_noun_11_omena(word, gradation_fn = identity):
                           allative            = root_alt + v + s("lle"),
                           allatives_plural    = [root_alt + s("oille"),
                                                  root_alt + s("ille")],
-                          essive              = root + v + s("na"),
+                          essives             = [root + v + s("na")],
                           essives_plural      = [root + s("oina"),
                                                  root + s("ina")],
                           translative         = root_alt + v + s("ksi"),

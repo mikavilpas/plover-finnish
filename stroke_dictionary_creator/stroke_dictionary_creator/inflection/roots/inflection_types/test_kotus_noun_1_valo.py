@@ -30,7 +30,7 @@ class TestInflectionType1(unittest.TestCase):
                                   ablatives_plural=['aamuilta'],
                                   allative='aamulle',
                                   allatives_plural=['aamuille'],
-                                  essive='aamuna',
+                                  essives=['aamuna'],
                                   essives_plural=['aamuina'],
                                   translative='aamuksi',
                                   translatives_plural=['aamuiksi'],

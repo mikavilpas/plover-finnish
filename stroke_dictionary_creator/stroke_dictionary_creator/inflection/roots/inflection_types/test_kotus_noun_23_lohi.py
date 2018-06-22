@@ -30,7 +30,7 @@ class TestInflectionType20(unittest.TestCase):
                                   ablatives_plural=['lohilta'],
                                   allative='lohelle',
                                   allatives_plural=['lohille'],
-                                  essive='lohena',
+                                  essives=['lohena'],
                                   essives_plural=['lohina'],
                                   translative='loheksi',
                                   translatives_plural=['lohiksi'],
@@ -43,7 +43,6 @@ class TestInflectionType20(unittest.TestCase):
 
     def test_other_vowel_harmony_group(self):
         data = kotus_noun_23_lohi("riihi")
-        print(data)
 
         expected = InflectionInfo(nominative='riihi',
                                   nominative_plural='riihet',
@@ -66,7 +65,7 @@ class TestInflectionType20(unittest.TestCase):
                                   ablatives_plural=['riihiltä'],
                                   allative='riihelle',
                                   allatives_plural=['riihille'],
-                                  essive='riihenä',
+                                  essives=['riihenä'],
                                   essives_plural=['riihinä'],
                                   translative='riiheksi',
                                   translatives_plural=['riihiksi'],

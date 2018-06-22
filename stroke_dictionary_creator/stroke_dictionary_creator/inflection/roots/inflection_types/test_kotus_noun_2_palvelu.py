@@ -31,7 +31,7 @@ class TestInflectionType2(unittest.TestCase):
                                   ablatives_plural=['palveluilta'],
                                   allative='palvelulle',
                                   allatives_plural=['palveluille'],
-                                  essive='palveluna',
+                                  essives=['palveluna'],
                                   essives_plural=['palveluina'],
                                   translative='palveluksi',
                                   translatives_plural=['palveluiksi'],

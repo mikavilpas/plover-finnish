@@ -35,7 +35,7 @@ class TestInflectionType4(unittest.TestCase):
                                   ablatives_plural=['laatikoilta'],
                                   allative='laatikolle',
                                   allatives_plural=['laatikoille'],
-                                  essive='laatikkona',
+                                  essives=['laatikkona'],
                                   essives_plural=['laatikoina'],
                                   translative='laatikoksi',
                                   translatives_plural=['laatikoiksi'],

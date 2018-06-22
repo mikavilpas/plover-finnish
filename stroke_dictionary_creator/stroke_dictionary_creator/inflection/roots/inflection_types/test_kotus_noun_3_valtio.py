@@ -29,7 +29,7 @@ class TestInflectionType3(unittest.TestCase):
                                   ablatives_plural=['valtioilta'],
                                   allative='valtiolle',
                                   allatives_plural=['valtioille'],
-                                  essive='valtiona',
+                                  essives=['valtiona'],
                                   essives_plural=['valtioina'],
                                   translative='valtioksi',
                                   translatives_plural=['valtioiksi'],
