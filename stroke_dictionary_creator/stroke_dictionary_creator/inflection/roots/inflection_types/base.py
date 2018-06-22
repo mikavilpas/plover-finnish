@@ -45,6 +45,15 @@ def root_and_double_end_vowel():
     return [root, end_vowel]
 
 @generate
+def root_and_cv_ending():
+    # a word like toimi
+
+    end_vowel = yield vowel
+    end_consonant = yield consonant
+    root = yield character.at_least(1).concat()
+    return [root, end_consonant, end_vowel]
+
+@generate
 def root_and_cvv_ending():
     # a word like esittää, returns the root as "esit"
 
