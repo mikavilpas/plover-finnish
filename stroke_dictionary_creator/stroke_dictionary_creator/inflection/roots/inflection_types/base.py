@@ -68,6 +68,23 @@ def root_and_cv_ending():
     return [root, end_consonant, end_vowel]
 
 @generate
+def root_and_vc_ending():
+    # a word like ien
+    end_consonant = yield consonant
+    end_vowel     = yield vowel
+    root          = yield character.at_least(1).concat()
+    return [root, end_vowel, end_consonant]
+
+@generate
+def root_and_cvc_ending():
+    # a word like jumalatar
+    end_consonant            = yield consonant
+    v                        = yield vowel
+    second_to_last_consonant = yield consonant
+    root                     = yield character.at_least(1).concat()
+    return [root, second_to_last_consonant, v, end_consonant]
+
+@generate
 def root_and_cvv_ending():
     # a word like esittää, returns the root as "esit"
 
