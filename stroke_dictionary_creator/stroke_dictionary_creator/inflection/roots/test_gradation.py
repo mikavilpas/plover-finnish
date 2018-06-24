@@ -65,3 +65,26 @@ class TestGradation(unittest.TestCase):
         gradate = g.gradate_kotus_m_suku_suvun
         ensure(gradate("suku")).equals("suvu")
         ensure(gradate).called_with("suvu").raises(Exception) # one way gradation
+
+    def test_gradate_kotus_d_joukahainen_av5(self):
+        gradate = g.gradate_kotus_d_joukahainen_av5_reikä_reiän
+        # halkoa
+        ensure(gradate("aikoa")).equals("aioa")
+        ensure(gradate("halkoa")).equals("haloa")
+        ensure(gradate("hauki")).equals("haui")
+        ensure(gradate("hiki")).equals("hii")
+
+    def test_gradate_kotus_d(self):
+        gradate = g.gradate_kotus_d_joukahainen_av6_aie_aikeen
+        ensure(gradate("ien")).equals("iken")
+        ensure(gradate("aie")).equals("aike")
+        ensure(gradate("maata")).equals("makata")
+        ensure(gradate("aueta")).equals("auketa")
+        ensure(gradate("aueta")).equals("auketa")
+
+        ensure(gradate("reiä")).equals("reikä")
+        ensure(gradate("lai")).equals("laki")
+        ensure(gradate("hae")).equals("hake")
+        ensure(gradate("hiota")).equals("hikota")
+        ensure(gradate("koe")).equals("koke")
+        ensure(gradate("liietä")).equals("liiketä")
