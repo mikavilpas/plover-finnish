@@ -3,6 +3,7 @@ from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
 from ..gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+from .. import gradation as g
 from .kotus_noun_9_kala import kotus_noun_9_kala
 
 class TestInflectionType9(unittest.TestCase):
@@ -78,6 +79,81 @@ class TestInflectionType9(unittest.TestCase):
                                   comitatives_plural=['aorttoine'])
 
         ensure_inflections_equal(expected, data)
+
+    def test_gradation_apostrophe(self):
+        data = kotus_noun_9_kala("raaka",
+                                 g.gradate_kotus_d_joukahainen_av5_reikä_reiän)
+
+        expected = InflectionInfo(nominative="raaka",
+                                  nominative_plural="raa'at",
+                                  genitive="raa'an",
+                                  genitives_plural=["raakojen",
+                                                    "raakain"],
+                                  partitives=["raakaa"],
+                                  partitives_plural=["raakoja"],
+                                  accusatives=["raaka",
+                                               "raa'an"],
+                                  accusative_plural="raa'at",
+                                  inessive="raa'assa",
+                                  inessives_plural=["raaoissa"],
+                                  elative="raa'asta",
+                                  elatives_plural=["raaoista"],
+                                  illatives=["raakaan"],
+                                  illatives_plural=["raakoihin"],
+                                  adessive="raa'alla",
+                                  adessives_plural=["raaoilla"],
+                                  ablative="raa'alta",
+                                  ablatives_plural=["raaoilta"],
+                                  allative="raa'alle",
+                                  allatives_plural=["raaoille"],
+                                  essives=["raakana"],
+                                  essives_plural=["raakoina"],
+                                  translative="raa'aksi",
+                                  translatives_plural=["raaoiksi"],
+                                  abessive="raa'atta",
+                                  abessives_plural=["raaoitta"],
+                                  instructives_plural=["raaoin"],
+                                  comitatives_plural=["raakoine"])
+
+        ensure_inflections_equal(expected, data)
+
+    def test_gradation_apostrophe_vaaka(self):
+        data = kotus_noun_9_kala("vaaka",
+                                 g.gradate_kotus_d_joukahainen_av5_reikä_reiän)
+
+        expected = InflectionInfo(nominative="vaaka",
+                                  nominative_plural="vaa'at",
+                                  genitive="vaa'an",
+                                  genitives_plural=["vaakojen",
+                                                    "vaakain"],
+                                  partitives=["vaakaa"],
+                                  partitives_plural=["vaakoja"],
+                                  accusatives=["vaaka",
+                                               "vaa'an"],
+                                  accusative_plural="vaa'at",
+                                  inessive="vaa'assa",
+                                  inessives_plural=["vaaoissa"],
+                                  elative="vaa'asta",
+                                  elatives_plural=["vaaoista"],
+                                  illatives=["vaakaan"],
+                                  illatives_plural=["vaakoihin"],
+                                  adessive="vaa'alla",
+                                  adessives_plural=["vaaoilla"],
+                                  ablative="vaa'alta",
+                                  ablatives_plural=["vaaoilta"],
+                                  allative="vaa'alle",
+                                  allatives_plural=["vaaoille"],
+                                  essives=["vaakana"],
+                                  essives_plural=["vaakoina"],
+                                  translative="vaa'aksi",
+                                  translatives_plural=["vaaoiksi"],
+                                  abessive="vaa'atta",
+                                  abessives_plural=["vaaoitta"],
+                                  instructives_plural=["vaaoin"],
+                                  comitatives_plural=["vaakoine"])
+
+        ensure_inflections_equal(expected, data)
+
 
     def test_umlauts(self):
         data = kotus_noun_9_kala("iskä")

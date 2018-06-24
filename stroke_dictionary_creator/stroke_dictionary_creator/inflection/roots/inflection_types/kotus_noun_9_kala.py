@@ -11,33 +11,48 @@ def kotus_noun_9_kala(word, gradation_fn = identity):
 
     # all words in the kotus wordlist for this class use the e vowel at the
     # end, it seems
-    return InflectionInfo(nominative          = word,
-                          nominative_plural   = root_alt + v + s("t"),
-                          genitive            = root_alt + v + s("n"),
-                          genitives_plural    = [root + s("ojen"),
-                                                root + v + s("in")],
-                          partitives          = [root + v + s("a")],
-                          partitives_plural   = [root + s("oja")],
-                          accusatives         = [word,
-                                                root_alt + v + s("n")],
-                          accusative_plural   = root_alt + v + s("t"),
-                          inessive            = root_alt + v + s("ssa"),
-                          inessives_plural    = [root_alt + s("oissa")],
-                          elative             = root_alt + v + s("sta"),
-                          elatives_plural     = [root_alt + s("oista")],
-                          illatives           = [root + v + s("an")],
-                          illatives_plural    = [root + s("oihin")],
-                          adessive            = root_alt + v + s("lla"),
-                          adessives_plural    = [root_alt + s("oilla")],
-                          ablative            = root_alt + v + s("lta"),
-                          ablatives_plural    = [root_alt + s("oilta")],
-                          allative            = root_alt + v + s("lle"),
-                          allatives_plural    = [root_alt + s("oille")],
-                          essives             = [root + v + s("na")],
-                          essives_plural      = [root + s("oina")],
-                          translative         = root_alt + v + s("ksi"),
-                          translatives_plural = [root_alt + s("oiksi")],
-                          abessive            = root_alt + v + s("tta"),
-                          abessives_plural    = [root_alt + s("oitta")],
-                          instructives_plural = [root_alt + s("oin")],
-                          comitatives_plural  = [root + s("oine")])
+    inflections = InflectionInfo(nominative          = word,
+                                 nominative_plural   = root_alt + v + s("t"),
+                                 genitive            = root_alt + v + s("n"),
+                                 genitives_plural    = [root + s("ojen"),
+                                                        root + v + s("in")],
+                                 partitives          = [root + v + s("a")],
+                                 partitives_plural   = [root + s("oja")],
+                                 accusatives         = [word,
+                                                        root_alt + v + s("n")],
+                                 accusative_plural   = root_alt + v + s("t"),
+                                 inessive            = root_alt + v + s("ssa"),
+                                 inessives_plural    = [root_alt + s("oissa")],
+                                 elative             = root_alt + v + s("sta"),
+                                 elatives_plural     = [root_alt + s("oista")],
+                                 illatives           = [root + v + s("an")],
+                                 illatives_plural    = [root + s("oihin")],
+                                 adessive            = root_alt + v + s("lla"),
+                                 adessives_plural    = [root_alt + s("oilla")],
+                                 ablative            = root_alt + v + s("lta"),
+                                 ablatives_plural    = [root_alt + s("oilta")],
+                                 allative            = root_alt + v + s("lle"),
+                                 allatives_plural    = [root_alt + s("oille")],
+                                 essives             = [root + v + s("na")],
+                                 essives_plural      = [root + s("oina")],
+                                 translative         = root_alt + v + s("ksi"),
+                                 translatives_plural = [root_alt + s("oiksi")],
+                                 abessive            = root_alt + v + s("tta"),
+                                 abessives_plural    = [root_alt + s("oitta")],
+                                 instructives_plural = [root_alt + s("oin")],
+                                 comitatives_plural  = [root + s("oine")])
+
+    # support raaka-raa'an and vaaka-vaa'an inflections
+    for k, v in inflections._asdict().items():
+        new_value = add_apostrophe_to_triple_a_vowels(v)
+        inflections = inflections._replace(**{k: new_value})
+
+    return inflections
+
+def add_apostrophe_to_triple_a_vowels(word_or_list):
+    if isinstance(word_or_list, str):
+        word = word_or_list
+        return word.replace("aaa", "aa'a")
+
+    return [add_apostrophe_to_triple_a_vowels(w)
+            for w in word_or_list]
