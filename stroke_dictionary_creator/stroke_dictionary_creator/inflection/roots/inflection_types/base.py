@@ -109,3 +109,12 @@ def root_and_optional_end_vowel(fallback_vowel):
         rest = yield character.at_least(1).concat()
         return [rest, end_vowel]
     return parser
+
+@generate
+def root_and_Xvc_ending():
+    # a word like avoin, paahdin
+    end_consonant = yield consonant
+    v             = yield vowel
+    x             = yield character
+    root          = yield character.at_least(1).concat()
+    return [root, x, v, end_consonant]
