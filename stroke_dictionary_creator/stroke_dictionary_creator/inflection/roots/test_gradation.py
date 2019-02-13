@@ -4,6 +4,10 @@ from . import gradation as g
 
 class TestGradation(unittest.TestCase):
     def test_gradate_joukahainen_refwords_and_gradition_classes(self):
+
+        # In this test I went through the joukahainen wordlist and tried to
+        # pick some exmaples from all words that have gradations
+
         gradate = g.gradate_joukahainen
 
         ensure(gradate("botaanikko", "arvelu", "av1")).equals("botaaniko")
@@ -184,29 +188,6 @@ class TestGradation(unittest.TestCase):
 
         # kohota
         ensure(gradate("lingota", "kohota", "av2")).equals("linkota")
-
-
-    # def test_gradate_joukahainen_av2(self):
-    #     gradate = g.gradate_joukahainen_av2
-
-    #     # ('b',  'bb'), # kind of like kotus B. (lobata -> lobbaan)
-    #     ensure(gradate("lobata")).equals("lobbata")
-    #     # ('g',  'gg'), # kind of like kotus B. (digata -> diggaan)
-    #     ensure(gradate("digata")).equals("diggaan")
-    #     # ('t',  'tt'), # kotus C
-    #     ensure(gradate("aate")).equals("aatte")
-    #     # ('p',  'pp'), # kotus B
-    #     ensure(gradate("lape")).equals("lappe")
-    #     # ('k',  'kk'), # kotus A
-    #     ensure(gradate("aluke")).equals("alukke")
-    #     # ('mm', 'mp'), # kotus H
-    #     # ('v',  'p'),  # kotus E
-    #     # ('nn', 'nt'), # kotus J
-    #     # ('ll', 'lt'), # kotus I
-    #     # ('rr', 'rt'), # kotus K
-    #     # ('d',  't'),  # kotus F
-    #     # ('ng', 'nk'), # kotus G
-    #     pass
 
     def test_gradate_joukahainen_av6(self):
         # TODO: go over tricky cases here.
