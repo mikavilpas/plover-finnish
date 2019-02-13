@@ -78,9 +78,11 @@ CLASSMAP = list(map(compile_gradation_regex, hfconv.modern_classmap))
 
 def gradate_joukahainen(word, refword, gradation_class):
     gradations = reference_options(word, refword)
-    print("got gradations")
-    print(gradations)
     matching = matching_gradations(word, gradation_class, gradations)
+
+    if len(matching) == 0:
+        raise ValueError("The gradation class {} is unknown/invalid for the word {}."
+                         .format(gradation_class, word))
     gradtype = matching[0]
 
     gradator_fn = gradation_dispatch[gradation_class][gradtype]
