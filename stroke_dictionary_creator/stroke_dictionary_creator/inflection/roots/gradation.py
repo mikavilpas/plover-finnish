@@ -25,9 +25,9 @@ def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
 def gradate(word, a, b):
     word = reverse(word)
     target = reverse(a)
-    replacement = reverse(b) if b else None
+    replacement = reverse(b) if b else ''
 
-    word = word.replace(target, replacement or '', 1)
+    word = word.replace(target, replacement, 1)
     return reverse(word)
 
 def gradator(from_, to):
@@ -64,25 +64,25 @@ def compile_gradation_regex(gradclass):
 
     # gradations:
     # [('nt','(.*n)tU','lintu')]
-    new_gradations = ((gradtype,
+    new_gradations = [(gradtype,
                        compile_voikko_gradation_regexp(pattern),
                        *rest)
                       for (gradtype, pattern, *rest)
-                      in gradations)
+                      in gradations]
 
     return (refword, grade, new_gradations)
 
 # Inflection class map
 from .voikko_hacks import hfconv
-CLASSMAP = map(compile_gradation_regex, hfconv.modern_classmap)
+CLASSMAP = list(map(compile_gradation_regex, hfconv.modern_classmap))
 
 def gradate_joukahainen(word, refword, gradation_class):
     gradations = reference_options(word, refword)
+    print("got gradations")
+    print(gradations)
     matching = matching_gradations(word, gradation_class, gradations)
     gradtype = matching[0]
 
-    print(gradation_class)
-    print(gradtype)
     gradator_fn = gradation_dispatch[gradation_class][gradtype]
     gradated_word = gradator_fn(word)
 
@@ -150,9 +150,13 @@ def allowed_gradations(gradation_class: str, gradations):
             if grad_class == gradation_class]
 
 def reference_options(word, refword):
-    print([options
-           for (classname, grade, options) in CLASSMAP
-           if classname == refword ])
-    return next(options
-                for (classname, grade, options) in CLASSMAP
-                if classname == refword)
+    matches = [options
+               for (classname, grade, options) in CLASSMAP
+               if classname == refword]
+    if len(matches) == 0:
+        raise ValueError("gradation for (word '{}', refword '{}') not found"
+                         .format(word, refword))
+    else:
+        return matches[0]
+
+identity = lambda a: a
