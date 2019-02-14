@@ -1,14 +1,13 @@
 import unittest
 from ensure import ensure
 from . import gradation as g
+from .gradation import gradate_joukahainen as gradate
 
 class TestGradation(unittest.TestCase):
     def test_gradate_joukahainen_refwords_and_gradition_classes(self):
 
         # In this test I went through the joukahainen wordlist and tried to
         # pick some exmaples from all words that have gradations
-
-        gradate = g.gradate_joukahainen
 
         ensure(gradate("botaanikko", "arvelu", "av1")).equals("botaaniko")
 
@@ -190,11 +189,9 @@ class TestGradation(unittest.TestCase):
         ensure(gradate("lingota", "kohota", "av2")).equals("linkota")
 
     def test_gradate_joukahainen_av6(self):
-        # TODO: go over tricky cases here.
-
-        ensure(gradate("selitä", "haluta", "av6")).equals("selkikä") # selitä-selkiän
+        ensure(gradate("selitä", "haluta", "av6")).equals("selkitä") # selitä-selkiän
         ensure(gradate("keritä", "haluta", "av6")).equals("kerkitä") # keritä-kerkiän
-        ensure(gradate("siitä", "haluta", "av6")).equals("heltitä")  # siitä-sikiän
+        ensure(gradate("siitä", "haluta", "av6")).equals("sikitä")  # siitä-sikiän
 
         ensure(gradate("hylätä", "salata", "av6")).equals("hylkätä")
         ensure(gradate("haleta", "katketa", "av6")).equals("halketa")
@@ -203,5 +200,3 @@ class TestGradation(unittest.TestCase):
         ensure(gradate("virota", "kohota", "av6")).equals("virkota")
 
         ensure(gradate("pyyhin", "uistin", "av6")).equals("pyyhkin")
-
-        raise Exception("not done")

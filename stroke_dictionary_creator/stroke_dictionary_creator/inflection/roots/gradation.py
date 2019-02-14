@@ -2,7 +2,6 @@ from parsy import *
 from .parse_utils import reverse, reverse_parse
 from .tokens import *
 from collections import OrderedDict
-# from voikko import
 
 # Definitions for the more machine readable Joukahainen mappings into the
 # (could be argued) more understandable Kotus system for gradation classes.
@@ -12,6 +11,24 @@ from collections import OrderedDict
 
 def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
     @generate
+    def add_k_at_cvcv_ending():
+        # For words like keritä,selitä,hylätä,juleta,keretä,virota
+        end            = yield (vowel + consonant + vowel).concat()
+        last_consonant = yield consonant
+        start          = yield character.many().concat()
+
+        return end + "k" + last_consonant + start
+
+    @generate
+    def add_k_at_cvc_ending():
+        # For words like pyyhin
+        end            = yield (consonant + vowel).concat()
+        last_consonant = yield consonant
+        start          = yield character.many().concat()
+
+        return end + "k" + last_consonant + start
+
+    @generate
     def split_double_vowel_with_k():
         end = yield ((vowel + consonant) | consonant).many().concat()
         vowel2 = yield vowel
@@ -20,7 +37,9 @@ def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
 
         return end + vowel2 + "k" + vowel1 + start
 
-    return reverse(split_double_vowel_with_k.parse(reverse(word)))
+    parser = add_k_at_cvc_ending | split_double_vowel_with_k | add_k_at_cvcv_ending
+
+    return reverse(parser.parse(reverse(word)))
 
 def gradate(word, a, b):
     word = reverse(word)
