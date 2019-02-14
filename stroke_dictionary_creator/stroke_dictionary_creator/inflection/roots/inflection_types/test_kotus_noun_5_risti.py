@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_j_hento_hennon_vanne_vanteen
+from ..gradation import gradate_kotus_j_hento_hennon
 from .kotus_noun_5_risti import kotus_noun_5_risti
 
 class TestInflectionType5(unittest.TestCase):
@@ -42,7 +42,7 @@ class TestInflectionType5(unittest.TestCase):
 
     def test_kotus_noun_5_risti_umlauts_and_gradation(self):
         data = kotus_noun_5_risti("käpälöinti",
-                                  gradate_kotus_j_hento_hennon_vanne_vanteen)
+                                  gradate_kotus_j_hento_hennon)
         expected = InflectionInfo(nominative="käpälöinti",
                                   nominative_plural="käpälöinnit",
                                   genitive="käpälöinnin",

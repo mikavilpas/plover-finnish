@@ -2,7 +2,6 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_h_kumpi_kumman_lumme_lumpeen
 from .kotus_noun_25_toimi import kotus_noun_25_toimi
 
 class TestInflectionType(unittest.TestCase):
@@ -45,7 +44,6 @@ class TestInflectionType(unittest.TestCase):
 
     def test_other_vowel_harmony_group(self):
         data = kotus_noun_25_toimi("niemi")
-        print(data)
 
         expected = InflectionInfo(nominative='niemi',
                                   nominative_plural='niemet',

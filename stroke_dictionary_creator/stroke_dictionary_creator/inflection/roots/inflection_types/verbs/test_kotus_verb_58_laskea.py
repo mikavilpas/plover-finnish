@@ -8,7 +8,7 @@ from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveA
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb58Laskea("kulkea",
-                                g.gradate_kotus_l_arki_arjen_hylje_hylkeen).moduses()
+                                g.gradate_kotus_l_arki_arjen).moduses()
 
     def test_indicative_present(self):
         conjugations = self.moduses.indicative_present()
@@ -133,7 +133,7 @@ class TestBasic(unittest.TestCase):
 
 class TestGradationWithUmlauts(unittest.TestCase):
     moduses = KotusVerb58Laskea("särkeä",
-                                g.gradate_kotus_l_arki_arjen_hylje_hylkeen) \
+                                g.gradate_kotus_l_arki_arjen) \
                                 .moduses()
 
     def test_potential_present(self):
@@ -158,7 +158,7 @@ class TestGradationWithUmlauts(unittest.TestCase):
 
 class TestParticiples(unittest.TestCase):
     participles = KotusVerb58Laskea("särkeä",
-                                    g.gradate_kotus_l_arki_arjen_hylje_hylkeen) \
+                                    g.gradate_kotus_l_arki_arjen) \
                                     .participles()
 
     def test_group_1_va(self):
@@ -188,7 +188,7 @@ class TestParticiples(unittest.TestCase):
 
 class TestInfinitives(unittest.TestCase):
     infinitives = KotusVerb58Laskea("särkeä",
-                                    g.gradate_kotus_l_arki_arjen_hylje_hylkeen)\
+                                    g.gradate_kotus_l_arki_arjen)\
                                     .infinitives()
     def test_group_1(self):
         data = self.infinitives.group_1_A()

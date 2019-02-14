@@ -2,13 +2,13 @@ import unittest
 from ensure import ensure
 from .kotus_verb_57_saartaa import KotusVerb57Saartaa, VerbPersonalForms, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 from ..test_utils import ensure_inflections_equal
-from ...gradation import gradate_kotus_k_virta_virran_porras_portaan
+from ...gradation import gradate_kotus_k_virta_virran
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb57Saartaa("saartaa",
-                                 gradate_kotus_k_virta_virran_porras_portaan).moduses()
+                                 gradate_kotus_k_virta_virran).moduses()
 
     def test_indicative_present(self):
         conjugations = self.moduses.indicative_present()
@@ -138,7 +138,7 @@ class TestBasic(unittest.TestCase):
 
 class TestGradation(unittest.TestCase):
     moduses = KotusVerb57Saartaa("saartaa",
-                                 gradate_kotus_k_virta_virran_porras_portaan) \
+                                 gradate_kotus_k_virta_virran) \
                                  .moduses()
 
     def test_potential_present(self):
@@ -163,7 +163,7 @@ class TestGradation(unittest.TestCase):
 
 class TestParticiples(unittest.TestCase):
     participles = KotusVerb57Saartaa("saartaa",
-                                     gradate_kotus_k_virta_virran_porras_portaan) \
+                                     gradate_kotus_k_virta_virran) \
                                      .participles()
 
     def test_group_1_va(self):
@@ -193,7 +193,7 @@ class TestParticiples(unittest.TestCase):
 
 class TestInfinitives(unittest.TestCase):
     infinitives = KotusVerb57Saartaa("saartaa",
-                                     gradate_kotus_k_virta_virran_porras_portaan)\
+                                     gradate_kotus_k_virta_virran)\
                                      .infinitives()
     def test_group_1(self):
         data = self.infinitives.group_1_A()

@@ -8,7 +8,7 @@ from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveA
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb59Tuntea("tuntea",
-                                g.gradate_kotus_j_hento_hennon_vanne_vanteen).moduses()
+                                g.gradate_kotus_j_hento_hennon).moduses()
 
     def test_indicative_present(self):
         conjugations = self.moduses.indicative_present()
@@ -135,7 +135,7 @@ class TestBasic(unittest.TestCase):
 
 class TestGradationWithUmlauts(unittest.TestCase):
     moduses = KotusVerb59Tuntea("tuntea",
-                                g.gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                g.gradate_kotus_j_hento_hennon) \
                                 .moduses()
 
     def test_potential_present(self):
@@ -160,7 +160,7 @@ class TestGradationWithUmlauts(unittest.TestCase):
 
 class TestParticiples(unittest.TestCase):
     participles = KotusVerb59Tuntea("tuntea",
-                                    g.gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                    g.gradate_kotus_j_hento_hennon) \
                                     .participles()
 
     def test_group_1_va(self):
@@ -190,7 +190,7 @@ class TestParticiples(unittest.TestCase):
 
 class TestInfinitives(unittest.TestCase):
     infinitives = KotusVerb59Tuntea("tuntea",
-                                    g.gradate_kotus_j_hento_hennon_vanne_vanteen)\
+                                    g.gradate_kotus_j_hento_hennon)\
                                     .infinitives()
     def test_group_1(self):
         data = self.infinitives.group_1_A()

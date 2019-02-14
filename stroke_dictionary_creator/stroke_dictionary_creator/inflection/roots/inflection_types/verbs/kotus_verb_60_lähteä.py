@@ -11,7 +11,7 @@ class KotusVerb60Lähteä(VerbBase):
         word_alt = self.gradation_fn(self.word)
 
         # there is only one word in this class, "lähteä"!
-        # So that is what we'll uses is the example too.
+        # So that is what we'll use is the example too.
         [lä, h, t, e, ä] = reverse_parse(self.word, root_and_ccvv_ending)
         # no known gradation is used for this class (word)
 

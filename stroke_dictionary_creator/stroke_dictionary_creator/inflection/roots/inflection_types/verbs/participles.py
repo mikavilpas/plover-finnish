@@ -1,7 +1,7 @@
 from collections import namedtuple
 from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel, identity
 from ...noun_inflection_info import InflectionInfo
-from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+from ...gradation import gradate_kotus_c_tyttö_tytön, gradate_kotus_c_kate_katteen
 
 from ..kotus_noun_1_valo import kotus_noun_1_valo
 from ..kotus_noun_10_koira import kotus_noun_10_koira
@@ -36,12 +36,12 @@ class VerbParticiples():
     def group_5_TU_passive(self) -> InflectionInfo:
         word_passive = self.moduses.indicative_perfect().passive
         return kotus_noun_1_valo(word_passive,
-                                 gradate_kotus_c_tyttö_tytön_kate_katteen)
+                                 gradate_kotus_c_tyttö_tytön)
 
     def group_6_negation(self) -> InflectionInfo:
         word_maton = self.roots.participle_root + self.s("maton")
         return kotus_noun_34_onneton(word_maton,
-                                     gradate_kotus_c_tyttö_tytön_kate_katteen)
+                                     gradate_kotus_c_kate_katteen)
 
     # suffix
     def s(self, text):

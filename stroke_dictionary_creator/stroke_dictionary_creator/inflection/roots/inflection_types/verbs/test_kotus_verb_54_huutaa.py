@@ -2,14 +2,14 @@ import unittest
 from ensure import ensure
 from .kotus_verb_54_huutaa import KotusVerb54Huutaa
 from ..test_utils import ensure_inflections_equal
-from ...gradation import gradate_kotus_f_satu_sadun_keidas_keitaan, gradate_kotus_j_hento_hennon_vanne_vanteen
+from ...gradation import gradate_kotus_f_satu_sadun, gradate_kotus_j_hento_hennon
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
 from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb54Huutaa("vääntää",
-                                gradate_kotus_j_hento_hennon_vanne_vanteen)\
+                                gradate_kotus_j_hento_hennon)\
                                 .moduses()
 
     def test_indicative_present(self):
@@ -138,7 +138,7 @@ class TestBasic(unittest.TestCase):
 
 class TestNoGradation(unittest.TestCase):
     moduses = KotusVerb54Huutaa("huutaa",
-                                gradate_kotus_f_satu_sadun_keidas_keitaan)\
+                                gradate_kotus_f_satu_sadun)\
                                 .moduses()
 
     def test_indicative_perfect(self):
@@ -164,7 +164,7 @@ class TestNoGradation(unittest.TestCase):
 class TestParticiples(unittest.TestCase):
 
     participles = KotusVerb54Huutaa("vääntää",
-                                    gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                    gradate_kotus_j_hento_hennon) \
                                     .participles()
 
     def test_group_1_va(self):
@@ -386,7 +386,7 @@ class TestParticiples(unittest.TestCase):
 
 class TestInfinitives(unittest.TestCase):
     infinitives = KotusVerb54Huutaa("vääntää",
-                                     gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                     gradate_kotus_j_hento_hennon) \
                                          .infinitives()
 
     def test_group_1(self):

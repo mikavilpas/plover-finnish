@@ -2,14 +2,14 @@ import unittest
 from ensure import ensure
 from .kotus_verb_53_muistaa import KotusVerb53Muistaa
 from ..test_utils import ensure_inflections_equal
-from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+from ...gradation import gradate_kotus_c_tyttö_tytön
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
 from .moduses import VerbPersonalForms, VerbRoots, VerbModuses, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 
 class TestBasic(unittest.TestCase):
     moduses = KotusVerb53Muistaa("esittää",
-                                 gradate_kotus_c_tyttö_tytön_kate_katteen)\
+                                 gradate_kotus_c_tyttö_tytön)\
                                  .moduses()
 
     def test_indicative_present(self):
@@ -162,7 +162,7 @@ class TestNoGradation(unittest.TestCase):
 class TestParticiples(unittest.TestCase):
 
     participles = KotusVerb53Muistaa("esittää",
-                                     gradate_kotus_c_tyttö_tytön_kate_katteen) \
+                                     gradate_kotus_c_tyttö_tytön) \
                                      .participles()
 
     def test_group_1_va(self):
@@ -384,7 +384,7 @@ class TestParticiples(unittest.TestCase):
 
 class TestInfinitives(unittest.TestCase):
     infinitives = KotusVerb53Muistaa("esittää",
-                                     gradate_kotus_c_tyttö_tytön_kate_katteen) \
+                                     gradate_kotus_c_tyttö_tytön) \
                                      .infinitives()
 
     def test_group_1(self):

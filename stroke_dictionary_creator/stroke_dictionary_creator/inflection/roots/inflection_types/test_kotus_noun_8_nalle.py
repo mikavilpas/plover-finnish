@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_a_takki_takin_hake_hakkeen
+from ..gradation import gradate_kotus_a_takki_takin
 from .kotus_noun_8_nalle import kotus_noun_8_nalle
 
 class TestInflectionType8(unittest.TestCase):
@@ -43,7 +43,7 @@ class TestInflectionType8(unittest.TestCase):
 
     def test_gradation(self):
         data = kotus_noun_8_nalle("nukke",
-                                  gradate_kotus_a_takki_takin_hake_hakkeen)
+                                  gradate_kotus_a_takki_takin)
 
         expected = InflectionInfo(nominative='nukke',
                                   nominative_plural='nuket',

@@ -2,13 +2,13 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_a_takki_takin_hake_hakkeen, gradate_kotus_b_kaappi_kaapin_opas_oppaan
+from ..gradation import gradate_kotus_a_takki_takin, gradate_kotus_b_kaappi_kaapin
 from .kotus_noun_14_solakka import kotus_noun_14_solakka
 
 class TestInflectionType14(unittest.TestCase):
     def test_basic_example(self):
         data = kotus_noun_14_solakka("solakka",
-                                     gradate_kotus_a_takki_takin_hake_hakkeen)
+                                     gradate_kotus_a_takki_takin)
 
         expected = InflectionInfo(nominative="solakka",
                                   nominative_plural   = "solakat",
@@ -46,7 +46,7 @@ class TestInflectionType14(unittest.TestCase):
 
     def test_gradation(self):
         data = kotus_noun_14_solakka("ulappa",
-                                     gradate_kotus_b_kaappi_kaapin_opas_oppaan)
+                                     gradate_kotus_b_kaappi_kaapin)
 
         expected = InflectionInfo(nominative='ulappa',
                                   nominative_plural='ulapat',
@@ -86,7 +86,7 @@ class TestInflectionType14(unittest.TestCase):
 
     def test_umlauts(self):
         data = kotus_noun_14_solakka("ärhäkkä",
-                                     gradate_kotus_a_takki_takin_hake_hakkeen)
+                                     gradate_kotus_a_takki_takin)
         expected = InflectionInfo(nominative='ärhäkkä',
                                   nominative_plural='ärhäkät',
                                   genitive='ärhäkän',

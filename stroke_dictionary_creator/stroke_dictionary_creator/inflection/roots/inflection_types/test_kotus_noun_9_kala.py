@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+from ..gradation import gradate_kotus_c_tyttö_tytön
 from .. import gradation as g
 from .kotus_noun_9_kala import kotus_noun_9_kala
 
@@ -45,7 +45,7 @@ class TestInflectionType9(unittest.TestCase):
     def test_gradation(self):
 
         data = kotus_noun_9_kala("aortta",
-                                 gradate_kotus_c_tyttö_tytön_kate_katteen)
+                                 gradate_kotus_c_tyttö_tytön)
 
         expected = InflectionInfo(nominative='aortta',
                                   nominative_plural='aortat',
@@ -82,7 +82,7 @@ class TestInflectionType9(unittest.TestCase):
 
     def test_gradation_apostrophe(self):
         data = kotus_noun_9_kala("raaka",
-                                 g.gradate_kotus_d_joukahainen_av5_reikä_reiän)
+                                 g.gradate_kotus_d_reikä_reiän)
 
         expected = InflectionInfo(nominative="raaka",
                                   nominative_plural="raa'at",
@@ -119,7 +119,7 @@ class TestInflectionType9(unittest.TestCase):
 
     def test_gradation_apostrophe_vaaka(self):
         data = kotus_noun_9_kala("vaaka",
-                                 g.gradate_kotus_d_joukahainen_av5_reikä_reiän)
+                                 g.gradate_kotus_d_reikä_reiän)
 
         expected = InflectionInfo(nominative="vaaka",
                                   nominative_plural="vaa'at",

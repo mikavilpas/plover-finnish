@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_a_takki_takin_hake_hakkeen, gradate_kotus_b_kaappi_kaapin_opas_oppaan
+from ..gradation import gradate_kotus_a_takki_takin
 from .kotus_noun_15_korkea import kotus_noun_15_korkea
 
 class TestInflectionType15(unittest.TestCase):

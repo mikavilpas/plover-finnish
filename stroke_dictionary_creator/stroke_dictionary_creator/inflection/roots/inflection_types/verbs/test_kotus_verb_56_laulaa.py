@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from .kotus_verb_56_laulaa import KotusVerb56Laulaa, VerbPersonalForms, VerbPersonalFormsImperativePresent, VerbPersonalFormsMultipleRoots
 from ..test_utils import ensure_inflections_equal
-from ...gradation import gradate_kotus_b_kaappi_kaapin_opas_oppaan, gradate_kotus_j_hento_hennon_vanne_vanteen
+from ...gradation import gradate_kotus_b_kaappi_kaapin, gradate_kotus_j_hento_hennon
 from ...noun_inflection_info import InflectionInfo
 from .infinitives import VerbInfinitive_1_A, VerbInfinitive_2_E, VerbInfinitiveAPersonalForms, VerbInfinitive_5_MAINEN, VerbInfinitive_3_MA
 
@@ -137,7 +137,7 @@ class TestBasic(unittest.TestCase):
 
 class TestGradation(unittest.TestCase):
     moduses = KotusVerb56Laulaa("tappaa",
-                                gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                gradate_kotus_b_kaappi_kaapin) \
                                 .moduses()
 
     def test_potential_present(self):
@@ -163,7 +163,7 @@ class TestGradation(unittest.TestCase):
 class TestParticiples(unittest.TestCase):
     def test_group_1_va(self):
         data = KotusVerb56Laulaa("tappaa",
-                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 gradate_kotus_b_kaappi_kaapin) \
                                  .participles() \
                                  .group_1_VA()
 
@@ -202,7 +202,7 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_2_nut(self):
         data = KotusVerb56Laulaa("tappaa",
-                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 gradate_kotus_b_kaappi_kaapin) \
                                  .participles() \
                                  .group_2_NUT()
 
@@ -242,7 +242,7 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_3_ma(self):
         data = KotusVerb56Laulaa("kantaa",
-                                 gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                 gradate_kotus_j_hento_hennon) \
                                  .participles() \
                                  .group_3_MA_agent_participle()
 
@@ -281,7 +281,7 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_4_va_passive(self):
         data = KotusVerb56Laulaa("kantaa",
-                                 gradate_kotus_j_hento_hennon_vanne_vanteen) \
+                                 gradate_kotus_j_hento_hennon) \
                                  .participles() \
                                  .group_4_VA_passive()
 
@@ -320,7 +320,7 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_5_tu(self):
         data = KotusVerb56Laulaa("tappaa",
-                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 gradate_kotus_b_kaappi_kaapin) \
                                  .participles() \
                                  .group_5_TU_passive()
 
@@ -358,7 +358,7 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_6_negation(self):
         data = KotusVerb56Laulaa("tappaa",
-                                 gradate_kotus_b_kaappi_kaapin_opas_oppaan) \
+                                 gradate_kotus_b_kaappi_kaapin) \
                                  .participles() \
                                  .group_6_negation()
 

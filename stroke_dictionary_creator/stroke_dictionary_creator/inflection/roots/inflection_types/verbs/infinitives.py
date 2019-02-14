@@ -1,7 +1,7 @@
 from collections import namedtuple
 from ..base import reverse_parse, root_and_end_vowel, change_to_same_vowel_group_prefer_umlauts, root_and_double_end_vowel, identity
 from ...noun_inflection_info import InflectionInfo
-from ...gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+from ...gradation import gradate_kotus_c_tyttö_tytön
 from .moduses import VerbPersonalForms, VerbRoots, VerbModuses
 from ..kotus_noun_38_nainen import kotus_noun_38_nainen
 
