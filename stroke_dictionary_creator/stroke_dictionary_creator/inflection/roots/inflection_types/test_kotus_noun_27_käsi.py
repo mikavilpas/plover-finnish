@@ -2,7 +2,6 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_h_kumpi_kumman_lumme_lumpeen
 from .kotus_noun_27_käsi import kotus_noun_27_käsi
 
 class TestInflectionType(unittest.TestCase):

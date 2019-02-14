@@ -82,7 +82,7 @@ class TestInflectionType9(unittest.TestCase):
 
     def test_gradation_apostrophe(self):
         data = kotus_noun_9_kala("raaka",
-                                 g.gradate_kotus_d_joukahainen_av5_reikä_reiän)
+                                 g.gradate_kotus_d_reikä_reiän)
 
         expected = InflectionInfo(nominative="raaka",
                                   nominative_plural="raa'at",
@@ -119,7 +119,7 @@ class TestInflectionType9(unittest.TestCase):
 
     def test_gradation_apostrophe_vaaka(self):
         data = kotus_noun_9_kala("vaaka",
-                                 g.gradate_kotus_d_joukahainen_av5_reikä_reiän)
+                                 g.gradate_kotus_d_reikä_reiän)
 
         expected = InflectionInfo(nominative="vaaka",
                                   nominative_plural="vaa'at",

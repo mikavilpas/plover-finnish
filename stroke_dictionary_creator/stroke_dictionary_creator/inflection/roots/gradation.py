@@ -167,15 +167,20 @@ gradation_dispatch = dict(
 
 # some of the gradations have to be set in stone because they are needed for
 # the creation of infinitives, and they are useful in tests as well.
-gradate_kotus_b_kaappi_kaapin = gradation_dispatch["av1"]["pp"]
-gradate_kotus_c_tyttö_tytön   = gradation_dispatch["av1"]["tt"]
-gradate_kotus_c_kate_katteen  = gradation_dispatch["av2"]["t"]
-gradate_kotus_f_satu_sadun    = gradation_dispatch["av1"]["t"]
-gradate_kotus_f_keidas_keitaan    = gradation_dispatch["av2"]["d"]
-gradate_kotus_i_ilta_illan    = gradation_dispatch["av1"]["lt"]
-gradate_kotus_j_hento_hennon  = gradation_dispatch["av1"]["nt"]
-gradate_kotus_k_virta_virran  = gradation_dispatch["av1"]["rt"]
-gradate_kotus_l_arki_arjen    = gradation_dispatch["av3"]["k>j"]
+gradate_kotus_a_takki_takin    = gradation_dispatch["av1"]["kk"]
+gradate_kotus_b_kaappi_kaapin  = gradation_dispatch["av1"]["pp"]
+gradate_kotus_c_tyttö_tytön    = gradation_dispatch["av1"]["tt"]
+gradate_kotus_c_kate_katteen   = gradation_dispatch["av2"]["t"]
+gradate_kotus_d_reikä_reiän    = gradation_dispatch["av5"]["k>"]
+gradate_kotus_e_sopu_sovun     = gradation_dispatch["av1"]["p"]
+gradate_kotus_f_satu_sadun     = gradation_dispatch["av1"]["t"]
+gradate_kotus_f_keidas_keitaan = gradation_dispatch["av2"]["d"]
+gradate_kotus_i_ilta_illan     = gradation_dispatch["av1"]["lt"]
+gradate_kotus_j_hento_hennon   = gradation_dispatch["av1"]["nt"]
+gradate_kotus_h_kumpi_kumman   = gradation_dispatch["av1"]["mp"]
+gradate_kotus_i_ilta_illan     = gradation_dispatch["av1"]["lt"]
+gradate_kotus_k_virta_virran   = gradation_dispatch["av1"]["rt"]
+gradate_kotus_l_arki_arjen     = gradation_dispatch["av3"]["k>j"]
 
 def allowed_gradations(gradation_class: str, gradations):
     return [grad_type

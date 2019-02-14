@@ -2,13 +2,13 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_h_kumpi_kumman_lumme_lumpeen
+from ..gradation import gradate_kotus_h_kumpi_kumman
 from .kotus_noun_16_vanhempi import kotus_noun_16_vanhempi
 
 class TestInflectionType16(unittest.TestCase):
     def test_basic_example(self):
         data = kotus_noun_16_vanhempi("vanhempi",
-                                      gradate_kotus_h_kumpi_kumman_lumme_lumpeen)
+                                      gradate_kotus_h_kumpi_kumman)
 
         expected = InflectionInfo(nominative="vanhempi",
                                   nominative_plural   = "vanhemmat",
@@ -44,7 +44,7 @@ class TestInflectionType16(unittest.TestCase):
 
     def test_with_umlauts(self):
         data = kotus_noun_16_vanhempi("vähempi",
-                                      gradate_kotus_h_kumpi_kumman_lumme_lumpeen)
+                                      gradate_kotus_h_kumpi_kumman)
 
         expected = InflectionInfo(nominative='vähempi',
                                   nominative_plural='vähemmät',

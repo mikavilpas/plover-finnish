@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_j_hento_hennon_vanne_vanteen
+from ..gradation import gradate_kotus_j_hento_hennon
 from .kotus_noun_13_katiska import kotus_noun_13_katiska
 
 class TestInflectionType12(unittest.TestCase):
