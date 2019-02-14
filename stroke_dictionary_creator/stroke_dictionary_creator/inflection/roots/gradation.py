@@ -9,38 +9,6 @@ from collections import OrderedDict
 # The source for (the implementation of) these mappings can be found in
 # https://github.com/sp3ctum/corevoikko/blob/feature%2Fexploration/voikko-fi/common/hfconv.py#L23
 
-def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
-    @generate
-    def add_k_at_cvcv_ending():
-        # For words like keritä,selitä,hylätä,juleta,keretä,virota
-        end            = yield (vowel + consonant + vowel).concat()
-        last_consonant = yield consonant
-        start          = yield character.many().concat()
-
-        return end + "k" + last_consonant + start
-
-    @generate
-    def add_k_at_cvc_ending():
-        # For words like pyyhin
-        end            = yield (consonant + vowel).concat()
-        last_consonant = yield consonant
-        start          = yield character.many().concat()
-
-        return end + "k" + last_consonant + start
-
-    @generate
-    def split_double_vowel_with_k():
-        end = yield ((vowel + consonant) | consonant).many().concat()
-        vowel2 = yield vowel
-        vowel1 = yield vowel
-        start = yield character.many().concat()
-
-        return end + vowel2 + "k" + vowel1 + start
-
-    parser = add_k_at_cvc_ending | split_double_vowel_with_k | add_k_at_cvcv_ending
-
-    return reverse(parser.parse(reverse(word)))
-
 def gradate(word, a, b):
     word = reverse(word)
     target = reverse(a)
@@ -125,6 +93,38 @@ def matching_gradations(word, gradation_class: str, gradations):
 
     return sorted(matching, key = _gradation_length, reverse=True)
 
+def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
+    @generate
+    def add_k_at_cvcv_ending():
+        # For words like keritä,selitä,hylätä,juleta,keretä,virota
+        end            = yield (vowel + consonant + vowel).concat()
+        last_consonant = yield consonant
+        start          = yield character.many().concat()
+
+        return end + "k" + last_consonant + start
+
+    @generate
+    def add_k_at_cvc_ending():
+        # For words like pyyhin
+        end            = yield (consonant + vowel).concat()
+        last_consonant = yield consonant
+        start          = yield character.many().concat()
+
+        return end + "k" + last_consonant + start
+
+    @generate
+    def split_double_vowel_with_k():
+        end = yield ((vowel + consonant) | consonant).many().concat()
+        vowel2 = yield vowel
+        vowel1 = yield vowel
+        start = yield character.many().concat()
+
+        return end + vowel2 + "k" + vowel1 + start
+
+    parser = add_k_at_cvc_ending | split_double_vowel_with_k | add_k_at_cvcv_ending
+
+    return reverse(parser.parse(reverse(word)))
+
 gradation_dispatch = dict(
     # the gradations have the same keys as defined in hfconv
     av1 = dict(
@@ -164,6 +164,18 @@ gradation_dispatch = dict(
     # kotus D, weak (nonexisting) to strong
     av6 = {">k" : gradate_kotus_d_joukahainen_av6_aie_aikeen}
 )
+
+# some of the gradations have to be set in stone because they are needed for
+# the creation of infinitives, and they are useful in tests as well.
+gradate_kotus_b_kaappi_kaapin = gradation_dispatch["av1"]["pp"]
+gradate_kotus_c_tyttö_tytön   = gradation_dispatch["av1"]["tt"]
+gradate_kotus_c_kate_katteen  = gradation_dispatch["av2"]["t"]
+gradate_kotus_f_satu_sadun    = gradation_dispatch["av1"]["t"]
+gradate_kotus_f_keidas_keitaan    = gradation_dispatch["av2"]["d"]
+gradate_kotus_i_ilta_illan    = gradation_dispatch["av1"]["lt"]
+gradate_kotus_j_hento_hennon  = gradation_dispatch["av1"]["nt"]
+gradate_kotus_k_virta_virran  = gradation_dispatch["av1"]["rt"]
+gradate_kotus_l_arki_arjen    = gradation_dispatch["av3"]["k>j"]
 
 def allowed_gradations(gradation_class: str, gradations):
     return [grad_type

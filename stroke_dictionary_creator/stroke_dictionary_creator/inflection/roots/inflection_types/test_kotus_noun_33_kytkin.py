@@ -8,7 +8,7 @@ from .kotus_noun_33_kytkin import kotus_noun_33_kytkin
 class TestInflectionType(unittest.TestCase):
     def test_basic_example(self):
         data = kotus_noun_33_kytkin("paahdin",
-                                    g.gradate_kotus_f_satu_sadun_keidas_keitaan)
+                                    g.gradate_kotus_f_keidas_keitaan)
 
         expected = InflectionInfo(nominative='paahdin',
                                   nominative_plural='paahtimet',
@@ -32,8 +32,7 @@ class TestInflectionType(unittest.TestCase):
                                   ablatives_plural=['paahtimilta'],
                                   allative='paahtimelle',
                                   allatives_plural=['paahtimille'],
-                                  essives=['paahtimena',
-                                           'paahdinna'],
+                                  essives=['paahtimena'],
                                   essives_plural=['paahtimina'],
                                   translative='paahtimeksi',
                                   translatives_plural=['paahtimiksi'],
@@ -69,8 +68,7 @@ class TestInflectionType(unittest.TestCase):
                                   ablatives_plural=['eläimiltä'],
                                   allative='eläimelle',
                                   allatives_plural=['eläimille'],
-                                  essives=['eläimenä',
-                                           'eläinnä'],
+                                  essives=['eläimenä'],
                                   essives_plural=['eläiminä'],
                                   translative='eläimeksi',
                                   translatives_plural=['eläimiksi'],
@@ -83,7 +81,7 @@ class TestInflectionType(unittest.TestCase):
 
     def test_basic_example_other_gradation(self):
         data = kotus_noun_33_kytkin("hiekoitin",
-                                    g.gradate_kotus_c_tyttö_tytön_kate_katteen)
+                                    g.gradate_kotus_c_kate_katteen)
 
         expected = InflectionInfo(nominative='hiekoitin',
                                   nominative_plural='hiekoittimet',
@@ -107,8 +105,7 @@ class TestInflectionType(unittest.TestCase):
                                   ablatives_plural=['hiekoittimilta'],
                                   allative='hiekoittimelle',
                                   allatives_plural=['hiekoittimille'],
-                                  essives=['hiekoittimena',
-                                           'hiekoittinna'],
+                                  essives=['hiekoittimena'],
                                   essives_plural=['hiekoittimina'],
                                   translative='hiekoittimeksi',
                                   translatives_plural=['hiekoittimiksi'],

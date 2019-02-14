@@ -9,9 +9,9 @@ def kotus_noun_33_kytkin(word, gradation_fn = identity):
     paahtin = gradation_fn(paahdin)
 
     (paah, d, i, n) = reverse_parse(paahdin, root_and_Xvc_ending)
-    (paah, t, _, _) = reverse_parse(paahtin, root_and_Xvc_ending)
+    (paah2, t, _, _) = reverse_parse(paahtin, root_and_Xvc_ending)
     paahdi   = paah + d + i
-    paahti   = paah + t + i
+    paahti   = paah2 + t + i
     paahtim  = paahti + s("m")
     paahtime = paahti + s("me")
     paahtimi = paahti + s("mi")
@@ -38,8 +38,7 @@ def kotus_noun_33_kytkin(word, gradation_fn = identity):
                           ablatives_plural    = [paahtim + s("ilta")],
                           allative            = paahtime + s("lle"),
                           allatives_plural    = [paahtim + s("ille")],
-                          essives             = [paahtim + s("ena"),
-                                                 paahdi + n + s("na")],
+                          essives             = [paahtim + s("ena")],
                           essives_plural      = [paahtim + s("ina")],
                           translative         = paahtime + s("ksi"),
                           translatives_plural = [paahtim + s("iksi")],

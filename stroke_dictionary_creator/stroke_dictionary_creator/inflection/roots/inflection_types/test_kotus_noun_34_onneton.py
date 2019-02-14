@@ -2,13 +2,13 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_c_tyttö_tytön_kate_katteen
+from ..gradation import gradate_kotus_c_kate_katteen
 from .kotus_noun_34_onneton import kotus_noun_34_onneton
 
 class TestInflection(unittest.TestCase):
     def test_basic_example(self):
         data = kotus_noun_34_onneton("onneton",
-                                     gradate_kotus_c_tyttö_tytön_kate_katteen)
+                                     gradate_kotus_c_kate_katteen)
 
         expected = InflectionInfo(nominative="onneton",
                                   nominative_plural   = "onnettomat",
@@ -44,7 +44,7 @@ class TestInflection(unittest.TestCase):
 
     def test_other_vowel_harmony_group(self):
         data = kotus_noun_34_onneton("hyödytön",
-                                     gradate_kotus_c_tyttö_tytön_kate_katteen)
+                                     gradate_kotus_c_kate_katteen)
 
         expected = InflectionInfo(nominative='hyödytön',
                                   nominative_plural='hyödyttömät',
