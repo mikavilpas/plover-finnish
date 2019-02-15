@@ -10,6 +10,13 @@ def word_nen_ending():
     return [root, nen]
 
 def kotus_noun_38_nainen(word, gradation_fn = identity):
+    # Nominals ending with -nen, such as adjectives formed with the suffixes
+    # -inen and -lainen, nouns formed using the suffix -minen, and fourth
+    # infinitives of verbs.
+    #
+    # No consonant gradation.
+    # https://en.wiktionary.org/wiki/Appendix:Finnish_nominal_inflection/nainen
+
     # suffix
     def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
 
