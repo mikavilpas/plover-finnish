@@ -2,7 +2,6 @@ from .base import *
 
 from parsy import *
 from ..tokens import *
-from .kotus_noun_34_onneton import word_vc_ending
 
 def kotus_noun_35_lämmin(word, gradation_fn = identity):
     # https://en.wiktionary.org/wiki/Appendix:Finnish_niminal_inflection/l%C3%A4mmin
@@ -14,8 +13,8 @@ def kotus_noun_35_lämmin(word, gradation_fn = identity):
     lämmin   = word
     word_alt = gradation_fn(lämmin)
 
-    (lämm, i, n) = reverse_parse(lämmin, word_vc_ending)
-    (lämp, *_) = reverse_parse(word_alt, word_vc_ending)
+    (lämm, i, n) = reverse_parse(lämmin, root_and_vc_ending)
+    (lämp, *_) = reverse_parse(word_alt, root_and_vc_ending)
     lämmi = lämm + i
     lämpi = lämp + i
 

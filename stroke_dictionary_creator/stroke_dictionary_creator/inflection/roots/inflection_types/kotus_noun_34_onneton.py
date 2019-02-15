@@ -3,22 +3,14 @@ from .base import *
 from parsy import *
 from ..tokens import *
 
-@generate
-def word_vc_ending():
-    # words in this class end in "-on"
-    n = yield consonant
-    o = yield vowel
-    root = yield character.at_least(1).concat()
-    return [root, o, n]
-
 def kotus_noun_34_onneton(word, gradation_fn = identity):
     # suffix
     def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
 
     word_alt = gradation_fn(word)
 
-    (root, *_) = reverse_parse(word, word_vc_ending)
-    (root_alt, *_) = reverse_parse(word_alt, word_vc_ending)
+    (root, *_) = reverse_parse(word, root_and_vc_ending)
+    (root_alt, *_) = reverse_parse(word_alt, root_and_vc_ending)
 
     return InflectionInfo(nominative          = word,
                           nominative_plural   = root_alt + s("omat"),

@@ -2,7 +2,6 @@ from .base import *
 
 from parsy import *
 from ..tokens import *
-from .kotus_noun_34_onneton import word_vc_ending
 
 def kotus_noun_36_sisin(word, gradation_fn = identity):
     # Superlative adjectives ending with "-in"
@@ -12,7 +11,7 @@ def kotus_noun_36_sisin(word, gradation_fn = identity):
     def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
 
     sisin       = word
-    (sis, i, n) = reverse_parse(sisin, word_vc_ending)
+    (sis, i, n) = reverse_parse(sisin, root_and_vc_ending)
     sisim       = sis + i + s("m")
     sisimm      = sis + i + s("mm")
     sisimp      = sis + i + s("mp")
