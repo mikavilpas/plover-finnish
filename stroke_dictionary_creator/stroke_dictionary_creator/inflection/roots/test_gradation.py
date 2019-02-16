@@ -200,3 +200,5 @@ class TestGradation(unittest.TestCase):
         ensure(gradate("virota", "kohota", "av6")).equals("virkota")
 
         ensure(gradate("pyyhin", "uistin", "av6")).equals("pyyhkin")
+
+        ensure(gradate("ies", "vieras", "av6")).equals("ikes")
