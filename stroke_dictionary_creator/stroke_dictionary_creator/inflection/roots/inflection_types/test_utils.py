@@ -1,6 +1,7 @@
 from ensure import ensure
 from collections import namedtuple
 
+# How to check if an object is an instance of a namedtuple?
 # https://stackoverflow.com/a/2166841/1336788
 def isnamedtupleinstance(x):
     t = type(x)
