@@ -97,6 +97,16 @@ def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
         return end + "k" + last_consonant + start
 
     @generate
+    def add_k_for_word_pyyhe():
+        # For words like pyyhe
+        e = yield string("e")
+        h = yield string("h")
+        yy = yield vowel.times(2).concat()
+        start = yield character.many().concat()
+
+        return e + "k" + h + yy + start
+
+    @generate
     def split_double_vowel_with_k():
         end = yield ((vowel + consonant) | consonant).many().concat()
         vowel2 = yield vowel
@@ -105,7 +115,10 @@ def gradate_kotus_d_joukahainen_av6_aie_aikeen(word) -> str:
 
         return end + vowel2 + "k" + vowel1 + start
 
-    parser = add_k_at_cvc_ending | split_double_vowel_with_k | add_k_at_cvcv_ending
+    parser = add_k_at_cvc_ending \
+             | add_k_for_word_pyyhe \
+             | split_double_vowel_with_k \
+             | add_k_at_cvcv_ending
 
     return reverse(parser.parse(reverse(word)))
 
