@@ -11,3 +11,5 @@ Big todos
 - honorific "Te" conjugations for verbs
 
 - derivations for verbs: laulaa-laulella and others
+
+- missing (irregular) words in joukahainen, such as poikkeavat.lexc, e.g. "yö"
