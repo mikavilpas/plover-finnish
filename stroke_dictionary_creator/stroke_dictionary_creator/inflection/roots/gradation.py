@@ -66,6 +66,7 @@ gradation_dispatch = dict(
 # some of the gradations have to be set in stone because they are needed for
 # the creation of infinitives, and they are useful in tests as well.
 gradate_kotus_a_takki_takin    = gradation_dispatch["av1"]["kk"]
+gradate_kotus_a_hake_hakkeen   = gradation_dispatch["av2"]["k"]
 gradate_kotus_b_kaappi_kaapin  = gradation_dispatch["av1"]["pp"]
 gradate_kotus_c_tyttö_tytön    = gradation_dispatch["av1"]["tt"]
 gradate_kotus_c_kate_katteen   = gradation_dispatch["av2"]["t"]
