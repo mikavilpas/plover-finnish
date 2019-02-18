@@ -9,8 +9,6 @@ def kotus_noun_10_koira(word, gradation_fn = identity):
     (root_alt, _) = reverse_parse(word_alt, root_and_optional_end_vowel("a"))
     v = end_vowel
 
-    # all words in the kotus wordlist for this class use the e vowel at the
-    # end, it seems
     return InflectionInfo(nominative          = word,
                           nominative_plural   = root_alt + v + s("t"),
                           genitive            = root_alt + v + s("n"),

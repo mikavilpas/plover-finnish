@@ -122,6 +122,15 @@ def root_and_cvv_ending():
     return [root, end_consonant, end_vowel]
 
 @generate
+def root_and_vcv_ending():
+    # a word like poika
+    end_vowel = yield vowel
+    c = yield consonant
+    middle_vowel = yield vowel
+    root = yield character.at_least(1).concat()
+    return [root, middle_vowel, c, end_vowel]
+
+@generate
 def optional_consonant_double_vowel():
     start_consonant = yield consonant.optional()
     middle_vowel = yield vowel
