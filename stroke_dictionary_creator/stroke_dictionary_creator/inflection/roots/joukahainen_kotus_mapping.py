@@ -134,7 +134,7 @@ joukahainen_refwords = {
     "sallia":  conj(KotusVerb61Sallia),
     "voida": conj(KotusVerb62Voida),
     # "käydä",
-    # "kanavoida",
+    "kanavoida": conj(KotusVerb62Voida),
     # "saada",
     # "juoda",
     # "nuolaista",
