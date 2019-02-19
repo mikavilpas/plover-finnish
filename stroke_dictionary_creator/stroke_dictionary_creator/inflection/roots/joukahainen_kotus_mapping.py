@@ -2,15 +2,22 @@
 
 from collections import namedtuple
 from inflection_types import *
+from inflection_types.verbs import *
 import gradation as g
 
 NominalInflection = namedtuple("NominalInflection",
-                               ["inflection_function", "gradation_fn"])
+                               ["inflection_fn", "gradation_fn"])
+Conjugation = namedtuple("Conjugation",
+                         ["verb_class", "gradation_fn"])
 
 def infl(fn, gradation_fn = g.identity) -> NominalInflection:
     "Shorthand for the readability of inflection definitions"
-    return NominalInflection(inflection_function = fn,
+    return NominalInflection(inflection_fn = fn,
                              gradation_fn = gradation_fn)
+
+def conj(fn, gradation_fn = g.identity) -> Conjugation:
+    return Conjugation(inflection_fn = fn,
+                       gradation_fn = gradation_fn)
 
 # TODO check that missing classes are inflected correctly!
 
@@ -95,36 +102,36 @@ joukahainen_refwords = {
     "veitsi":    infl(kotus_noun_30_veitsi),
 
     # verbs
-    "punoa":      infl(kotus_verb_52_sanoa),
-    "aavistaa":   infl(kotus_verb_53_muistaa),
-    "hidastaa":   infl(kotus_verb_53_muistaa),
-    "heittää":    infl(kotus_verb_53_muistaa, g.gradate_kotus_c_tyttö_tytön),
-    "muistaa":    infl(kotus_verb_53_muistaa),
-    "inttää":     infl(kotus_verb_53_muistaa),
-    "sulaa":      infl(kotus_verb_53_muistaa),
-    "hohtaa":     infl(kotus_verb_53_muistaa, g.gradate_kotus_f_satu_sadun),
-    "hujahtaa":   infl(kotus_verb_53_muistaa, g.gradate_kotus_f_satu_sadun),
-    "kirjoittaa": infl(kotus_verb_53_muistaa, g.gradate_kotus_c_tyttö_tytön),
-    "loistaa":    infl(kotus_verb_53_muistaa),
-    "vuotaa":     infl(kotus_verb_55_soutaa, g.gradate_kotus_f_satu_sadun),
-    "huutaa":     infl(kotus_verb_54_huutaa, g.gradate_kotus_f_satu_sadun),
-    "sukeltaa":   infl(kotus_verb_54_huutaa, g.gradate_kotus_i_ilta_illan),
-    "paleltaa":   infl(kotus_verb_54_huutaa, g.gradate_kotus_i_ilta_illan),
-    "murtaa":     infl(kotus_verb_54_huutaa, g.gradate_kotus_k_virta_virran),
-    "juontaa":    infl(kotus_verb_54_huutaa, g.gradate_kotus_j_hento_hennon),
-    "pahentaa":   infl(kotus_verb_54_huutaa, g.gradate_kotus_j_hento_hennon),
-    "kaivaa":     infl(kotus_verb_56_laulaa),
+    "punoa":      conj(KotusVerb52Sanoa),
+    "aavistaa":   conj(KotusVerb53Muistaa),
+    "hidastaa":   conj(KotusVerb53Muistaa),
+    "heittää":    conj(KotusVerb53Muistaa, g.gradate_kotus_c_tyttö_tytön),
+    "muistaa":    conj(KotusVerb53Muistaa),
+    "inttää":     conj(KotusVerb53Muistaa),
+    "sulaa":      conj(KotusVerb53Muistaa),
+    "hohtaa":     conj(KotusVerb53Muistaa, g.gradate_kotus_f_satu_sadun),
+    "hujahtaa":   conj(KotusVerb53Muistaa, g.gradate_kotus_f_satu_sadun),
+    "kirjoittaa": conj(KotusVerb53Muistaa, g.gradate_kotus_c_tyttö_tytön),
+    "loistaa":    conj(KotusVerb53Muistaa),
+    "vuotaa":     conj(KotusVerb55Soutaa, g.gradate_kotus_f_satu_sadun),
+    "huutaa":     conj(KotusVerb54Huutaa, g.gradate_kotus_f_satu_sadun),
+    "sukeltaa":   conj(KotusVerb54Huutaa, g.gradate_kotus_i_ilta_illan),
+    "paleltaa":   conj(KotusVerb54Huutaa, g.gradate_kotus_i_ilta_illan),
+    "murtaa":     conj(KotusVerb54Huutaa, g.gradate_kotus_k_virta_virran),
+    "juontaa":    conj(KotusVerb54Huutaa, g.gradate_kotus_j_hento_hennon),
+    "pahentaa":   conj(KotusVerb54Huutaa, g.gradate_kotus_j_hento_hennon),
+    "kaivaa":     conj(KotusVerb56Laulaa),
 
     # TODO irregular (78), see:
     # https://fi.wiktionary.org/wiki/Liite:Verbitaivutus/suomi/kaikaa
     # "kaikaa",
 
-    "soutaa":  infl(kotus_verb_55_soutaa),
-    "saartaa": infl(kotus_verb_57_saartaa),
-    "laskea":  infl(kotus_verb_58_laskea),
-    "tuntea":  infl(kotus_verb_59_tuntea, g.gradate_kotus_j_hento_hennon),
-    "lähteä":  infl(kotus_verb_60_lähteä, g.gradate_kotus_f_satu_sadun),
     # "sallia",
+    "soutaa":  conj(KotusVerb55Soutaa),
+    "saartaa": conj(KotusVerb57Saartaa),
+    "laskea":  conj(KotusVerb58Laskea),
+    "tuntea":  conj(KotusVerb59Tuntea, g.gradate_kotus_j_hento_hennon),
+    "lähteä":  conj(KotusVerb60Lähteä, g.gradate_kotus_f_satu_sadun),
     # "voida",
     # "käydä",
     # "kanavoida",
