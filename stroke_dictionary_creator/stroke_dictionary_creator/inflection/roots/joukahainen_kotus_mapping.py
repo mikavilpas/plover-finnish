@@ -51,8 +51,8 @@ joukahainen_refwords = {
     "pii":       infl(kotus_noun_18_maa),
     "suo":       infl(kotus_noun_19_suo),
     "askel":     infl(kotus_noun_32_sisar),
-    "rosé":      None, # TODO 21
-    "spray":     None, # TODO 21
+    "rosé":      infl(kotus_noun_21_rosé),
+    "spray":      infl(kotus_noun_21_rosé),
     "parfait":   None, # TODO 22
     "huuli":     infl(kotus_noun_24_uni),
     "meri":      infl(kotus_noun_24_uni),
