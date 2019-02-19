@@ -126,12 +126,12 @@ joukahainen_refwords = {
     # https://fi.wiktionary.org/wiki/Liite:Verbitaivutus/suomi/kaikaa
     # "kaikaa",
 
-    # "sallia",
     "soutaa":  conj(KotusVerb55Soutaa),
     "saartaa": conj(KotusVerb57Saartaa),
     "laskea":  conj(KotusVerb58Laskea),
     "tuntea":  conj(KotusVerb59Tuntea, g.gradate_kotus_j_hento_hennon),
     "lähteä":  conj(KotusVerb60Lähteä, g.gradate_kotus_f_satu_sadun),
+    "sallia":  conj(KotusVerb61Sallia),
     # "voida",
     # "käydä",
     # "kanavoida",
