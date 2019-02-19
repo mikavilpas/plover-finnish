@@ -133,7 +133,7 @@ def root_and_cvv_ending_different_vowels():
 
 @generate
 def root_and_vcv_ending():
-    # a word like poika
+    # a word like poika, voida
     end_vowel = yield vowel
     c = yield consonant
     middle_vowel = yield vowel
