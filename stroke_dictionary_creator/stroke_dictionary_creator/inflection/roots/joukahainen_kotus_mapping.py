@@ -85,7 +85,7 @@ joukahainen_refwords = {
     "kuollut":   infl(kotus_noun_47_kuollut),
     "hame":      infl(kotus_noun_48_hame),
 
-    # TODO only has the singular form!
+    # TODO only has the plural form!
     # "alkeet",
 
     "tie":       infl(kotus_noun_19_suo),
