@@ -24,7 +24,7 @@ class KotusVerb60Lähteä(VerbBase):
 
         return VerbRoots(root_strong        = lähte,
                          root_weak          = lähde,
-                         root_passive       = lähde,
+                         root_passive       = lähde + t,
                          singular3          = lähte + e,
                          plural3            = lähte,
                          singular1_past     = [lähd, läks],

@@ -24,7 +24,7 @@ class KotusVerb59Tuntea(VerbBase):
 
         return VerbRoots(root_strong        = tunte,
                          root_weak          = tunne,
-                         root_passive       = tunne,
+                         root_passive       = tunne + t,
                          singular3          = tunte + e,
                          plural3            = tunte,
                          singular1_past     = [tuns],

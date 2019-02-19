@@ -20,7 +20,7 @@ class KotusVerb61Sallia(VerbBase):
 
         return VerbRoots(root_strong        = sopi,
                          root_weak          = sovi,
-                         root_passive       = sovi,
+                         root_passive       = sovi + "t",
                          singular3          = sopi + "i",
                          plural3            = sopi,
                          singular1_past     = [sov],

@@ -30,7 +30,7 @@ class VerbParticiples():
         return kotus_noun_10_koira(word_va)
 
     def group_4_VA_passive(self) -> InflectionInfo:
-        word_va = self.roots.root_passive + self.s("ttava")
+        word_va = self.roots.root_passive + self.s("tava")
         return kotus_noun_10_koira(word_va)
 
     def group_5_TU_passive(self) -> InflectionInfo:

@@ -19,7 +19,7 @@ class KotusVerb55Soutaa(VerbBase):
 
         return VerbRoots(root_strong        = yltä,
                          root_weak          = yl + l + ä,
-                         root_passive       = yl + l + self.s("e"),
+                         root_passive       = yl + l + self.s("et"),
                          singular3          = yltä + ä,
                          plural3            = yltä,
                          singular1_past     = [yl + l,

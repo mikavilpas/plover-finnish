@@ -18,7 +18,7 @@ class KotusVerb58Laskea(VerbBase):
 
         return VerbRoots(root_strong        = kulke,
                          root_weak          = kulje,
-                         root_passive       = kulje,
+                         root_passive       = kulje + "t",
                          singular3          = kulke + e,
                          plural3            = kulke,
                          singular1_past     = [kulj],

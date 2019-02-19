@@ -21,7 +21,7 @@ class KotusVerb57Saartaa(VerbBase):
 
         return VerbRoots(root_strong        = saart + a,
                          root_weak          = saarr + a,
-                         root_passive       = saarr + self.s("e"),
+                         root_passive       = saarr + self.s("et"),
                          singular3          = saart + a + a,
                          plural3            = saart + a,
                          singular1_past     = [saar + self.s("s"),

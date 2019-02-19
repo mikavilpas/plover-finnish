@@ -17,7 +17,7 @@ class KotusVerb53Muistaa(VerbBase):
 
         return VerbRoots(root_strong        = esitt + ä,
                          root_weak          = esit + ä,
-                         root_passive       = esit + self.s("e"),
+                         root_passive       = esit + self.s("et"),
                          singular3          = esitt + ä + ä,
                          plural3            = esitt + ä,
                          singular1_past     = [esit],

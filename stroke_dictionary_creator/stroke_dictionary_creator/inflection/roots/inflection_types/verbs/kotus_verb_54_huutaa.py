@@ -17,7 +17,7 @@ class KotusVerb54Huutaa(VerbBase):
 
         return VerbRoots(root_strong        = vään + t + ä,
                          root_weak          = väänn + ä,
-                         root_passive       = väänn + self.s("e"),
+                         root_passive       = väänn + self.s("et"),
                          singular3          = vään + t + ä + ä,
                          plural3            = vään + t + ä,
                          singular1_past     = [vään + self.s("s")],

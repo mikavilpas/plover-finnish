@@ -6,7 +6,7 @@ class VerbRoots():
     def __init__(self, root_weak, root_strong, root_passive,
                  singular3, singular3_past, singular1_past,
                  conditional_strong, participle_root, plural3,
-                 infinitive_root = None):
+                 infinitive_root = None, passive_weak_root = None):
         self.root_weak          = root_weak
         self.root_strong        = root_strong
         self.root_passive       = root_passive
@@ -16,8 +16,10 @@ class VerbRoots():
         self.conditional_strong = conditional_strong
         self.participle_root    = participle_root
         self.plural3            = plural3
-        # many verbs don't have this separately
-        self.infinitive_root    = infinitive_root or root_strong
+
+        # many verbs don't have these separately
+        self.infinitive_root   = infinitive_root or root_strong
+        self.passive_weak_root = passive_weak_root or root_passive
 
 VerbPersonalForms = namedtuple("VerbPersonalForms",
                                ["singular1", "singular1_negative",
@@ -69,8 +71,8 @@ class VerbModuses():
                                  plural1_negative   = r.root_weak,
                                  plural2_negative   = r.root_weak,
                                  plural3_negative   = r.root_weak,
-                                 passive            = r.root_passive + s("taan"),
-                                 passive_negative   = r.root_passive + s("ta"),)
+                                 passive            = r.passive_weak_root + s("aan"),
+                                 passive_negative   = r.passive_weak_root + s("a"),)
 
     # Notice that this returns multiple roots!
     def indicative_past(self) -> VerbPersonalFormsMultipleRoots:
@@ -90,8 +92,8 @@ class VerbModuses():
             plural1_negative   = r.root_strong + s("neet"),
             plural2_negative   = r.root_strong + s("neet"),
             plural3_negative   = r.root_strong + s("neet"),
-            passive            = r.root_passive + s("ttiin"),
-            passive_negative   = r.root_passive + s("ttu"),)
+            passive            = r.root_passive + s("tiin"),
+            passive_negative   = r.root_passive + s("tu"),)
 
     def indicative_perfect(self) -> VerbPersonalForms:
         r = self.roots
@@ -112,8 +114,8 @@ class VerbModuses():
                                  plural1_negative   = neet,
                                  plural2_negative   = neet,
                                  plural3_negative   = neet,
-                                 passive            = r.root_passive + s("ttu"),
-                                 passive_negative   = r.root_passive + s("ttu"),)
+                                 passive            = r.root_passive + s("tu"),
+                                 passive_negative   = r.root_passive + s("tu"),)
 
     def conditional_present(self) -> VerbPersonalForms:
         r = self.roots
@@ -133,8 +135,8 @@ class VerbModuses():
                                  plural1_negative   = isi,
                                  plural2_negative   = isi,
                                  plural3_negative   = isi,
-                                 passive            = r.root_passive + s("ttaisiin"),
-                                 passive_negative   = r.root_passive + s("ttaisi"),)
+                                 passive            = r.root_passive + s("taisiin"),
+                                 passive_negative   = r.root_passive + s("taisi"),)
 
     def potential_present(self) -> VerbPersonalForms:
         r = self.roots
@@ -154,8 +156,8 @@ class VerbModuses():
                                  plural1_negative   = ne,
                                  plural2_negative   = ne,
                                  plural3_negative   = ne,
-                                 passive            = r.root_passive + s("ttaneen"),
-                                 passive_negative   = r.root_passive + s("ttane"),)
+                                 passive            = r.root_passive + s("taneen"),
+                                 passive_negative   = r.root_passive + s("tane"),)
 
     def imperative_present(self) -> VerbPersonalFormsImperativePresent:
         r = self.roots
@@ -174,8 +176,8 @@ class VerbModuses():
             plural1_negative   = ko,
             plural2_negative   = ko,
             plural3_negative   = ko,
-            passive            = r.root_passive + s("ttakoon"),
-            passive_negative   = r.root_passive + s("ttako"),)
+            passive            = r.root_passive + s("takoon"),
+            passive_negative   = r.root_passive + s("tako"),)
 
     def many(self, roots: [str], suffix: str) -> [str]:
         # some verb forms have multiple root forms, like yltää:ylti/ylsi

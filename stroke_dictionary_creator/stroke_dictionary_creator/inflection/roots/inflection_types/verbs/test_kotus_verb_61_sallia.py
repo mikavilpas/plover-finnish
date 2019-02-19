@@ -78,20 +78,20 @@ class TestBasic(unittest.TestCase):
     def test_conditional_present(self):
         conjugations = self.moduses.conditional_present()
 
-        expected = VerbPersonalForms(singular1          ='sopisin',
-                                     singular1_negative ='sopisi',
-                                     singular2          ='sopisit',
-                                     singular2_negative ='sopisi',
-                                     singular3          ='sopisi',
-                                     singular3_negative ='sopisi',
-                                     plural1            ='sopisimme',
-                                     plural1_negative   ='sopisi',
-                                     plural2            ='sopisitte',
-                                     plural2_negative   ='sopisi',
-                                     plural3            ='sopisivat',
-                                     plural3_negative   ='sopisi',
-                                     passive            ='sovittaisiin',
-                                     passive_negative   ='sovittaisi')
+        expected = VerbPersonalForms(singular1          = 'sopisin',
+                                     singular1_negative = 'sopisi',
+                                     singular2          = 'sopisit',
+                                     singular2_negative = 'sopisi',
+                                     singular3          = 'sopisi',
+                                     singular3_negative = 'sopisi',
+                                     plural1            = 'sopisimme',
+                                     plural1_negative   = 'sopisi',
+                                     plural2            = 'sopisitte',
+                                     plural2_negative   = 'sopisi',
+                                     plural3            = 'sopisivat',
+                                     plural3_negative   = 'sopisi',
+                                     passive            = 'sovittaisiin',
+                                     passive_negative   = 'sovittaisi')
 
         ensure_inflections_equal(expected, conjugations)
 
