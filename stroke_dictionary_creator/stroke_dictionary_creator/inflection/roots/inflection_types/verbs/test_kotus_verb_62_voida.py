@@ -51,43 +51,42 @@ class TestBasic(unittest.TestCase):
         ensure_inflections_equal(expected, conjugations)
 
     def test_indicative_perfect(self):
-        conjugations = self.moduses.indicative_past()
+        conjugations = self.moduses.indicative_perfect()
 
-        expected = VerbPersonalFormsMultipleRoots(singular1s         = ['voin'],
-                                                  singular1_negative = 'voinut',
-                                                  singular2s         = ['voit'],
-                                                  singular2_negative = 'voinut',
-                                                  singular3s         = ['voi'],
-                                                  singular3_negative = 'voinut',
-                                                  plural1s           = ['voimme'],
-                                                  plural1_negative   = 'voineet',
-                                                  plural2s           = ['voitte'],
-                                                  plural2_negative   = 'voineet',
-                                                  plural3s           = ['voivat'],
-                                                  plural3_negative   = 'voineet',
-                                                  passive            = 'voitiin',
-                                                  passive_negative   = 'voitu')
-
+        expected = VerbPersonalForms(singular1          = 'voinut',
+                                     singular1_negative = 'voinut',
+                                     singular2          = 'voinut',
+                                     singular2_negative = 'voinut',
+                                     singular3          = 'voinut',
+                                     singular3_negative = 'voinut',
+                                     plural1            = 'voineet',
+                                     plural1_negative   = 'voineet',
+                                     plural2            = 'voineet',
+                                     plural2_negative   = 'voineet',
+                                     plural3            = 'voineet',
+                                     plural3_negative   = 'voineet',
+                                     passive            = 'voitu',
+                                     passive_negative   = 'voitu')
 
         ensure_inflections_equal(expected, conjugations)
 
     def test_conditional_present(self):
         conjugations = self.moduses.conditional_present()
 
-        expected = VerbPersonalForms(singular1='voisin',
-                                     singular1_negative='voisi',
-                                     singular2='voisit',
-                                     singular2_negative='voisi',
-                                     singular3='voisi',
-                                     singular3_negative='voisi',
-                                     plural1='voisimme',
-                                     plural1_negative='voisi',
-                                     plural2='voisitte',
-                                     plural2_negative='voisi',
-                                     plural3='voisivat',
-                                     plural3_negative='voisi',
-                                     passive='voitaisiin',
-                                     passive_negative='voitaisi')
+        expected = VerbPersonalForms(singular1          = 'voisin',
+                                     singular1_negative = 'voisi',
+                                     singular2          = 'voisit',
+                                     singular2_negative = 'voisi',
+                                     singular3          = 'voisi',
+                                     singular3_negative = 'voisi',
+                                     plural1            = 'voisimme',
+                                     plural1_negative   = 'voisi',
+                                     plural2            = 'voisitte',
+                                     plural2_negative   = 'voisi',
+                                     plural3            = 'voisivat',
+                                     plural3_negative   = 'voisi',
+                                     passive            = 'voitaisiin',
+                                     passive_negative   = 'voitaisi')
 
         ensure_inflections_equal(expected, conjugations)
 

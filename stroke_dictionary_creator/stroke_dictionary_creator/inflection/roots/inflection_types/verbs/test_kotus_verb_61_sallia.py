@@ -56,22 +56,22 @@ class TestBasic(unittest.TestCase):
     def test_indicative_perfect(self):
         conjugations = KotusVerb61Sallia("henkiä",
                                          g.gradate_kotus_g_aurinko_auringon)\
-                                         .moduses().indicative_past()
+                                         .moduses().indicative_perfect()
 
-        expected = VerbPersonalFormsMultipleRoots(singular1s         = ['hengin'],
-                                                  singular1_negative = 'henkinyt',
-                                                  singular2s         = ['hengit'],
-                                                  singular2_negative = 'henkinyt',
-                                                  singular3s         = ['henki'],
-                                                  singular3_negative = 'henkinyt',
-                                                  plural1s           = ['hengimme'],
-                                                  plural1_negative   = 'henkineet',
-                                                  plural2s           = ['hengitte'],
-                                                  plural2_negative   = 'henkineet',
-                                                  plural3s           = ['henkivät'],
-                                                  plural3_negative   = 'henkineet',
-                                                  passive            = 'hengittiin',
-                                                  passive_negative   = 'hengitty')
+        expected = VerbPersonalForms(singular1          = 'henkinyt',
+                                     singular1_negative = 'henkinyt',
+                                     singular2          = 'henkinyt',
+                                     singular2_negative = 'henkinyt',
+                                     singular3          = 'henkinyt',
+                                     singular3_negative = 'henkinyt',
+                                     plural1            = 'henkineet',
+                                     plural1_negative   = 'henkineet',
+                                     plural2            = 'henkineet',
+                                     plural2_negative   = 'henkineet',
+                                     plural3            = 'henkineet',
+                                     plural3_negative   = 'henkineet',
+                                     passive            = 'hengitty',
+                                     passive_negative   = 'hengitty')
 
         ensure_inflections_equal(expected, conjugations)
 
