@@ -164,3 +164,13 @@ def root_and_Xvc_ending():
     x             = yield character
     root          = yield character.at_least(1).concat()
     return [root, x, v, end_consonant]
+
+@generate
+def root_and_double_vowel_cv():
+    # a word like saada, returns the parts in "sada" (double vowel only once)
+    end_vowel     = yield vowel
+    end_consonant = yield consonant
+    v             = yield vowel
+    _             = yield string(v)
+    root          = yield character.at_least(1).concat()
+    return [root, v, end_consonant, end_vowel]
