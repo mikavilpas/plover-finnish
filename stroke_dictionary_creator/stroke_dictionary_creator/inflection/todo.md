@@ -13,3 +13,5 @@ Big todos
 - derivations for verbs: laulaa-laulella and others
 
 - missing (irregular) words in joukahainen, such as poikkeavat.lexc, e.g. "yö"
+
+- verb 68 (tupakoida) has two forms of some forms, https://en.wiktionary.org/wiki/Appendix:Finnish_conjugation/tupakoida
