@@ -141,7 +141,7 @@ joukahainen_refwords = {
     "mennä":     conj(KotusVerb67Tulla),
     "purra":     conj(KotusVerb67Tulla),
     "katsella":  conj(KotusVerb67Tulla),
-    # "haravoida",
+    "haravoida": conj(KotusVerb68Tupakoida),
     # "valita",
     # "saneerata",
     # "aleta",
