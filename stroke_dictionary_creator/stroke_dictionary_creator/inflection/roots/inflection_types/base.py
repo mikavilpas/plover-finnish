@@ -22,7 +22,7 @@ def root_and_vowel_vowel_ending():
 
 @generate
 def root_and_ccv_ending():
-    # for the word "kynsi"
+    # for the word "kynsi", "rohkaista"
 
     last_vowel               = yield vowel
     second_to_last_consonant = yield consonant
@@ -139,6 +139,16 @@ def root_and_vcv_ending():
     middle_vowel = yield vowel
     root = yield character.at_least(1).concat()
     return [root, middle_vowel, c, end_vowel]
+
+@generate
+def root_and_vvcv_ending():
+    # a word like juoda -> [j, u, o, d, a]
+    v    = yield vowel
+    c    = yield consonant
+    v2   = yield vowel
+    v3   = yield vowel
+    root = yield character.at_least(1).concat()
+    return [root, v3, v2, c, v]
 
 @generate
 def optional_consonant_double_vowel():

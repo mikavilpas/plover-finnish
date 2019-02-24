@@ -6,7 +6,9 @@ class VerbRoots():
     def __init__(self, root_weak, root_strong, root_passive,
                  singular3, singular3_past, singular1_past,
                  conditional_strong, participle_root, plural3,
-                 infinitive_root = None, passive_weak_root = None):
+                 infinitive_root = None, passive_weak_root = None,
+                 present_root = None, potential_root = None,
+                 suffix_ut = None, suffix_eet = None):
         self.root_weak          = root_weak
         self.root_strong        = root_strong
         self.root_passive       = root_passive
@@ -20,6 +22,10 @@ class VerbRoots():
         # many verbs don't have these separately
         self.infinitive_root   = infinitive_root or root_strong
         self.passive_weak_root = passive_weak_root or root_passive
+        self.potential_root    = potential_root or participle_root
+        self.present_root      = present_root or root_weak
+        self.suffix_ut         = suffix_ut or "ut"
+        self.suffix_eet        = suffix_eet or "eet"
 
 VerbPersonalForms = namedtuple("VerbPersonalForms",
                                ["singular1", "singular1_negative",
@@ -59,39 +65,41 @@ class VerbModuses():
         r = self.roots
         s = self.s
 
-        return VerbPersonalForms(singular1          = r.root_weak + s("n"),
-                                 singular2          = r.root_weak + s("t"),
+        return VerbPersonalForms(singular1          = r.present_root + s("n"),
+                                 singular2          = r.present_root + s("t"),
                                  singular3          = r.singular3,
-                                 singular1_negative = r.root_weak,
-                                 singular2_negative = r.root_weak,
-                                 singular3_negative = r.root_weak,
-                                 plural1            = r.root_weak + s("mme"),
-                                 plural2            = r.root_weak + s("tte"),
+                                 singular1_negative = r.present_root,
+                                 singular2_negative = r.present_root,
+                                 singular3_negative = r.present_root,
+                                 plural1            = r.present_root + s("mme"),
+                                 plural2            = r.present_root + s("tte"),
                                  plural3            = r.plural3 + s("vat"),
-                                 plural1_negative   = r.root_weak,
-                                 plural2_negative   = r.root_weak,
-                                 plural3_negative   = r.root_weak,
+                                 plural1_negative   = r.present_root,
+                                 plural2_negative   = r.present_root,
+                                 plural3_negative   = r.present_root,
                                  passive            = r.passive_weak_root + s("aan"),
                                  passive_negative   = r.passive_weak_root + s("a"),)
 
     # Notice that this returns multiple roots!
     def indicative_past(self) -> VerbPersonalFormsMultipleRoots:
-        r = self.roots
-        s = self.s
+        r   = self.roots
+        s   = self.s
+        ut  = s(r.suffix_ut)
+        eet = s(r.suffix_eet)
 
         return VerbPersonalFormsMultipleRoots(
             singular1s         = self.many(r.singular1_past, s("in")),
             singular2s         = self.many(r.singular1_past, s("it")),
             singular3s         = self.many(r.singular3_past, s("i")),
-            singular1_negative = r.root_strong + s("nut"),
-            singular2_negative = r.root_strong + s("nut"),
-            singular3_negative = r.root_strong + s("nut"),
+            singular1_negative = r.root_strong + ut,
+            singular2_negative = r.root_strong + ut,
+            singular3_negative = r.root_strong + ut,
             plural1s           = self.many(r.singular1_past, s("imme")),
             plural2s           = self.many(r.singular1_past, s("itte")),
             plural3s           = self.many(r.singular3_past, s("ivat")),
-            plural1_negative   = r.root_strong + s("neet"),
-            plural2_negative   = r.root_strong + s("neet"),
-            plural3_negative   = r.root_strong + s("neet"),
+            plural1_negative   = r.root_strong + eet,
+            plural2_negative   = r.root_strong + eet,
+            plural3_negative   = r.root_strong + eet,
             passive            = r.root_passive + s("tiin"),
             passive_negative   = r.root_passive + s("tu"),)
 
@@ -99,21 +107,21 @@ class VerbModuses():
         r = self.roots
         s = self.s
 
-        nut = r.root_strong + s("nut")
-        neet = r.root_strong + s("neet")
+        ut = r.root_strong + s(r.suffix_ut)
+        eet = r.root_strong + s(r.suffix_eet)
 
-        return VerbPersonalForms(singular1          = nut,
-                                 singular2          = nut,
-                                 singular3          = nut,
-                                 singular1_negative = nut,
-                                 singular2_negative = nut,
-                                 singular3_negative = nut,
-                                 plural1            = neet,
-                                 plural2            = neet,
-                                 plural3            = neet,
-                                 plural1_negative   = neet,
-                                 plural2_negative   = neet,
-                                 plural3_negative   = neet,
+        return VerbPersonalForms(singular1          = ut,
+                                 singular2          = ut,
+                                 singular3          = ut,
+                                 singular1_negative = ut,
+                                 singular2_negative = ut,
+                                 singular3_negative = ut,
+                                 plural1            = eet,
+                                 plural2            = eet,
+                                 plural3            = eet,
+                                 plural1_negative   = eet,
+                                 plural2_negative   = eet,
+                                 plural3_negative   = eet,
                                  passive            = r.root_passive + s("tu"),
                                  passive_negative   = r.root_passive + s("tu"),)
 
@@ -142,7 +150,7 @@ class VerbModuses():
         r = self.roots
         s = self.s
 
-        ne = r.participle_root + s("ne")
+        ne = r.potential_root + s("e")
 
         return VerbPersonalForms(singular1          = ne + s("n"),
                                  singular2          = ne + s("t"),

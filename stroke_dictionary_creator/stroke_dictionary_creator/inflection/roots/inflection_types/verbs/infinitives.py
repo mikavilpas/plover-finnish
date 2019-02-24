@@ -52,7 +52,7 @@ class VerbInfinitives():
 
         return VerbInfinitive_2_E(
             inessive         = self.roots.infinitive_root + s("essa"),
-            inessive_passive = self.roots.root_passive + s("taessa"),
+            inessive_passive = self.roots.root_passive    + s("taessa"),
             instructive      = self.roots.infinitive_root + s("en"),
             elative          = self.roots.infinitive_root + s("esta"))
 
@@ -61,12 +61,12 @@ class VerbInfinitives():
             instructive_passive = self.roots.root_passive + self.s("taman"))
 
     def group_4_MINEN(self) -> InflectionInfo:
-        word_minen = self.roots.root_strong + self.s("minen")
+        word_minen = self.roots.present_root + self.s("minen")
         return kotus_noun_38_nainen(word_minen)
 
     def group_5_MAINEN(self) -> VerbInfinitive_5_MAINEN:
         return VerbInfinitive_5_MAINEN(
-            adessive = self.roots.root_strong + self.s("maisilla"))
+            adessive = self.roots.present_root + self.s("maisilla"))
 
     # suffix
     def s(self, text):
