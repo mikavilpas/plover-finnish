@@ -55,16 +55,16 @@ def root_and_ccvv_ending():
 def root_and_double_end_vowel():
     end_vowel = yield vowel
     yield vowel
-    root = yield character.at_least(1).concat()
+    root      = yield character.at_least(1).concat()
     return [root, end_vowel]
 
 @generate
 def root_and_cv_ending():
     # a word like toimi
 
-    end_vowel = yield vowel
+    end_vowel     = yield vowel
     end_consonant = yield consonant
-    root = yield character.at_least(1).concat()
+    root          = yield character.at_least(1).concat()
     return [root, end_consonant, end_vowel]
 
 @generate
@@ -115,10 +115,10 @@ def root_and_optional_X_vc_ending():
 def root_and_cvv_ending():
     # a word like esittää, returns the root as "esit"
 
-    end_vowel = yield vowel
+    end_vowel     = yield vowel
     yield vowel
     end_consonant = yield consonant
-    root = yield character.at_least(1).concat()
+    root          = yield character.at_least(1).concat()
     return [root, end_consonant, end_vowel]
 
 @generate
@@ -134,10 +134,11 @@ def root_and_cvv_ending_different_vowels():
 @generate
 def root_and_vcv_ending():
     # a word like poika, voida
-    end_vowel = yield vowel
-    c = yield consonant
+    end_vowel    = yield vowel
+    c            = yield consonant
     middle_vowel = yield vowel
-    root = yield character.at_least(1).concat()
+    root         = yield character.at_least(1).concat()
+
     return [root, middle_vowel, c, end_vowel]
 
 @generate
@@ -153,8 +154,8 @@ def root_and_vvcv_ending():
 @generate
 def optional_consonant_double_vowel():
     start_consonant = yield consonant.optional()
-    middle_vowel = yield vowel
-    end_vowel = yield vowel
+    middle_vowel    = yield vowel
+    end_vowel       = yield vowel
     return [start_consonant, middle_vowel, end_vowel]
 
 def root_and_optional_end_vowel(fallback_vowel):
@@ -162,7 +163,7 @@ def root_and_optional_end_vowel(fallback_vowel):
     def parser():
         end_vowel = yield vowel.optional()
         end_vowel = end_vowel if end_vowel is not None else fallback_vowel
-        rest = yield character.at_least(1).concat()
+        rest      = yield character.at_least(1).concat()
         return [rest, end_vowel]
     return parser
 
