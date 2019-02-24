@@ -83,6 +83,7 @@ gradate_kotus_h_kumpi_kumman     = gradation_dispatch["av1"]["mp"]
 gradate_kotus_h_lumme_lumpeen    = gradation_dispatch["av2"]["mm"]
 gradate_kotus_i_ilta_illan       = gradation_dispatch["av1"]["lt"]
 gradate_kotus_k_virta_virran     = gradation_dispatch["av1"]["rt"]
+gradate_kotus_k_porras_portaan   = gradation_dispatch["av2"]["rr"]
 gradate_kotus_l_arki_arjen       = gradation_dispatch["av3"]["k>j"]
 
 identity = lambda a: a
