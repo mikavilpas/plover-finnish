@@ -8,7 +8,8 @@ class VerbRoots():
                  conditional_strong, participle_root, plural3,
                  infinitive_root = None, passive_weak_root = None,
                  present_root = None, potential_root = None,
-                 suffix_ut = None, suffix_eet = None):
+                 imperative_root = None, suffix_ut = None,
+                 suffix_eet = None):
         self.root_weak          = root_weak
         self.root_strong        = root_strong
         self.root_passive       = root_passive
@@ -26,6 +27,7 @@ class VerbRoots():
         self.present_root      = present_root or root_weak
         self.suffix_ut         = suffix_ut or "nut"
         self.suffix_eet        = suffix_eet or "neet"
+        self.imperative_root   = imperative_root or root_strong
 
 VerbPersonalForms = namedtuple("VerbPersonalForms",
                                ["singular1", "singular1_negative",
@@ -171,16 +173,16 @@ class VerbModuses():
         r = self.roots
         s = self.s
 
-        ko = r.root_strong + s("ko")
+        ko = r.imperative_root + s("ko")
 
         return VerbPersonalFormsImperativePresent(
             singular2          = r.root_weak,
             singular3          = ko + s("on"),
             singular2_negative = r.root_weak,
             singular3_negative = ko,
-            plural1            = r.root_strong + s("kaamme"),
-            plural2            = r.root_strong + s("kaa"),
-            plural3            = r.root_strong + s("koot"),
+            plural1            = r.imperative_root + s("kaamme"),
+            plural2            = r.imperative_root + s("kaa"),
+            plural3            = r.imperative_root + s("koot"),
             plural1_negative   = ko,
             plural2_negative   = ko,
             plural3_negative   = ko,
