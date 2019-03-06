@@ -142,7 +142,7 @@ joukahainen_refwords = {
     "purra":     conj(KotusVerb67Tulla),
     "katsella":  conj(KotusVerb67Tulla),
     "haravoida": conj(KotusVerb68Tupakoida),
-    # "valita",
+    "valita":    conj(KotusVerb69Valita),
     # "saneerata",
     # "aleta",
     # "haluta",
@@ -150,10 +150,10 @@ joukahainen_refwords = {
     # "salata",
     # "katketa",
     # "kohota",
-    # "kihistä",
-    # "kitistä",
+    "kihistä": conj(KotusVerb66Rohkaista),
+    "kitistä": conj(KotusVerb66Rohkaista),
     # "taitaa",
-    # "juosta",
+    "juosta": conj(KotusVerb70Juosta),
     # "nähdä",
     # "kevetä"
 }
