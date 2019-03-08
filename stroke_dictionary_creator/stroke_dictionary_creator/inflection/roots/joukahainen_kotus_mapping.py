@@ -154,6 +154,6 @@ joukahainen_refwords = {
     "kitistä": conj(KotusVerb66Rohkaista),
     # "taitaa",
     "juosta": conj(KotusVerb70Juosta),
-    # "nähdä",
+    "nähdä":  conj(KotusVerb71Nähdä),
     # "kevetä"
 }
