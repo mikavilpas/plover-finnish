@@ -8,6 +8,7 @@ class VerbRoots():
                  conditional_strong, participle_root, plural3,
                  infinitive_root = None, passive_weak_root = None,
                  present_root = None, potential_root = None,
+                 potential_s3_root = None, potential_p3_root = None,
                  imperative_root = None, suffix_ut = None,
                  suffix_eet = None):
         self.root_weak          = root_weak
@@ -21,13 +22,15 @@ class VerbRoots():
         self.plural3            = plural3
 
         # many verbs don't have these separately
-        self.infinitive_root   = infinitive_root or root_strong
+        self.infinitive_root   = infinitive_root   or root_strong
         self.passive_weak_root = passive_weak_root or root_passive
-        self.potential_root    = potential_root or participle_root + "n"
-        self.present_root      = present_root or root_weak
-        self.suffix_ut         = suffix_ut or "nut"
-        self.suffix_eet        = suffix_eet or "neet"
-        self.imperative_root   = imperative_root or root_strong
+        self.potential_root    = potential_root    or participle_root + "n"
+        self.potential_s3_root = potential_s3_root or potential_root
+        self.potential_p3_root = potential_p3_root or potential_root
+        self.present_root      = present_root      or root_weak
+        self.suffix_ut         = suffix_ut         or "nut"
+        self.suffix_eet        = suffix_eet        or "neet"
+        self.imperative_root   = imperative_root   or root_strong
 
 VerbPersonalForms = namedtuple("VerbPersonalForms",
                                ["singular1", "singular1_negative",
@@ -156,13 +159,13 @@ class VerbModuses():
 
         return VerbPersonalForms(singular1          = ne + s("n"),
                                  singular2          = ne + s("t"),
-                                 singular3          = ne + s("e"),
+                                 singular3          = r.potential_s3_root + s("e"),
                                  singular1_negative = ne,
                                  singular2_negative = ne,
                                  singular3_negative = ne,
                                  plural1            = ne + s("mme"),
                                  plural2            = ne + s("tte"),
-                                 plural3            = ne + s("vat"),
+                                 plural3            = r.potential_p3_root + s("vat"),
                                  plural1_negative   = ne,
                                  plural2_negative   = ne,
                                  plural3_negative   = ne,
