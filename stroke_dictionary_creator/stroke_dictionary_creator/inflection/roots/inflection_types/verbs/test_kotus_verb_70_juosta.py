@@ -92,18 +92,18 @@ class TestBasic(unittest.TestCase):
     def test_potential_present(self):
         conjugations = self.moduses.potential_present()
 
-        expected = VerbPersonalForms(singular1          = 'pieksen',
-                                     singular1_negative = 'piekse',
-                                     singular2          = 'piekset',
-                                     singular2_negative = 'piekse',
-                                     singular3          = 'pieksee',
-                                     singular3_negative = 'piekse',
-                                     plural1            = 'pieksemme',
-                                     plural1_negative   = 'piekse',
-                                     plural2            = 'pieksette',
-                                     plural2_negative   = 'piekse',
-                                     plural3            = 'pieksevät',
-                                     plural3_negative   = 'piekse',
+        expected = VerbPersonalForms(singular1          = 'piessen',
+                                     singular1_negative = 'piesse',
+                                     singular2          = 'piesset',
+                                     singular2_negative = 'piesse',
+                                     singular3          = 'piessee',
+                                     singular3_negative = 'piesse',
+                                     plural1            = 'piessemme',
+                                     plural1_negative   = 'piesse',
+                                     plural2            = 'piessette',
+                                     plural2_negative   = 'piesse',
+                                     plural3            = 'piessevät',
+                                     plural3_negative   = 'piesse',
                                      passive            = 'piestäneen',
                                      passive_negative   = 'piestäne')
 

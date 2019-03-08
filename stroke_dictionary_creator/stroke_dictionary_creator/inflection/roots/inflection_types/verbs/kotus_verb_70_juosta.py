@@ -33,7 +33,7 @@ class KotusVerb70Juosta(VerbBase):
                          singular3_past     = [pieks],
                          conditional_strong = pieks,
                          participle_root    = piekse,
-                         potential_root     = pieks,
+                         potential_root     = pies + "s",
                          infinitive_root    = piest,
                          imperative_root    = pies,
                          passive_weak_root  = piest,
