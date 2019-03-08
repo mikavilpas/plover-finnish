@@ -25,8 +25,8 @@ class VerbRoots():
         self.infinitive_root   = infinitive_root   or root_strong
         self.passive_weak_root = passive_weak_root or root_passive
         self.potential_root    = potential_root    or participle_root + "n"
-        self.potential_s3_root = potential_s3_root or potential_root
-        self.potential_p3_root = potential_p3_root or potential_root
+        self.potential_s3_root = potential_s3_root or self.potential_root + "e"
+        self.potential_p3_root = potential_p3_root or self.potential_root + "e"
         self.present_root      = present_root      or root_weak
         self.suffix_ut         = suffix_ut         or "nut"
         self.suffix_eet        = suffix_eet        or "neet"
