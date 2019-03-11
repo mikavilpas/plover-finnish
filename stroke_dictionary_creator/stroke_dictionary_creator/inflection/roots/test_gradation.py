@@ -197,6 +197,7 @@ class TestGradation(unittest.TestCase):
         ensure(gradate("haleta", "katketa", "av6")).equals("halketa")
         ensure(gradate("juleta", "katketa", "av6")).equals("julketa")
         ensure(gradate("keretä", "katketa", "av6")).equals("kerketä")
+        ensure(gradate("kyetä", "aleta", "av6")).equals("kyketä")
         ensure(gradate("virota", "kohota", "av6")).equals("virkota")
 
         ensure(gradate("pyyhin", "uistin", "av6")).equals("pyyhkin")

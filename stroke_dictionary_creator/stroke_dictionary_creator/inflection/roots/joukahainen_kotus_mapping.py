@@ -144,7 +144,7 @@ joukahainen_refwords = {
     "haravoida": conj(KotusVerb68Tupakoida),
     "valita":    conj(KotusVerb69Valita),
     # "saneerata",
-    # "aleta",
+    "aleta": conj(KotusVerb72Vanheta),
     # "haluta",
     # "juoruta",
     # "salata",
@@ -155,5 +155,5 @@ joukahainen_refwords = {
     # "taitaa",
     "juosta": conj(KotusVerb70Juosta),
     "nähdä":  conj(KotusVerb71Nähdä),
-    # "kevetä"
+    "kevetä": conj(KotusVerb72Vanheta, g.gradate_kotus_e_sopu_sovun)
 }
