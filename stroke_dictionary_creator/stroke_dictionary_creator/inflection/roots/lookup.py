@@ -1,29 +1,28 @@
 from . import joukahainen_kotus_mapping as mapping
 from . import gradation as g
 
-def lookup(word, nominal_or_verb, refword, joukahainen_gradation_class = None):
-    def get_gradation(mapping_default_gradation):
-        if joukahainen_gradation_class is not None:
-            return g.gradation_function(word,
-                                        refword,
-                                        joukahainen_gradation_class)
-        else:
-            return mapping_default_gradation or g.identity
+def lookup_verb(word, refword, joukahainen_gradation_class = None):
+    verb_info = mapping.verbs[refword]
+    verb      = verb_info.verb_class
+    gradation = _get_gradation(word,
+                               refword,
+                               joukahainen_gradation_class,
+                               verb_info.gradation_fn)
+    return verb(word, gradation)
 
-    if nominal_or_verb == "verb":
-        verb_info = mapping.verbs[refword]
-        verb      = verb_info.verb_class
-        gradation = get_gradation(verb_info.gradation_fn)
-        return verb(word, gradation)
+def lookup_nominal(word, refword, joukahainen_gradation_class = None):
+    nominal_info = mapping.nominals[refword]
+    nominal      = nominal_info.inflection_fn
+    gradation    = _get_gradation(word,
+                                  refword,
+                                  joukahainen_gradation_class,
+                                  nominal_info.gradation_fn)
+    return nominal(word, gradation)
 
-    elif nominal_or_verb in ["noun", "adjective"]:
-        nominal_info        = mapping.nominals[refword]
-        inflection_function = nominal_info.inflection_fn
-        gradation = get_gradation(nominal_info.gradation_fn)
-        return nominal(word, gradation)
-
+def _get_gradation(word, refword, joukahainen_gradation_class, mapping_default_gradation):
+    if joukahainen_gradation_class is not None:
+        return g.gradation_function(word,
+                                    refword,
+                                    joukahainen_gradation_class)
     else:
-        raise Exception("Unknown word lookup: {}" % (word,
-                                                     nominal_or_verb,
-                                                     refword,
-                                                     joukahainen_gradation_class))
+        return mapping_default_gradation or g.identity
