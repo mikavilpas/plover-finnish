@@ -1,7 +1,15 @@
 import unittest
 from ensure import ensure
 from . import gradation as g
-from .gradation import gradate_joukahainen as gradate
+from .gradation import gradation_function
+
+# Test function for gradating
+def gradate(word, refword, gradation_class):
+    gradator_fn   = gradation_function(word, refword, gradation_class)
+    gradated_word = gradator_fn(word)
+
+    return gradated_word
+
 
 class TestGradation(unittest.TestCase):
     def test_gradate_joukahainen_refwords_and_gradition_classes(self):
@@ -98,6 +106,7 @@ class TestGradation(unittest.TestCase):
 
         # vuotaa
         ensure(gradate("suoltaa", "vuotaa", "av1")).equals("suollaa")
+        ensure(gradate("huoltaa", "vuotaa", "av1")).equals("huollaa")
 
         # huutaa
         ensure(gradate("vääntää", "huutaa", "av1")).equals("väännää")

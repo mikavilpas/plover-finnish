@@ -113,7 +113,14 @@ class TestBasic(unittest.TestCase):
                                      passive            = "yllettäneen",
                                      passive_negative   = "yllettäne",)
 
+
         ensure_inflections_equal(expected, conjugations)
+
+
+        rekust = KotusVerb55Soutaa("huoltaa",
+                                   gradate_kotus_i_ilta_illan)\
+                                   .moduses()
+        print(rekust.potential_present())
 
 
     def test_imperative_present(self):

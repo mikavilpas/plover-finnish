@@ -8,20 +8,17 @@ from .tokens import *
 
 from .gradation_helpers import gradator, gradate_kotus_d_joukahainen_av6_aie_aikeen, reference_options, matching_gradations
 
-# Main function for gradating
-def gradate_joukahainen(word, refword, gradation_class):
+def gradation_function(word, refword, gradation_class):
     gradations = reference_options(word, refword)
     matching = matching_gradations(word, gradation_class, gradations)
 
     if len(matching) == 0:
         raise ValueError("The gradation class {} is unknown/invalid for the word {}."
-                         .format(gradation_class, word))
+                         .format((gradation_class, refword), word))
     gradtype = matching[0]
 
     gradator_fn = gradation_dispatch[gradation_class][gradtype]
-    gradated_word = gradator_fn(word)
-
-    return gradated_word
+    return gradator_fn
 
 gradation_dispatch = dict(
     # the gradations have the same keys as defined in hfconv
