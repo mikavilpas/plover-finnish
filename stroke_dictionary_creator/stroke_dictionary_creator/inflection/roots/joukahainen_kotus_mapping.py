@@ -145,7 +145,7 @@ joukahainen_refwords = {
     "valita":    conj(KotusVerb69Valita),
     "saneerata": conj(KotusVerb73Salata),
     "aleta": conj(KotusVerb72Vanheta),
-    # "haluta",
+    "haluta":  conj(KotusVerb75Selvitä),
     "juoruta": conj(KotusVerb74Katketa),
     "salata":  conj(KotusVerb73Salata),
     "katketa": conj(KotusVerb74Katketa),
