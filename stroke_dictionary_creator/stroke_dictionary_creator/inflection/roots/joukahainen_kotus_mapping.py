@@ -21,7 +21,7 @@ def conj(fn, gradation_fn = g.identity) -> Conjugation:
 
 # TODO check that missing classes are inflected correctly!
 
-joukahainen_refwords = {
+nominals = {
     "valo":      infl(kotus_noun_1_valo),
     "arvelu":    infl(kotu_noun_2_palvelu),
     "autio":     infl(kotus_noun_3_valtio),
@@ -101,7 +101,9 @@ joukahainen_refwords = {
     "loppu":     infl(kotus_noun_1_valo, g.gradate_kotus_b_kaappi_kaapin),
     "veitsi":    infl(kotus_noun_30_veitsi),
 
-    # verbs
+}
+
+verbs = {
     "punoa":      conj(KotusVerb52Sanoa),
     "aavistaa":   conj(KotusVerb53Muistaa),
     "hidastaa":   conj(KotusVerb53Muistaa),
@@ -121,39 +123,37 @@ joukahainen_refwords = {
     "juontaa":    conj(KotusVerb54Huutaa, g.gradate_kotus_j_hento_hennon),
     "pahentaa":   conj(KotusVerb54Huutaa, g.gradate_kotus_j_hento_hennon),
     "kaivaa":     conj(KotusVerb56Laulaa),
-
+    "soutaa":     conj(KotusVerb55Soutaa),
+    "saartaa":    conj(KotusVerb57Saartaa),
+    "laskea":     conj(KotusVerb58Laskea),
+    "tuntea":     conj(KotusVerb59Tuntea, g.gradate_kotus_j_hento_hennon),
+    "lähteä":     conj(KotusVerb60Lähteä, g.gradate_kotus_f_satu_sadun),
+    "sallia":     conj(KotusVerb61Sallia),
+    "voida":      conj(KotusVerb62Voida),
+    "käydä":      conj(KotusVerb65Käydä),
+    "kanavoida":  conj(KotusVerb62Voida),
+    "saada":      conj(KotusVerb63Saada),
+    "juoda":      conj(KotusVerb64Juoda),
+    "nuolaista":  conj(KotusVerb66Rohkaista),
+    "mennä":      conj(KotusVerb67Tulla),
+    "purra":      conj(KotusVerb67Tulla),
+    "katsella":   conj(KotusVerb67Tulla),
+    "haravoida":  conj(KotusVerb68Tupakoida),
+    "valita":     conj(KotusVerb69Valita),
+    "saneerata":  conj(KotusVerb73Salata),
+    "aleta":      conj(KotusVerb72Vanheta),
+    "haluta":     conj(KotusVerb75Selvitä),
+    "juoruta":    conj(KotusVerb74Katketa),
+    "salata":     conj(KotusVerb73Salata),
+    "katketa":    conj(KotusVerb74Katketa),
+    "kohota":     conj(KotusVerb74Katketa),
+    "kihistä":    conj(KotusVerb66Rohkaista),
+    "kitistä":    conj(KotusVerb66Rohkaista),
+    "taitaa":     conj(KotusVerb76Taitaa),
+    "juosta":     conj(KotusVerb70Juosta),
+    "nähdä":      conj(KotusVerb71Nähdä),
+    "kevetä":     conj(KotusVerb72Vanheta, g.gradate_kotus_e_sopu_sovun)
     # TODO irregular (78), see:
     # https://fi.wiktionary.org/wiki/Liite:Verbitaivutus/suomi/kaikaa
     # "kaikaa",
-
-    "soutaa":    conj(KotusVerb55Soutaa),
-    "saartaa":   conj(KotusVerb57Saartaa),
-    "laskea":    conj(KotusVerb58Laskea),
-    "tuntea":    conj(KotusVerb59Tuntea, g.gradate_kotus_j_hento_hennon),
-    "lähteä":    conj(KotusVerb60Lähteä, g.gradate_kotus_f_satu_sadun),
-    "sallia":    conj(KotusVerb61Sallia),
-    "voida":     conj(KotusVerb62Voida),
-    "käydä":     conj(KotusVerb65Käydä),
-    "kanavoida": conj(KotusVerb62Voida),
-    "saada":     conj(KotusVerb63Saada),
-    "juoda":     conj(KotusVerb64Juoda),
-    "nuolaista": conj(KotusVerb66Rohkaista),
-    "mennä":     conj(KotusVerb67Tulla),
-    "purra":     conj(KotusVerb67Tulla),
-    "katsella":  conj(KotusVerb67Tulla),
-    "haravoida": conj(KotusVerb68Tupakoida),
-    "valita":    conj(KotusVerb69Valita),
-    "saneerata": conj(KotusVerb73Salata),
-    "aleta": conj(KotusVerb72Vanheta),
-    "haluta":  conj(KotusVerb75Selvitä),
-    "juoruta": conj(KotusVerb74Katketa),
-    "salata":  conj(KotusVerb73Salata),
-    "katketa": conj(KotusVerb74Katketa),
-    "kohota":  conj(KotusVerb74Katketa),
-    "kihistä": conj(KotusVerb66Rohkaista),
-    "kitistä": conj(KotusVerb66Rohkaista),
-    # "taitaa",
-    "juosta": conj(KotusVerb70Juosta),
-    "nähdä":  conj(KotusVerb71Nähdä),
-    "kevetä": conj(KotusVerb72Vanheta, g.gradate_kotus_e_sopu_sovun)
 }
