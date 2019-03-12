@@ -12,7 +12,7 @@ class KotusVerb63Saada(VerbBase):
         # gradation. The stem is found by removing the -da/-dä.
         # https://en.wiktionary.org/wiki/Appendix:Finnish_conjugation/saada
 
-        [s, a, d, a] = reverse_parse(self.word, root_and_double_vowel_cv)
+        [s, a, d, _] = reverse_parse(self.word, root_and_double_vowel_cv)
         sa           = s + a
         saa          = sa + a
         saad         = saa + "d"
