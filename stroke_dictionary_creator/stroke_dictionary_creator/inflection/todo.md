@@ -16,5 +16,6 @@ Big todos
 
 - Multiple forms of conditionals for class 74 (ängetä: änkeäisin/änkeisin)
 - Multiple forms for class 75
+- Multiple forms for class 76 (e.g. Perfect: tienneet+tietäneet)
 
 - verb 68 (tupakoida) has two forms of some forms, https://en.wiktionary.org/wiki/Appendix:Finnish_conjugation/tupakoida
