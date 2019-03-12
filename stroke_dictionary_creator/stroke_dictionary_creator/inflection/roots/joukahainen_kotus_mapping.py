@@ -123,7 +123,7 @@ verbs = {
     "pahentaa":   conj(KotusVerb54Huutaa, g.gradate_kotus_j_hento_hennon),
     "kaivaa":     conj(KotusVerb56Laulaa),
     "soutaa":     conj(KotusVerb55Soutaa),
-    "saartaa":    conj(KotusVerb57Saartaa),
+    "saartaa":    conj(KotusVerb57Saartaa, g.gradate_kotus_k_virta_virran),
     "laskea":     conj(KotusVerb58Laskea),
     "tuntea":     conj(KotusVerb59Tuntea, g.gradate_kotus_j_hento_hennon),
     "lähteä":     conj(KotusVerb60Lähteä, g.gradate_kotus_f_satu_sadun),
