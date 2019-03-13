@@ -116,13 +116,6 @@ class TestBasic(unittest.TestCase):
 
         ensure_inflections_equal(expected, conjugations)
 
-
-        rekust = KotusVerb55Soutaa("huoltaa",
-                                   gradate_kotus_i_ilta_illan)\
-                                   .moduses()
-        print(rekust.potential_present())
-
-
     def test_imperative_present(self):
         conjugations = self.moduses.imperative_present()
 

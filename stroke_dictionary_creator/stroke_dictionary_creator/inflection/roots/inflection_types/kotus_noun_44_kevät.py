@@ -18,9 +18,7 @@ def kotus_noun_44_kevät(word, gradation_fn = identity):
 
     kevät         = word
     (ke, v, ä, t) = reverse_parse(word, root_and_cvc_ending)
-    print((ke, v, ä, t))
-    kevätt       = ke + v + ä + t + t
-    print(kevätt)
+    kevätt        = ke + v + ä + t + t
 
     reference = kotus_noun_41_vieras(word, gradation_fn)
     return reference._replace(partitives = [kevätt + s("a")])

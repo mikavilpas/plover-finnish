@@ -12,7 +12,6 @@ def kotus_noun_42_mies(word, gradation_fn = identity):
 
     mies          = word
     (m, i, e, s_) = reverse_parse(word, root_and_vvc_ending)
-    print((m, i, e, s_))
     mie           = m + i + e
     miehi         = mie + "h" + i
     miehe         = mie + "h" + e

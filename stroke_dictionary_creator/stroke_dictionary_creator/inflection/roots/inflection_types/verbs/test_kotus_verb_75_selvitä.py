@@ -112,7 +112,6 @@ class TestBasic(unittest.TestCase):
 
     def test_imperative_present(self):
         conjugations = self.moduses.imperative_present()
-        print(conjugations)
 
         expected = VerbPersonalFormsImperativePresent(
             singular2          = 'heltiä',
