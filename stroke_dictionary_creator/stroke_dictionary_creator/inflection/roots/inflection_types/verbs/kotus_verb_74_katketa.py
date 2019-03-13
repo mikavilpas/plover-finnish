@@ -16,7 +16,7 @@ class KotusVerb74Katketa(VerbBase):
 
         # aueta is the example word
         [au, e, t, a] = reverse_parse(self.word, root_and_vcv_ending)
-        [auk, *_]     = reverse_parse(gradate(self.word), root_and_vcv_ending)
+        [auk, *_]     = reverse_parse(gradate(self.word), root_and_XcX_ending)
         aue           = au + e
         auen          = aue + "n"
         auke          = auk + e

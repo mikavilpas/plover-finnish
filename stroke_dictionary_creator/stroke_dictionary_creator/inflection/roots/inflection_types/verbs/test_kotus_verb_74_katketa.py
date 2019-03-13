@@ -131,6 +131,30 @@ class TestBasic(unittest.TestCase):
         ensure_inflections_equal(expected, conjugations)
 
 
+    def test_juoruta(self):
+        # regression case
+        moduses = KotusVerb74Katketa("luututa",
+                                     g.gradate_kotus_c_kate_katteen).moduses()
+        conjugations = moduses.potential_present()
+
+        expected = VerbPersonalForms(singular1          = 'luutunnen',
+                                     singular1_negative = 'luutunne',
+                                     singular2          = 'luutunnet',
+                                     singular2_negative = 'luutunne',
+                                     singular3          = 'luutunnee',
+                                     singular3_negative = 'luutunne',
+                                     plural1            = 'luutunnemme',
+                                     plural1_negative   = 'luutunne',
+                                     plural2            = 'luutunnette',
+                                     plural2_negative   = 'luutunne',
+                                     plural3            = 'luutunnevat',
+                                     plural3_negative   = 'luutunne',
+                                     passive            = 'luututtaneen',
+                                     passive_negative   = 'luututtane')
+
+        ensure_inflections_equal(expected, conjugations)
+
+
 class TestParticiples(unittest.TestCase):
     participles = KotusVerb74Katketa("todeta",
                                      g.gradate_kotus_f_keidas_keitaan).participles()

@@ -94,6 +94,15 @@ def root_and_vvc_ending():
     return [root, x, v, end_consonant]
 
 @generate
+def root_and_XcX_ending():
+    # a word like avoin, paahdin
+    end_x = yield character
+    c     = yield consonant
+    x     = yield character
+    root  = yield character.at_least(1).concat()
+    return [root, x, c, end_x]
+
+@generate
 def root_and_Xvc_ending():
     # a word like avoin, paahdin
     end_consonant = yield consonant
