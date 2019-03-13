@@ -5,9 +5,9 @@ def kotus_noun_7_ovi(word, gradation_fn = identity):
     # suffix
     def s(text): return change_to_same_vowel_group_prefer_umlauts(word, text)
 
-    word_alt = gradation_fn(word)
+    word_alt          = gradation_fn(word)
     (root, end_vowel) = reverse_parse(word, root_and_optional_end_vowel("i"))
-    (root_alt, _) = reverse_parse(word_alt, root_and_optional_end_vowel("i"))
+    (root_alt, _)     = reverse_parse(word_alt, root_and_optional_end_vowel("i"))
 
     return InflectionInfo(nominative          = word,
                           nominative_plural   = root_alt + s("et"),

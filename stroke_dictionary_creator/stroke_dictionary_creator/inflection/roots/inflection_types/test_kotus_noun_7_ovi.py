@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from ..noun_inflection_info import InflectionInfo
 from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_e_sopu_sovun, gradate_kotus_f_satu_sadun
+from .. import gradation as g
 from .kotus_noun_7_ovi import kotus_noun_7_ovi
 
 class TestInflectionType7(unittest.TestCase):
@@ -43,7 +43,7 @@ class TestInflectionType7(unittest.TestCase):
 
     def test_gradation(self):
         data = kotus_noun_7_ovi("arpi",
-                                gradate_kotus_e_sopu_sovun)
+                                g.gradate_kotus_e_sopu_sovun)
 
         expected = InflectionInfo(nominative="arpi",
                                   nominative_plural="arvet",
@@ -80,7 +80,7 @@ class TestInflectionType7(unittest.TestCase):
 
     def test_with_umlaut_gradation(self):
         data = kotus_noun_7_ovi("tähti",
-                                gradate_kotus_f_satu_sadun)
+                                g.gradate_kotus_f_satu_sadun)
 
         expected = InflectionInfo(nominative='tähti',
                                   nominative_plural='tähdet',
@@ -115,3 +115,7 @@ class TestInflectionType7(unittest.TestCase):
         ensure_inflections_equal(expected, data)
 
     # There are no singular words in this class that end in a consonant
+
+    def test_toholampi_regression(self):
+        data = kotus_noun_7_ovi("Toholampi", g.gradate_kotus_h_kumpi_kumman)
+        ensure(data.abessive).equals("Toholammetta")
