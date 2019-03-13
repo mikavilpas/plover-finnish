@@ -2,16 +2,16 @@ import unittest
 from ensure import ensure
 from . import gradation as g
 from .gradation import gradation_function
-from .lookup import lookup_verb
-
-def ensure_gives(args, result):
-    # It's super hard to read the tests when they get too long. I made this to
-    # make it a bit more bearable.
-    ensure(lookup_verb(*args)
-           .moduses().potential_present().passive).equals(result)
+from .lookup import lookup_verb, lookup_nominal
 
 class TestLookup(unittest.TestCase):
     def test_verbs(self):
+        def ensure_gives(args, result):
+            # It's super hard to read the tests when they get too long. I made this to
+            # make it a bit more bearable.
+            ensure(lookup_verb(*args)
+                .moduses().potential_present().passive).equals(result)
+
         # go through each case and make sure gradation works
         ensure_gives(("sanoa",      "punoa"             ), "sanottaneen"     )
         ensure_gives(("aallottaa",  "aavistaa",   "av1" ), "aallotettaneen"  )
@@ -59,3 +59,80 @@ class TestLookup(unittest.TestCase):
         ensure_gives(("piestä",     "juosta"            ), "piestäneen"      )
         ensure_gives(("tehdä",      "nähdä"             ), "tehtäneen"       )
         ensure_gives(("kalveta",    "kevetä"            ), "kalvettaneen"    )
+
+    def test_nominals(self):
+        def ensure_gives(args, result):
+            ensure(lookup_nominal(*args).abessive).equals(result)
+
+        # The same thing here, try to go through all cases
+        ensure_gives(("akku",       "valo",    "av1"  ), "akutta"        )
+        ensure_gives(("aavikko",    "arvelu",  "av1"  ), "aavikotta"     )
+        ensure_gives(("kaihi",      "kiiski"          ), "kaihetta"      )
+        ensure_gives(("siisti",     "siisti"          ), "siistittä"     )
+        ensure_gives(("frakki",     "risti",   "av1"  ), "frakitta"      )
+        ensure_gives(("lemmikki",   "paperi",  "av1"  ), "lemmikittä"    )
+        ensure_gives(("kuskus",     "kalsium"         ), "kuskusitta"    )
+        ensure_gives(("mäki",       "lovi",    "av5"  ), "mäettä"        )
+        ensure_gives(("Rautalampi", "toholampi"       ), "Rautalammetta" )
+        ensure_gives(("suksi",      "suksi"           ), "suksetta"      )
+        ensure_gives(("nukke",      "nalle",   "av1"  ), "nuketta"       )
+        ensure_gives(("arka",       "kala",    "av5"  ), "aratta"        )
+        ensure_gives(("nahka",      "nahka"           ), "nahatta"       )
+        ensure_gives(("jumala",     "jumala"          ), "jumalatta"     )
+        ensure_gives(("häkä",       "koira",   "av5"  ), "häättä"        )
+        ensure_gives(("ylkä",       "ylkä"            ), "yljättä"       )
+        ensure_gives(("pitkä",      "pitkä"           ), "pitkättä"      )
+        ensure_gives(("ruoka",      "ruoka"           ), "ruoatta"       )
+        ensure_gives(("poika",      "poika"           ), "pojatta"       )
+        ensure_gives(("papana",     "matala"          ), "papanatta"     )
+        ensure_gives(("emäntä",     "asema",    "av1" ), "emännättä"     )
+        ensure_gives(("astia",      "kulkija"         ), "astiatta"      )
+        ensure_gives(("video",      "video"           ), "videotta"      )
+        ensure_gives(("alpakka",    "karahka",  "av1" ), "alpakatta"     )
+        ensure_gives(("ongelma",    "apaja"           ), "ongelmatta"    )
+        ensure_gives(("kypärä",     "peruna"          ), "kypärättä"     )
+        ensure_gives(("kapea",      "korkea"          ), "kapeatta"      )
+        ensure_gives(("ylempi",     "suurempi", "av1" ), "ylemmättä"     )
+        ensure_gives(("vapaa",      "vapaa"           ), "vapaatta"      )
+        ensure_gives(("kamee",      "kamee"           ), "kameetta"      )
+        ensure_gives(("pii",        "pii"             ), "piittä"        )
+        ensure_gives(("suo",        "suo"             ), "suotta"        )
+        ensure_gives(("kannel",     "askel",    "av2" ), "kanteletta"    )
+        ensure_gives(("rosé",       "rosé"            ), "rosétta"       )
+        ensure_gives(("cowboy",     "spray"           ), "cowboytta"     )
+        ensure_gives(("parfait",    "parfait"         ), "parfait'tta"   )
+        ensure_gives(("huuli",      "huuli"           ), "huuletta"      )
+        ensure_gives(("meri",       "meri"            ), "merettä"       )
+        ensure_gives(("tuohi",      "tuohi"           ), "tuohetta"      )
+        ensure_gives(("niemi",      "niemi"           ), "niemettä"      )
+        ensure_gives(("pieni",      "pieni"           ), "pienettä"      )
+        ensure_gives(("lumi",       "lumi"            ), "lumetta"       )
+        ensure_gives(("susi",       "susi"            ), "sudetta"       )
+        ensure_gives(("tosi",       "tosi"            ), "todetta"       )
+        ensure_gives(("kansi",      "kansi"           ), "kannetta"      )
+        ensure_gives(("ien",        "sisar",    "av6" ), "ikenettä"      )
+        ensure_gives(("hapan",      "hapan"           ), "hapametta"     )
+        ensure_gives(("ahdin",      "uistin",   "av2" ), "ahtimetta"     )
+        ensure_gives(("laidun",     "laidun"          ), "laitumetta"    )
+        ensure_gives(("kesytön",    "onneton",  "av2" ), "kesyttömättä"  )
+        ensure_gives(("lämmin",     "lämmin"          ), "lämpimättä"    )
+        ensure_gives(("vasen",      "vasen"           ), "vasemmatta"    )
+        ensure_gives(("sisin",      "sisin"           ), "sisimmättä"    )
+        ensure_gives(("nainen",     "nainen"          ), "naisetta"      )
+        ensure_gives(("vastaus",    "vastaus"         ), "vastauksetta"  )
+        ensure_gives(("kalleus",    "kalleus"         ), "kalleudetta"   )
+        ensure_gives(("kaunis",     "kaunis"          ), "kauniitta"     )
+        ensure_gives(("autuas",     "autuas"          ), "autuaatta"     )
+        ensure_gives(("laupias",    "laupias"         ), "laupiaatta"    )
+        ensure_gives(("ies",        "vieras",   "av6" ), "ikeettä"       )
+        ensure_gives(("asukas",     "iäkäs",    "av2" ), "asukkaatta"    )
+        ensure_gives(("ohut",       "ohut"            ), "ohuetta"       )
+        ensure_gives(("kevät",      "kevät"           ), "keväättä"      )
+        ensure_gives(("mies",       "mies"            ), "miehettä"      )
+        ensure_gives(("kuollut",    "kuollut"         ), "kuolleetta"    )
+        ensure_gives(("aie",        "hame",     "av6" ), "aikeetta"      )
+        ensure_gives(("tie",        "tie"             ), "tiettä"        )
+        ensure_gives(("lapsi",      "lapsi"           ), "lapsetta"      )
+        ensure_gives(("hapsi",      "hapsi"           ), "hapsetta"      )
+        ensure_gives(("loppu",      "loppu"           ), "loputta"       )
+        ensure_gives(("veitsi",     "veitsi"          ), "veitsettä"     )

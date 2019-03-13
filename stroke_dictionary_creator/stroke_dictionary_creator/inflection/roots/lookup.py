@@ -19,7 +19,11 @@ def lookup_nominal(word, refword, joukahainen_gradation_class = None):
                                   nominal_info.gradation_fn)
     return nominal(word, gradation)
 
-def _get_gradation(word, refword, joukahainen_gradation_class, mapping_default_gradation):
+def _get_gradation(word,
+                   refword,
+                   joukahainen_gradation_class,
+                   mapping_default_gradation):
+
     if joukahainen_gradation_class is not None:
         return g.gradation_function(word,
                                     refword,

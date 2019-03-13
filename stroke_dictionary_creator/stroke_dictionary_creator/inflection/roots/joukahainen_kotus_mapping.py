@@ -12,8 +12,17 @@ NominalInflection = namedtuple("NominalInflection",
 Conjugation = namedtuple("Conjugation",
                          ["verb_class", "gradation_fn"])
 
-def infl(fn, gradation_fn = None) -> NominalInflection:
+def infl(module, gradation_fn = None) -> NominalInflection:
     "Shorthand for the readability of inflection definitions"
+    # The function name is the same as the module name. Let's resolve it so the
+    # file is a bit easier to read.
+    #
+    # sample:
+    # stroke_dictionary_creator.inflection.roots.inflection_types.kotus_noun_2_palvelu
+
+    fn_name = module.__name__.split(".")[-1]
+    fn      = getattr(module, fn_name)
+
     return NominalInflection(inflection_fn = fn,
                              gradation_fn = gradation_fn)
 
@@ -123,7 +132,7 @@ verbs = {
     "pahentaa":   conj(KotusVerb54Huutaa, g.gradate_kotus_j_hento_hennon),
     "kaivaa":     conj(KotusVerb56Laulaa),
     "soutaa":     conj(KotusVerb55Soutaa),
-    "saartaa":    conj(KotusVerb57Saartaa, g.gradate_kotus_k_virta_virran),
+    "saartaa":    conj(KotusVerb57Saartaa),
     "laskea":     conj(KotusVerb58Laskea),
     "tuntea":     conj(KotusVerb59Tuntea, g.gradate_kotus_j_hento_hennon),
     "lähteä":     conj(KotusVerb60Lähteä, g.gradate_kotus_f_satu_sadun),

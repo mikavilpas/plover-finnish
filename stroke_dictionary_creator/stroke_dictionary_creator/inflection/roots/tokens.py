@@ -1,7 +1,7 @@
 from parsy import *
 
-vowel = char_from("aeiouyäö")
-consonant = char_from("bcdfghjklmnpqrstvwxz")
+vowel = char_from("aeiouyäöAEIOUYÄÖ")
+consonant = char_from("bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ")
 character = vowel | consonant
 
 @generate
