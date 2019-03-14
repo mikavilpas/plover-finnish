@@ -43,3 +43,8 @@ class TestShortWords(unittest.TestCase):
 
     def test_short_word(self):
         ensure(short_word.parse("hämää")).equals("HASHa")
+        ensure(short_word.parse("nainen")).equals("TPHAINe")
+        ensure(short_word.parse("paimen")).equals("PAISHe")
+
+    def test_end(self):
+        ensure(end.parse("en")).equals("e")
