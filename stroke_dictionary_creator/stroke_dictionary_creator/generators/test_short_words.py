@@ -13,7 +13,7 @@ class TestShortWords(unittest.TestCase):
         ensure(word_cv.parse("no")).equals("TPH-o")
 
     def test_word_vcv(self):
-        ensure(word_vcv.parse("aha")).equals("AHa")
+        ensure(word_vcv.parse("aha")).equals("AH")
 
     def test_word_cvv(self):
         ensure(word_cvv.parse("joo")).equals("SKVROo")
@@ -26,7 +26,7 @@ class TestShortWords(unittest.TestCase):
         ensure(word_v_end_diphtong.parse("oja")).equals("Oia")
 
     def test_word_cvcv(self):
-        ensure(word_cvcv.parse("tina")).equals("TINa")
+        ensure(word_cvcv.parse("tina")).equals("TIN")
 
     def test_word_vccv(self):
         ensure(word_vccv.parse("onko")).equals("ONKo")
@@ -37,6 +37,6 @@ class TestShortWords(unittest.TestCase):
         ensure(word_vcvv.parse("äreä")).equals("ARea")
 
     def test_word_cvvccv(self):
-        ensure(word_cvvccv.parse("paikka")).equals("PAINKHa")
+        ensure(word_cvvccv.parse("paikka")).equals("PAINKH")
         ensure(word_cvvccv.parse("paikkoja")).equals("PAINKHoia")
         ensure(word_cvvccv.parse("seittiä")).equals("SEISTRia")

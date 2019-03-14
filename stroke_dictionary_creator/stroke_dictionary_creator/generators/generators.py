@@ -26,10 +26,11 @@ end_vowel_e = morpheme("e", "e")
 end_vowel_o = morpheme("o", "o")
 end_vowel_ö = morpheme("ö", "o")
 end_vowel_i = morpheme("i", "i")
-end_vowel_a = morpheme("a", "a")
-end_vowel_ä = morpheme("ä", "a")
 end_vowel_u = morpheme("u", "eo")
 end_vowel_y = morpheme("y", "eo")
+# shortcuts for words that end in "a" or "ä"
+end_vowel_a = morpheme("a", "")
+end_vowel_ä = morpheme("ä", "")
 
 end_vowel = end_vowel_e | end_vowel_o | end_vowel_ö | end_vowel_u \
             | end_vowel_y | end_vowel_i | end_vowel_a | end_vowel_ä
@@ -93,16 +94,18 @@ end_diphtong_öä = morpheme("öä", "oa")
 end_diphtong_ja = morpheme("ja", "ia")
 end_diphtong_jä = morpheme("jä", "ia")
 
-# TODO possible risk of word conflict?
 end_diphtong_ia = morpheme("ia", "ia")
 end_diphtong_iä = morpheme("iä", "ia")
+end_diphtong_aa = morpheme("aa", "a") # shortcut
+end_diphtong_ää = morpheme("ää", "ä") # shortcut
 
 end_diphtong = alt(end_diphtong_ei, end_diphtong_eo, end_diphtong_eö,
                    end_diphtong_ea, end_diphtong_eä, end_diphtong_ui,
                    end_diphtong_yi, end_diphtong_ua, end_diphtong_yä,
                    end_diphtong_oi, end_diphtong_öi, end_diphtong_oa,
                    end_diphtong_öä, end_diphtong_ja, end_diphtong_jä,
-                   end_diphtong_ia, end_diphtong_iä)
+                   end_diphtong_ia, end_diphtong_iä, end_diphtong_aa,
+                   end_diphtong_ää)
 
 
 

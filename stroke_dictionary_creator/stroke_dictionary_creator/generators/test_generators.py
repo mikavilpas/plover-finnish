@@ -20,10 +20,11 @@ class TestGenerators(unittest.TestCase):
         ensure(end_vowel.parse("o")).equals("o")
         ensure(end_vowel.parse("ö")).equals("o")
         ensure(end_vowel.parse("i")).equals("i")
-        ensure(end_vowel.parse("a")).equals("a")
-        ensure(end_vowel.parse("ä")).equals("a")
         ensure(end_vowel.parse("u")).equals("eo")
         ensure(end_vowel.parse("y")).equals("eo")
+
+        ensure(end_vowel.parse("a")).equals("")
+        ensure(end_vowel.parse("ä")).equals("")
 
     def test_initial_consonant(self):
         ensure(initial_consonant.parse("g")).equals("TKPV")
@@ -107,10 +108,6 @@ class TestGenerators(unittest.TestCase):
         ensure(long_vowel.parse("ee")).equals("*E")
         ensure(long_vowel.parse("ii")).equals("*I")
 
-    def key_combinations(self, keys):
-        combinations = itertools.combinations(keys, 2)
-        return list(map(lambda c: "".join(c), combinations))
-
     def test_final_two_consonants(self):
         # try all combinations of 2 final consonants, and see that the stroke
         # parser is able to parse all combinations that final_two_consonants
@@ -125,6 +122,10 @@ class TestGenerators(unittest.TestCase):
                                                              comb.lower())
 
             ensure(stroke_parser_result).equals(final_two_consonants_result)
+
+    def key_combinations(self, keys):
+        combinations = itertools.combinations(keys, 2)
+        return list(map(lambda c: "".join(c), combinations))
 
     def parse_or_none(self, p, input_string):
         try:
@@ -142,7 +143,8 @@ class TestGenerators(unittest.TestCase):
         ensure(final_double_consonant.parse("tt")).equals("STR")
 
     def end_vocal_sound(self):
-        ensure(end_vocal_sound.parse("a")).equals("a")
+        ensure(end_vocal_sound.parse("a")).equals("")
+        ensure(end_vocal_sound.parse("ä")).equals("")
         ensure(end_vocal_sound.parse("ei")).equals("ei")
         ensure(end_vocal_sound.parse("ijä")).equals("eia")
         ensure(end_vocal_sound.parse("iä")).equals("ia")
