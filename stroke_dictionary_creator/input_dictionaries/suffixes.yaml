@@ -64,7 +64,7 @@
 # https://fi.wikipedia.org/wiki/Liitepartikkeli
 "{:suffix_in_same_vowel_harmony_group:kö}" : -Ko
 "{:suffix_in_same_vowel_harmony_group:kä}" : -Ka
-"{^kin}" : KIN
+"{^kin}" : K-
 "{:suffix_in_same_vowel_harmony_group:kään}": KA*N
 "{:suffix_in_same_vowel_harmony_group:pä}": P-a
 "{:suffix_in_same_vowel_harmony_group:hän}": H-N

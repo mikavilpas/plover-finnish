@@ -24,7 +24,8 @@ def assert_no_duplicate_keys_used(word, stroke):
         raise Exception(msg, e)
 
 def assert_dictionary_valid(dictionary):
-    for word, stroke in dictionary.items():
-        assert_stroke_writable(word, stroke)
+    for word, strokes in dictionary.items():
+        for stroke in strokes.split("/"):
+            assert_stroke_writable(word, stroke)
         assert_no_duplicate_keys_used(word, stroke)
     return dictionary
