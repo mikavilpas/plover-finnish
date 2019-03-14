@@ -97,7 +97,7 @@ end_diphtong_jä = morpheme("jä", "ia")
 end_diphtong_ia = morpheme("ia", "ia")
 end_diphtong_iä = morpheme("iä", "ia")
 end_diphtong_aa = morpheme("aa", "a") # shortcut
-end_diphtong_ää = morpheme("ää", "ä") # shortcut
+end_diphtong_ää = morpheme("ää", "a") # shortcut
 
 end_diphtong = alt(end_diphtong_ei, end_diphtong_eo, end_diphtong_eö,
                    end_diphtong_ea, end_diphtong_eä, end_diphtong_ui,

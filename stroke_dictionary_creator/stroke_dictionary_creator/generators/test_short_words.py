@@ -40,3 +40,6 @@ class TestShortWords(unittest.TestCase):
         ensure(word_cvvccv.parse("paikka")).equals("PAINKH")
         ensure(word_cvvccv.parse("paikkoja")).equals("PAINKHoia")
         ensure(word_cvvccv.parse("seittiä")).equals("SEISTRia")
+
+    def test_short_word(self):
+        ensure(short_word.parse("hämää")).equals("HASHa")
