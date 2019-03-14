@@ -1,5 +1,6 @@
 from parsy import *
 from operator import concat
+from .roots.tokens import character, number
 
 compound_word_separator = string("=")
 
@@ -7,7 +8,7 @@ compound_word_separator = string("=")
 # the Swedish word "berg". This holds no meaning in Finnish, so this is best
 # ignored.
 empty_char = char_from("|").result("")
-word_char =   letter | whitespace | digit | char_from(".,-_'") \
+word_char  =  letter | whitespace | digit | char_from(".,-_'") \
             | compound_word_separator | empty_char
 
 # the classes require a specific format in Finnish that must be honored
@@ -34,8 +35,13 @@ word_class = noun | adjective | verb | pronoun | class_with_no_inflection
 def word_and_class():
     word = yield word_char.at_least(1).concat()
     yield string(";")
-    klass = yield word_class
-    yield string("-")
-    reference_word = yield word_char.at_least(1).concat()
 
-    return [word, klass + "-" + reference_word]
+    klass = yield word_class
+
+    yield string("-")
+    reference_word = yield character.at_least(1).concat()
+
+    yield string("-av").optional()
+    gradation_class = (yield number.optional()) or ""
+
+    return [word, klass, reference_word, "av" + gradation_class or ""]
