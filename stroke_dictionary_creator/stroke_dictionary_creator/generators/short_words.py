@@ -34,9 +34,3 @@ short_word = word_cvvccv | word_nainen | word_vcvv | word_vvcv | word_cvcv |\
              word_vccv | word_cvc | \
              word_cvv | word_vcv | word_v_end_diphtong | \
              word_cv | word_vc | word_vv
-
-def safe_parse_short_word(word):
-    try:
-        return short_word.parse(word)
-    except ParseError:
-        pass

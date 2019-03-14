@@ -1,5 +1,5 @@
 import sys
-import generators.short_words as sw
+from generators.all_words import all_words
 from toolz import functoolz
 from toolz import itertoolz
 import inflection.inflection_service as infl
@@ -8,6 +8,7 @@ import math
 from multiprocessing import Pool
 import collections
 from termcolor import cprint
+from parsy import ParseError
 
 sys.path.append("../../word-analyser/")
 import word_analyser.tools as tools
@@ -25,7 +26,13 @@ def inflected_forms(word):
         return []
 
 def strokefy(inflection_forms):
-    return [[w, sw.safe_parse_short_word(w)]
+    def parse(w):
+        try:
+            return all_words.parse(w)
+        except ParseError:
+            pass
+
+    return [[w, parse(w)]
             for w in inflection_forms]
 
 def flatten_dictify_matched(subprocess_data):
