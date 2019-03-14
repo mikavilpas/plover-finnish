@@ -7,6 +7,7 @@ from operator import concat
 import math
 from multiprocessing import Pool
 import collections
+from termcolor import cprint
 
 sys.path.append("../../word-analyser/")
 import word_analyser.tools as tools
@@ -20,7 +21,7 @@ def inflected_forms(word):
         inflection_forms = infl.inflected_forms(word)
         return inflection_forms
     except Exception as e:
-        print("Error with word %s: %s" % (word, e))
+        cprint("Error with word %s: %s" % (word, e), "blue")
         return []
 
 def strokefy(inflection_forms):
