@@ -11,15 +11,14 @@ empty_char = char_from("|").result("")
 word_char  =  letter | whitespace | digit | char_from(".,-_'") \
             | compound_word_separator | empty_char
 
-# the classes require a specific format in Finnish that must be honored
-noun      = string("noun").result("subst")
-adjective = string("adjective").result("subst") # some forms are handled as nouns in the inflector
-verb      = string("verb").result("verbi")
+noun      = string("noun")
+adjective = string("adjective")
+verb      = string("verb")
 
-pronoun_fst   = string("pnoun_firstname").result("subst")
-pronoun_lst   = string("pnoun_lastname").result("subst")
-pronoun_misc  = string("pnoun_misc").result("subst")
-pronoun_place = string("pnoun_place").result("subst")
+pronoun_fst   = string("pnoun_firstname")
+pronoun_lst   = string("pnoun_lastname")
+pronoun_misc  = string("pnoun_misc")
+pronoun_place = string("pnoun_place")
 
 pronoun = pronoun_fst | pronoun_lst | pronoun_misc | pronoun_place
 
@@ -42,6 +41,7 @@ def word_and_class():
     reference_word = yield character.at_least(1).concat()
 
     yield string("-av").optional()
-    gradation_class = (yield number.optional()) or ""
+    gradation_number = (yield number.optional())
+    gradation_class  = "av" + gradation_number if gradation_number else None
 
-    return [word, klass, reference_word, "av" + gradation_class or ""]
+    return [word, klass, reference_word, gradation_class]
