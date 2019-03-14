@@ -15,8 +15,13 @@ def inflected_forms(word):
     """Retuns all the inflected forms of the given word as a set, such as for the
     word vuoto;noun-valo-av1
     """
-    inflection_forms = infl.inflected_forms(word)
-    return inflection_forms
+    try:
+
+        inflection_forms = infl.inflected_forms(word)
+        return inflection_forms
+    except Exception as e:
+        print("Error with word %s: %s" % (word, e))
+        return []
 
 def strokefy(inflection_forms):
     return [[w, sw.safe_parse_short_word(w)]

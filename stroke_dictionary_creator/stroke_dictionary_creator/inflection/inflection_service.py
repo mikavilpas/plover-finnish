@@ -16,7 +16,7 @@ def inflected_forms(word_info):
         return _flatten([], results)
 
     else:
-        print("Warning: cannot inflect %s" % word_info)
+        # print("Warning: cannot inflect %s" % word_info)
         return [word]
 
 def _flatten(results, named_tuple) -> [str]:
