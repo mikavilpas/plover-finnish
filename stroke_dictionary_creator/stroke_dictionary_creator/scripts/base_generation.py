@@ -1,4 +1,5 @@
 import sys
+from create_dictionary import load_file_as_yaml
 from generators.all_words import all_words
 from toolz import functoolz
 from toolz import itertoolz
@@ -9,6 +10,8 @@ from multiprocessing import Pool
 import collections
 from termcolor import cprint
 from parsy import ParseError
+from glob import glob
+import os
 
 sys.path.append("../../word-analyser/")
 import word_analyser.tools as tools
@@ -53,13 +56,36 @@ def chunkify(n, sequence):
     lazy_chunks = itertoolz.partition_all(chunk_length, sequence)
     return lazy_chunks
 
-def wordlist_chunks(cores):
+def combine(dictionaries):
+    combined = {}
+    for d in dictionaries:
+        combined.update(d)
+    return combined
+
+# python create_double_strokes.py  5453,43s user 7,19s system 550% cpu 16:31,25 total
+def ignored_words(target_file, existing_files):
+    def not_my_file(f):
+        name = os.path.basename(f)
+        print(name, os.path.basename(target_file))
+        return name != os.path.basename(target_file)
+
+    others = [f for f in existing_files if not_my_file(f)]
+    d = combine(map(load_file_as_yaml, others))
+    return set(d.keys())
+
+def wordlist_chunks(cores, target_file_name):
+    # To speed up generation of words, ignore all words that are present in the
+    # already existing dictionaries
+    ignore_words = ignored_words(target_file_name,
+                                 glob("../input_dictionaries/*.yaml"))
+    print("Ignoring %s already created words." % (len(ignore_words)))
+
     words_raw = tools.get_finnish_wordlist()
+
     print("Loaded {} Finnish language words and abbreviations.".format(len(words_raw)))
 
-    cores = cores # I have 8 processor cores
     # Let each core process an ~equal amount of work
     chunks = list(chunkify(n = cores, sequence = words_raw))
     print("Processing all words on {} cores with {} words per core".format(
         cores, len(chunks[0])))
-    return chunks
+    return (chunks, ignore_words)

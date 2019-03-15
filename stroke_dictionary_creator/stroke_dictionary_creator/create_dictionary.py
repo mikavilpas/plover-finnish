@@ -48,7 +48,6 @@ def load_file_as_yaml(filepath):
         return d
 
 def load_dictionaries_from_path(path):
-    yaml = YAML()
     yaml_file_paths = glob.glob("../input_dictionaries/*.yaml")
 
     return map(load_file_as_yaml, yaml_file_paths)
