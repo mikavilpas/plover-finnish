@@ -71,10 +71,25 @@ middle_diphtong_ye = morpheme("ye", "AOE")
 middle_diphtong_ui = morpheme("ui", "AOI")
 middle_diphtong_yi = morpheme("yi", "AOI")
 middle_diphtong_ei = morpheme("ei", "EI")
+# reversed with "*"
+middle_diphtong_ea = morpheme("ea", "A*E")
+middle_diphtong_eä = morpheme("eä", "A*E")
+middle_diphtong_ia = morpheme("ia", "A*I")
+middle_diphtong_iä = morpheme("iä", "A*I")
+middle_diphtong_eu = morpheme("eu", "AO*E")
+middle_diphtong_ey = morpheme("ey", "AO*E")
+middle_diphtong_iu = morpheme("iu", "AO*I")
+middle_diphtong_iy = morpheme("iy", "AO*I")
+middle_diphtong_ie = morpheme("ie", "*EI")
 
 middle_diphtong =   middle_diphtong_ae | middle_diphtong_äe | middle_diphtong_ai \
                   | middle_diphtong_äi | middle_diphtong_ue | middle_diphtong_ye \
-                  | middle_diphtong_yi | middle_diphtong_ui | middle_diphtong_ei
+                  | middle_diphtong_yi | middle_diphtong_ui | middle_diphtong_ei \
+                  | middle_diphtong_ea | middle_diphtong_eä \
+                  | middle_diphtong_ia | middle_diphtong_iä \
+                  | middle_diphtong_eu | middle_diphtong_ey \
+                  | middle_diphtong_iu | middle_diphtong_iy \
+                  | middle_diphtong_ie
 
 
 

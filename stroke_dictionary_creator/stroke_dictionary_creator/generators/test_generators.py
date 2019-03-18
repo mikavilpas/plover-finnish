@@ -56,6 +56,20 @@ class TestGenerators(unittest.TestCase):
         ensure(middle_diphtong.parse("yi")).equals("AOI")
         ensure(middle_diphtong.parse("ei")).equals("EI")
 
+        ensure(middle_diphtong.parse("ea")).equals("A*E")
+        ensure(middle_diphtong.parse("eä")).equals("A*E")
+
+        ensure(middle_diphtong.parse("ia")).equals("A*I")
+        ensure(middle_diphtong.parse("iä")).equals("A*I")
+
+        ensure(middle_diphtong.parse("eu")).equals("AO*E")
+        ensure(middle_diphtong.parse("ey")).equals("AO*E")
+
+        ensure(middle_diphtong.parse("iu")).equals("AO*I")
+        ensure(middle_diphtong.parse("iy")).equals("AO*I")
+
+        ensure(middle_diphtong.parse("ie")).equals("*EI")
+
     def test_end_diphtong(self):
         ensure(end_diphtong.parse("ei")).equals("ei")
         ensure(end_diphtong.parse("eo")).equals("eo")
