@@ -42,7 +42,7 @@ def combine(dictionaries):
 
 def load_file_as_yaml(filepath):
     with open(filepath) as f:
-        d = YAML().load(f)
+        d = YAML(typ="safe", pure=True).load(f)
         name = os.path.basename(filepath)
         print("Loaded %s with %s strokes." % (name, len(d)))
         return d
