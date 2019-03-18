@@ -272,6 +272,7 @@
 - duunia: TKAO*Nia
 - duuri: TKAO*Ri
 - duuria: TKAO*Ria
+- dvi: TK-SRi
 - dyykkaa: TKAO*NKHa
 - dyyni: TKAO*Ni
 - dyyniä: TKAO*Nia
@@ -845,6 +846,7 @@
 - hosui: HOSeoi
 - hovi: HOSRi
 - hovia: HOSRia
+- hra: H-R
 - huh: HAOH
 - huhta: HAOHT
 - huhtaa: HAOHTa
@@ -1726,6 +1728,7 @@
 - keveä: KESRea
 - keyri: KAO*ERi
 - keyriä: KAO*ERia
+- khoi: K-Hoi
 - kiehtoa: K*EIHToa
 - kiehtoi: K*EIHToi
 - kiehu: K*EIHeo
@@ -3462,6 +3465,7 @@
 - mitta: PHISTR
 - mittaa: PHISTRa
 - mittoja: PHISTRoia
+- mma: PH-SH
 - moa: PHO
 - moaa: PHOa
 - moi: PHOi
@@ -3968,6 +3972,9 @@
 - nova: TPHOSR
 - novaa: TPHOSRa
 - novia: TPHOSRia
+- nro: TPH-Ro
+- nroa: TPH-Roa
+- nroja: TPH-Roia
 - nuha: TPHAOH
 - nuhaa: TPHAOHa
 - nuhia: TPHAOHia
@@ -4491,6 +4498,8 @@
 - peura: PAO*ER
 - peuraa: PAO*ERa
 - peuroja: PAO*ERoia
+- phui: P-Heoi
+- phyi: P-Heoi
 - piakka: PA*INKH
 - piakkaa: PA*INKHa
 - piakkoja: PA*INKHoia
@@ -4686,6 +4695,7 @@
 - pivo: PISRo
 - pivoa: PISRoa
 - pivoja: PISRoia
+- pnä: P-N
 - pohja: POHia
 - pohti: POHTi
 - pohtia: POHTia
@@ -4753,6 +4763,7 @@
 - poven: POSRe
 - povi: POSRi
 - povia: POSRia
+- pro: P-Ro
 - pue: PAOe
 - puemme: PAOEKSHe
 - puen: PAOe
@@ -4906,6 +4917,7 @@
 - puutu: PAO*Teo
 - puutua: PAO*Teoa
 - puutui: PAO*Teoi
+- pvä: P-SR
 - pyhiä: PAOHia
 - pyhä: PAOH
 - pyhää: PAOHa
@@ -5568,6 +5580,7 @@
 - ruuvi: RAO*SRi
 - ruuvia: RAO*SRia
 - ruven: RAOSRe
+- rva: R-SR
 - ry: R-eo
 - ryhti: RAOHTi
 - ryhtiä: RAOHTia
@@ -6785,6 +6798,7 @@
 - tiukua: TAO*IKeoa
 - tiukuja: TAO*IKeoia
 - tivaa: TISRa
+- tmi: T-SHi
 - tohti: TOHTi
 - tohtia: TOHTia
 - toi: TOi
@@ -6849,6 +6863,8 @@
 - totu: TOTeo
 - tovi: TOSRi
 - tovia: TOSRia
+- tri: T-Ri
+- tse: T-Se
 - tue: TAOe
 - tueksi: TAOEKSi
 - tuemme: TAOEKSHe
