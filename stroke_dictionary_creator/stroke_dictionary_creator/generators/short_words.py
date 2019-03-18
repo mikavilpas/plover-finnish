@@ -29,8 +29,12 @@ word_cvvccv = initial_consonant \
               + final_two_consonants \
               + end
 
+word_no_middle = initial_consonant + no_middle_key \
+                 + (final_consonant | final_two_consonants) \
+                 + end
+
 # short_word_2 = word_vv
 short_word = word_cvvccv | word_nainen | word_vcvv | word_vvcv | word_cvcv |\
              word_vccv | word_cvc | \
              word_cvv | word_vcv | word_v_end_diphtong | \
-             word_cv | word_vc | word_vv
+             word_cv | word_vc | word_vv | word_no_middle
