@@ -16,8 +16,8 @@ def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
                   indent = 2,
                   sort_keys = False)
 
-def reverse_keys_and_values(dictionaries):
-    return {v: k for k, v in dictionaries.items()}
+def reverse_keys_and_values(d):
+    return {v: k for k, v in d.items()}
 
 def warn_about_conflicts(new_dict, target_dict):
     new_strokes = set(new_dict.values())
@@ -42,7 +42,7 @@ def combine(dictionaries):
 
 def load_file_as_yaml(filepath):
     with open(filepath) as f:
-        d = YAML(typ="safe").load(f)
+        d = YAML().load(f)
         name = os.path.basename(filepath)
         print("Loaded %s with %s strokes." % (name, len(d)))
         return d
