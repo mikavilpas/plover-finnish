@@ -25,7 +25,7 @@ suffix = string_from(
     "n", "t", "a,", "ä",
 ).result(None)
 
-second_chord      = suffix << letter.should_fail("end of word") | short_word
+second_chord      = suffix << any_char.should_fail("end of word") | short_word
 stroke_and_suffix = seq(short_word, second_chord)
 
 def two_strokes(word):
