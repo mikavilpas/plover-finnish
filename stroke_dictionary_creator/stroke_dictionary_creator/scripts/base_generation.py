@@ -1,6 +1,5 @@
 import sys
 from create_dictionary import load_file_as_yaml
-from generators.all_words import all_words
 from toolz import functoolz
 from toolz import itertoolz
 import inflection.inflection_service as infl
