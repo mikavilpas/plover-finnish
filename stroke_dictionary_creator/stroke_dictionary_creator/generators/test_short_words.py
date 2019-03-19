@@ -3,49 +3,27 @@ from ensure import ensure
 from stroke_dictionary_creator.generators.short_words import *
 
 class TestShortWords(unittest.TestCase):
-    def test_word_vv(self):
-        ensure(word_vv.parse("ai")).equals("Ai")
-
-    def test_word_vc(self):
-        ensure(word_vc.parse("on")).equals("ON")
-
-    def test_word_cv(self):
-        ensure(word_cv.parse("no")).equals("TPH-o")
-
-    def test_word_vcv(self):
-        ensure(word_vcv.parse("aha")).equals("AH")
-
-    def test_word_cvv(self):
-        ensure(word_cvv.parse("joo")).equals("SKVROo")
-
-    def test_word_cvc(self):
-        ensure(word_cvc.parse("hah")).equals("HAH")
-        ensure(word_cvc.parse("höh")).equals("HOH")
-
-    def test_word_v_end_diphtong(self):
-        ensure(word_v_end_diphtong.parse("oja")).equals("Oia")
-
-    def test_word_cvcv(self):
-        ensure(word_cvcv.parse("tina")).equals("TIN")
-
-    def test_word_vccv(self):
-        ensure(word_vccv.parse("onko")).equals("ONKo")
-        ensure(word_vccv.parse("ukko")).equals("AONKHo")
-        ensure(word_vccv.parse).called_with("ahma").raises(Exception)
-
-    def test_word_vcvv(self):
-        ensure(word_vcvv.parse("äreä")).equals("ARea")
-
-    def test_word_cvvccv(self):
-        ensure(word_cvvccv.parse("paikka")).equals("PAINKH")
-        ensure(word_cvvccv.parse("paikkoja")).equals("PAINKHoia")
-        ensure(word_cvvccv.parse("seittiä")).equals("SEISTRia")
-
     def test_short_word(self):
+        ensure(short_word.parse("ai")).equals("AI")
+        ensure(short_word.parse("on")).equals("ON")
+        ensure(short_word.parse("no")).equals("TPHO")
+        ensure(short_word.parse("aha")).equals("AH")
+        ensure(short_word.parse("joo")).equals("SKVRO*")
+        ensure(short_word.parse("hah")).equals("HAH")
+        ensure(short_word.parse("höh")).equals("HOH")
+        ensure(short_word.parse("tina")).equals("TIN")
+        ensure(short_word.parse("onko")).equals("ONKo")
+        ensure(short_word.parse("ukko")).equals("AONKHo")
+        ensure(short_word.parse("äreä")).equals("ARea")
+        ensure(short_word.parse("paikka")).equals("PAINKH")
+        ensure(short_word.parse("paikkoja")).equals("PAINKHoia")
+        ensure(short_word.parse("seittiä")).equals("SEISTRia")
         ensure(short_word.parse("hämää")).equals("HASHa")
         ensure(short_word.parse("nainen")).equals("TPHAINe")
         ensure(short_word.parse("paimen")).equals("PAISHe")
         ensure(short_word.parse("ksen")).equals("K-Se")
+        ensure(short_word.parse("oja")).equals("Oia")
+        ensure(short_word.parse("kuja")).equals("KAOia")
 
     def test_end(self):
-        ensure(end.parse("en")).equals("e")
+        ensure(v.parse("en")).equals("e")
