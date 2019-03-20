@@ -28,18 +28,18 @@ def inflected_forms(word):
         return []
 
 def flatten_dictify_matched(subprocess_data):
-    def stroke_found(w, s):
-        if type(s) is list:
-            return w and s and None not in s
-        else:
-            return w and s
+    def stroke_found(result):
+        try:
+            return None not in result
+        except TypeError:
+            pass
 
-    found_strokes = {w: s
+    found_strokes = {word_and_stroke[0]: word_and_stroke[1]
                      for words_and_strokes in subprocess_data
                      # each inflected form has its own stroke here
                      for inflections_and_strokes in words_and_strokes
-                     for w,s in inflections_and_strokes
-                     if stroke_found(w, s)}
+                     for word_and_stroke in inflections_and_strokes
+                     if stroke_found(word_and_stroke)}
 
     # Force the words to always be in the same order. Otherwise git diffs will
     # be inconsistent.

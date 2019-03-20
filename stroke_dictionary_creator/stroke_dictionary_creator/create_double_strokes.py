@@ -23,8 +23,6 @@ def create_strokes_for_words(words_raw, ignore_words):
                                     (map, inflected_forms),
                                     (map, lambda words: strokefy(words,
                                                                  ignore_words)),
-                                    # strokefying can fail, so let's weed out failures
-                                    (filter, lambda a: None not in a),
                                     # realize the lazy sequence
                                     list)
     print("Processed {} strokes.".format(len(words_raw)))

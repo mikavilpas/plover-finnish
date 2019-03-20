@@ -7,6 +7,8 @@ from functools import reduce
 from operator import ior
 
 def join_strokes(*strokes):
+    strokes = [s for s in strokes
+               if s != "-"]
     return "/".join(strokes)
 
 #
