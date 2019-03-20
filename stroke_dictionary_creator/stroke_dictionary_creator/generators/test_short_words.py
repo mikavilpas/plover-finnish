@@ -21,9 +21,11 @@ class TestShortWords(unittest.TestCase):
         ensure(short_word.parse("hämää")).equals("HASHa")
         ensure(short_word.parse("nainen")).equals("TPHAINe")
         ensure(short_word.parse("paimen")).equals("PAISHe")
-        ensure(short_word.parse("ksen")).equals("K-Se")
         ensure(short_word.parse("oja")).equals("Oia")
         ensure(short_word.parse("kuja")).equals("KAOia")
+        ensure(short_word.parse("aattoja")).equals("A*STRoia")
+
+        ensure(short_word.parse("")).equals("")
 
     def test_end(self):
         ensure(v.parse("en")).equals("e")

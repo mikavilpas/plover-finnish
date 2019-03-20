@@ -15,6 +15,7 @@ e = (final_two_consonants | final_consonant)               .desc("end consonant 
 v = (end_EN_ending | end_vocal_sound | no_end_vocal_sound) .desc("end vocal part")
 
 def join(*items):
+    if items == ["-"]: return ""
     return "".join([w for w in items if w])
 
 short_word = seq(s.optional(),
