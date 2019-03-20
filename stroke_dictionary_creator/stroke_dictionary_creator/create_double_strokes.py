@@ -14,7 +14,8 @@ def strokefy(inflection_forms, ignore_words):
         except ParseError:
             pass
 
-    return [parse(w) for w in inflection_forms
+    return [parse(w)
+            for w in inflection_forms
             if w not in ignore_words]
 
 def create_strokes_for_words(words_raw, ignore_words):
@@ -22,6 +23,8 @@ def create_strokes_for_words(words_raw, ignore_words):
                                     (map, inflected_forms),
                                     (map, lambda words: strokefy(words,
                                                                  ignore_words)),
+                                    # strokefying can fail, so let's weed out failures
+                                    (filter, lambda a: None not in a),
                                     # realize the lazy sequence
                                     list)
     print("Processed {} strokes.".format(len(words_raw)))
@@ -32,8 +35,6 @@ def main():
 
     with Pool(cores) as pool:
         # "map" step
-        def do_create(words):
-            return create_strokes_for_words(words, ignore_words)
         do_create = partial(create_strokes_for_words, ignore_words = ignore_words)
 
         strokes = pool.map(do_create, chunks)

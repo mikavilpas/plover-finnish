@@ -8,5 +8,5 @@ class TestTwoStrokeWords(unittest.TestCase):
         ensure(two_strokes("hiatuksen")).equals(["hiatuksen", "HA*ITeo/K-Se"])
 
     def test_with_suffix(self):
-        ensure(two_strokes("kokon")).equals(["kokon", "KOKo"])
-        ensure(two_strokes("aamuiksi")).equals(["aamuiksi", "A*SHeoi"])
+        ensure(two_strokes("kokon")).equals(["koko", "KOKo"])
+        ensure(two_strokes("aamuiksi")).equals(["aamui", "A*SHeoi"])

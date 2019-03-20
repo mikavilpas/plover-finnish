@@ -28,7 +28,11 @@ def inflected_forms(word):
         return []
 
 def flatten_dictify_matched(subprocess_data):
-    stroke_found = lambda w, s: s is not None and w is not None
+    def stroke_found(w, s):
+        if type(s) is list:
+            return w and s and None not in s
+        else:
+            return w and s
 
     found_strokes = {w: s
                      for words_and_strokes in subprocess_data
