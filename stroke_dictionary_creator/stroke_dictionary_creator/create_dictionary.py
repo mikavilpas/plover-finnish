@@ -28,8 +28,11 @@ def warn_about_conflicts(new_dict, target_dict):
     for stroke in conflicting_strokes:
         new_words = [w for w, s in new_dict.items() if s == stroke]
         target_words = [w for w, s in target_dict.items() if s == stroke]
-        print("Warning: multiple words defined for the stroke {}".format(stroke))
-        print(list(set(new_words + target_words)))
+        words = list(set(new_words + target_words))
+
+        if len(words) > 1: # don't warn in case the strokes are exactly the same
+            print("Warning: multiple words defined for the stroke {}".format(stroke))
+            print(words)
 
 def combine(dictionaries):
     # in case of conflicting_strokes, keeps the values specified earlier in the order of

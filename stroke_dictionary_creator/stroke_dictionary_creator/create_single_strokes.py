@@ -11,7 +11,7 @@ def create_strokes_for_words(words_raw, ignore_words):
     def strokefy(inflection_forms):
         def parse(w):
             try:
-                return short_word.parse(w)
+                return short_word.parse(w.lower())
             except ParseError:
                 pass
 

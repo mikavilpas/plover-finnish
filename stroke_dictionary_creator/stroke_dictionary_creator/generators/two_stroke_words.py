@@ -48,4 +48,4 @@ def two_strokes(word):
         else:
             return [word, join_strokes(s1, s2)]
 
-    return two_strokes_parser.parse(word)
+    return two_strokes_parser.parse(word.lower())
