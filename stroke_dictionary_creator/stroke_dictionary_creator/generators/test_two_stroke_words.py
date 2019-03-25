@@ -1,6 +1,7 @@
 import unittest
 from ensure import ensure
-from .two_stroke_words import *
+from .two_stroke_words import two_strokes
+
 
 class TestTwoStrokeWords(unittest.TestCase):
     def test_two_strokes(self):
@@ -18,3 +19,5 @@ class TestTwoStrokeWords(unittest.TestCase):
         ensure(two_strokes("aatelistoja")).equals(["aatelistoja", "A*Te/HRISToia"])
 
         ensure(two_strokes("etenen")).equals(["etenen", "ETe/EN"])
+
+        ensure(two_strokes("sarana")).equals(["sara", "SAR"])
