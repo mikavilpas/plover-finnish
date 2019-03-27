@@ -23,7 +23,7 @@ def assert_no_duplicate_keys_used(word, stroke):
         msg = "Error with the word {} and its stroke {}".format(word, stroke)
         raise Exception(msg, e)
 
-def assert_dictionary_valid(dictionary):
+def assert_dictionary_valid(dictionary) -> dict:
     for word, strokes in dictionary.items():
         for stroke in strokes.split("/"):
             assert_stroke_writable(word, stroke)
