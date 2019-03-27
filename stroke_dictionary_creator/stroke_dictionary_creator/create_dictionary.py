@@ -50,7 +50,7 @@ def load_file_as_yaml(filepath):
     with open(filepath) as f:
         d = YAML(typ="safe", pure=True).load(f)
         name = os.path.basename(filepath)
-        print("Loaded %s with %s strokes." % (name, len(d)))
+        print("Loaded %s with %s entries." % (name, len(d)))
         return d
 
 def load_dictionaries_from_path(path):
