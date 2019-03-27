@@ -1860,3 +1860,1131 @@ AOKSHe:
 SAO*Re:
   - 'suure'
   - 'suuren'
+
+PHAOHTReo:
+  - 'murru'
+  - 'myrry'
+SA*NTo:
+  - 'sääntö'
+  - 'saanto'
+TERa:
+  - 'terää'
+  - 'teraa'
+KA*NKHi:
+  - 'kaakki'
+  - 'kääkki'
+PHOi:
+  - 'moi'
+  - 'möi'
+Oi:
+  - 'oi'
+  - 'öi'
+R*ESTR:
+  - 'reettä'
+  - 'Reetta'
+KA*Teoi:
+  - 'kaatui'
+  - 'käätyi'
+RASHRa:
+  - 'räppää'
+  - 'rappaa'
+REIN:
+  - 'rein'
+  - 'Rein'
+PA*Ri:
+  - 'paari'
+  - 'pääri'
+RANKHi:
+  - 'rakki'
+  - 'räkki'
+TPHAT:
+  - 'nat'
+  - 'nata'
+R*ISTR:
+  - 'riittä'
+  - 'Riitta'
+K*EINSTe:
+  - 'kiele'
+  - 'kielen'
+RAHR:
+  - 'räp'
+  - 'rapa'
+  - 'rap'
+ANSTa:
+  - 'alaa'
+  - 'älää'
+TAOTi:
+  - 'tuti'
+  - 'tyti'
+PHESTRe:
+  - 'metten'
+  - 'Mette'
+SANST:
+  - 'sala'
+  - 'sälä'
+KAR:
+  - 'kar'
+  - 'Kär'
+  - 'kara'
+  - 'kär'
+S*EINe:
+  - 'siene'
+  - 'sienen'
+PVINSHe:
+  - 'bisse'
+  - 'bissen'
+HRAHR:
+  - 'lapa'
+  - 'läpä'
+  - 'läp'
+  - 'lap'
+KASi:
+  - 'käsi'
+  - 'kasi'
+RAOTeo:
+  - 'ryty'
+  - 'rutu'
+TKA*IN:
+  - 'dian'
+  - 'Diana'
+  - 'diana'
+TAHRi:
+  - 'tahri'
+  - 'tapi'
+HAOHTRa:
+  - 'hurraa'
+  - 'hyrrää'
+TAIN:
+  - 'täin'
+  - 'Taina'
+  - 'täinä'
+VANSTeo:
+  - 'valu'
+  - 'väly'
+SA*N:
+  - 'saan'
+  - 'Saana'
+  - 'sään'
+  - 'säänä'
+SANKi:
+  - 'sänki'
+  - 'sanki'
+PANSHi:
+  - 'passi'
+  - 'pässi'
+H*IRe:
+  - 'hiire'
+  - 'hiiren'
+AKSHe:
+  - 'ammen'
+  - 'amme'
+HRAIKeo:
+  - 'läiky'
+  - 'laiku'
+SKVRASH:
+  - 'jama'
+  - 'jämä'
+INSTo:
+  - 'ilo'
+  - 'Ilo'
+PAH:
+  - 'pah'
+  - 'paha'
+SKVRAOHTRa:
+  - 'jyrrää'
+  - 'jurraa'
+ANSTi:
+  - 'ali'
+  - 'Ali'
+  - 'äli'
+AKSH:
+  - 'ämmä'
+  - 'Amma'
+RANSHa:
+  - 'rassaa'
+  - 'rässää'
+HRATeo:
+  - 'latu'
+  - 'läty'
+HAOHTR:
+  - 'hyrrä'
+  - 'hurra'
+PHAOo:
+  - 'myö'
+  - 'muo'
+  - 'myo'
+RIHR:
+  - 'rip'
+  - 'ripa'
+POKa:
+  - 'pokaa'
+  - 'pökää'
+RAOHRea:
+  - 'rupea'
+  - 'rypeä'
+HAK:
+  - 'haka'
+  - 'häkä'
+KAOTeo:
+  - 'kutu'
+  - 'kyty'
+TPHAHR:
+  - 'nap'
+  - 'napa'
+TAHTo:
+  - 'tahto'
+  - 'tähtö'
+HRAO*R:
+  - 'luura' # "luurata" root
+  - 'lyyra'
+TAO*HRi:
+  - 'tuupi'
+  - 'tyypi'
+SA*To:
+  - 'säätö'
+  - 'saato'
+HR*ISH:
+  - 'liima'
+  - 'Liima' # "Liimatta"
+TPHASHRa:
+  - 'nappaa'
+  - 'näppää'
+HAOSR:
+  - 'hyvä'
+  - 'hyvä hyvä' # added this because I anticipate it to come up commonly
+  - 'huva' # ???
+KAKi:
+  - 'käki'
+  - 'kaki'
+KANKSi:
+  - 'känni'
+  - 'kanni'
+OHRi:
+  - 'opi'
+  - 'ohri'
+TPHAKeoi:
+  - 'näkyi'
+  - 'nakui'
+PHA*STR:
+  - 'Määttä'
+  - 'maatta'
+SAOKe:
+  - 'syke'
+  - 'suke'
+PHANKS:
+  - 'manna'
+  - 'männä'
+KEHeo:
+  - 'kehu'
+  - 'kehy'
+RASTi:
+  - 'rasti'
+  - 'rästi'
+TAO*Ri:
+  - 'tuuri'
+  - 'tyyri'
+SA*KSe:
+  - 'sääkse'
+  - 'sääksen'
+SASHRi:
+  - 'säppi'
+  - 'sappi'
+TAOSHRi:
+  - 'typpi'
+  - 'tuppi'
+PAOSeo:
+  - 'pysy'
+  - 'pusu'
+PA*STo:
+  - 'päästö'
+  - 'paasto'
+TAOo:
+  - 'tuo'
+  - 'työ'
+SKVRAORa:
+  - 'jyrää'
+  - 'juraa'
+PHATi:
+  - 'mäti'
+  - 'mati'
+PHONT:
+  - 'monta'
+  - 'Monta'
+A*Ne:
+  - 'ääne'
+  - 'äänen'
+HAOSTReo:
+  - 'huttu'
+  - 'hytty'
+TPH*EISHe:
+  - 'nieme'
+  - 'niemen'
+SOi:
+  - 'soi'
+  - 'Soi'
+  - 'söi'
+HRASTi:
+  - 'lasti'
+  - 'lästi'
+TAONKH:
+  - 'tukka'
+  - 'tykkä'
+TKAO*Ni:
+  - 'duuni'
+  - 'dyyni'
+PAOKi:
+  - 'puki'
+  - 'pyki'
+SAO*NSTa:
+  - 'syylää'
+  - 'suulaa'
+VASTi:
+  - 'västi'
+  - 'vasti'
+HROHo:
+  - 'löhö'
+  - 'loho'
+V*IKSe:
+  - 'viikse'
+  - 'viiksen'
+RA*NKHi:
+  - 'rääkki'
+  - 'raakki'
+TAOHReo:
+  - 'typy'
+  - 'tuhru'
+POHRi:
+  - 'pöpi'
+  - 'popi'
+SEINe:
+  - 'seine'
+  - 'Seine'
+PAT:
+  - 'pät'
+  - 'pata'
+HR*EISHe:
+  - 'lieme'
+  - 'liemen'
+HRAHRi:
+  - 'läpi'
+  - 'lapi'
+R*ITe:
+  - 'riite'
+  - 'riiten'
+PAO*Hi:
+  - 'pyyhi'
+  - 'puuhi' # "puuhia,puuhilla" root
+VAOo:
+  - 'vuo'
+  - 'vyö'
+  - 'Vuo'
+KAIT:
+  - 'kait'
+  - 'kaita'
+ROSo:
+  - 'roso'
+  - 'rösö'
+K*INST:
+  - 'kiila'
+  - 'kiil' # ???
+RAISR:
+  - 'räivä'
+  - 'raiva'
+SKVRAOR:
+  - 'jyrä'
+  - 'jura'
+  - 'jyr'
+  - 'jur'
+PAOSeoi:
+  - 'pysyi'
+  - 'pusui'
+PET:
+  - 'petä'
+  - 'peta'
+  - 'pet' # "petasta" root, rare
+KAO*R:
+  - 'kuur'
+  - 'kuura'
+PHAOT:
+  - 'muta'
+  - 'mut' # ???, maybe an Etelä-Suomi dialect word?
+PHAOK:
+  - 'muka'
+  - 'mykä'
+PH*EIHe:
+  - 'miehe'
+  - 'miehen'
+KOHi:
+  - 'köhi'
+  - 'kohi'
+SKVRORo:
+  - 'jörö'
+  - 'joro'
+KER:
+  - 'ker'
+  - 'kerä'
+VAHa:
+  - 'vähää'
+  - 'vahaa'
+PHA*Re:
+  - 'määre'
+  - 'Maare'
+PHAO*Ri:
+  - 'muuri'
+  - 'myyri'
+RAO*SHReo:
+  - 'ryyppy'
+  - 'ruuppu'
+RAHi:
+  - 'rähi'
+  - 'rahi'
+TATi:
+  - 'täti'
+  - 'tati'
+PENKSeo:
+  - 'pennu'
+  - 'penny'
+S-SH:
+  - 'ssh' # abbreviation for ssh, the secure shell
+  - 'SM'  # abbreviation for suomenmestari
+  - 'SSH'
+HAO*Reo:
+  - 'hyyry'
+  - 'huuru'
+SINe:
+  - 'sine'
+  - 'sinen'
+SEISHe:
+  - 'seime'
+  - 'seimen'
+ANKea:
+  - 'ankea'
+  - 'änkeä'
+SANSTa:
+  - 'salaa'
+  - 'sälää'
+HRAO*Ra:
+  - 'luuraa'
+  - 'lyyraa'
+HRAHRe:
+  - 'lape'
+  - 'läpen'
+HASHi:
+  - 'hämi'
+  - 'Hami'
+  - 'hami'
+PHAR:
+  - 'mara'
+  - 'Mar'
+  - 'märä'
+  - 'mar'
+TAHR:
+  - 'tapa'
+  - 'tahra'
+  - 'tap'
+  - 'Tapa'
+V*INST:
+  - 'viila'
+  - 'viil' # ???
+SKVRASHa:
+  - 'jamaa'
+  - 'jämää'
+ANKHa:
+  - 'akkaa'
+  - 'äkkää'
+HAR:
+  - 'hara'
+  - 'härä'
+  - 'har' # ???
+HRISHe:
+  - 'lime'
+  - 'limen'
+KANSH:
+  - 'kassa'
+  - 'kässä'
+KANKSeo:
+  - 'kannu'
+  - 'känny'
+VANKi:
+  - 'vanki'
+  - 'vänki'
+KASHRa:
+  - 'käppää'
+  - 'kappaa'
+TPHAKi:
+  - 'näki'
+  - 'naki'
+HA*SRi:
+  - 'häävi'
+  - 'haavi'
+SKVRAOSHi:
+  - 'jumi'
+  - 'jymi'
+RAO*Ni:
+  - 'ryyni'
+  - 'ruuni'
+PETeo:
+  - 'pety'
+  - 'petu'
+HRAONKHi:
+  - 'lukki'
+  - 'lykki'
+TONKH:
+  - 'tökkä'
+  - 'tokka'
+TAONKHi:
+  - 'tukki'
+  - 'tykki'
+PHOKa:
+  - 'mokaa'
+  - 'mökää'
+ASe:
+  - 'ase'
+  - 'asen'
+KAOSHe:
+  - 'kyme'
+  - 'kymen'
+HRASTR:
+  - 'lättä'
+  - 'latta'
+VENSTe:
+  - 'vele'
+  - 'velen'
+KANSHa:
+  - 'kassaa'
+  - 'kässää'
+HRAO*Ri:
+  - 'luuri'
+  - 'lyyri'
+VAINKHeoi:
+  - 'väikkyi'
+  - 'vaikkui'
+HAKa:
+  - 'häkää'
+  - 'hakaa'
+KAO*SHe:
+  - 'kuume'
+  - 'kuumen'
+SAOSTReoi:
+  - 'suttui'
+  - 'syttyi'
+TIHReo:
+  - 'tipu'
+  - 'tihru'
+ANi:
+  - 'ani'
+  - 'Ani'
+A*Ri:
+  - 'ääri'
+  - 'aari'
+TONKHa:
+  - 'tökkää'
+  - 'tokkaa'
+TAOKi:
+  - 'tuki'
+  - 'tyki'
+HAKi:
+  - 'haki'
+  - 'häki'
+KAHReo:
+  - 'käpy'
+  - 'kapu'
+TPHAOSHRi:
+  - 'nuppi'
+  - 'nyppi'
+HRAO*:
+  - 'luu'
+  - 'Lyy'
+KAOKi:
+  - 'kuki' # "kukin" root
+  - 'kyki'
+TORi:
+  - 'tori'
+  - 'töri'
+TPH*INe:
+  - 'niine'
+  - 'niinen'
+PESTa:
+  - 'pestää'
+  - 'pestaa'
+KAONSTi:
+  - 'kyli'
+  - 'kuli'
+HR*EITe:
+  - 'liete'
+  - 'lieten'
+R*ET:
+  - 'reet'
+  - 'Reeta'
+SKVRAOReo:
+  - 'jyry'
+  - 'jury'
+P-S:
+  - 'ps'
+  - 'PS'
+R*IHe:
+  - 'riihe'
+  - 'riihen'
+TAO*SHRi:
+  - 'tyyppi'
+  - 'tuuppi'
+KAO*NST:
+  - 'kuula'
+  - 'kuul'
+  - 'kyylä'
+'*IN':
+  - 'Iina'
+  - 'iin'
+SAO*Ria:
+  - 'suuria'
+  - 'Syyria'
+PER:
+  - 'per'
+  - 'perä'
+KOKSHi:
+  - 'kömmi'
+  - 'kommi'
+POHTRe:
+  - 'pörre'
+  - 'pörren'
+KAO*Ri:
+  - 'kuuri'
+  - 'kyyri'
+TOKi:
+  - 'toki'
+  - 'töki'
+HRONTi:
+  - 'lonti'
+  - 'lönti'
+SAONSTi:
+  - 'syli'
+  - 'Suli'
+  - 'suli'
+T*INSTe:
+  - 'tiile'
+  - 'tiilen'
+TAONKi:
+  - 'tunki'
+  - 'tynki'
+SOR:
+  - 'sora'
+  - 'sor' # ???
+HRAOSeo:
+  - 'lyseo'
+  - 'lysy'
+TONKHi:
+  - 'tökki'
+  - 'tokki'
+PHAT:
+  - 'mätä'
+  - 'mat'
+  - 'mata'
+TAOKSHi:
+  - 'tymmi'
+  - 'tummi'
+RAH:
+  - 'rah'
+  - 'raha'
+SA*Teo:
+  - 'saatu'
+  - 'sääty'
+VA*R:
+  - 'vaara'
+  - 'vaar'
+  - 'väärä'
+TAONSHa:
+  - 'tyssää'
+  - 'tussaa'
+PHOK:
+  - 'moka'
+  - 'mökä'
+KONST:
+  - 'kol'
+  - 'Köl'
+  - 'kola'
+HAISReo:
+  - 'haivu'
+  - 'häivy'
+TPHAOHReo:
+  - 'nupu'
+  - 'nypy'
+KAReo:
+  - 'karu'
+  - 'käry'
+PHERe:
+  - 'meren'
+  - 'mere'
+VAR:
+  - 'vara'
+  - 'var'
+HRASHRa:
+  - 'lappaa'
+  - 'läppää'
+PHERia:
+  - 'meriä'
+  - 'Merja'
+TKPVENRe:
+  - 'genre'
+  - 'genren'
+KANSa:
+  - 'kansaa'
+  - 'känsää'
+PHA*Ria:
+  - 'määriä'
+  - 'Maaria'
+SA*Teoi:
+  - 'saatui'
+  - 'säätyi'
+PVANa:
+  - 'banaa'
+  - 'bänää'
+HAOSHReo:
+  - 'hyppy'
+  - 'huppu'
+PIRi:
+  - 'piri'
+  - 'Piri'
+VARi:
+  - 'väri'
+  - 'vari'
+HRONSHi:
+  - 'lössi'
+  - 'lossi'
+PHARe: ['mare', 'märe']
+TAOHRa: ['tuhraa', 'tupaa']
+HONKa: ['honkaa', 'hönkää']
+RAOHRi: ['rypi', 'rupi']
+KATe:
+  - 'kate'
+  - 'käte'
+  - 'käten'
+TAHTi:
+  - 'tähti'
+  - 'tahti'
+ANSTeo:
+  - 'äly'
+  - 'alu'
+VAIKeo:
+  - 'vaiku'
+  - 'väiky'
+POTeo:
+  - 'pöty'
+  - 'potu'
+HAOSRe:
+  - 'hyve'
+  - 'huven'
+HRASTRa:
+  - 'lattaa'
+  - 'lättää'
+SAOSHi:
+  - 'sushi'
+  - 'sumi'
+TONKi:
+  - 'tonki'
+  - 'tönki'
+KA*HRi:
+  - 'kaapi'
+  - 'kääpi'
+ROHRo:
+  - 'ropo'
+  - 'röpö'
+HONK:
+  - 'hönkä'
+  - 'honka'
+KANi:
+  - 'kani'
+  - 'käni'
+TOSHRa:
+  - 'töppää'
+  - 'toppaa'
+TER:
+  - 'ter'
+  - 'terä'
+  - 'tera'
+HAO*Si:
+  - 'huusi'
+  - 'hyysi'
+PHANSH: ['massa', 'mässä']
+HROHia: ['lohia', 'Lohja']
+TPHANKHi: ['nakki', 'näkki']
+TPHASHR: ['nappa', 'näppä']
+TPHAOSHReo:
+  - 'nuppu'
+  - 'nyppy'
+PHAO*R: ['myyrä', 'muura']
+H*INSTe:
+  - 'hiile'
+  - 'hiilen'
+KVR-NSTe:
+  - 'ylen'
+  - 'Yle'
+TAORa: ['tyrää', 'turaa']
+R*IST: ['riistä', 'riista']
+TAOR: ['tyr', 'tyrä', 'tura']
+PAOSTi: ['pysti', 'pusti']
+PHAO*SHi: ['muumi', 'myymi']
+KAONSTeo:
+  - 'kulu'
+  - 'kyly'
+VA*ia: ['vääjä', 'vaaja']
+KAO*NSTi: ['kuuli', 'kyyli']
+SONSTia:
+  - 'solia'
+  - 'Solja'
+PA*Si:
+  - 'pääsi'
+  - 'paasi'
+TPHAKeo: ['näky', 'naku']
+P*EINe: ['piene', 'pienen']
+V*EIRe: ['viere', 'vieren']
+KAONKS: ['kunna', 'kynnä']
+T*E:
+  - 'tee'
+  - 'Teea'
+AIN: ['aina', 'Aina']
+TAONKHeo: ['tukku', 'tykky']
+HRANKHi:
+  - 'lakki'
+  - 'läkki'
+SAOTeo: ['sutu', 'syty']
+SAOSi: ['susi', 'sysi']
+RA*SHi:
+  - 'raami'
+  - 'räämi'
+TAHTa: ['tähtää', 'tahtaa']
+HR*ITeo: ['liity', 'liitu']
+TPHOKia: ['nokia', 'Nokia']
+PHA*: ['mää', 'Maa', 'maa']
+HER: ['herä', 'her', 'hera']
+TOR: ['tora', 'tor']
+PESTReoi:
+  - 'pettyi'
+  - 'pettui'
+VAS: ['vasa', 'väsä']
+TAOSRe:
+  - 'tyve'
+  - 'tyven'
+KAONKHi: ['kukki', 'kykki']
+HEITe: ['heite', 'heiten']
+SAKa:
+  - 'säkää'
+  - 'sakaa'
+PHONKHi:
+  - 'mökki'
+  - 'mokki'
+VOi: ['voi', 'vöi']
+HASReo: ['havu', 'hävy']
+VIT: ['vit', 'vita']
+RAINKHa: ['räikkää', 'raikkaa']
+HAOTi: ['hyti', 'huti']
+HA*Ra:
+  - 'haaraa'
+  - 'häärää'
+RAO: ['ry', 'Rya']
+HAOHR: ['hup', 'hupa']
+ERi: ['eri', 'Eri']
+A*Sia: ['Aasia', 'aasia']
+K*IST: ['kiistä', 'kiista']
+KANSTeo: ['käly', 'kalu']
+SAONTi:
+  - 'synti'
+  - 'sunti'
+SAOo:
+  - 'syö'
+  - 'suo'
+PEIT: ['peit', 'peitä']
+V*INe:
+  - 'viine'
+  - 'viinen'
+ENSTi: ['eli', 'Eli']
+HRAOo: ['lyö', 'luo']
+SANTa:
+  - 'säntää'
+  - 'santaa'
+KEH: ['keh', 'kehä']
+SAONSTe: ['syle', 'sylen']
+VANK:
+  - 'vänkä'
+  - 'vanka'
+RASTRi: ['ratti', 'rätti']
+HR*IR:
+  - 'liir'
+  - 'liira'
+TPH*IN: ['niin', 'Niina']
+HAOSRi: ['huvi', 'hyvi']
+SAO*Ti: ['syyti', 'suuti']
+HRAOKeo: ['luku', 'lyky']
+VERe:
+  - 'vere'
+  - 'veren'
+HOSHR: ['hoppa', 'höppä']
+HRA*SR:
+  - 'läävä'
+  - 'laava'
+VA*Ri: ['vaari', 'vääri']
+ISR: ['iva', 'Iva']
+RA*Keo: ['raaku', 'rääky']
+HRAKi: ['laki', 'läki']
+VASeoi:
+  - 'väsyi'
+  - 'vasui'
+KAOToi: ['kutoi', 'kytöi']
+TOSHR: ['töppä', 'toppa']
+HRAOHR: ['lyp', 'lupa']
+KAOR:
+  - 'kura'
+  - 'Kur'
+  - 'kur'
+ORi:
+  - 'ori'
+  - 'öri'
+PATi: ['päti', 'pati']
+HANSTi:
+  - 'hali'
+  - 'Hali'
+  - 'häli'
+SASReo: ['sävy', 'savu']
+T*ERe: ['teere', 'teeren']
+VANSTi:
+  - 'väli'
+  - 'vali'
+P*EINSTe:
+  - 'piele'
+  - 'pielen'
+HANSTeo: ['halu', 'häly']
+KASHR: ['käppä', 'kappa']
+PANKSi: ['pänni', 'panni']
+KAOKeo: ['kyky', 'kuku']
+KIT:
+  - 'kit'
+  - 'kita'
+R*IT: ['riita', 'riitä']
+HAOISe:
+  - 'hyise'
+  - 'hyisen'
+HRA*SRa:
+  - 'läävää'
+  - 'laavaa'
+POH:
+  - 'pöh'
+  - 'poha'
+HERa: ['herää', 'heraa']
+SAO*NST: ['syylä', 'suula']
+TAOHRi:
+  - 'tupi'
+  - 'tuhri'
+  - 'typi'
+SAOKi:
+  - 'syki'
+  - 'suki'
+PHAO*Teo: ['muutu', 'myyty']
+SA*ST:
+  - 'säästä'
+  - 'saasta'
+RAO*Ti: ['ruuti', 'ryyti']
+PHAOTeo: ['mutu', 'myty']
+TAOHR:
+  - 'tupa'
+  - 'tuhra'
+KA*R: ['kaar', 'kaara']
+HASH:
+  - 'hämä'
+  - 'hama'
+TAKeo:
+  - 'täky'
+  - 'taku'
+TPHAOHRi: ['nupi', 'nypi']
+TOi:
+  - 'töi'
+  - 'Toi'
+  - 'toi'
+AITe:
+  - 'äite'
+  - 'äiten'
+HENST: ['hel', 'hela']
+VASeo: ['väsy', 'vasu']
+KISRe: ['kive', 'kiven']
+HA*R:
+  - 'haara'
+  - 'häärä'
+PH-SR: ['mV', 'MV', 'mv']
+SAONST:
+  - 'syl'
+  - 'sula'
+RAISRa:
+  - 'raivaa'
+  - 'räivää'
+KAIN:
+  - 'käin'
+  - 'Kain'
+RA*Keoi:
+  - 'rääkyi'
+  - 'raakui'
+VASa: ['väsää', 'vasaa']
+HAIHReoi:
+  - 'häipyi'
+  - 'haipui'
+PH-SH:
+  - 'mm'
+  - 'MM'
+  - 'mma'
+PONSTi:
+  - 'poli'
+  - 'pöli'
+OR:
+  - 'or'
+  - 'ora'
+TPHISHe:
+  - 'nime'
+  - 'nimen'
+HAOSHeo:
+  - 'hymy'
+  - 'humu'
+A*Re:
+  - 'ääre'
+  - 'äären'
+POK: ['poka', 'pökä']
+TPHASHRi:
+  - 'nappi'
+  - 'näppi'
+KAO*Ti:
+  - 'kyyti'
+  - 'kuuti'
+SAOTi:
+  - 'suti'
+  - 'syti'
+PHAONKHi:
+  - 'mykki' # "mykkinä" root
+  - 'mukki'
+PHAO*Ra:
+  - 'muuraa'
+  - 'myyrää'
+VAK: ['väkä', 'vaka']
+HRANKia:
+  - 'länkiä'
+  - 'Lankia'
+RANTa: ['rantaa', 'räntää']
+TPH-SH:
+  - 'nm'
+  - 'Nm'
+PHANSHa: ['massaa', 'mässää']
+VA*Ra: ['väärää', 'vaaraa']
+KANKS: ['kanna', 'kännä']
+PHAOKi: ['muki', 'myki']
+KAONSTeoi: ['kului', 'kylyi']
+PAO*H: ['puuha', 'pyyhä']
+PH*EINSTe: ['miele', 'mielen']
+SKVRAT:
+  - 'jat'
+  - 'jätä'
+TPH*ISTReo: ['niitty', 'niittu']
+SKVRA*N:
+  - 'jään'
+  - 'Jaana'
+  - 'jäänä'
+  - 'jaan'
+TPHAONSHe:
+  - 'nysse'
+  - 'nyssen'
+S*IR:
+  - 'siir'
+  - 'siira'
+TAOSRi: ['tyvi', 'tuvi']
+ANKH:
+  - 'akka'
+  - 'äkkä'
+KAOTi: ['kuti', 'kyti']
+HRAINKHeoi: ['läikkyi', 'laikkui']
+SARa:
+  - 'särää'
+  - 'saraa'
+HRAINKHa:
+  - 'läikkää'
+  - 'laikkaa'
+PA*Teoi: ['päätyi', 'paatui']
+V*ISR:
+  - 'viiva'
+  - 'viivä'
+KAI: ['kai', 'Kai']
+PHASTRa:
+  - 'mättää'
+  - 'mattaa'
+RA*Seo: ['raasu', 'rääsy']
+KATo: ['kato', 'kätö']
+TPHAOH:
+  - 'nuha'
+  - 'nyhä'
+P*INSTe: ['piile', 'piilen']
+TAHRa: ['tapaa', 'tahraa']
+TOReoi:
+  - 'torui'
+  - 'töryi'
+POR:
+  - 'por'
+  - 'pora'
+ET:
+  - 'et'
+  - 'etä'
+  - 'Et'
+  - 'eta'
+SANKHi:
+  - 'sakki'
+  - 'säkki'
+KANS:
+  - 'kansa'
+  - 'känsä'
+ANTo:
+  - 'anto'
+  - 'Anto'
+PHAOR: ['mur', 'mura']
+TPHAOHRa: ['nyhrää', 'nuhraa']
+KA*SR: ['kaava', 'käävä']
+HRANKi: ['länki', 'lanki']
+PVANe: ['bäne', 'bänen']
+PHANTeo: ['mänty', 'mantu']
+H*EIe: ['hiee', 'hieen']
+HANSTeoa: ['halua', 'hälyä']
+SAONKHi: ['sykki', 'sukki']
+HROi: ['loi', 'löi']
+RAK: ['räkä', 'raka']
+ENKS: ['ennä', 'enna']
+KONTi: ['konti', 'könti']
+HIH: ['hih', 'hiha']
+TAO*R: ['tuura', 'Tuur']
+ANe: ['ane', 'Ane']
+TOReo: ['toru', 'töry']
+HAOHRi: ['hypi', 'hupi']
+KAO*NSTa: ['kyylää', 'kuulaa']
+T-SR: ['tv', 'TV']
+PAOR: ['pur', 'pura']
+VAH: ['vähä', 'vaha']
+HRAHTo: ['lähtö', 'lahto']
+PARi: ['pari', 'päri']
+ANS: ['ansa', 'Ans']
+Aeo: ['ay', 'Au']
+TANKHi: ['takki', 'täkki']
+PHO: ['moa', 'möä']
+KONTeo: ['kontu', 'könty']
+PAHTR: ['parra', 'pärrä']
+TPHA*NSTi: ['naali', 'nääli']
+HAH: ['häh', 'Hah', 'haha', 'hah']
+PAORi: ['pyri', 'puri']
+TATia: ['tätiä', 'Tatja']
+SAONKSi: ['synni', 'sunni']
+PAHReoa: ['papua', 'Papua']
+V*EIN: ['vien', 'Viena']
+TPHAOHa: ['nuhaa', 'nyhää']
+TAONKHa: ['tykkää', 'tukkaa']
+HASHa: ['hämää', 'hamaa']
+HRASi: ['lasi', 'läsi']
+SANSTi: ['sali', 'Sali', 'säli']
+KANSi: ['kansi', 'känsi']
+KAOHa: ['kyhää', 'kuhaa']
+TAORi: ['turi', 'tyri']
+AIe: ['aie', 'aien']
+HRAOKi: ['luki', 'lyki']
+HRASHR: ['läppä', 'lappa']
+TENSTe: ['tele', 'telen']
+HRAINKH: ['laikka', 'läikkä']
+SANT: ['santa', 'sant', 'säntä']
+RAOTo: ['rytö', 'ruto']
