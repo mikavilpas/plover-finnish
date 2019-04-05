@@ -1,16 +1,15 @@
+from typing import List
+
 from parsy import *
+from parsy import any_char, string_from
 
 from .generators import *
 from .short_words import short_word
-from .generators import morpheme
-from functools import reduce
-from operator import ior
-from parsy import any_char, string_from
 
-def join_strokes(*strokes):
-    strokes = [s for s in strokes
-               if s != "-"]
-    return "/".join(strokes)
+
+def join_strokes(*strokes) -> str:
+    return "/".join([s for s in strokes
+                     if s != "-"])
 
 #
 #
@@ -36,9 +35,9 @@ second_chord =                                                     \
 
 stroke_and_suffix = seq(short_word, second_chord)
 
-def two_strokes(word):
+def two_strokes(word) -> List[str]:
     @generate("two stroke word")
-    def two_strokes_parser():
+    def two_strokes_parser() -> List[str]:
         (s_1, s_2) = yield seq(short_word, second_chord)
 
         is_suffix_stroke = "SUFFIX:" in s_2

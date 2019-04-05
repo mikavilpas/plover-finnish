@@ -3,6 +3,7 @@ from .parsing import word_and_class
 from .roots.noun_inflection_info import InflectionInfo
 from .roots.inflection_types.verbs.verb import VerbBase
 from functools import reduce
+from typing import List
 
 def inflected_forms(word_info):
     (word, klass, reference_word, gradation) = word_and_class.parse(word_info)
@@ -11,7 +12,7 @@ def inflected_forms(word_info):
         results = lookup_verb(word, reference_word, gradation)
         return _all_conjugations(results)
 
-    elif klass in ["noun", "adjective"]:
+    elif klass in ["noun", "adjective", "pnoun_place"]:
         results = lookup_nominal(word, reference_word, gradation)
         return _flatten([], results)
 
@@ -19,8 +20,8 @@ def inflected_forms(word_info):
         # print("Warning: cannot inflect %s" % word_info)
         return [word]
 
-def _flatten(results, named_tuple) -> [str]:
-    def _add(l: list, word_or_list) -> [str]:
+def _flatten(results, named_tuple) -> List[str]:
+    def _add(l: list, word_or_list) -> List[str]:
         if type(word_or_list) is str:
             l.append(word_or_list)
         elif type(word_or_list) is list:
@@ -31,7 +32,7 @@ def _flatten(results, named_tuple) -> [str]:
         _add(results, word_or_list)
     return results
 
-def _all_conjugations(verb: VerbBase) -> [str]:
+def _all_conjugations(verb: VerbBase) -> List[str]:
     moduses     = verb.moduses()
     participles = verb.participles()
     infinitives = verb.infinitives()
@@ -57,4 +58,3 @@ def _all_conjugations(verb: VerbBase) -> [str]:
                  infinitives.group_5_MAINEN()]
 
     return reduce(_flatten, all_forms, [])
-

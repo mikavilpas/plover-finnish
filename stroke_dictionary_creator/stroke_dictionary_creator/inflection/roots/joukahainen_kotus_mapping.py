@@ -2,7 +2,6 @@
 
 from collections import namedtuple
 from . import inflection_types as i
-from .inflection_types import kotus_noun_1_valo, kotus_noun_2_palvelu, kotus_noun_3_valtio
 from .inflection_types.verbs import *
 from . import gradation as g
 

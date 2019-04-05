@@ -5,7 +5,6 @@ from toolz import itertoolz
 import inflection.inflection_service as infl
 from operator import concat
 import math
-from multiprocessing import Pool
 import collections
 from termcolor import cprint
 from parsy import ParseError
@@ -24,7 +23,7 @@ def inflected_forms(word):
         inflection_forms = infl.inflected_forms(word)
         return inflection_forms
     except Exception as e:
-        cprint("Error with word %s: %s" % (word, e), "blue")
+        cprint("Error inflecting word %s: %s" % (word, e), "blue")
         return []
 
 def flatten_dictify_matched(subprocess_data):

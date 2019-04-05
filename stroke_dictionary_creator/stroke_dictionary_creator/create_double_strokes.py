@@ -2,6 +2,9 @@ from scripts.base_generation import *
 from generators.two_stroke_words import two_strokes
 from toolz import functoolz
 from functools import partial
+from multiprocessing import Pool
+from parsy import ParseError
+import sys
 
 cores = 8
 

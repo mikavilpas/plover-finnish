@@ -2,6 +2,8 @@ from scripts.base_generation import *
 from generators.short_words import short_word
 from toolz import functoolz
 from functools import partial
+from parsy import ParseError
+from multiprocessing import Pool
 
 cores = 8
 
@@ -32,10 +34,8 @@ def main():
 
     with Pool(cores) as pool:
         # "map" step
-        def do_create(words):
-            return create_strokes_for_words(words, ignore_words)
         do_create = partial(create_strokes_for_words,
-                            ignore_words = ignore_words)
+                            ignore_words=ignore_words)
 
         strokes = pool.map(do_create, chunks)
 
