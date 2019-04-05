@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
-import sys
-import os
-from ruamel.yaml import YAML
 import glob
-from toolz import functoolz
 import json
-import stroke_validation as validation
+import os
+import sys
+from typing import List, Any
+
+from ruamel.yaml import YAML
+from toolz import functoolz
+
 import manually_resolved_conflicts_service as conflicts
+import stroke_validation as validation
+
 
 def write_as_json_stroke_dictionary(destination, flat_stroke_dictionary):
     print("Writing output to: %s" % destination)
@@ -53,10 +57,20 @@ def load_file_as_yaml(filepath):
         print("Loaded %s with %s entries." % (name, len(d)))
         return d
 
-def load_dictionaries_from_path(path):
-    yaml_file_paths = glob.glob("../input_dictionaries/*.yaml")
+def load_file_as_json(filepath):
+    with open(filepath) as f:
+        d = YAML(typ="safe", pure=True).load(f)
+        name = os.path.basename(filepath)
+        print("Loaded %s with %s entries." % (name, len(d)))
+        return d
 
-    return map(load_file_as_yaml, yaml_file_paths)
+def load_dictionaries_from_path(path):
+    yaml_dictionaries = map(load_file_as_yaml,
+                            glob.glob("../input_dictionaries/*.yaml"))
+
+    json_dictionaries = map(load_file_as_json,
+                            glob.glob("../input_dictionaries/*.json"))
+    return list(yaml_dictionaries + json_dictionaries)
 
 def apply_conflict_resolution(strokes) -> dict:
     conflict_resolution_strokes = conflicts.conflict_strokes(load_file_as_yaml)

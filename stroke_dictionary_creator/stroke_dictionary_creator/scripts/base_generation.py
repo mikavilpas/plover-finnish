@@ -1,5 +1,5 @@
 import sys
-from create_dictionary import load_file_as_yaml
+from create_dictionary import load_file_as_yaml, load_file_as_json
 from toolz import functoolz
 from toolz import itertoolz
 import inflection.inflection_service as infl
@@ -13,6 +13,7 @@ import os
 
 sys.path.append("../../word-analyser/")
 import word_analyser.tools as tools
+import json
 
 def inflected_forms(word):
     """Retuns all the inflected forms of the given word as a set, such as for the
@@ -47,6 +48,10 @@ def flatten_dictify_matched(subprocess_data):
 def write_to_yaml_file(target_file, strokes):
     return tools.save_results_into_file(strokes, target_file)
 
+def write_to_json_file(target_file, strokes):
+    with open(target_file, 'w') as json_file:
+        json.dump(strokes, json_file, indent = 2, ensure_ascii=False)
+
 def chunkify(n, sequence):
     length = len(sequence)
     chunk_length = math.floor(length / n)
@@ -64,15 +69,25 @@ def combine(dictionaries):
         combined.update(d)
     return combined
 
+def load_file(path):
+    if ".json" in path:
+        return load_file_as_json(path)
+    elif ".yaml" in path:
+        return load_file_as_yaml(path)
+
 # python create_double_strokes.py  5453,43s user 7,19s system 550% cpu 16:31,25 total
 def ignored_words(target_file, existing_files):
+    if "QUICK" in os.environ:
+        print("Environment variable QUICK has been set. Not collecting list of ignored words.")
+        return set()
+
     def not_my_file(f):
         name = os.path.basename(f)
         print(name, os.path.basename(target_file))
         return name != os.path.basename(target_file)
 
     others = [f for f in existing_files if not_my_file(f)]
-    d = combine(map(load_file_as_yaml, others))
+    d = combine(map(load_file, others))
     return set(d.keys())
 
 def wordlist_chunks(cores, target_file_name):
