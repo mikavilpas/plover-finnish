@@ -3,7 +3,7 @@ import glob
 import json
 import os
 import sys
-from typing import List, Any
+from typing import Any, List
 
 from ruamel.yaml import YAML
 from toolz import functoolz
@@ -65,11 +65,11 @@ def load_file_as_json(filepath):
         return d
 
 def load_dictionaries_from_path(path):
-    yaml_dictionaries = map(load_file_as_yaml,
-                            glob.glob("../input_dictionaries/*.yaml"))
+    yaml_dictionaries = list(map(load_file_as_yaml,
+                                 glob.glob("../input_dictionaries/*.yaml")))
 
-    json_dictionaries = map(load_file_as_json,
-                            glob.glob("../input_dictionaries/*.json"))
+    json_dictionaries = list(map(load_file_as_json,
+                                 glob.glob("../input_dictionaries/*.json")))
     return list(yaml_dictionaries + json_dictionaries)
 
 def apply_conflict_resolution(strokes) -> dict:
