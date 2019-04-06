@@ -94,7 +94,7 @@ def wordlist_chunks(cores, target_file_name):
     # To speed up generation of words, ignore all words that are present in the
     # already existing dictionaries
     ignore_words = ignored_words(target_file_name,
-                                 glob("../input_dictionaries/*.yaml"))
+                                 glob("../input_dictionaries/*"))
     print("Ignoring %s already created words." % (len(ignore_words)))
 
     words_raw = tools.get_finnish_wordlist()

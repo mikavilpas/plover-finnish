@@ -37,9 +37,11 @@ def warn_about_conflicts(new_dict, target_dict):
         words = list(set(new_words + target_words))
 
         if len(words) > 1 and stroke not in conflict_resolution_strokes:
-            # don't warn in case the strokes are exactly the same
-            print("Warning: multiple words defined for the stroke {}. You'll need to resolve the conflict by hand.".format(stroke))
-            print(words)
+            # ^ don't warn in case the strokes are exactly the same
+
+            # Print the output in a format that can be easily pasted to the
+            # conflicts file.
+            print("{}: {}".format(stroke, words))
 
 def combine(dictionaries) -> dict:
     # in case of conflicting_strokes, keeps the values specified earlier in the order of
