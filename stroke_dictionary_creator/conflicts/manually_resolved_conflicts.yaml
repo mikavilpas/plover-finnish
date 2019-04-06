@@ -1860,7 +1860,6 @@ AOKSHe:
 SAO*Re:
   - 'suure'
   - 'suuren'
-
 PHAOHTReo:
   - 'murru'
   - 'myrry'
@@ -2988,10 +2987,6 @@ TENSTe: ['tele', 'telen']
 HRAINKH: ['laikka', 'läikkä']
 SANT: ['santa', 'sant', 'säntä']
 RAOTo: ['rytö', 'ruto']
-
-
-
-
 S-: ['sinä']
 PH-: ['minä']
 KA*N: ['{:suffix_in_same_vowel_harmony_group:kään}', 'Kaana']
@@ -3006,7 +3001,6 @@ KAO*ST: ['kuusta', 'kyystä']
 SKVRAIT: ['jäit', 'jäitä']
 KAOHia: ['kuhia', 'Kuhia']
 PHAISTe: ['maisten', 'mäisten']
-
 '*I': ['Ii', 'Iia']
 SASRoa: ['Savoa', 'savoa']
 KAO*NSTia: ['kuulia', 'kyyliä']
