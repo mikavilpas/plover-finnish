@@ -1,6 +1,6 @@
 import unittest
 from ensure import ensure
-from stroke_dictionary_creator.generators.short_words import *
+from .short_words import *
 
 class TestShortWords(unittest.TestCase):
     def test_short_word(self):
@@ -25,7 +25,7 @@ class TestShortWords(unittest.TestCase):
         ensure(short_word.parse("kuja")).equals("KAOia")
         ensure(short_word.parse("aattoja")).equals("A*STRoia")
 
-        ensure(short_word.parse("")).equals("")
+        ensure(short_word.parse("")).equals("-")
 
     def test_end(self):
         ensure(v.parse("en")).equals("e")
