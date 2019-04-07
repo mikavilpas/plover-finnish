@@ -4,7 +4,7 @@ from collections import namedtuple
 from . import inflection_types as i
 from .inflection_types.verbs import *
 from . import gradation as g
-
+from typing import Dict
 
 NominalInflection = namedtuple("NominalInflection",
                                ["inflection_fn", "gradation_fn"])
@@ -29,7 +29,7 @@ def conj(verb_class, gradation_fn = None) -> Conjugation:
     return Conjugation(verb_class = verb_class,
                        gradation_fn = gradation_fn)
 
-nominals = {
+nominals: Dict[str, NominalInflection] = {
     "valo":      infl(i.kotus_noun_1_valo),
     "arvelu":    infl(i.kotus_noun_2_palvelu),
     "autio":     infl(i.kotus_noun_3_valtio),
@@ -110,7 +110,7 @@ nominals = {
     "veitsi":    infl(i.kotus_noun_30_veitsi),
 }
 
-verbs = {
+verbs: Dict[str, Conjugation] = {
     "punoa":      conj(KotusVerb52Sanoa),
     "aavistaa":   conj(KotusVerb53Muistaa),
     "hidastaa":   conj(KotusVerb53Muistaa),
