@@ -6,10 +6,12 @@ from .. import base
 Adjective = namedtuple("Adjective",
                        ["positive", "comparative", "superlative"])
 
+# have an overload just to make the calls more readable
 def inflect_as(word,
-               refword: str,
-               gradation_fn) -> base.InflectionInfo:
+               refword: str) -> base.InflectionInfo:
+    return inflect_with(word, refword, gradation_fn = None)
 
+def inflect_with(word, refword: str, gradation_fn) -> base.InflectionInfo:
     info: NominalInflection = nominals[refword]
     inflect                 = info.inflection_fn
     grad                    = gradation_fn or info.gradation_fn or base.identity

@@ -1,4 +1,4 @@
-from .adjective import inflect_as, Adjective
+from .adjective import inflect_as, inflect_with, Adjective
 from .. import base
 
 def joukahainen_adjective_arvelu(word, gradation_fn = base.identity) -> Adjective:
@@ -9,6 +9,6 @@ def joukahainen_adjective_arvelu(word, gradation_fn = base.identity) -> Adjectiv
     mainitumpi = maini + t + u + "mpi"
     mainituin  = maini + t + u + "in"
 
-    return Adjective(positive    = inflect_as(word, "arvelu", gradation_fn),
-                     comparative = inflect_as(mainitumpi, "suurempi", None),
-                     superlative = inflect_as(mainituin, "sisin", None))
+    return Adjective(positive    = inflect_with(word, "arvelu", gradation_fn),
+                     comparative = inflect_as(mainitumpi, "suurempi"),
+                     superlative = inflect_as(mainituin, "sisin"))
