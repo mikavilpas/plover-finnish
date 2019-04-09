@@ -1,9 +1,12 @@
 import unittest
+
 from ensure import ensure
+
+from .. import gradation as g
 from ..noun_inflection_info import InflectionInfo
-from .test_utils import ensure_inflections_equal
-from ..gradation import gradate_kotus_j_hento_hennon
 from .kotus_noun_13_katiska import kotus_noun_13_katiska
+from .test_utils import ensure_inflections_equal
+
 
 class TestInflectionType12(unittest.TestCase):
     def test_basic_example(self):
@@ -42,7 +45,6 @@ class TestInflectionType12(unittest.TestCase):
                                   comitatives_plural  = ["katiskoine"])
 
         ensure_inflections_equal(expected, data)
-
 
     def test_umlauts(self):
         data = kotus_noun_13_katiska("mölinä")
@@ -83,5 +85,43 @@ class TestInflectionType12(unittest.TestCase):
 
         ensure_inflections_equal(expected, data)
 
-    # no words with gradation
     # no singular words end in a consonant.
+
+    def test_gradation(self):
+        data = kotus_noun_13_katiska("ärhäkkä", g.gradate_kotus_a_takki_takin)
+
+        expected = InflectionInfo(nominative          = 'ärhäkkä',
+                                  nominative_plural   = 'ärhäkät',
+                                  genitive            = 'ärhäkän',
+                                  genitives_plural    = ['ärhäköiden',
+                                                         'ärhäköitten',
+                                                         'ärhäkköjen',
+                                                         'ärhäkkäin'],
+                                  partitives          = ['ärhäkkää'],
+                                  partitives_plural   = ['ärhäköitä',
+                                                         'ärhäkköjä'],
+                                  accusatives         = ['ärhäkkä',
+                                                         'ärhäkän'],
+                                  accusative_plural   = 'ärhäkät',
+                                  inessive            = 'ärhäkässä',
+                                  inessives_plural    = ['ärhäköissä'],
+                                  elative             = 'ärhäkästä',
+                                  elatives_plural     = ['ärhäköistä'],
+                                  illatives           = ['ärhäkkään'],
+                                  illatives_plural    = ['ärhäköihin'],
+                                  adessive            = 'ärhäkällä',
+                                  adessives_plural    = ['ärhäköillä'],
+                                  ablative            = 'ärhäkältä',
+                                  ablatives_plural    = ['ärhäköiltä'],
+                                  allative            = 'ärhäkälle',
+                                  allatives_plural    = ['ärhäköille'],
+                                  essives             = ['ärhäkkänä'],
+                                  essives_plural      = ['ärhäköinä'],
+                                  translative         = 'ärhäkäksi',
+                                  translatives_plural = ['ärhäköiksi'],
+                                  abessive            = 'ärhäkättä',
+                                  abessives_plural    = ['ärhäköittä'],
+                                  instructives_plural = ['ärhäköin'],
+                                  comitatives_plural  = ['ärhäkköine'])
+
+        ensure_inflections_equal(expected, data)
