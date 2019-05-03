@@ -194,3 +194,10 @@ def root_and_double_vowel_cv():
     _             = yield string(v)
     root          = yield character.at_least(1).concat()
     return [root, v, end_consonant, end_vowel]
+
+@generate
+def word_nen_ending():
+    # a word like "nainen"
+    nen = yield string("nen")
+    root = yield character.at_least(1).concat()
+    return [root, nen]

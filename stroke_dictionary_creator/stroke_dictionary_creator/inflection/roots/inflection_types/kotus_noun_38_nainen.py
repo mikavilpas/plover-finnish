@@ -3,12 +3,6 @@ from .base import *
 from parsy import *
 from ..tokens import *
 
-@generate
-def word_nen_ending():
-    nen = yield string("nen")
-    root = yield character.at_least(1).concat()
-    return [root, nen]
-
 def kotus_noun_38_nainen(word, gradation_fn = identity):
     # Nominals ending with -nen, such as adjectives formed with the suffixes
     # -inen and -lainen, nouns formed using the suffix -minen, and fourth
