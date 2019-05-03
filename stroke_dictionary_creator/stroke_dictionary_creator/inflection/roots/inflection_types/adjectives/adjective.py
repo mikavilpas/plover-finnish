@@ -6,6 +6,9 @@ from .. import base
 Adjective = namedtuple("Adjective",
                        ["positive", "comparative", "superlative"])
 
+AdjectiveNoPositive = namedtuple("AdjectiveNoPositive",
+                                 ["comparative", "superlative"])
+
 # have an overload just to make the calls more readable
 def inflect_as(word,
                refword: str) -> base.InflectionInfo:
