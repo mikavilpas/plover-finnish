@@ -1,9 +1,11 @@
-from parsy import *
-from ..tokens import *
-from ..noun_inflection_info import InflectionInfo
-from ..gradation import identity
-from ..parse_utils import reverse_parse
+from parsy import generate, string
 
+from ..gradation import identity
+from ..noun_inflection_info import InflectionInfo
+from ..parse_utils import reverse_parse
+from ..tokens import character, consonant, vowel
+
+import sys
 sys.path.append("../../../../plugin/plover_finnish/")
 from plover_finnish.vowel_group_service import change_to_same_vowel_group, change_to_same_vowel_group_prefer_umlauts
 
@@ -49,7 +51,6 @@ def root_and_ccvv_ending():
             second_to_last_consonant,
             second_to_last_vowel,
             last_vowel]
-
 
 @generate
 def root_and_double_end_vowel():
