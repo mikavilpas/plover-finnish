@@ -9,6 +9,9 @@ Adjective = namedtuple("Adjective",
 AdjectiveNoPositive = namedtuple("AdjectiveNoPositive",
                                  ["comparative", "superlative"])
 
+AdjectiveNotComparable = namedtuple("AdjectiveNotComparable",
+                                    ["word"])
+
 # have an overload just to make the calls more readable
 def inflect_as(word,
                refword: str) -> base.InflectionInfo:
