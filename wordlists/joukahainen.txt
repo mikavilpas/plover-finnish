@@ -23231,7 +23231,7 @@ meleena;noun-kala
 meleerata;verb-saneerata
 melfalaani;noun-risti
 melkein;adverb-None
-melko;adjective-loppu
+melko;adjective-loppu-av5
 melkoinen;adjective-nainen
 mellakka;noun-karahka-av1
 mellakoida;verb-haravoida-av2
@@ -27590,7 +27590,7 @@ pikkanen;adjective-nainen
 pikkarainen;adjective-nainen
 pikkelssi;noun-risti
 pikkolo;noun-arvelu
-pikku;adjective-loppu
+pikku;adjective-loppu-av5
 pikku;prefix-None
 pikku=hiljaa;adverb-None
 pikku=takkisillaan;adverb-None
@@ -36894,7 +36894,7 @@ vajoama;noun-asema
 vajota;verb-kohota
 vajottaa;verb-kirjoittaa-av1
 vajua;verb-punoa
-vaka;adjective-loppu
+vaka;adjective-loppu-av5
 vaka=varainen;adjective-nainen
 vakaa;adjective-vapaa
 vakaannuttaa;verb-sulaa-av1
