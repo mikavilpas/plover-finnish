@@ -2,7 +2,7 @@ import unittest
 from ensure import ensure
 from . import gradation as g
 from .gradation import gradation_function
-from .lookup import lookup_verb, lookup_nominal
+from .lookup import lookup_verb, lookup_nominal, lookup_adjective
 
 class TestLookup(unittest.TestCase):
     def test_verbs(self):
@@ -136,3 +136,60 @@ class TestLookup(unittest.TestCase):
         ensure_gives(("hapsi",      "hapsi"           ), "hapsetta"      )
         ensure_gives(("loppu",      "loppu"           ), "loputta"       )
         ensure_gives(("veitsi",     "veitsi"          ), "veitsettä"     )
+
+    def test_adjectives(self):
+        def ensure_gives(args, result):
+            adjective = lookup_adjective(*args)
+            ensure(adjective.comparative.abessive).equals(result)
+
+        # The same thing here, try to go through all cases
+        ensure_gives(("kömpelö", "arvelu"          ), "kömpelömmättä"   )
+        ensure_gives(("sanottu", "arvelu",   "av1" ), "sanotummatta"    )
+        ensure_gives(("antoisa", "asema"           ), "antoisammatta"   )
+        ensure_gives(("riiviö",  "autio"           ), "riiviömmättä"    )
+        ensure_gives(("tuore",   "hame"            ), "tuoreemmatta"    )
+        ensure_gives(("tuore",   "hame"            ), "tuoreemmatta"    )
+        ensure_gives(("kodikas", "iäkäs",    "av2" ), "kodikkaammatta"  )
+        ensure_gives(("harva",   "kala"            ), "harvemmatta"     )
+        ensure_gives(("piukka",  "kala",     "av1" ), "piukemmatta"     )
+        ensure_gives(("tarkka",  "kala",     "av5" ), "tarkemmatta"     )
+        ensure_gives(("kosher",  "kalsium"         ), "kosherimmatta"   )
+        ensure_gives(("pönäkkä", "karahka",  "av1" ), "pönäkämmättä"    )
+        ensure_gives(("kallis",  "kaunis"          ), "kalliimmatta"    )
+        ensure_gives(("kurja",   "koira"           ), "kurjemmatta"     )
+        ensure_gives(("vänkä",   "koira",    "av1" ), "vängemmättä"     )
+        ensure_gives(("märkä",   "koira",    "av5" ), "märemmättä"      )
+        ensure_gives(("kapea",   "korkea"          ), "kapeammatta"     )
+        ensure_gives(("viheriä", "kulkija"         ), "viheriämmättä"   )
+        ensure_gives(("jäänyt",  "kuollut"         ), "jääneemmättä"    )
+        ensure_gives(("laupias", "laupias"         ), "laupiaammatta"   )
+        ensure_gives(("hatara",  "matala"          ), "hatarammatta"    )
+        ensure_gives(("öinen",   "nainen"          ), "öisemmättä"      )
+        ensure_gives(("beige",   "nalle"           ), "beigemmättä"     )
+        ensure_gives(("lyhyt",   "ohut"            ), "lyhyemmättä"     )
+        ensure_gives(("alaston", "onneton"         ), "alastomammatta"  )
+        ensure_gives(("tahaton", "onneton",  "av2" ), "tahattomammatta" )
+        ensure_gives(("höveli",  "paperi"          ), "hövelimmättä"    )
+        ensure_gives(("tyyni",   "pieni"           ), "tyynemmättä"     )
+        ensure_gives(("peeaa",   "pii"             ), "peeaammatta"     )
+        ensure_gives(("falski",  "risti"           ), "falskimmatta"    )
+        ensure_gives(("feikki",  "risti",    "av1" ), "feikimmättä"     )
+        ensure_gives(("siisti",  "siisti"          ), "siistimmättä"    )
+        ensure_gives(("ylin",    "sisin"           ), "ylemmättä"       )
+        ensure_gives(("uusi",    "susi"            ), "uudemmatta"      )
+        ensure_gives(("täysi",   "tosi"            ), "täydemmättä"     )
+        ensure_gives(("avoin",   "uistin"          ), "avoimemmatta"    )
+        ensure_gives(("lässy",   "valo"            ), "lässymmättä"     )
+        ensure_gives(("leuto",   "valo",     "av1" ), "leudommatta"     )
+        ensure_gives(("vakaa",   "vapaa"           ), "vakaammatta"     )
+        ensure_gives(("symppis", "vastaus"         ), "symppiksemmättä" )
+        ensure_gives(("suulas",  "vieras"          ), "suulaammatta"    )
+        ensure_gives(("ahdas",   "vieras",   "av2" ), "ahtaammatta"     )
+
+        # the "kalleus" class (contains the word "lähteisyys") is ignored because
+        # it has no adjectives.
+        # TODO noncomparable adjectives!
+        # ensure_gives(("öky", "loppu"), "ökymmättä")
+        # ensure_gives(("idempi", "suurempi", "av1"), "TODO")
+
+        # TODO exceptional (poikkeava) adjectives!

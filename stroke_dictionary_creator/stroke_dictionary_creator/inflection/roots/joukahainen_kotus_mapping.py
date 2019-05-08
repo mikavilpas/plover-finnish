@@ -1,13 +1,18 @@
 """Mapping of joukahainen inflection types to those used in kotus."""
 
 from collections import namedtuple
-from . import inflection_types as i
-from .inflection_types.verbs import *
-from . import gradation as g
 from typing import Dict
+
+from .inflection_types import adjectives as a
+from . import gradation as g
+from . import inflection_types as i
+
+from .inflection_types.verbs import *
 
 NominalInflection = namedtuple("NominalInflection",
                                ["inflection_fn", "gradation_fn"])
+AdjectiveInflection = namedtuple("AdjectiveInflection",
+                                 ["inflection_fn", "gradation_fn"])
 Conjugation = namedtuple("Conjugation",
                          ["verb_class", "gradation_fn"])
 
@@ -24,6 +29,14 @@ def infl(module, gradation_fn = None) -> NominalInflection:
 
     return NominalInflection(inflection_fn = fn,
                              gradation_fn = gradation_fn)
+
+def adj(refword: str, gradation_fn = None) -> AdjectiveInflection:
+    fn_name    = "joukahainen_adjective_" + refword
+    module     = getattr(a, fn_name)
+    fn         = getattr(module, fn_name)
+
+    return AdjectiveInflection(inflection_fn = fn,
+                               gradation_fn = gradation_fn)
 
 def conj(verb_class, gradation_fn = None) -> Conjugation:
     return Conjugation(verb_class = verb_class,
@@ -108,6 +121,51 @@ nominals: Dict[str, NominalInflection] = {
     "hapsi":     infl(i.kotus_noun_7_ovi), # TODO can also be 29 when poetic,
     "loppu":     infl(i.kotus_noun_1_valo, g.gradate_kotus_b_kaappi_kaapin),
     "veitsi":    infl(i.kotus_noun_30_veitsi),
+}
+
+adjectives: Dict[str, AdjectiveInflection] = {
+    # TODO what to do about these?
+    # "None":    infl(i.kotus_noun_1_valo),
+
+    # this contains only the word "lähteisyys", which is not an adjective!
+    # "kalleus":   adj("kalleus"),
+
+    # "poikkeava": adj("poikkeava"),
+
+    "arvelu":    adj("arvelu"),
+    "asema":     adj("asema"),
+    "autio":     adj("autio"),
+    "hame":      adj("hame"),
+    "iäkäs":     adj("iäkäs"),
+    "kala":      adj("kala"),
+    "kalsium":   adj("kalsium"),
+    "karahka":   adj("karahka"),
+    "kaunis":    adj("kaunis"),
+    "koira":     adj("koira"),
+    "korkea":    adj("korkea"),
+    "kulkija":   adj("kulkija"),
+    "kuollut":   adj("kuollut"),
+    "laupias":   adj("laupias"),
+    "loppu":     adj("loppu"),
+    "matala":    adj("matala"),
+    "nainen":    adj("nainen"),
+    "nalle":     adj("nalle"),
+    "ohut":      adj("ohut"),
+    "onneton":   adj("onneton"),
+    "paperi":    adj("paperi"),
+    "pieni":     adj("pieni"),
+    "pii":       adj("pii"),
+    "risti":     adj("risti"),
+    "siisti":    adj("siisti"),
+    "sisin":     adj("sisin"),
+    "susi":      adj("susi"),
+    "suurempi":  adj("suurempi"),
+    "tosi":      adj("tosi"),
+    "uistin":    adj("uistin"),
+    "valo":      adj("valo"),
+    "vapaa":     adj("vapaa"),
+    "vastaus":   adj("vastaus"),
+    "vieras":    adj("vieras"),
 }
 
 verbs: Dict[str, Conjugation] = {

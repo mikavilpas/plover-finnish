@@ -1,5 +1,9 @@
-from . import joukahainen_kotus_mapping as mapping
+from stroke_dictionary_creator.stroke_dictionary_creator.inflection.roots.inflection_types.adjectives.adjective import \
+    Adjective
+
 from . import gradation as g
+from . import joukahainen_kotus_mapping as mapping
+
 
 def lookup_verb(word, refword, joukahainen_gradation_class = None):
     verb_info = mapping.verbs[refword]
@@ -18,6 +22,16 @@ def lookup_nominal(word, refword, joukahainen_gradation_class = None):
                                   joukahainen_gradation_class,
                                   nominal_info.gradation_fn)
     return nominal(word, gradation)
+
+def lookup_adjective(word, refword, joukahainen_gradation_class = None):
+
+    nominal_info = mapping.adjectives[refword]
+    adjective    = nominal_info.inflection_fn
+    gradation    = _get_gradation(word,
+                                  refword,
+                                  joukahainen_gradation_class,
+                                  nominal_info.gradation_fn)
+    return adjective(word, gradation)
 
 def _get_gradation(word,
                    refword,

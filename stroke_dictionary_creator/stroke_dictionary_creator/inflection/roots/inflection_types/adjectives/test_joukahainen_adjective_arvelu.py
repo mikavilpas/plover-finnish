@@ -1,4 +1,3 @@
-import unittest
 from ensure import ensure
 from .joukahainen_adjective_arvelu import joukahainen_adjective_arvelu
 from ... import gradation as g
