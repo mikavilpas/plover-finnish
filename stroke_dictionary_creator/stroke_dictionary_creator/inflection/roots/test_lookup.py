@@ -175,7 +175,6 @@ class TestLookup(unittest.TestCase):
         ensure_gives(("falski",  "risti"           ), "falskimmatta"    )
         ensure_gives(("feikki",  "risti",    "av1" ), "feikimmättä"     )
         ensure_gives(("siisti",  "siisti"          ), "siistimmättä"    )
-        ensure_gives(("ylin",    "sisin"           ), "ylemmättä"       )
         ensure_gives(("uusi",    "susi"            ), "uudemmatta"      )
         ensure_gives(("täysi",   "tosi"            ), "täydemmättä"     )
         ensure_gives(("avoin",   "uistin"          ), "avoimemmatta"    )
@@ -186,10 +185,17 @@ class TestLookup(unittest.TestCase):
         ensure_gives(("suulas",  "vieras"          ), "suulaammatta"    )
         ensure_gives(("ahdas",   "vieras",   "av2" ), "ahtaammatta"     )
 
+        # noncomparable adjectives
+        #
+        def ensure_gives_noncomparable(args, result):
+            adjective = lookup_adjective(*args)
+            ensure(adjective.word.abessive).equals(result)
+
         # the "kalleus" class (contains the word "lähteisyys") is ignored because
         # it has no adjectives.
         # TODO noncomparable adjectives!
-        # ensure_gives(("öky", "loppu"), "ökymmättä")
-        # ensure_gives(("idempi", "suurempi", "av1"), "TODO")
+        ensure_gives_noncomparable(("öky",    "loppu"           ), "ökyttä"    )
+        ensure_gives_noncomparable(("idempi", "suurempi", "av1" ), "idemmättä" )
+        ensure_gives_noncomparable(("ylin",   "sisin"           ), "ylimmättä" )
 
         # TODO exceptional (poikkeava) adjectives!
