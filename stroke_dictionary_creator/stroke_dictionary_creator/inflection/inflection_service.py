@@ -1,18 +1,28 @@
-from .roots.lookup import lookup_verb, lookup_nominal
-from .parsing import word_and_class
-from .roots.noun_inflection_info import InflectionInfo
-from .roots.inflection_types.verbs.verb import VerbBase
 from functools import reduce
 from typing import List
+
+from stroke_dictionary_creator.stroke_dictionary_creator.inflection.roots.inflection_types.adjectives.adjective import (
+    Adjective, AdjectiveNoPositive)
+
+from .parsing import word_and_class
+from .roots.inflection_types.verbs.verb import VerbBase
+from .roots.lookup import lookup_adjective, lookup_nominal, lookup_verb
+from .roots.noun_inflection_info import InflectionInfo
+
 
 def inflected_forms(word_info):
     (word, klass, reference_word, gradation) = word_and_class.parse(word_info)
 
     if klass == "verb":
-        results = lookup_verb(word, reference_word, gradation)
-        return _all_conjugations(results)
+        verb = lookup_verb(word, reference_word, gradation)
+        return _all_conjugations(verb)
 
-    elif klass in ["noun", "adjective", "pnoun_place"]:
+    elif klass == "adjective":
+        # this is one of the adjective types
+        adjective = lookup_adjective(word, reference_word, gradation)
+        return _all_adjective_forms(adjective)
+
+    elif klass in ["noun", "pnoun_place"]:
         results = lookup_nominal(word, reference_word, gradation)
         return _flatten([], results)
 
@@ -31,6 +41,20 @@ def _flatten(results, named_tuple) -> List[str]:
     for word_or_list in named_tuple._asdict().values():
         _add(results, word_or_list)
     return results
+
+def _all_adjective_forms(adjective):
+    if type(adjective) == Adjective:
+        adjective: Adjective = adjective
+        all_forms = [adjective.positive,
+                     adjective.comparative,
+                     adjective.superlative]
+        return reduce(_flatten, all_forms, [])
+
+    if type(adjective) == AdjectiveNoPositive:
+        adjective: AdjectiveNoPositive = adjective
+        all_forms = [adjective.comparative,
+                     adjective.superlative]
+        return reduce(_flatten, all_forms, [])
 
 def _all_conjugations(verb: VerbBase) -> List[str]:
     moduses     = verb.moduses()

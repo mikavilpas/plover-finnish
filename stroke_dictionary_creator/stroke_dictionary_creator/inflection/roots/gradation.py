@@ -2,13 +2,15 @@
 # Definitions for the more machine readable Joukahainen mappings into the
 # (could be argued) more understandable Kotus system for gradation classes.
 
-from parsy import *
+from typing import Optional
+
+from .gradation_helpers import (gradate_kotus_d_joukahainen_av6_aie_aikeen,
+                                gradator, matching_gradations,
+                                reference_options)
 from .parse_utils import reverse, reverse_parse
-from .tokens import *
 
-from .gradation_helpers import gradator, gradate_kotus_d_joukahainen_av6_aie_aikeen, reference_options, matching_gradations
 
-def gradation_function(word, refword, gradation_class):
+def gradation_function(word, refword, gradation_class: Optional[str]):
     gradations = reference_options(word, refword)
     matching = matching_gradations(word, gradation_class, gradations)
 
@@ -17,7 +19,7 @@ def gradation_function(word, refword, gradation_class):
                          .format((gradation_class, refword), word))
     gradtype = matching[0]
 
-    gradator_fn = gradation_dispatch[gradation_class][gradtype]
+    gradator_fn = gradation_dispatch[gradation_class or ""][gradtype]
     return gradator_fn
 
 gradation_dispatch = dict(

@@ -8,6 +8,7 @@ def test_with_gradation():
     # note: only a single form available
     ensure(words.word.inessive).equals("idemmässä")
 
+def test_deduces_correct_gradation():
     # should also deduce the correct gradation
     words = joukahainen_adjective_suurempi("idempi"
                                            # Gradation not passed as argument!
