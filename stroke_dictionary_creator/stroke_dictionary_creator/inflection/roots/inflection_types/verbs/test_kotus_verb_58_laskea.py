@@ -163,27 +163,27 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_1_va(self):
         data = self.participles.group_1_VA()
-        ensure(data.nominative).equals("särkevä")
+        ensure(data.positive.nominative).equals("särkevä")
 
     def test_group_2_nut(self):
         data = self.participles.group_2_NUT()
-        ensure(data.nominative).equals("särkenyt")
+        ensure(data.positive.nominative).equals("särkenyt")
 
     def test_group_3_ma(self):
         data = self.participles.group_3_MA_agent_participle()
-        ensure(data.nominative).equals("särkemä")
+        ensure(data.positive.nominative).equals("särkemä")
 
     def test_group_4_va_passive(self):
         data = self.participles.group_4_VA_passive()
-        ensure(data.nominative).equals("särjettävä")
+        ensure(data.positive.nominative).equals("särjettävä")
 
     def test_group_5_tu(self):
         data = self.participles.group_5_TU_passive()
-        ensure(data.nominative).equals("särjetty")
+        ensure(data.positive.nominative).equals("särjetty")
 
     def test_group_6_negation(self):
         data = self.participles.group_6_negation()
-        ensure(data.nominative).equals("särkemätön")
+        ensure(data.positive.nominative).equals("särkemätön")
 
 
 class TestInfinitives(unittest.TestCase):

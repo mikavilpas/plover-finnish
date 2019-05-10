@@ -31,7 +31,7 @@ class TestBasic(unittest.TestCase):
 
     def test_indicative_past(self):
         # try other vowel group
-        conjugations = moduses = KotusVerb64Juoda("lyödä").moduses().indicative_past()
+        conjugations = KotusVerb64Juoda("lyödä").moduses().indicative_past()
 
         expected = VerbPersonalFormsMultipleRoots(singular1s         = ['löin'],
                                                   singular1_negative = 'lyönyt',
@@ -134,27 +134,27 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_1_va(self):
         data = self.participles.group_1_VA()
-        ensure(data.nominative).equals("juova")
+        ensure(data.positive.nominative).equals("juova")
 
     def test_group_2_nut(self):
         data = self.participles.group_2_NUT()
-        ensure(data.nominative).equals("juonut")
+        ensure(data.positive.nominative).equals("juonut")
 
     def test_group_3_ma(self):
         data = self.participles.group_3_MA_agent_participle()
-        ensure(data.nominative).equals("juoma")
+        ensure(data.positive.nominative).equals("juoma")
 
     def test_group_4_va_passive(self):
         data = self.participles.group_4_VA_passive()
-        ensure(data.nominative).equals("juotava")
+        ensure(data.positive.nominative).equals("juotava")
 
     def test_group_5_tu(self):
         data = self.participles.group_5_TU_passive()
-        ensure(data.nominative).equals("juotu")
+        ensure(data.positive.nominative).equals("juotu")
 
     def test_group_6_negation(self):
         data = self.participles.group_6_negation()
-        ensure(data.nominative).equals("juomaton")
+        ensure(data.positive.nominative).equals("juomaton")
 
 
 class TestInfinitives(unittest.TestCase):

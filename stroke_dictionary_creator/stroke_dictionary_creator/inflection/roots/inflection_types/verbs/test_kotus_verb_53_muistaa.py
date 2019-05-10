@@ -199,7 +199,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['esittävin'],
                                   comitatives_plural=['esittävine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_2_nut(self):
         data = self.participles.group_2_NUT()
@@ -236,7 +236,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['esittänein'],
                                   comitatives_plural=['esittäneine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_3_ma(self):
         data = self.participles.group_3_MA_agent_participle()
@@ -272,7 +272,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['esittämin'],
                                   comitatives_plural=['esittämine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_4_va_passive(self):
         data = self.participles.group_4_VA_passive()
@@ -308,7 +308,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['esitettävin'],
                                   comitatives_plural=['esitettävine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_5_tu(self):
         data = self.participles.group_5_TU_passive()
@@ -343,7 +343,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['esitetyin'],
                                   comitatives_plural=['esitettyine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_6_negation(self):
         data = self.participles.group_6_negation()
@@ -379,7 +379,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['esittämättömin'],
                                   comitatives_plural=['esittämättömine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
 
 class TestInfinitives(unittest.TestCase):

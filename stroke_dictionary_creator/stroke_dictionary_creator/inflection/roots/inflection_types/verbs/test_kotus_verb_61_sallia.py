@@ -141,27 +141,27 @@ class TestParticiples(unittest.TestCase):
 
     def test_group_1_va(self):
         data = self.participles.group_1_VA()
-        ensure(data.nominative).equals("sopiva")
+        ensure(data.positive.nominative).equals("sopiva")
 
     def test_group_2_nut(self):
         data = self.participles.group_2_NUT()
-        ensure(data.nominative).equals("sopinut")
+        ensure(data.positive.nominative).equals("sopinut")
 
     def test_group_3_ma(self):
         data = self.participles.group_3_MA_agent_participle()
-        ensure(data.nominative).equals("sopima")
+        ensure(data.positive.nominative).equals("sopima")
 
     def test_group_4_va_passive(self):
         data = self.participles.group_4_VA_passive()
-        ensure(data.nominative).equals("sovittava")
+        ensure(data.positive.nominative).equals("sovittava")
 
     def test_group_5_tu(self):
         data = self.participles.group_5_TU_passive()
-        ensure(data.nominative).equals("sovittu")
+        ensure(data.positive.nominative).equals("sovittu")
 
     def test_group_6_negation(self):
         data = self.participles.group_6_negation()
-        ensure(data.nominative).equals("sopimaton")
+        ensure(data.positive.nominative).equals("sopimaton")
 
 
 class TestInfinitives(unittest.TestCase):

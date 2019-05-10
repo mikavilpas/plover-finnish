@@ -198,7 +198,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['tappavin'],
                                   comitatives_plural=['tappavine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_2_nut(self):
         data = KotusVerb56Laulaa("tappaa",
@@ -238,7 +238,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['tappanein'],
                                   comitatives_plural=['tappaneine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_3_ma(self):
         data = KotusVerb56Laulaa("kantaa",
@@ -277,7 +277,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['kantamin'],
                                   comitatives_plural=['kantamine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_4_va_passive(self):
         data = KotusVerb56Laulaa("kantaa",
@@ -316,7 +316,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['kannettavin'],
                                   comitatives_plural=['kannettavine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_5_tu(self):
         data = KotusVerb56Laulaa("tappaa",
@@ -354,7 +354,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['tapetuin'],
                                   comitatives_plural=['tapettuine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
     def test_group_6_negation(self):
         data = KotusVerb56Laulaa("tappaa",
@@ -393,7 +393,7 @@ class TestParticiples(unittest.TestCase):
                                   instructives_plural=['tappamattomin'],
                                   comitatives_plural=['tappamattomine'])
 
-        ensure_inflections_equal(expected, data)
+        ensure_inflections_equal(expected, data.positive)
 
 
 class TestInfinitives(unittest.TestCase):
