@@ -6,9 +6,6 @@ from .. import base
 Adjective = namedtuple("Adjective",
                        ["positive", "comparative", "superlative"])
 
-AdjectiveNoPositive = namedtuple("AdjectiveNoPositive",
-                                 ["comparative", "superlative"])
-
 AdjectiveNotComparable = namedtuple("AdjectiveNotComparable",
                                     ["word"])
 
@@ -21,9 +18,7 @@ def inflect_with(word, refword: str, gradation_fn) -> base.InflectionInfo:
     # This can't be a top level import, otherwise there will be a circular
     # dependency error. Might need a bit of re-thinking later on to have a
     # better design.
-    from stroke_dictionary_creator\
-        .stroke_dictionary_creator.inflection.roots.joukahainen_kotus_mapping import \
-        NominalInflection, nominals
+    from ...joukahainen_kotus_mapping import NominalInflection, nominals
 
     info: NominalInflection = nominals[refword]
     inflect                 = info.inflection_fn

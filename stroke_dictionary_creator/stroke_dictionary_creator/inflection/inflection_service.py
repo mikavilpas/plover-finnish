@@ -1,10 +1,9 @@
 from functools import reduce
 from typing import List
 
-from stroke_dictionary_creator.stroke_dictionary_creator.inflection.roots.inflection_types.adjectives.adjective import (
-    Adjective, AdjectiveNoPositive)
-
 from .parsing import word_and_class
+from .roots.inflection_types.adjectives.adjective import (
+    Adjective, AdjectiveNotComparable)
 from .roots.inflection_types.verbs.verb import VerbBase
 from .roots.lookup import lookup_adjective, lookup_nominal, lookup_verb
 from .roots.noun_inflection_info import InflectionInfo
@@ -50,10 +49,9 @@ def _all_adjective_forms(adjective):
                      adjective.superlative]
         return reduce(_flatten, all_forms, [])
 
-    if type(adjective) == AdjectiveNoPositive:
-        adjective: AdjectiveNoPositive = adjective
-        all_forms = [adjective.comparative,
-                     adjective.superlative]
+    if type(adjective) == AdjectiveNotComparable:
+        adjective: AdjectiveNotComparable = adjective
+        all_forms = [adjective.word]
         return reduce(_flatten, all_forms, [])
 
 def _all_conjugations(verb: VerbBase) -> List[str]:

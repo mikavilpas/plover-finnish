@@ -1,15 +1,12 @@
 from typing import Optional
 
-from stroke_dictionary_creator.stroke_dictionary_creator.inflection.roots.inflection_types.adjectives.adjective import \
-    Adjective
-
-from . import gradation as g
-from . import joukahainen_kotus_mapping as mapping
+from . import gradation as g, joukahainen_kotus_mapping as mapping
+from .inflection_types.verbs.verb import VerbBase
 
 
 def lookup_verb(word,
                 refword,
-                joukahainen_gradation_class: Optional[str] = None):
+                joukahainen_gradation_class: Optional[str] = None) -> VerbBase:
     verb_info = mapping.verbs[refword]
     verb      = verb_info.verb_class
     gradation = _get_gradation(word,

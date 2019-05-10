@@ -1,10 +1,7 @@
 from ensure import ensure
 
-from stroke_dictionary_creator.stroke_dictionary_creator.inflection.roots import \
-    gradation as g
-
 from .joukahainen_adjective_valo import joukahainen_adjective_valo
-
+from ... import gradation as g
 
 def test_no_gradation():
     words = joukahainen_adjective_valo("fiksu")

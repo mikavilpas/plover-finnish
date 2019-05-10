@@ -1,7 +1,9 @@
-from .moduses import *
-from ...gradation import identity
-from .participles import VerbParticiples
 from .infinitives import VerbInfinitives
+from .moduses import VerbModuses, VerbRoots
+from .participles import VerbParticiples
+from ...gradation import identity
+from ..base import change_to_same_vowel_group_prefer_umlauts
+
 
 class VerbBase():
     def __init__(self, word, gradation_fn = identity):

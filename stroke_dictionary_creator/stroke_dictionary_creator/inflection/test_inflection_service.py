@@ -2,7 +2,7 @@ import unittest
 
 from ensure import ensure
 
-from stroke_dictionary_creator.stroke_dictionary_creator.inflection.inflection_service import inflected_forms
+from .inflection_service import inflected_forms
 
 
 def test_inflected_forms_noun():
@@ -18,6 +18,6 @@ class TestAdjectives(unittest.TestCase):
         forms = inflected_forms("ehjä;adjective-koira")
         ensure(forms).contains("ehjimmille")
 
-    def test_adjective_no_positive(self):
+    def test_adjective_not_comparable(self):
         forms = inflected_forms("uloin;adjective-sisin")
-        ensure(forms).contains("ulommassa")
+        ensure(forms).contains("uloimmassa")
