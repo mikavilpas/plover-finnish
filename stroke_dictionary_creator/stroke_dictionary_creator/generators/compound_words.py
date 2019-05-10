@@ -1,9 +1,10 @@
+from typing import List, Tuple
+
 from parsy import ParseError
 
-from .two_stroke_words import join_strokes
 from .short_words import short_word
-from .two_stroke_words import two_strokes
-from typing import List, Tuple
+from .two_stroke_words import join_strokes, two_strokes
+
 
 def safe_parse(p, text):
     try:
@@ -31,9 +32,13 @@ def combine(leading_strokes: List[List[str]], trailing_strokes: List[List[str]])
 def strokefy_compound_word(inflection_fn, word_info: str) -> List[Tuple[str, str]]:
     def make_stroke(word):
         result = safe_parse(short_word, word)
-        if result:
-            return [word, result]
-        return two_strokes(word)
+        try:
+            if result:
+                return [word, result]
+            return two_strokes(word)
+        except ParseError as e:
+            print(f"Error: unable to parse the word {word} ({word_info}), exception: {e}")
+            raise e
 
     # for the word_info 'anteeksi=antaa;verb-kaivaa-av1',
     # - leading_parts contains ['anteeksi']
